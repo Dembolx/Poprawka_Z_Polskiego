@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Temat 2 · Nawłoć</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="shared_styles.css"/>
+</head>
+<body>
+<nav class="topnav">
+  <a href="index.html" class="nav-back">← Hub</a>
+  <span class="nav-title">🌿 Nawłoć · Przedwiośnie · Żeromski 1924</span>
+  <div class="nav-status-wrap" id="nav-status"></div>
+</nav>
+<header>
+  <p class="eyebrow">Temat 2 · Stefan Żeromski · Przedwiośnie 1924</p>
+  <h1>Obraz życia na <span>Nawłoci</span></h1>
+  <p class="sub">Przestrzeń · Kontrast · Bohaterowie · Znaczenie</p>
+  <div class="divider"></div>
+</header>
+<div class="toggle-bar">
+  <button class="toggle-btn active" id="btn-cards" onclick="switchView('cards')">📋 Teoria</button>
+  <button class="toggle-btn" id="btn-quiz" onclick="switchView('quiz')">🎯 Quiz</button>
+  <button class="toggle-btn" id="btn-nota" onclick="switchView('nota')">📝 Notatka</button>
+</div>
+
+<!-- TEORIA -->
+<div id="view-cards" style="position:relative;z-index:1;max-width:1100px;margin:0 auto;padding:2rem 2rem 4rem">
+  <div class="nw-hero" style="background:linear-gradient(135deg,rgba(90,122,74,.18) 0%,rgba(58,104,128,.12) 40%,rgba(122,32,64,.12) 100%)">
+    <div class="nw-hero-eyebrow" style="color:var(--n-sage2)">Stefan Żeromski · Przedwiośnie · 1924</div>
+    <div class="nw-hero-title">Obraz życia na <em style="color:var(--n-cream)">Nawłoci</em></div>
+    <div class="nw-hero-sub">Nawłoć — ziemiański dworek rodziny Wielosławskich — jest w powieści przestrzenią kontrastów: sielankowej urody i głębokiej niesprawiedliwości społecznej. Cezary Baryka doświadcza tu polskiej szlachty od środka, co stanie się źródłem jego wewnętrznego rozdarcia.</div>
+    <div class="nw-hero-tags">
+      <span class="nw-tag" style="color:var(--n-sage2);border-color:rgba(90,122,74,.4);background:rgba(90,122,74,.1)">Realizm społeczny</span>
+      <span class="nw-tag" style="color:var(--n-rust2);border-color:rgba(160,64,42,.4);background:rgba(160,64,42,.1)">Krytyka szlachty</span>
+      <span class="nw-tag" style="color:#6aaccc;border-color:rgba(58,104,128,.5);background:rgba(58,104,128,.1)">Miłość i idylla</span>
+      <span class="nw-tag" style="color:#cc6080;border-color:rgba(122,32,64,.5);background:rgba(122,32,64,.1)">Nędza folwarczna</span>
+    </div>
+  </div>
+  <div class="nw-quote">
+    <p>„Był to kraj kwitnący, wesoły, bogaty, zadowolony z siebie, rozkoszujący się swoją dolą — kraj, który za nic nie chciał wiedzieć, że tuż za jego płotem umiera z głodu inne życie."</p>
+    <cite>— Stefan Żeromski, Przedwiośnie</cite>
+  </div>
+  <div class="nw-section-head"><span class="nw-section-icon">🏡</span><div class="nw-section-title">Przestrzeń i atmosfera Nawłoci</div><div class="nw-section-line"></div></div>
+  <div class="nw-grid">
+    <div class="nw-card nw-sage"><div class="nw-card-icon">🌿</div><div class="nw-card-title">Sielankowy pejzaż i uroda natury</div><div class="nw-card-desc">Nawłoć jest opisywana jako miejsce niemal rajskie — bujne parki, stawy, aleje lipowe, kwitnące ogrody. Żeromski z rozmysłem maluje ten krajobraz w ciepłych barwach, by uwydatnić <strong>kontrast z nędzą pobliskich chałup chłopskich</strong>.</div></div>
+    <div class="nw-card nw-sky"><div class="nw-card-icon">🏰</div><div class="nw-card-title">Dworek jako mikrokosmos szlachecki</div><div class="nw-card-desc">Dwór Wielosławskich to zamknięty, samowystarczalny świat: polowania, bale, wizyty sąsiadów. Ten świat <strong>żyje własnym rytmem</strong>, kompletnie oderwany od powojennej rzeczywistości Polski.</div></div>
+    <div class="nw-card nw-rust"><div class="nw-card-icon">🌾</div><div class="nw-card-title">Folwark — drugie oblicze Nawłoci</div><div class="nw-card-desc">Tuż za bramą dworku rozciąga się folwark z robotnikami żyjącymi w skrajnej nędzy. <strong>Nierówność jest dosłownie geograficzna</strong>: przepaść społeczna widoczna jest w przestrzeni, nie tylko w relacjach.</div></div>
+    <div class="nw-card nw-stone"><div class="nw-card-icon">🕯️</div><div class="nw-card-title">Czas zawieszony i anachronizm</div><div class="nw-card-desc">Nawłoć funkcjonuje jak skansen — szlachta zachowuje <strong>przedwojenne obyczaje i hierarchie</strong>, jakby rewolucja i odrodzona Polska jej nie dotyczyły.</div></div>
+  </div>
+  <div class="nw-section-head"><span class="nw-section-icon">👥</span><div class="nw-section-title">Bohaterowie i ich role w Nawłoci</div><div class="nw-section-line"></div></div>
+  <div class="nw-chars">
+    <div class="nw-char" style="--nc:#8aaa6a"><div class="nw-char-emoji">🧑</div><div class="nw-char-name">Cezary Baryka</div><div class="nw-char-role">Obserwator z zewnątrz</div><div class="nw-char-desc">Przybysz z Rosji, wychowany w rewolucyjnym chaosie. W Nawłoci przeżywa idyllę, ale jej sztuczność go niepokoi. Kocha Laurę, lecz nie potrafi zaakceptować świata, który ona reprezentuje.</div></div>
+    <div class="nw-char" style="--nc:#c86040"><div class="nw-char-emoji">👩</div><div class="nw-char-name">Laura Kościeniecka</div><div class="nw-char-role">Córka szlachecka · Miłość Cezarego</div><div class="nw-char-desc">Piękna, wykształcona, inteligentna — i zarazem głęboko zakorzeniona w świecie Nawłoci. Kocha Cezarego, ale nie potrafi wyjść poza swój świat. Symbolizuje uwodzicielskość szlacheckiego życia.</div></div>
+    <div class="nw-char" style="--nc:#6aaccc"><div class="nw-char-emoji">👴</div><div class="nw-char-name">Hipolit Wielosławski</div><div class="nw-char-role">Gospodarz · Głowa rodu</div><div class="nw-char-desc">Serdeczny, gościnny, dobroduszny. Jednak jego życzliwość nie zmienia faktu, że jest beneficjentem systemu utrzymującego chłopów w nędzy. Dobry człowiek uwięziony w niesprawiedliwej strukturze.</div></div>
+    <div class="nw-char" style="--nc:#cc6080"><div class="nw-char-emoji">👨‍🌾</div><div class="nw-char-name">Chłopi folwarczni</div><div class="nw-char-role">Robotnicy · Milczące tło</div><div class="nw-char-desc">Nie mają imion ani głosu — zbiorowy bohater drugiego planu. Ich nędza to rzeczywistość, którą szlachta ignoruje. Dla Cezarego stają się ucieleśnieniem niesprawiedliwości.</div></div>
+  </div>
+  <div class="nw-section-head"><span class="nw-section-icon">🔄</span><div class="nw-section-title">Nawłoć — świat kontrastów</div><div class="nw-section-line"></div></div>
+  <div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:1.5rem 1.8rem;margin-bottom:1.5rem">
+    <div class="nw-contrast">
+      <div style="text-align:right"><div class="nw-contrast-item sage">Sielankowy park i stawy</div></div><div class="nw-contrast-vs">vs</div><div><div class="nw-contrast-item rust">Nędza chłopskich chałup</div></div>
+      <div style="text-align:right"><div class="nw-contrast-item sage">Bale, polowania, uczty</div></div><div class="nw-contrast-vs">vs</div><div><div class="nw-contrast-item rust">Głód i ciężka praca folwarku</div></div>
+      <div style="text-align:right"><div class="nw-contrast-item sage">Miłość i beztroska Cezarego</div></div><div class="nw-contrast-vs">vs</div><div><div class="nw-contrast-item rust">Sumienie i idealizm bohatera</div></div>
+      <div style="text-align:right"><div class="nw-contrast-item sage">Szlachecka tradycja i rytuał</div></div><div class="nw-contrast-vs">vs</div><div><div class="nw-contrast-item rust">Rewolucja i wrzenie społeczne</div></div>
+      <div style="text-align:right"><div class="nw-contrast-item sage">Laura — piękno i spokój</div></div><div class="nw-contrast-vs">vs</div><div><div class="nw-contrast-item rust">Lulek — bunt i proletariat</div></div>
+    </div>
+  </div>
+  <div class="nw-section-head"><span class="nw-section-icon">💡</span><div class="nw-section-title">Znaczenie Nawłoci w całości powieści</div><div class="nw-section-line"></div></div>
+  <div class="nw-grid">
+    <div class="nw-card nw-burgundy"><div class="nw-card-icon">🗺️</div><div class="nw-card-title">Etap dojrzewania Cezarego</div><div class="nw-card-desc">Nawłoć jest <strong>środkowym rozdziałem</strong> drogi bohatera między Bakujem (rewolucja, śmierć matki) a Warszawą (polityka, wybór ideologiczny). Odejście stamtąd jest gestem dorosłości.</div></div>
+    <div class="nw-card nw-rust"><div class="nw-card-icon">🪞</div><div class="nw-card-title">Lustro polskiego społeczeństwa</div><div class="nw-card-desc">Żeromski używa Nawłoci, by pokazać <strong>fundamentalny problem odrodzonej Polski</strong>: piękna fasada szlacheckiej kultury skrywa rażącą niesprawiedliwość. To diagnoza z miłością i bólem.</div></div>
+    <div class="nw-card nw-sage"><div class="nw-card-icon">📖</div><div class="nw-card-title">Tradycja literacka „dworu"</div><div class="nw-card-desc">Żeromski nawiązuje do tradycji <strong>dworku jako symbolu polskości</strong> (Pan Tadeusz, Nad Niemnem), ale ją problematyzuje. Nawłoć to piękny, lecz chory organizm społeczny.</div></div>
+    <div class="nw-card nw-sky"><div class="nw-card-icon">⏳</div><div class="nw-card-title">Zmierzch starego świata</div><div class="nw-card-desc">Nawłoć to świat skazany na zagładę. Żeromski opisuje go z <strong>nostalgią i nieuchronnością</strong>: to ostatni oddech szlacheckiej cywilizacji przed nadchodzącym przełomem.</div></div>
+  </div>
+</div>
+
+<!-- QUIZ -->
+<div id="view-quiz" style="display:none;position:relative;z-index:1;max-width:800px;margin:0 auto;padding:1.5rem 1.5rem 5rem">
+  <div id="quiz-hub">
+    <div style="text-align:center;padding:1.5rem 0 2rem">
+      <div style="font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem">Temat 2 · Quiz</div>
+      <div style="font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;color:var(--ink);margin-bottom:.4rem">Sprawdź wiedzę o Nawłoci</div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+      <button class="qhub-card" onclick="launchQuiz('nawloc','nawloc')" style="--qc:#2a7d5f">
+        <div class="qhub-icon">🌿</div><div class="qhub-title">Quiz Nawłoć</div>
+        <div class="qhub-sub">Przestrzeń · Bohaterowie · Kontrast · Znaczenie · Nawłoć a Polska</div>
+        <div class="qhub-count" id="hub-score-nawloc">24 pytania</div>
+      </button>
+      <button class="qhub-card" onclick="launchQuiz('all','nawloc')" style="--qc:#c9a84c">
+        <div class="qhub-icon">🎯</div><div class="qhub-title">MEGA QUIZ</div>
+        <div class="qhub-sub">Wszystkie cztery tematy razem</div>
+        <div class="qhub-count">130+ pytań</div>
+      </button>
+    </div>
+  </div>
+  <div id="quiz-active" style="display:none">
+    <div style="display:flex;align-items:center;gap:.8rem;margin-bottom:1.2rem">
+      <button onclick="backToHub()" style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);color:var(--ink2);font-size:.75rem;padding:.4rem .9rem;border-radius:100px;cursor:pointer">← Wróć</button>
+      <div style="flex:1"><div style="display:flex;justify-content:space-between;margin-bottom:.4rem"><span style="font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink2)" id="qa-label"></span><span style="font-size:.8rem;font-weight:500;color:var(--gold)" id="qa-score"></span></div><div class="quiz-prog-bar"><div class="quiz-prog-fill" id="qa-fill" style="width:0%"></div></div></div>
+    </div>
+    <div class="quiz-card"><div class="quiz-q-num" id="qa-num"></div><span class="quiz-cat" id="qa-cat"></span><div class="quiz-q-text" id="qa-text"></div><div class="quiz-options" id="qa-opts"></div><div class="quiz-feedback" id="qa-feedback"></div><div class="quiz-next-wrap"><button class="quiz-next" id="qa-next" onclick="nextQA()">Następne →</button></div></div>
+  </div>
+  <div id="quiz-result-screen" style="display:none;text-align:center;padding:2rem 1rem">
+    <div class="res-emoji" id="qr-emoji"></div><div class="res-title" id="qr-title"></div>
+    <div class="res-score-box" style="margin:1rem auto 1.2rem"><div class="res-big" id="qr-big"></div><div class="res-of" id="qr-of"></div></div>
+    <div class="res-bar-wrap"><div class="quiz-prog-bar" style="height:8px;border-radius:4px"><div class="res-bar-fill" id="qr-bar" style="width:0%"></div></div></div>
+    <div class="res-cats" id="qr-cats" style="margin:1.2rem 0"></div><div class="res-msg" id="qr-msg"></div>
+    <div style="display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap">
+      <button class="res-restart" onclick="replayQuiz()">Jeszcze raz 🔄</button>
+      <button class="res-restart" onclick="backToHub()" style="background:rgba(255,255,255,.08);color:var(--ink)">Wybierz tryb</button>
+      <a href="index.html" class="res-restart" style="background:rgba(255,255,255,.08);color:var(--ink);text-decoration:none">← Hub</a>
+    </div>
+  </div>
+</div>
+
+<!-- NOTATKA -->
+<div id="view-nota" style="display:none;position:relative;z-index:1;max-width:900px;margin:0 auto;padding:2rem 1.5rem 4rem">
+  <div class="nw-quote"><p>„Był to kraj kwitnący... za nic nie chciał wiedzieć, że tuż za jego płotem umiera z głodu inne życie."</p><cite>— Stefan Żeromski, Przedwiośnie</cite></div>
+  <div class="nw-section-head"><span class="nw-section-icon">📋</span><div class="nw-section-title">Notatka podsumowująca — Nawłoć</div><div class="nw-section-line"></div></div>
+  <div class="nw-grid">
+    <div class="nw-card nw-sage"><div class="nw-card-icon">🏡</div><div class="nw-card-title">Przestrzeń</div><div class="nw-card-desc">Sielankowy park i dworek vs. nędzny folwark <strong>tuż za ogrodzeniem</strong>. Anachronizm — szlachta żyje jak przed wojną. Każde miejsce to kontrast piękna i niesprawiedliwości.</div></div>
+    <div class="nw-card nw-rust"><div class="nw-card-icon">⚖️</div><div class="nw-card-title">Kontrast społeczny</div><div class="nw-card-desc">Bale i polowania szlachty vs. głód robotników rolnych. Żeromski <strong>nie potępia szlachty wprost</strong> — pokazuje niesprawiedliwy system. Nawłoć = piękna fasada zepsutej Polski.</div></div>
+    <div class="nw-card nw-sky"><div class="nw-card-icon">🧑</div><div class="nw-card-title">Cezary na Nawłoci</div><div class="nw-card-desc">Zakochuje się w Laurze → chwilowy spokój. Ale nie może zaakceptować niesprawiedliwości. Odejście = odrzucenie szlacheckiej wersji Polski. <strong>Etap dojrzewania</strong> między Bakujem a Warszawą.</div></div>
+    <div class="nw-card nw-burgundy"><div class="nw-card-icon">💡</div><div class="nw-card-title">Znaczenie</div><div class="nw-card-desc">Lustro polskiego społeczeństwa. Nawiązanie do tradycji dworku (Pan Tadeusz) — ale <strong>krytyczne</strong>. Zmierzch starego świata. Mit arkadii zdekonstruowany przez Żeromskiego.</div></div>
+  </div>
+  <div class="nw-section-head"><span class="nw-section-icon">👤</span><div class="nw-section-title">Kluczowi bohaterowie Nawłoci</div><div class="nw-section-line"></div></div>
+  <div style="overflow-x:auto"><table>
+    <thead><tr><th>Postać</th><th>Rola</th><th>Symbolika</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Cezary Baryka</strong></td><td>Obserwator z zewnątrz (z Baku)</td><td>Outsider widzący kontrast piękna i niesprawiedliwości</td></tr>
+      <tr><td><strong>Laura Kościeniecka</strong></td><td>Miłość Cezarego, córka szlachecka</td><td>Piękna pułapka — miłość paraliżuje sumienie</td></tr>
+      <tr><td><strong>Hipolit Wielosławski</strong></td><td>Gospodarz, głowa rodu</td><td>Dobry człowiek w niesprawiedliwej strukturze</td></tr>
+      <tr><td><strong>Chłopi folwarczni</strong></td><td>Milczące tło bez imion</td><td>Ucieleśnienie niesprawiedliwości — centralny argument moralny</td></tr>
+    </tbody>
+  </table></div>
+</div>
+
+<div class="streak-badge" id="streak-badge"></div>
+<script src="quiz_engine.js"></script>
+<script>
+const TOPIC_ID = 'nawloc';
+function switchView(v){['cards','quiz','nota'].forEach(id=>{document.getElementById('view-'+id).style.display='none';document.getElementById('btn-'+id)?.classList.remove('active');});document.getElementById('view-'+v).style.display='block';document.getElementById('btn-'+v)?.classList.add('active');}
+function renderNavStatus(){const td=getTopicData(TOPIC_ID);const status=td.status||'';const el=document.getElementById('nav-status');el.innerHTML=`<button class="nav-sbtn${status==='done'?' sd':''}" onclick="toggleStatus('done')">✓ Zaliczone</button><button class="nav-sbtn${status==='focus'?' sf':''}" onclick="toggleStatus('focus')">★ Powtórka</button><button class="nav-sbtn${status==='hard'?' sh':''}" onclick="toggleStatus('hard')">! Trudny</button>`;}
+function toggleStatus(s){const p=gp();if(!p[TOPIC_ID])p[TOPIC_ID]={};p[TOPIC_ID].status=(p[TOPIC_ID].status===s?'':s);sp(p);renderNavStatus();}
+renderNavStatus();updateHubScores();
+</script>
+</body>
+</html>

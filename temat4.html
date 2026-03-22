@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Temat 4 · Przedwiośnie – Analiza</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="shared_styles.css"/>
+</head>
+<body>
+<nav class="topnav">
+  <a href="index.html" class="nav-back">← Hub</a>
+  <span class="nav-title">🌱 Przedwiośnie – Fabuła · Bohaterowie · Tytuł</span>
+  <div class="nav-status-wrap" id="nav-status"></div>
+</nav>
+<header>
+  <p class="eyebrow">Temat 4 · Stefan Żeromski · Przedwiośnie 1924</p>
+  <h1>Analiza <span>Przedwiośnia</span></h1>
+  <p class="sub">Znajomość fabuły · Charakterystyka bohaterów · Wyjaśnienie tytułu</p>
+  <div class="divider"></div>
+</header>
+<div class="toggle-bar">
+  <button class="toggle-btn active" id="btn-fabula" onclick="switchView('fabula')">📖 Fabuła</button>
+  <button class="toggle-btn" id="btn-bohaterowie" onclick="switchView('bohaterowie')">👤 Bohaterowie</button>
+  <button class="toggle-btn" id="btn-tytul" onclick="switchView('tytul')">🌱 Tytuł</button>
+  <button class="toggle-btn" id="btn-quiz" onclick="switchView('quiz')">🎯 Quiz</button>
+  <button class="toggle-btn" id="btn-nota" onclick="switchView('nota')">📝 Notatka</button>
+</div>
+
+<!-- ===== FABUŁA ===== -->
+<div id="view-fabula" style="position:relative;z-index:1;max-width:1100px;margin:0 auto;padding:2rem 2rem 4rem">
+
+  <div class="nw-hero" style="background:linear-gradient(135deg,rgba(184,112,32,.15) 0%,rgba(160,64,42,.12) 50%,rgba(42,125,95,.1) 100%)">
+    <div class="nw-hero-eyebrow" style="color:var(--amber)">Stefan Żeromski · Przedwiośnie · 1924</div>
+    <div class="nw-hero-title">Znajomość <em style="color:var(--gold2)">fabuły</em></div>
+    <div class="nw-hero-sub">Powieść śledzi losy Cezarego Baryki — syna polskiego emigranta — od dzieciństwa w Baku, przez rewolucję, aż do rozdarcia ideologicznego w odrodzonej Polsce. To powieść inicjacyjna i polityczna zarazem.</div>
+    <div class="nw-hero-tags">
+      <span class="nw-tag" style="color:var(--amber);border-color:rgba(184,112,32,.4);background:rgba(184,112,32,.1)">Bildungsroman</span>
+      <span class="nw-tag" style="color:var(--n-rust2);border-color:rgba(160,64,42,.4);background:rgba(160,64,42,.1)">Powieść polityczna</span>
+      <span class="nw-tag" style="color:var(--n-sage2);border-color:rgba(90,122,74,.4);background:rgba(90,122,74,.1)">Realizm społeczny</span>
+      <span class="nw-tag" style="color:#6aaccc;border-color:rgba(58,104,128,.5);background:rgba(58,104,128,.1)">Otwarte zakończenie</span>
+    </div>
+  </div>
+
+  <div class="nw-section-head"><span class="nw-section-icon">🗺️</span><div class="nw-section-title">Trzy etapy życia Cezarego — mapa fabuły</div><div class="nw-section-line"></div></div>
+
+  <!-- ETAP 1: BAKU -->
+  <div style="border:1px solid rgba(184,112,32,.35);border-radius:10px;overflow:hidden;margin-bottom:1.8rem">
+    <div style="background:rgba(184,112,32,.15);padding:1.2rem 1.8rem;border-bottom:1px solid rgba(184,112,32,.2);display:flex;align-items:center;gap:1rem">
+      <div style="font-size:1.8rem">🏙️</div>
+      <div>
+        <div style="font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--amber);margin-bottom:.2rem">Część I</div>
+        <div style="font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:var(--ink)">Baku — dzieciństwo i rewolucja</div>
+        <div style="font-size:.78rem;color:var(--ink2);margin-top:.2rem">Formowanie się Cezarego · Trauma i doświadczenie</div>
+      </div>
+    </div>
+    <div style="padding:1.5rem 1.8rem">
+      <div class="nw-grid" style="margin-bottom:0">
+        <div class="nw-card nw-amber"><div class="nw-card-icon">👦</div><div class="nw-card-title">Dzieciństwo w Baku</div><div class="nw-card-desc">Cezary dorasta w Baku — mieście naftowym na Kaukazie. Jego ojciec <strong>Seweryn Baryka</strong> to polski emigrant, matka Jadwiga jest Polką. Cezary wychowuje się między kulturami, czuje się bardziej Rosjaninem niż Polakiem.</div></div>
+        <div class="nw-card nw-amber"><div class="nw-card-icon">🔥</div><div class="nw-card-title">Rewolucja bolszewicka</div><div class="nw-card-desc">Wybucha rewolucja w Baku. Cezary przeżywa chaos, przemoc i głód. <strong>Matka Jadwiga ginie</strong> podczas zamieszek — to pierwsza wielka trauma bohatera, która kształtuje jego stosunek do gwałtownych zmian społecznych.</div></div>
+        <div class="nw-card nw-amber"><div class="nw-card-icon">🏠</div><div class="nw-card-title">Obietnica szklanych domów</div><div class="nw-card-desc">Seweryn Baryka snuje Cezaremu wizję <strong>szklanych domów</strong> — nowoczesnej, szczęśliwej Polski zbudowanej dzięki postępowi technicznemu. Ta opowieść staje się motywacją do wyjazdu do ojczyzny.</div></div>
+        <div class="nw-card nw-amber"><div class="nw-card-icon">💀</div><div class="nw-card-title">Śmierć ojca w drodze</div><div class="nw-card-desc">Seweryn i Cezary wyruszają do Polski. Ojciec <strong>umiera w drodze</strong> — nie doczeka zobaczenia ojczyzny. Zostawia Cezaremu tylko marzenie, które okazuje się mitem. Cezary przybywa do Polski sam, rozczarowany i szukający sensu.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ETAP 2: NAWŁOĆ I POLSKA -->
+  <div style="border:1px solid rgba(90,122,74,.35);border-radius:10px;overflow:hidden;margin-bottom:1.8rem">
+    <div style="background:rgba(90,122,74,.13);padding:1.2rem 1.8rem;border-bottom:1px solid rgba(90,122,74,.2);display:flex;align-items:center;gap:1rem">
+      <div style="font-size:1.8rem">🌿</div>
+      <div>
+        <div style="font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--n-sage2);margin-bottom:.2rem">Część II</div>
+        <div style="font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:var(--ink)">Nawłoć — polska idylla i jej cena</div>
+        <div style="font-size:.78rem;color:var(--ink2);margin-top:.2rem">Zderzenie z polskością · Miłość · Kontrast piękna i nędzy</div>
+      </div>
+    </div>
+    <div style="padding:1.5rem 1.8rem">
+      <div class="nw-grid" style="margin-bottom:0">
+        <div class="nw-card nw-sage"><div class="nw-card-icon">😞</div><div class="nw-card-title">Pierwsze rozczarowanie — brak szklanych domów</div><div class="nw-card-desc">Cezary przybywa do Polski i szuka szklanych domów. <strong>Nie ma ich</strong>. Polska jest biedna, zacofana, niesprawiedliwa — nic z utopii ojca. To pierwszy wielki ból i punkt wyjścia do poszukiwań.</div></div>
+        <div class="nw-card nw-sage"><div class="nw-card-icon">🤝</div><div class="nw-card-title">Opieka Gajowca i poznanie Warszawy</div><div class="nw-card-desc"><strong>Szymon Gajowiec</strong> — urzędnik i reformator — przyjmuje Cezarego pod swoje skrzydła. Wprowadza go w polskie realia, opowiada o swojej wizji stopniowej reformy. Cezary słucha, ale jest niespokojny.</div></div>
+        <div class="nw-card nw-sage"><div class="nw-card-icon">🌹</div><div class="nw-card-title">Nawłoć i miłość do Laury</div><div class="nw-card-desc">Gajowiec kieruje Cezarego na <strong>Nawłoć</strong> — ziemiański dworek Wielosławskich. Cezary przeżywa idyllę, zakochuje się w <strong>Laurze Kościenieckiej</strong>. Przez chwilę wydaje mu się, że to jest właśnie Polska.</div></div>
+        <div class="nw-card nw-sage"><div class="nw-card-icon">⚖️</div><div class="nw-card-title">Kontrast piękna i nędzy</div><div class="nw-card-desc">Ale Cezary widzi też <strong>folwark tuż za ogrodzeniem</strong> — nędzę chłopów przy luksusie szlachty. Sumienie nie pozwala mu zaakceptować tego świata. Odejście z Nawłoci to gest dorosłości i odrzucenia pięknego mitu.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ETAP 3: WARSZAWA I FINAŁ -->
+  <div style="border:1px solid rgba(122,32,64,.35);border-radius:10px;overflow:hidden;margin-bottom:1.8rem">
+    <div style="background:rgba(122,32,64,.13);padding:1.2rem 1.8rem;border-bottom:1px solid rgba(122,32,64,.2);display:flex;align-items:center;gap:1rem">
+      <div style="font-size:1.8rem">🏛️</div>
+      <div>
+        <div style="font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:#cc6080;margin-bottom:.2rem">Część III</div>
+        <div style="font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:var(--ink)">Warszawa — dylemat i otwarty finał</div>
+        <div style="font-size:.78rem;color:var(--ink2);margin-top:.2rem">Spór trzech wizji · Wybór drogi · Marsz robotników</div>
+      </div>
+    </div>
+    <div style="padding:1.5rem 1.8rem">
+      <div class="nw-grid" style="margin-bottom:0">
+        <div class="nw-card nw-burgundy"><div class="nw-card-icon">⚡</div><div class="nw-card-title">Spotkanie z Lulkiem</div><div class="nw-card-desc">W Warszawie Cezary poznaje <strong>Antoniego Lulka</strong> — komunistycznego działacza robotniczego. Lulek przemawia w imieniu najuboższych, atakuje Gajowca jako obrońcę status quo. Jego gniew trafia w Cezarego — bo widział nędzę Nawłoci.</div></div>
+        <div class="nw-card nw-burgundy"><div class="nw-card-icon">🔄</div><div class="nw-card-title">Spór Gajowca i Lulka</div><div class="nw-card-desc">Cezary słucha debaty między <strong>Gajowcem</strong> (reforma, prawo, instytucje) a <strong>Lulkiem</strong> (rewolucja, obalenie systemu). Rozumie obu. Nie może wybrać — każda droga ma swoją cenę, którą zna z własnego doświadczenia.</div></div>
+        <div class="nw-card nw-burgundy"><div class="nw-card-icon">🚶</div><div class="nw-card-title">Marsz na Belweder — finał</div><div class="nw-card-desc">Robotnicy organizują marsz na <strong>Belweder</strong>. Cezary dołącza do pochodu. <strong>Żeromski nie mówi, co się stanie</strong> — powieść urywa się. To celowo ambiwalentny finał: gest rozdarcia, nie deklaracja ideologiczna.</div></div>
+        <div class="nw-card nw-burgundy"><div class="nw-card-icon">❓</div><div class="nw-card-title">Dlaczego otwarte zakończenie?</div><div class="nw-card-desc">Żeromski nie chce być propagandystą. <strong>Każda droga ma koszty</strong> — szklane domy to mit, reforma za wolna, rewolucja krwawa. Otwarte zakończenie to uczciwa odpowiedź: nie znam właściwej drogi, stawiam pytanie.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CHRONOLOGIA -->
+  <div class="nw-section-head"><span class="nw-section-icon">📅</span><div class="nw-section-title">Chronologia fabuły — mapa czasu</div><div class="nw-section-line"></div></div>
+  <div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:1.5rem 1.8rem;margin-bottom:1.5rem">
+    <div style="display:flex;flex-direction:column;gap:0;position:relative;padding-left:2rem">
+      <div style="position:absolute;left:.5rem;top:0;bottom:0;width:1px;background:rgba(184,112,32,.3)"></div>
+      <div style="position:relative;padding:.8rem 0 .8rem .8rem">
+        <div style="position:absolute;left:-.45rem;top:1.1rem;width:10px;height:10px;border-radius:50%;background:var(--amber);border:2px solid var(--bg)"></div>
+        <div style="font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-bottom:.2rem">Przed akcją powieści</div>
+        <div style="font-weight:600;color:var(--ink);font-size:.88rem;margin-bottom:.2rem">Seweryn emigruje z Polski do Baku</div>
+        <div style="font-size:.77rem;color:var(--ink2)">Ojciec Cezarego opuszcza Polskę i osiedla się w Baku. Tam rodzi się Cezary — syn emigranta, wychowany między Polską a Rosją.</div>
+      </div>
+      <div style="position:relative;padding:.8rem 0 .8rem .8rem">
+        <div style="position:absolute;left:-.45rem;top:1.1rem;width:10px;height:10px;border-radius:50%;background:var(--amber);border:2px solid var(--bg)"></div>
+        <div style="font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-bottom:.2rem">Rewolucja 1917–1920</div>
+        <div style="font-weight:600;color:var(--ink);font-size:.88rem;margin-bottom:.2rem">Chaos w Baku — śmierć matki Jadwigi</div>
+        <div style="font-size:.77rem;color:var(--ink2)">Rewolucja bolszewicka dociera do Baku. Matka Cezarego ginie. Cezary przeżywa przemoc, głód i rozkład starego porządku. To trauma kształtująca całą jego postawę.</div>
+      </div>
+      <div style="position:relative;padding:.8rem 0 .8rem .8rem">
+        <div style="position:absolute;left:-.45rem;top:1.1rem;width:10px;height:10px;border-radius:50%;background:var(--amber);border:2px solid var(--bg)"></div>
+        <div style="font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-bottom:.2rem">Droga do Polski</div>
+        <div style="font-weight:600;color:var(--ink);font-size:.88rem;margin-bottom:.2rem">Seweryn snuje wizję szklanych domów — i umiera w drodze</div>
+        <div style="font-size:.77rem;color:var(--ink2)">Ojciec opowiada Cezaremu o szklanych domach. Umiera zanim dotrą do Polski. Cezary przybywa do ojczyzny sam — z mitem zamiast rzeczywistości.</div>
+      </div>
+      <div style="position:relative;padding:.8rem 0 .8rem .8rem">
+        <div style="position:absolute;left:-.45rem;top:1.1rem;width:10px;height:10px;border-radius:50%;background:var(--n-sage);border:2px solid var(--bg)"></div>
+        <div style="font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--n-sage2);margin-bottom:.2rem">Polska — odrodzona 1918</div>
+        <div style="font-weight:600;color:var(--ink);font-size:.88rem;margin-bottom:.2rem">Warszawa — pierwsze rozczarowanie, opieka Gajowca</div>
+        <div style="font-size:.77rem;color:var(--ink2)">Cezary przybywa do Polski. Szklanych domów nie ma. Poznaje Gajowca, który staje się jego mentorem. Cezary jest zagubiony między mitem a rzeczywistością.</div>
+      </div>
+      <div style="position:relative;padding:.8rem 0 .8rem .8rem">
+        <div style="position:absolute;left:-.45rem;top:1.1rem;width:10px;height:10px;border-radius:50%;background:var(--n-sage);border:2px solid var(--bg)"></div>
+        <div style="font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--n-sage2);margin-bottom:.2rem">Nawłoć</div>
+        <div style="font-weight:600;color:var(--ink);font-size:.88rem;margin-bottom:.2rem">Idylla i jej cena — miłość do Laury, kontrast z folwarkiem</div>
+        <div style="font-size:.77rem;color:var(--ink2)">Na dworku Wielosławskich Cezary doświadcza polskiej szlachty od środka. Kocha Laurę. Ale widzi też folwark za ogrodzeniem. Odejście z Nawłoci = dorosłość.</div>
+      </div>
+      <div style="position:relative;padding:.8rem 0 .8rem .8rem">
+        <div style="position:absolute;left:-.45rem;top:1.1rem;width:10px;height:10px;border-radius:50%;background:var(--n-burgundy);border:2px solid var(--bg)"></div>
+        <div style="font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:#cc6080;margin-bottom:.2rem">Finał — Warszawa</div>
+        <div style="font-weight:600;color:var(--ink);font-size:.88rem;margin-bottom:.2rem">Dylemat Gajowiec–Lulek → marsz na Belweder</div>
+        <div style="font-size:.77rem;color:var(--ink2)">Cezary słucha sporu Gajowca i Lulka. Nie może wybrać. Dołącza do marszu robotników na Belweder. Powieść urywa się — bez odpowiedzi.</div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /view-fabula -->
+
+<!-- ===== BOHATEROWIE ===== -->
+<div id="view-bohaterowie" style="display:none;position:relative;z-index:1;max-width:1100px;margin:0 auto;padding:2rem 2rem 4rem">
+
+  <div class="nw-section-head"><span class="nw-section-icon">👤</span><div class="nw-section-title">Główni bohaterowie Przedwiośnia</div><div class="nw-section-line"></div></div>
+
+  <!-- CEZARY -->
+  <div style="border:1px solid rgba(184,112,32,.35);border-radius:10px;overflow:hidden;margin-bottom:1.8rem">
+    <div style="background:rgba(184,112,32,.15);padding:1.2rem 1.8rem;border-bottom:1px solid rgba(184,112,32,.2);display:flex;align-items:center;gap:1.2rem">
+      <div style="font-size:2.5rem">🧑</div>
+      <div>
+        <div style="font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--amber);margin-bottom:.3rem">Bohater główny · Protagonist</div>
+        <div style="font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--ink)">Cezary Baryka</div>
+        <div style="font-size:.82rem;color:var(--ink2);margin-top:.3rem">Syn polskiego emigranta · Wychowany w Baku · Rozdarty między kulturami i ideologiami</div>
+      </div>
+    </div>
+    <div style="padding:1.5rem 1.8rem">
+      <div class="nw-grid">
+        <div class="nw-card nw-amber"><div class="nw-card-icon">🌍</div><div class="nw-card-title">Kim jest Cezary?</div><div class="nw-card-desc">Cezary to człowiek <strong>między kulturami</strong> — Polak z Baku, przybysz w ojczyźnie. Wychowany w rewolucyjnym chaosie, rozumie siłę i cenę radykalnych zmian. Szuka miejsca w Polsce — i sensu.</div></div>
+        <div class="nw-card nw-amber"><div class="nw-card-icon">💥</div><div class="nw-card-title">Trauma i kształtowanie</div><div class="nw-card-desc">Rewolucja w Baku, <strong>śmierć matki</strong>, głód i przemoc — to fundament charakteru Cezarego. Dlatego rozumie rewolucyjną logikę, ale się jej boi. Dlatego nie może przyjąć łatwo żadnej z trzech wizji.</div></div>
+        <div class="nw-card nw-amber"><div class="nw-card-icon">🔄</div><div class="nw-card-title">Droga dojrzewania</div><div class="nw-card-desc">Cezary przechodzi drogę: <strong>mit (szklane domy) → konfrontacja (Nawłoć) → dylemat (Warszawa)</strong>. To powieść inicjacyjna — każdy etap uczy go i rozczarowuje. Finał to brak odpowiedzi, nie słabość.</div></div>
+        <div class="nw-card nw-amber"><div class="nw-card-icon">💔</div><div class="nw-card-title">Cezary a trzy wizje</div><div class="nw-card-desc">Dziedziczy <strong>mit Seweryna</strong>, szanuje <strong>Gajowca</strong>, rozumie <strong>Lulka</strong>. Żadnego nie może w pełni naśladować. To jego tragedia — i źródło ambiwalentnego finału powieści.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEWERYN -->
+  <div style="border:1px solid rgba(36,88,160,.35);border-radius:10px;overflow:hidden;margin-bottom:1.8rem">
+    <div style="background:rgba(36,88,160,.13);padding:1.2rem 1.8rem;border-bottom:1px solid rgba(36,88,160,.2);display:flex;align-items:center;gap:1.2rem">
+      <div style="font-size:2.5rem">👨</div>
+      <div>
+        <div style="font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:#6aaccc;margin-bottom:.3rem">Ojciec Cezarego · Marzyciel-emigrant</div>
+        <div style="font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--ink)">Seweryn Baryka</div>
+        <div style="font-size:.82rem;color:var(--ink2);margin-top:.3rem">Polski emigrant w Baku · Twórca mitu szklanych domów · Umiera zanim dotrze do ojczyzny</div>
+      </div>
+    </div>
+    <div style="padding:1.5rem 1.8rem">
+      <div class="nw-grid">
+        <div class="nw-card nw-sky"><div class="nw-card-icon">🏠</div><div class="nw-card-title">Wizja szklanych domów</div><div class="nw-card-desc">Seweryn opowiada Cezaremu o nowoczesnej Polsce zbudowanej przez postęp techniczny. <strong>Szklane domy</strong> = przejrzystość, modernizacja, dobrobyt bez rewolucji. To piękny mit emigranta.</div></div>
+        <div class="nw-card nw-sky"><div class="nw-card-icon">💭</div><div class="nw-card-title">Marzyciel oderwany od rzeczywistości</div><div class="nw-card-desc">Seweryn tęskni za Polską z odległości — nie zna jej problemów na co dzień. Jego wizja jest <strong>szczera, ale nierealistyczna</strong>. Ignoruje napięcia klasowe i społeczne realia.</div></div>
+        <div class="nw-card nw-sky"><div class="nw-card-icon">🕯️</div><div class="nw-card-title">Symboliczna śmierć przed dotarciem</div><div class="nw-card-desc">Seweryn <strong>umiera w drodze do Polski</strong> — symbol: marzenie nigdy nie zderzy się z rzeczywistością. Zostaje tylko legenda opowiedziana synowi. Cezary przeżywa rozczarowanie samotnie.</div></div>
+        <div class="nw-card nw-sky"><div class="nw-card-icon">🌱</div><div class="nw-card-title">Funkcja w powieści</div><div class="nw-card-desc">Seweryn jest <strong>katalizatorem akcji</strong> — to przez niego Cezary trafia do Polski. Jego mit to pierwszy etap dylematu bohatera. Żeromski traktuje go z empatią: to dobry człowiek o złudnych marzeniach.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LAURA -->
+  <div style="border:1px solid rgba(122,32,64,.35);border-radius:10px;overflow:hidden;margin-bottom:1.8rem">
+    <div style="background:rgba(122,32,64,.13);padding:1.2rem 1.8rem;border-bottom:1px solid rgba(122,32,64,.2);display:flex;align-items:center;gap:1.2rem">
+      <div style="font-size:2.5rem">👩</div>
+      <div>
+        <div style="font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:#cc6080;margin-bottom:.3rem">Miłość Cezarego · Córka szlachecka</div>
+        <div style="font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--ink)">Laura Kościeniecka</div>
+        <div style="font-size:.82rem;color:var(--ink2);margin-top:.3rem">Piękna, wykształcona, zakorzeniona w Nawłoci · Symbol uroku i jałowości szlachty</div>
+      </div>
+    </div>
+    <div style="padding:1.5rem 1.8rem">
+      <div class="nw-grid">
+        <div class="nw-card nw-burgundy"><div class="nw-card-icon">✨</div><div class="nw-card-title">Kim jest Laura?</div><div class="nw-card-desc">Piękna, inteligentna, wykształcona córka szlachecka. Kocha Cezarego szczerze, ale <strong>nie potrafi wyjść poza swój świat</strong>. Nawłoć jest dla niej naturalnym środowiskiem, nie problemem.</div></div>
+        <div class="nw-card nw-burgundy"><div class="nw-card-icon">💊</div><div class="nw-card-title">Miłość jako narkotyk sumienia</div><div class="nw-card-desc">Zachwyt Laurą sprawia, że Cezary przez chwilę <strong>akceptuje niesprawiedliwy świat Nawłoci</strong>. Miłość działa jak narkotyk — uśmierza sumienie i paraliżuje wolę zmiany. Żeromski demaskuje tę pułapkę.</div></div>
+        <div class="nw-card nw-burgundy"><div class="nw-card-icon">🏰</div><div class="nw-card-title">Symbol szlacheckiego świata</div><div class="nw-card-desc">Laura uosabia <strong>uwodzicielskość i jałowość szlachty</strong>: piękna, kulturalna, serdeczna — ale zamknięta na zmianę. Jej miłość nie może przekroczyć granic dworku.</div></div>
+        <div class="nw-card nw-burgundy"><div class="nw-card-icon">🔄</div><div class="nw-card-title">Laura vs Lulek</div><div class="nw-card-desc">W powieści Laura i Lulek tworzą kontrast: <strong>piękno i spokój vs. bunt i proletariat</strong>. Cezary kocha Laurę, ale musi odejść. Temu wyborowi towarzyszy ból — bo obie strony mają swoją rację.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GAJOWIEC I LULEK - KOMPAKTOWO -->
+  <div class="nw-section-head"><span class="nw-section-icon">⚔️</span><div class="nw-section-title">Antagoniści ideologiczni — Gajowiec i Lulek</div><div class="nw-section-line"></div></div>
+  <div class="nw-grid">
+    <div class="nw-card nw-sage">
+      <div style="font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--n-sage2);margin-bottom:.5rem">Reformator · Mentor</div>
+      <div class="nw-card-icon">⚖️</div>
+      <div class="nw-card-title">Szymon Gajowiec</div>
+      <div class="nw-card-desc"><strong>Urzędnik państwowy</strong> — opiekun i mentor Cezarego w Warszawie. Wierzy w stopniową reformę: prawo, instytucje, oświata, cierpliwość. Jest sympatyczny i rozsądny. Ale Lulek ma rację: za wolny wobec ogromu biedy. <strong>Relacja z Cezarym:</strong> szacunek bez naśladowania.</div>
+    </div>
+    <div class="nw-card nw-rust">
+      <div style="font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--n-rust2);margin-bottom:.5rem">Rewolucjonista · Głos proletariatu</div>
+      <div class="nw-card-icon">✊</div>
+      <div class="nw-card-title">Antoni Lulek</div>
+      <div class="nw-card-desc"><strong>Działacz komunistyczny</strong> — głos proletariatu i najuboższych. Atakuje Gajowca za bronię status quo. Jego gniew jest moralnie uzasadniony — nędza jest realna. Ale Cezary znał koszt rewolucji z Baku. <strong>Relacja z Cezarym:</strong> rozumie, ale się boi.</div>
+    </div>
+  </div>
+
+  <!-- HIPOLIT -->
+  <div style="margin-top:1.2rem" class="nw-section-head"><span class="nw-section-icon">🏡</span><div class="nw-section-title">Postacie Nawłoci</div><div class="nw-section-line"></div></div>
+  <div class="nw-grid three">
+    <div class="nw-card nw-sky"><div class="nw-card-icon">👴</div><div class="nw-card-title">Hipolit Wielosławski</div><div class="nw-card-desc">Gospodarz dworku — serdeczny, gościnny, dobroduszny szlachcic. <strong>Dobry człowiek w niesprawiedliwej strukturze.</strong> Jego życzliwość nie zmienia faktu, że korzysta z systemu wyzysku chłopów.</div></div>
+    <div class="nw-card nw-rust"><div class="nw-card-icon">👨‍🌾</div><div class="nw-card-title">Chłopi folwarczni</div><div class="nw-card-desc">Bezimienni robotnicy rolni — <strong>milczące tło</strong> bez głosu. Ich nędza jest centralnym argumentem moralnym powieści. Dla Cezarego stają się symbolem niesprawiedliwości, której nie można ignorować.</div></div>
+    <div class="nw-card nw-amber"><div class="nw-card-icon">👩‍🦳</div><div class="nw-card-title">Jadwiga Barykowa (matka)</div><div class="nw-card-desc">Matka Cezarego — ginie podczas rewolucji w Baku. Jej śmierć jest <strong>pierwszą wielką traumą bohatera</strong>, kształtującą jego stosunek do przemocy i radykalnych zmian przez całą powieść.</div></div>
+  </div>
+
+</div><!-- /view-bohaterowie -->
+
+<!-- ===== TYTUŁ ===== -->
+<div id="view-tytul" style="display:none;position:relative;z-index:1;max-width:1100px;margin:0 auto;padding:2rem 2rem 4rem">
+
+  <div class="nw-hero" style="background:linear-gradient(135deg,rgba(42,125,95,.18) 0%,rgba(184,112,32,.15) 50%,rgba(160,64,42,.1) 100%)">
+    <div class="nw-hero-eyebrow" style="color:var(--n-sage2)">Wyjaśnienie tytułu · Symbolika · Konteksty</div>
+    <div class="nw-hero-title">Co oznacza <em style="color:var(--gold2)">„Przedwiośnie"</em>?</div>
+    <div class="nw-hero-sub">Tytuł powieści jest jej kluczową metaforą. Żeromski nie wybrał go przypadkowo — „przedwiośnie" opisuje jednocześnie stan Polski po odzyskaniu niepodległości, drogę Cezarego i pytanie, które zadaje cała powieść.</div>
+  </div>
+
+  <div class="nw-section-head"><span class="nw-section-icon">🌱</span><div class="nw-section-title">Dosłowne znaczenie słowa</div><div class="nw-section-line"></div></div>
+  <div class="nw-grid">
+    <div class="nw-card nw-sage"><div class="nw-card-icon">❄️➡️🌿</div><div class="nw-card-title">Pora między zimą a wiosną</div><div class="nw-card-desc">Dosłownie: <strong>wczesna wiosna</strong>, kiedy zima jeszcze nie odeszła, a wiosna jeszcze nie nadeszła. Czas przejścia, niepewności i oczekiwania. Jest nadzieja — i wciąż mróz.</div></div>
+    <div class="nw-card nw-sage"><div class="nw-card-icon">🔄</div><div class="nw-card-title">Stan niepełny, nieukończony</div><div class="nw-card-desc">Przedwiośnie to <strong>stan nie-do-końca</strong>: nie zima, nie wiosna. Coś się zaczęło, ale nie wiadomo, jak się skończy. Czy zima wróci? Czy wiosna naprawdę przyjdzie? To czas ryzyka i szansy jednocześnie.</div></div>
+  </div>
+
+  <div class="nw-section-head"><span class="nw-section-icon">🇵🇱</span><div class="nw-section-title">Tytuł jako metafora odrodzonej Polski</div><div class="nw-section-line"></div></div>
+  <div class="nw-grid three">
+    <div class="nw-card nw-rust"><div class="nw-card-icon">❄️</div><div class="nw-card-title">Zima = zabory</div><div class="nw-card-desc">123 lata rozbiorów to <strong>zima</strong> — brak wolności, zniewolenie narodu, mróz ucisku. Polska żyła pod cudzą władzą.</div></div>
+    <div class="nw-card nw-sage"><div class="nw-card-icon">🌱</div><div class="nw-card-title">Przedwiośnie = 1918 i po nim</div><div class="nw-card-desc">Polska odrodziła się w 1918 — <strong>zima zaborów się skończyła</strong>. Ale czy nastała wiosna? Żeromski mówi: jeszcze nie. Jeszcze mróz niesprawiedliwości.</div></div>
+    <div class="nw-card nw-sky"><div class="nw-card-icon">🌸</div><div class="nw-card-title">Wiosna = niespełniona obietnica</div><div class="nw-card-desc"><strong>Prawdziwa wiosna</strong> to Polska sprawiedliwa — bez nędzy chłopów, bez klas, bez wyzysku. Ona jeszcze nie przyszła. Powieść zadaje pytanie: jak do niej dojść?</div></div>
+  </div>
+
+  <div style="background:rgba(42,125,95,.08);border:1px solid rgba(42,125,95,.25);border-radius:8px;padding:1.4rem 1.6rem;margin:1.5rem 0">
+    <div style="font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--ink);margin-bottom:.6rem">📌 Kluczowa formuła do zapamiętania:</div>
+    <div style="font-size:.9rem;color:var(--ink2);line-height:1.7"><strong style="color:var(--ink)">Polska wyszła z zimy (zaborów)</strong> — jest wolna politycznie. Ale <strong style="color:var(--ink)">wiosna (sprawiedliwość społeczna) jeszcze nie nadeszła</strong> — bieda, niesprawiedliwość klasowa, brak reform. Polska jest w <strong style="color:var(--gold)">przedwiośniu</strong> — między wyzwoleniem a pełnym rozkwitem.</div>
+  </div>
+
+  <div class="nw-section-head"><span class="nw-section-icon">🧑</span><div class="nw-section-title">Tytuł jako metafora Cezarego Baryki</div><div class="nw-section-line"></div></div>
+  <div class="nw-grid">
+    <div class="nw-card nw-amber"><div class="nw-card-icon">🌀</div><div class="nw-card-title">Cezary sam jest „przedwiośniem"</div><div class="nw-card-desc">Cezary jest w stanie przejścia — między <strong>Bakujem a Polską</strong>, między marzeniem a rzeczywistością, między reformą a rewolucją. Nie jest ani dzieckiem (zima), ani dojrzałym człowiekiem (wiosna). Jest w drodze.</div></div>
+    <div class="nw-card nw-amber"><div class="nw-card-icon">❓</div><div class="nw-card-title">Pytanie bez odpowiedzi</div><div class="nw-card-desc">Finał powieści to <strong>brak odpowiedzi</strong> — tak jak przedwiośnie nie mówi, czy wiosna nadejdzie, czy wróci zima. Marsz Cezarego na Belweder to gest, nie deklaracja. Żeromski pyta, nie odpowiada.</div></div>
+  </div>
+
+  <div class="nw-section-head"><span class="nw-section-icon">📚</span><div class="nw-section-title">Kontekst literacki — polemika z Panem Tadeuszem</div><div class="nw-section-line"></div></div>
+  <div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:1.5rem 1.8rem;margin-bottom:1.5rem">
+    <div class="nw-contrast">
+      <div style="text-align:right">
+        <div style="font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:#6aaccc;margin-bottom:.4rem">📖 Pan Tadeusz — Mickiewicz 1834</div>
+        <div class="nw-contrast-item sage">Soplicowo = arkadia, mityczna wiosna polskości</div>
+      </div>
+      <div class="nw-contrast-vs">vs</div>
+      <div>
+        <div style="font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--n-rust2);margin-bottom:.4rem">🌱 Przedwiośnie — Żeromski 1924</div>
+        <div class="nw-contrast-item rust">Nawłoć = fałszywa wiosna ukrywająca mróz niesprawiedliwości</div>
+      </div>
+      <div style="text-align:right"><div class="nw-contrast-item sage">Szlachecki dworek = serce Polski, mit wiecznotrwały</div></div>
+      <div class="nw-contrast-vs">vs</div>
+      <div><div class="nw-contrast-item rust">Szlachecki dworek = piękna struktura zbudowana na wyzysku</div></div>
+      <div style="text-align:right"><div class="nw-contrast-item sage">Tęsknota i idealizacja — wiosna przeszłości</div></div>
+      <div class="nw-contrast-vs">vs</div>
+      <div><div class="nw-contrast-item rust">Diagnoza i pytanie — jak osiągnąć wiosnę przyszłości?</div></div>
+    </div>
+  </div>
+
+  <div class="nw-section-head"><span class="nw-section-icon">📅</span><div class="nw-section-title">Rok wydania — dlaczego 1924 jest ważny?</div><div class="nw-section-line"></div></div>
+  <div class="nw-grid">
+    <div class="nw-card nw-gold"><div class="nw-card-icon">🗓️</div><div class="nw-card-title">1924 — sześć lat po niepodległości</div><div class="nw-card-desc">Żeromski publikuje powieść w <strong>1924 roku</strong> — sześć lat po odzyskaniu niepodległości w 1918. Wystarczająco długo, by zobaczyć, że wolność polityczna nie rozwiązała problemów społecznych. Polska jest wolna — i wciąż niesprawiedliwa.</div></div>
+    <div class="nw-card nw-gold"><div class="nw-card-icon">⚠️</div><div class="nw-card-title">Diagnoza i ostrzeżenie</div><div class="nw-card-desc">Żeromski ostrzega: <strong>jeśli Polska nie rozwiąże kwestii klasowej</strong>, jeśli nie przyjdzie sprawiedliwa wiosna — przyjdzie inaczej. Rewolucja jak w Rosji. Lulek jest tu głosem ostrzeżenia, nie tylko żądaniem.</div></div>
+  </div>
+
+  <div class="nw-section-head"><span class="nw-section-icon">🔗</span><div class="nw-section-title">Tytuł a trzy wizje Polski</div><div class="nw-section-line"></div></div>
+  <div class="nw-grid three">
+    <div class="nw-card nw-sky"><div class="nw-card-icon">🏠</div><div class="nw-card-title">Seweryn — szybka droga do wiosny?</div><div class="nw-card-desc">Szklane domy obiecują <strong>wiosnę natychmiast</strong> — postęp techniczny jako skrót. Ale to mit. Wiosna przez modernizację bez reform społecznych okazuje się niemożliwa.</div></div>
+    <div class="nw-card nw-sage"><div class="nw-card-icon">⚖️</div><div class="nw-card-title">Gajowiec — cierpliwa droga do wiosny</div><div class="nw-card-desc">Gajowiec chce budować wiosnę <strong>powoli i bezpiecznie</strong> — przez reformę, prawo, instytucje. Wiosna jest możliwa, ale odległa. Czy za wolna, gdy ludzie głodują teraz?</div></div>
+    <div class="nw-card nw-rust"><div class="nw-card-icon">✊</div><div class="nw-card-title">Lulek — rewolucja jako wiosna</div><div class="nw-card-desc">Lulek chce <strong>wiosny natychmiast przez rewolucję</strong>. Zniszczyć mróz, nie czekać. Ale Cezary wie, że rewolucja może zniszczyć też zalążki nowego. Krwawa wiosna — czy to wiosna?</div></div>
+  </div>
+
+  <div class="nw-quote" style="margin-top:2rem;border-left-color:var(--teal)">
+    <p>„Tytuł «Przedwiośnie» to najważniejsza metafora powieści: jest nadzieja (Polska odrodziła się), jest potencjał (wiosna nadejdzie), ale jest też ból, że jeszcze mróz — niesprawiedliwość, bieda, niezdecydowanie."</p>
+    <cite>— interpretacja tytułu powieści Żeromskiego</cite>
+  </div>
+
+</div><!-- /view-tytul -->
+
+<!-- ===== QUIZ ===== -->
+<div id="view-quiz" style="display:none;position:relative;z-index:1;max-width:800px;margin:0 auto;padding:1.5rem 1.5rem 5rem">
+  <div id="quiz-hub">
+    <div style="text-align:center;padding:1.5rem 0 2rem">
+      <div style="font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem">Temat 4 · Quiz</div>
+      <div style="font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;color:var(--ink);margin-bottom:.4rem">Sprawdź wiedzę — Przedwiośnie</div>
+      <div style="font-size:.85rem;color:var(--ink2)">Fabuła · Bohaterowie · Tytuł · Analiza</div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+      <button class="qhub-card" onclick="launchQuiz('przedwiosnie','przedwiosnie')" style="--qc:#b87020">
+        <div class="qhub-icon">🌱</div>
+        <div class="qhub-title">Quiz Przedwiośnie</div>
+        <div class="qhub-sub">Fabuła · Bohaterowie · Tytuł · Symbolika · Analiza całościowa</div>
+        <div class="qhub-count" id="hub-score-przedwiosnie">32 pytania</div>
+      </button>
+      <button class="qhub-card" onclick="launchQuiz('all','przedwiosnie')" style="--qc:#c9a84c">
+        <div class="qhub-icon">🎯</div>
+        <div class="qhub-title">MEGA QUIZ</div>
+        <div class="qhub-sub">Wszystkie cztery tematy razem — pełne przygotowanie</div>
+        <div class="qhub-count">130+ pytań</div>
+      </button>
+    </div>
+  </div>
+  <div id="quiz-active" style="display:none">
+    <div style="display:flex;align-items:center;gap:.8rem;margin-bottom:1.2rem">
+      <button onclick="backToHub()" style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);color:var(--ink2);font-size:.75rem;padding:.4rem .9rem;border-radius:100px;cursor:pointer">← Wróć</button>
+      <div style="flex:1">
+        <div style="display:flex;justify-content:space-between;margin-bottom:.4rem">
+          <span style="font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink2)" id="qa-label"></span>
+          <span style="font-size:.8rem;font-weight:500;color:var(--gold)" id="qa-score"></span>
+        </div>
+        <div class="quiz-prog-bar"><div class="quiz-prog-fill" id="qa-fill" style="width:0%"></div></div>
+      </div>
+    </div>
+    <div class="quiz-card">
+      <div class="quiz-q-num" id="qa-num"></div>
+      <span class="quiz-cat" id="qa-cat"></span>
+      <div class="quiz-q-text" id="qa-text"></div>
+      <div class="quiz-options" id="qa-opts"></div>
+      <div class="quiz-feedback" id="qa-feedback"></div>
+      <div class="quiz-next-wrap"><button class="quiz-next" id="qa-next" onclick="nextQA()">Następne →</button></div>
+    </div>
+  </div>
+  <div id="quiz-result-screen" style="display:none;text-align:center;padding:2rem 1rem;animation:fadeUp .5s ease">
+    <div class="res-emoji" id="qr-emoji"></div>
+    <div class="res-title" id="qr-title"></div>
+    <div class="res-score-box" style="margin:1rem auto 1.2rem">
+      <div class="res-big" id="qr-big"></div>
+      <div class="res-of" id="qr-of"></div>
+    </div>
+    <div class="res-bar-wrap">
+      <div class="quiz-prog-bar" style="height:8px;border-radius:4px">
+        <div class="res-bar-fill" id="qr-bar" style="width:0%"></div>
+      </div>
+    </div>
+    <div class="res-cats" id="qr-cats" style="margin:1.2rem 0"></div>
+    <div class="res-msg" id="qr-msg"></div>
+    <div style="display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap;margin-top:1rem">
+      <button class="res-restart" onclick="replayQuiz()">Jeszcze raz 🔄</button>
+      <button class="res-restart" onclick="backToHub()" style="background:rgba(255,255,255,.08);color:var(--ink)">Wybierz tryb</button>
+      <a href="index.html" class="res-restart" style="background:rgba(255,255,255,.08);color:var(--ink);text-decoration:none">← Hub</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== NOTATKA ===== -->
+<div id="view-nota" style="display:none;position:relative;z-index:1;max-width:900px;margin:0 auto;padding:2rem 1.5rem 4rem">
+
+  <div class="nw-section-head"><span class="nw-section-icon">📋</span><div class="nw-section-title">Notatka podsumowująca — Przedwiośnie (całość)</div><div class="nw-section-line"></div></div>
+
+  <!-- FABUŁA -->
+  <div style="border:1px solid rgba(184,112,32,.3);border-radius:8px;margin-bottom:1rem;overflow:hidden">
+    <div style="background:rgba(184,112,32,.12);padding:.9rem 1.4rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center" onclick="toggleNote('nf')">
+      <div style="font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--ink)">📖 Fabuła — trzy etapy Cezarego</div>
+      <div style="color:var(--amber)" id="nf-arr">▼</div>
+    </div>
+    <div id="nf" style="padding:1.1rem 1.4rem">
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:.8rem">
+        <div style="background:rgba(255,255,255,.03);border-radius:6px;padding:.85rem 1rem;border-left:2px solid var(--amber)">
+          <div style="font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-bottom:.35rem">I · Baku</div>
+          <div style="font-size:.8rem;color:var(--ink);line-height:1.6">Dzieciństwo w Baku. Rewolucja → śmierć matki. Seweryn snuje mit szklanych domów. Ojciec umiera w drodze do Polski. Cezary przybywa sam.</div>
+        </div>
+        <div style="background:rgba(255,255,255,.03);border-radius:6px;padding:.85rem 1rem;border-left:2px solid var(--n-sage)">
+          <div style="font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--n-sage2);margin-bottom:.35rem">II · Nawłoć</div>
+          <div style="font-size:.8rem;color:var(--ink);line-height:1.6">Rozczarowanie: brak szklanych domów. Gajowiec jako opiekun. Nawłoć — idylla i miłość do Laury. Kontrast z folwarkiem. Odejście = dorosłość.</div>
+        </div>
+        <div style="background:rgba(255,255,255,.03);border-radius:6px;padding:.85rem 1rem;border-left:2px solid var(--n-burgundy)">
+          <div style="font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:#cc6080;margin-bottom:.35rem">III · Warszawa</div>
+          <div style="font-size:.8rem;color:var(--ink);line-height:1.6">Spór Gajowca i Lulka. Dylemat Cezarego — nie może wybrać. Marsz na Belweder. Otwarte zakończenie — Żeromski nie odpowiada.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOHATEROWIE -->
+  <div style="border:1px solid rgba(90,122,74,.3);border-radius:8px;margin-bottom:1rem;overflow:hidden">
+    <div style="background:rgba(90,122,74,.12);padding:.9rem 1.4rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center" onclick="toggleNote('nb')">
+      <div style="font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--ink)">👥 Bohaterowie — role i symbolika</div>
+      <div style="color:var(--n-sage2)" id="nb-arr">▼</div>
+    </div>
+    <div id="nb" style="padding:1.1rem 1.4rem;overflow-x:auto">
+      <table>
+        <thead><tr><th>Postać</th><th>Rola</th><th>Symbolika</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Cezary Baryka</strong></td><td>Bohater główny — człowiek między kulturami i ideologiami</td><td>Polak zagubiony między mitem a rzeczywistością, między reformą a rewolucją</td></tr>
+          <tr><td><strong>Seweryn Baryka</strong></td><td>Ojciec — twórca mitu szklanych domów, umiera w drodze</td><td>Emigracyjne złudzenie — piękny sen niezderzony z rzeczywistością</td></tr>
+          <tr><td><strong>Laura Kościeniecka</strong></td><td>Miłość Cezarego — córka szlachecka z Nawłoci</td><td>Uwodzicielskość szlachty — piękna pułapka uśmierzająca sumienie</td></tr>
+          <tr><td><strong>Szymon Gajowiec</strong></td><td>Mentor — urzędnik, reformator</td><td>Droga ewolucyjna — sympatyczna, ale zbyt powolna</td></tr>
+          <tr><td><strong>Antoni Lulek</strong></td><td>Rewolucjonista — głos proletariatu</td><td>Droga rewolucyjna — moralnie uzasadniona, ale Cezary zna jej koszty</td></tr>
+          <tr><td><strong>Hipolit Wielosławski</strong></td><td>Gospodarz Nawłoci — dobroduszny szlachcic</td><td>Dobry człowiek w niesprawiedliwej strukturze</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- TYTUŁ -->
+  <div style="border:1px solid rgba(42,125,95,.3);border-radius:8px;margin-bottom:1rem;overflow:hidden">
+    <div style="background:rgba(42,125,95,.12);padding:.9rem 1.4rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center" onclick="toggleNote('nt')">
+      <div style="font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--ink)">🌱 Tytuł „Przedwiośnie" — wyjaśnienie</div>
+      <div style="color:var(--teal)" id="nt-arr">▼</div>
+    </div>
+    <div id="nt" style="padding:1.1rem 1.4rem">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:.8rem">
+        <div style="background:rgba(255,255,255,.03);border-radius:6px;padding:.85rem 1rem;border-left:2px solid var(--teal)">
+          <div style="font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin-bottom:.35rem">Znaczenie literalne</div>
+          <div style="font-size:.8rem;color:var(--ink);line-height:1.6">Pora między zimą a wiosną — stan przejścia, niepewności, oczekiwania. Jest nadzieja — i wciąż mróz.</div>
+        </div>
+        <div style="background:rgba(255,255,255,.03);border-radius:6px;padding:.85rem 1rem;border-left:2px solid var(--gold)">
+          <div style="font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:.35rem">Metafora Polski</div>
+          <div style="font-size:.8rem;color:var(--ink);line-height:1.6"><strong>Zima</strong> = zabory. <strong>Wiosna</strong> = sprawiedliwa Polska. <strong>Przedwiośnie</strong> = 1924 — wolność polityczna bez sprawiedliwości społecznej.</div>
+        </div>
+        <div style="background:rgba(255,255,255,.03);border-radius:6px;padding:.85rem 1rem;border-left:2px solid var(--amber)">
+          <div style="font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-bottom:.35rem">Metafora Cezarego</div>
+          <div style="font-size:.8rem;color:var(--ink);line-height:1.6">Cezary sam jest w stanie przedwiośnia — między Bakujem a Polską, między marzeniem a rzeczywistością, w drodze bez końca.</div>
+        </div>
+        <div style="background:rgba(255,255,255,.03);border-radius:6px;padding:.85rem 1rem;border-left:2px solid var(--n-rust2)">
+          <div style="font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--n-rust2);margin-bottom:.35rem">Kontekst literacki</div>
+          <div style="font-size:.8rem;color:var(--ink);line-height:1.6">Polemika z <strong>Panem Tadeuszem</strong> — Nawłoć to fałszywa wiosna, nie arkadia Soplicowa. Wiosna polskości jeszcze nie nastała.</div>
+        </div>
+      </div>
+      <div style="margin-top:.8rem;padding:.85rem 1rem;background:rgba(201,168,76,.08);border-radius:6px;border:1px solid rgba(201,168,76,.2);font-size:.83rem;color:var(--ink2);line-height:1.6">
+        <strong style="color:var(--gold)">Kluczowy wniosek o tytule:</strong> Żeromski pyta, jak osiągnąć wiosnę — przez mit Seweryna, reformę Gajowca, rewolucję Lulka? I nie odpowiada. Tytuł jest pytaniem, nie odpowiedzią.
+      </div>
+    </div>
+  </div>
+
+</div><!-- /view-nota -->
+
+<div class="streak-badge" id="streak-badge"></div>
+
+<script src="quiz_engine.js"></script>
+<script>
+const TOPIC_ID = 'przedwiosnie';
+
+function switchView(v) {
+  ['fabula','bohaterowie','tytul','quiz','nota'].forEach(id => {
+    const el = document.getElementById('view-' + id);
+    const btn = document.getElementById('btn-' + id);
+    if (el) el.style.display = 'none';
+    if (btn) btn.classList.remove('active');
+  });
+  const target = document.getElementById('view-' + v);
+  const btn = document.getElementById('btn-' + v);
+  if (target) target.style.display = 'block';
+  if (btn) btn.classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function toggleNote(id) {
+  const el = document.getElementById(id);
+  const arr = document.getElementById(id + '-arr');
+  const open = el.style.display !== 'none';
+  el.style.display = open ? 'none' : 'block';
+  if (arr) arr.textContent = open ? '▶' : '▼';
+}
+
+function renderNavStatus() {
+  const td = getTopicData(TOPIC_ID);
+  const status = td.status || '';
+  const el = document.getElementById('nav-status');
+  el.innerHTML = `
+    <button class="nav-sbtn${status==='done'?' sd':''}" onclick="toggleStatus('done')">✓ Zaliczone</button>
+    <button class="nav-sbtn${status==='focus'?' sf':''}" onclick="toggleStatus('focus')">★ Powtórka</button>
+    <button class="nav-sbtn${status==='hard'?' sh':''}" onclick="toggleStatus('hard')">! Trudny</button>`;
+}
+
+function toggleStatus(s) {
+  const p = gp();
+  if (!p[TOPIC_ID]) p[TOPIC_ID] = {};
+  p[TOPIC_ID].status = (p[TOPIC_ID].status === s ? '' : s);
+  sp(p);
+  renderNavStatus();
+}
+
+renderNavStatus();
+updateHubScores();
+</script>
+</body>
+</html>
