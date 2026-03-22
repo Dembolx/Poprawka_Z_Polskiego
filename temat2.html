@@ -137,6 +137,75 @@
 </div>
 
 <div class="streak-badge" id="streak-badge"></div>
+
+<!-- ===== AUDIO PLAYER ===== -->
+<style>body{padding-bottom:4.5rem!important}</style>
+<div id="audio-player" style="position:fixed;bottom:0;left:0;right:0;z-index:100;background:rgba(14,12,8,.97);border-top:1px solid rgba(255,255,255,.1);backdrop-filter:blur(12px);padding:.75rem 1.5rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap">
+  <div style="display:flex;flex-direction:column;min-width:0;flex:0 0 auto">
+    <span style="font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);line-height:1">Słuchaj</span>
+    <span style="font-family:'Playfair Display',serif;font-size:.9rem;font-weight:700;color:var(--ink);white-space:nowrap">Temat 2 · Nawłoć</span>
+  </div>
+  <button id="ap-play" onclick="apToggle()" style="flex-shrink:0;width:38px;height:38px;border-radius:50%;background:var(--gold);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .15s">
+    <svg id="ap-icon-play" width="14" height="14" viewBox="0 0 12 14" fill="#1a1400"><path d="M1 1l10 6L1 13V1z"/></svg>
+    <svg id="ap-icon-pause" width="14" height="14" viewBox="0 0 12 14" fill="#1a1400" style="display:none"><rect x="1" y="1" width="3.5" height="12" rx="1"/><rect x="7.5" y="1" width="3.5" height="12" rx="1"/></svg>
+  </button>
+  <div style="flex:1;display:flex;flex-direction:column;gap:.35rem;min-width:140px">
+    <div style="position:relative;height:4px;background:rgba(255,255,255,.1);border-radius:2px;cursor:pointer" id="ap-bar" onclick="apSeek(event)">
+      <div id="ap-fill" style="height:100%;width:0%;background:var(--gold);border-radius:2px;transition:width .25s linear"></div>
+      <div id="ap-thumb" style="position:absolute;top:50%;right:calc(100% - 0%);transform:translate(50%,-50%);width:10px;height:10px;border-radius:50%;background:var(--gold2);pointer-events:none"></div>
+    </div>
+    <div style="display:flex;justify-content:space-between">
+      <span id="ap-cur" style="font-size:.65rem;color:var(--ink2);font-variant-numeric:tabular-nums">0:00</span>
+      <span id="ap-dur" style="font-size:.65rem;color:var(--ink2);font-variant-numeric:tabular-nums">--:--</span>
+    </div>
+  </div>
+  <div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0">
+    <svg width="13" height="13" viewBox="0 0 16 14" fill="none" stroke="var(--ink2)" stroke-width="1.5"><path d="M1 4h3l4-3v12l-4-3H1V4z"/><path d="M11 3c1.5 1 2.5 2.8 2.5 5s-1 4-2.5 5M13.5 1c2 1.5 3.5 4 3.5 7s-1.5 5.5-3.5 7" stroke-linecap="round"/></svg>
+    <input type="range" id="ap-vol" min="0" max="1" step="0.02" value="1" oninput="apVol(this.value)" style="width:60px;accent-color:var(--gold)">
+  </div>
+  <select id="ap-speed" onchange="apSpeed(this.value)" style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);color:var(--ink2);font-family:'DM Sans',sans-serif;font-size:.7rem;padding:.3rem .5rem;border-radius:6px;cursor:pointer">
+    <option value="0.75">0.75x</option>
+    <option value="1" selected>1x</option>
+    <option value="1.25">1.25x</option>
+    <option value="1.5">1.5x</option>
+    <option value="2">2x</option>
+  </select>
+</div>
+<audio id="ap-audio" src="assets/temat2.mp3" preload="metadata"></audio>
+<script>
+(function(){
+  var au=document.getElementById("ap-audio");
+  var fill=document.getElementById("ap-fill");
+  var thumb=document.getElementById("ap-thumb");
+  var cur=document.getElementById("ap-cur");
+  var dur=document.getElementById("ap-dur");
+  var iconPlay=document.getElementById("ap-icon-play");
+  var iconPause=document.getElementById("ap-icon-pause");
+  function fmt(s){var m=Math.floor(s/60);return m+":"+(Math.floor(s%60)+"").padStart(2,"0");}
+  au.addEventListener("loadedmetadata",function(){dur.textContent=fmt(au.duration);});
+  au.addEventListener("timeupdate",function(){
+    if(!au.duration)return;
+    var p=au.currentTime/au.duration*100;
+    fill.style.width=p+"%";
+    thumb.style.right="calc("+(100-p)+"% - 5px)";
+    cur.textContent=fmt(au.currentTime);
+  });
+  au.addEventListener("ended",function(){iconPlay.style.display="";iconPause.style.display="none";});
+  window.apToggle=function(){
+    if(au.paused){au.play();iconPlay.style.display="none";iconPause.style.display="";}
+    else{au.pause();iconPlay.style.display="";iconPause.style.display="none";}
+  };
+  window.apSeek=function(e){
+    var bar=document.getElementById("ap-bar");
+    var rect=bar.getBoundingClientRect();
+    var p=Math.max(0,Math.min(1,(e.clientX-rect.left)/rect.width));
+    au.currentTime=p*au.duration;
+  };
+  window.apVol=function(v){au.volume=parseFloat(v);};
+  window.apSpeed=function(v){au.playbackRate=parseFloat(v);};
+})();
+</script>
+
 <script src="quiz_engine.js"></script>
 <script>
 const TOPIC_ID = 'nawloc';
