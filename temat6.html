@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Temat 5 · Kazimiera Iłłakowiczówna</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="shared_styles.css"/>
+</head>
+<body>
+<nav class="topnav">
+  <a href="index.html" class="nav-back">← Hub</a>
+  <span class="nav-title">🌙 Kazimiera Iłłakowiczówna · Poezja</span>
+  <div class="nav-status-wrap" id="nav-status"></div>
+</nav>
+
+<header>
+  <p class="eyebrow">Temat 5 · Kazimiera Iłłakowiczówna · Dwudziestolecie</p>
+  <h1>Kazimiera <span>Iłłakowiczówna</span></h1>
+  <p class="sub">Życie i twórczość · Charakterystyka poezji · Błękitna chwila · O Hani co się zabiła</p>
+  <div class="divider"></div>
+</header>
+
+<div class="toggle-bar">
+  <button class="toggle-btn active" id="btn-cards" onclick="switchView('cards')">📋 Teoria</button>
+  <button class="toggle-btn" id="btn-quiz" onclick="switchView('quiz')">🎯 Quiz</button>
+  <button class="toggle-btn" id="btn-nota" onclick="switchView('nota')">📝 Notatka</button>
+</div>
+
+<!-- ===== TEORIA ===== -->
+<div id="view-cards" style="position:relative;z-index:1;max-width:1100px;margin:0 auto;padding:2rem 2rem 4rem">
+
+  <div class="nw-hero" style="background:linear-gradient(135deg,rgba(106,60,156,.15) 0%,rgba(42,125,95,.12) 50%,rgba(58,104,128,.10) 100%)">
+    <div class="nw-hero-eyebrow" style="color:#9a70cc">Dwudziestolecie · Poezja kobieca</div>
+    <div class="nw-hero-title">Kazimiera <em style="color:#b899e8">Iłłakowiczówna</em></div>
+    <div class="nw-hero-sub">Jedna z najwybitniejszych poetek polskiego dwudziestolecia — łączy liryzm z filozoficzną refleksją nad śmiercią, miłością i przemijaniem. Sekretarka Józefa Piłsudskiego, poetka o niepowtarzalnym głosie, oscylująca między bajkowością a dramatyczną powagą. Jej wiersze to zapis wrażliwości, która potrafiła dostrzec tragedię w zwykłości i piękno w bólu.</div>
+    <div class="nw-hero-tags">
+      <span class="nw-tag" style="color:#9a70cc;border-color:rgba(106,60,156,.4);background:rgba(106,60,156,.1)">1889–1983</span>
+      <span class="nw-tag" style="color:#6aaccc;border-color:rgba(58,104,128,.5);background:rgba(58,104,128,.1)">Liryzm</span>
+      <span class="nw-tag" style="color:var(--n-sage2);border-color:rgba(90,122,74,.4);background:rgba(90,122,74,.1)">Śmierć i przemijanie</span>
+      <span class="nw-tag" style="color:var(--gold);border-color:rgba(201,168,76,.4);background:rgba(201,168,76,.1)">Bajkowość</span>
+      <span class="nw-tag" style="color:#cc6080;border-color:rgba(122,32,64,.5);background:rgba(122,32,64,.1)">Poezja kobieca</span>
+    </div>
+  </div>
+
+  <!-- ŻYCIE I TWÓRCZOŚĆ -->
+  <div class="nw-section-head"><span class="nw-section-icon">👤</span><div class="nw-section-title">Życie i twórczość — biografia</div><div class="nw-section-line"></div></div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;margin-bottom:1.8rem">
+
+    <div style="border:1px solid rgba(106,60,156,.4);border-radius:10px;overflow:hidden">
+      <div style="background:rgba(106,60,156,.13);padding:1.3rem 1.8rem;border-bottom:1px solid rgba(106,60,156,.18)">
+        <div style="font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:#9a70cc;margin-bottom:.3rem">Dane biograficzne</div>
+        <div style="font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--ink)">Kim była Iłłakowiczówna?</div>
+      </div>
+      <div style="padding:1.2rem 1.8rem">
+        <div class="nw-grid" style="margin-bottom:0;gap:.8rem">
+          <div class="nw-card" style="--na:#9a70cc;background:rgba(106,60,156,.07);padding:1rem 1.1rem">
+            <div class="nw-card-icon" style="font-size:1.2rem;margin-bottom:.4rem">📅</div>
+            <div class="nw-card-title" style="font-size:.9rem">1889–1983</div>
+            <div class="nw-card-desc">Urodzona w Wilnie, przeżyła 94 lata — świadek dwóch wojen, odbudowy Polski i PRL-u. Jedno z najdłuższych życiorypisów polskiej poezji.</div>
+          </div>
+          <div class="nw-card" style="--na:#9a70cc;background:rgba(106,60,156,.07);padding:1rem 1.1rem">
+            <div class="nw-card-icon" style="font-size:1.2rem;margin-bottom:.4rem">🏛️</div>
+            <div class="nw-card-title" style="font-size:.9rem">Sekretarka Piłsudskiego</div>
+            <div class="nw-card-desc">W latach 1926–1935 pełniła funkcję sekretarki i bliskiej współpracownicy Józefa Piłsudskiego — jednocześnie pisząc poezję.</div>
+          </div>
+          <div class="nw-card" style="--na:#9a70cc;background:rgba(106,60,156,.07);padding:1rem 1.1rem">
+            <div class="nw-card-icon" style="font-size:1.2rem;margin-bottom:.4rem">📚</div>
+            <div class="nw-card-title" style="font-size:.9rem">Debiut i dorobek</div>
+            <div class="nw-card-desc">Debiut w 1911 roku. Ponad 20 tomów poezji. Laureatka prestiżowych nagród literackich, m.in. Nagrody Państwowej (1931). Tłumaczka literatury obcej.</div>
+          </div>
+          <div class="nw-card" style="--na:#9a70cc;background:rgba(106,60,156,.07);padding:1rem 1.1rem">
+            <div class="nw-card-icon" style="font-size:1.2rem;margin-bottom:.4rem">🌍</div>
+            <div class="nw-card-title" style="font-size:.9rem">Emigracja i powrót</div>
+            <div class="nw-card-desc">II wojnę przeżyła na emigracji w Rumunii i Londynie. Po wojnie wróciła do Polski (1947), osiadła w Poznaniu, gdzie zmarła w 1983 roku.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="border:1px solid rgba(42,125,95,.4);border-radius:10px;overflow:hidden">
+      <div style="background:rgba(42,125,95,.13);padding:1.3rem 1.8rem;border-bottom:1px solid rgba(42,125,95,.18)">
+        <div style="font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--n-sage2);margin-bottom:.3rem">Miejsce w epoce</div>
+        <div style="font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--ink)">Iłłakowiczówna a dwudziestolecie</div>
+      </div>
+      <div style="padding:1.2rem 1.8rem">
+        <div class="nw-grid" style="margin-bottom:0;gap:.8rem">
+          <div class="nw-card nw-sage" style="padding:1rem 1.1rem">
+            <div class="nw-card-icon" style="font-size:1.2rem;margin-bottom:.4rem">🌸</div>
+            <div class="nw-card-title" style="font-size:.9rem">Poza głównym nurtem</div>
+            <div class="nw-card-desc">Nie należała do Skamandra ani Awangardy Krakowskiej. Tworzyła niezależnie — jej głos był oryginalny i niepowtarzalny na tle epoki.</div>
+          </div>
+          <div class="nw-card nw-sage" style="padding:1rem 1.1rem">
+            <div class="nw-card-icon" style="font-size:1.2rem;margin-bottom:.4rem">🧚</div>
+            <div class="nw-card-title" style="font-size:.9rem">Bajkowość i realizm</div>
+            <div class="nw-card-desc">Łączy elementy baśni, folkloru i realizmu — jej poezja jest jednocześnie naiwna i dojrzała, prosta w formie, głęboka w treści.</div>
+          </div>
+          <div class="nw-card nw-sage" style="padding:1rem 1.1rem">
+            <div class="nw-card-icon" style="font-size:1.2rem;margin-bottom:.4rem">💜</div>
+            <div class="nw-card-title" style="font-size:.9rem">Poezja kobieca</div>
+            <div class="nw-card-desc">Jedna z pierwszych polek, które odważnie pisały o doświadczeniach kobiecych — emocjach, ciele, miłości, stracie i tożsamości.</div>
+          </div>
+          <div class="nw-card nw-sage" style="padding:1rem 1.1rem">
+            <div class="nw-card-icon" style="font-size:1.2rem;margin-bottom:.4rem">🕯️</div>
+            <div class="nw-card-title" style="font-size:.9rem">Tematyka śmierci</div>
+            <div class="nw-card-desc">Śmierć — zwłaszcza samobójstwo i przedwczesna śmierć — jest jednym z centralnych motywów jej poezji. Traktuje ją z czułością, nie grozą.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CHARAKTERYSTYKA TWÓRCZOŚCI -->
+  <div class="nw-section-head"><span class="nw-section-icon">🎨</span><div class="nw-section-title">Charakterystyka twórczości poetyckiej</div><div class="nw-section-line"></div></div>
+
+  <div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:1.8rem;margin-bottom:1.8rem">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.4rem">
+
+      <div style="border-left:3px solid #9a70cc;padding-left:1rem">
+        <div style="font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;color:#9a70cc;margin-bottom:.35rem">Liryzm i emocjonalność</div>
+        <div style="font-size:.78rem;color:var(--ink2);line-height:1.6">Poezja Iłłakowiczówny jest przede wszystkim <strong style="color:var(--ink)">głęboko liryczna</strong> — zbudowana na emocji, intuicji i przeżyciu. Logika argumentu ustępuje miejsca obrazowi i nastrojowi.</div>
+      </div>
+
+      <div style="border-left:3px solid var(--n-sage2);padding-left:1rem">
+        <div style="font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;color:var(--n-sage2);margin-bottom:.35rem">Bajkowość i folkloryzm</div>
+        <div style="font-size:.78rem;color:var(--ink2);line-height:1.6">Chętnie sięga po motywy <strong style="color:var(--ink)">baśniowe, ludowe i mityczne</strong>. Jej świat poetycki zamieszkują anioły, duchy, wróżki — ale osadzone w konkretnych, realistycznych realiach.</div>
+      </div>
+
+      <div style="border-left:3px solid #cc6080;padding-left:1rem">
+        <div style="font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;color:#cc6080;margin-bottom:.35rem">Śmierć jako motyw centralny</div>
+        <div style="font-size:.78rem;color:var(--ink2);line-height:1.6">Śmierć nie jest u niej przerażająca — jest <strong style="color:var(--ink)">oswojona, cicha, niekiedy łagodna</strong>. Szczególnie interesuje ją samobójstwo jako akt desperacji i wolności zarazem.</div>
+      </div>
+
+      <div style="border-left:3px solid var(--gold);padding-left:1rem">
+        <div style="font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;color:var(--gold);margin-bottom:.35rem">Prostota i precyzja</div>
+        <div style="font-size:.78rem;color:var(--ink2);line-height:1.6">Unika skomplikowanego słownictwa — jej wiersze są <strong style="color:var(--ink)">pozornie proste</strong>, ale ta prostota jest artystycznym wyborem. Każde słowo jest na swoim miejscu.</div>
+      </div>
+
+      <div style="border-left:3px solid #6aaccc;padding-left:1rem">
+        <div style="font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;color:#6aaccc;margin-bottom:.35rem">Muzyczność wiersza</div>
+        <div style="font-size:.78rem;color:var(--ink2);line-height:1.6">Jej poezja jest <strong style="color:var(--ink)">melodyjna i rytmiczna</strong> — bliższa pieśni niż manifestowi. Instrumentacja głoskowa, powtórzenia i refrenowość tworzą hipnotyzujący efekt.</div>
+      </div>
+
+      <div style="border-left:3px solid var(--amber);padding-left:1rem">
+        <div style="font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;color:var(--amber);margin-bottom:.35rem">Perspektywa kobieca</div>
+        <div style="font-size:.78rem;color:var(--ink2);line-height:1.6">Pisze o świecie <strong style="color:var(--ink)">z perspektywy kobiety</strong> — jej wrażliwości, ograniczeń, bólu i siły. To było nowatorskie w epoce zdominowanej przez poetów-mężczyzn.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CZTERY FILARY TWÓRCZOŚCI -->
+  <div class="nw-section-head"><span class="nw-section-icon">🧠</span><div class="nw-section-title">Cztery filary poetyki Iłłakowiczówny</div><div class="nw-section-line"></div></div>
+  <div class="nw-grid" style="margin-bottom:1.8rem">
+
+    <div class="nw-card" style="--na:#9a70cc;background:rgba(106,60,156,.07)">
+      <div class="nw-card-icon">🌙</div>
+      <div class="nw-card-title">Chwila i przemijanie</div>
+      <div class="nw-card-desc">Obsesja <strong>ulotności chwili</strong> — piękno jest kruche i szybko ginie. „Błękitna chwila" to modelowy przykład tej poetyki: zachwyt i ból istnieją jednocześnie, chwila jest cenna właśnie dlatego, że przemija.</div>
+    </div>
+
+    <div class="nw-card nw-sage">
+      <div class="nw-card-icon">🕊️</div>
+      <div class="nw-card-title">Śmierć oswojona</div>
+      <div class="nw-card-desc">Śmierć nie jest wrogiem — bywa <strong>wyzwoleniem, spokojnym odejściem</strong>. W wierszu o Hani samobójstwo jest tragedią, ale też aktem rozpaczy, który wymaga zrozumienia, nie potępienia.</div>
+    </div>
+
+    <div class="nw-card" style="--na:#6aaccc;background:rgba(58,104,128,.07)">
+      <div class="nw-card-icon">🧚</div>
+      <div class="nw-card-title">Świat zaklęty w bajkę</div>
+      <div class="nw-card-desc">Realia codzienne zostają <strong>przetworzone przez bajkowy filtr</strong> — stają się symboliczne, ponadczasowe. Konkretne zdarzenia (samobójstwo, chwila zachwytu) zyskują wymiar mitu.</div>
+    </div>
+
+    <div class="nw-card" style="--na:#cc6080;background:rgba(122,32,64,.07)">
+      <div class="nw-card-icon">💔</div>
+      <div class="nw-card-title">Empatia i solidarność</div>
+      <div class="nw-card-desc">Poetka staje po stronie <strong>słabych, odrzuconych, cierpiących</strong>. Hania to nie postać potępiona — to ofiara, którą należy opłakać. Empatia jest fundamentem jej etyki poetyckiej.</div>
+    </div>
+
+  </div>
+
+  <!-- INTERPRETACJA: BŁĘKITNA CHWILA -->
+  <div class="nw-section-head"><span class="nw-section-icon">🔵</span><div class="nw-section-title">Interpretacja: „Błękitna chwila"</div><div class="nw-section-line"></div></div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;margin-bottom:1.8rem">
+
+    <div style="border:1px solid rgba(58,104,128,.4);border-radius:10px;overflow:hidden">
+      <div style="background:rgba(58,104,128,.13);padding:1.1rem 1.5rem;border-bottom:1px solid rgba(58,104,128,.2)">
+        <div style="font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:#6aaccc;margin-bottom:.2rem">Tekst wiersza</div>
+        <div style="font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--ink)">„Błękitna chwila"</div>
+      </div>
+      <div style="padding:1.3rem 1.5rem;font-family:'Playfair Display',serif;font-size:.88rem;line-height:2;color:var(--ink);font-style:italic">
+        Była to taka błękitna chwila,<br>
+        że serce mi stanęło od piękna.<br>
+        Oto tak będzie, gdy śmierć mnie omyła<br>
+        i dusza na skrzydłach odfruwa bezkrwawa i lekka.<br>
+        <br>
+        Było tak cicho, że słyszałam prawie<br>
+        czas, jak odpływa od nas ospale,<br>
+        i że ten błękit zostanie po mnie w trawie,<br>
+        i że ta chwila zostanie na zawsze.<br>
+        <br>
+        A jednak odeszłam, i chwila przeminęła,<br>
+        i błękit w trawie zdążył już pożółknąć,<br>
+        i tamten spokój — jak niebyłe —<br>
+        już nie powróci, choćbym wołać miała.
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:.9rem">
+
+      <div style="border:1px solid rgba(58,104,128,.25);border-radius:8px;overflow:hidden">
+        <div style="background:rgba(58,104,128,.1);padding:.75rem 1.1rem;border-bottom:1px solid rgba(58,104,128,.15)">
+          <div style="font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:#6aaccc">Temat i motyw</div>
+        </div>
+        <div style="padding:.9rem 1.1rem;font-size:.8rem;color:var(--ink2);line-height:1.65">
+          Wiersz opisuje <strong style="color:var(--ink)">ulotną chwilę zachwytu</strong> — moment wewnętrznego spokoju i piękna, który przemija bezpowrotnie. Tematem jest <strong style="color:var(--ink)">nietrwałość i niemożność zatrzymania czasu</strong>.
+        </div>
+      </div>
+
+      <div style="border:1px solid rgba(201,168,76,.25);border-radius:8px;overflow:hidden">
+        <div style="background:rgba(201,168,76,.1);padding:.75rem 1.1rem;border-bottom:1px solid rgba(201,168,76,.15)">
+          <div style="font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold)">Symbolika błękitu</div>
+        </div>
+        <div style="padding:.9rem 1.1rem;font-size:.8rem;color:var(--ink2);line-height:1.65">
+          <strong style="color:var(--ink)">Błękit</strong> to symbol spokoju, nieba, transcendencji — ale też kruchości. Chwila jest „błękitna", bo jest czysta i ulotna jak niebo. Biel i błękit kojarzą się ze śmiercią i wiecznością jednocześnie.
+        </div>
+      </div>
+
+      <div style="border:1px solid rgba(90,122,74,.25);border-radius:8px;overflow:hidden">
+        <div style="background:rgba(90,122,74,.1);padding:.75rem 1.1rem;border-bottom:1px solid rgba(90,122,74,.15)">
+          <div style="font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--n-sage2)">Motyw śmierci</div>
+        </div>
+        <div style="padding:.9rem 1.1rem;font-size:.8rem;color:var(--ink2);line-height:1.65">
+          Podmiot liryczny porównuje piękną chwilę do <strong style="color:var(--ink)">śmierci — „gdy śmierć mnie omyła"</strong>. Śmierć jawi się jako spokojne, piękne odejście, nie jako groza. To typowe dla Iłłakowiczówny: śmierć oswojona przez estetykę.
+        </div>
+      </div>
+
+      <div style="border:1px solid rgba(106,60,156,.25);border-radius:8px;overflow:hidden">
+        <div style="background:rgba(106,60,156,.1);padding:.75rem 1.1rem;border-bottom:1px solid rgba(106,60,156,.15)">
+          <div style="font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:#9a70cc">Przesłanie</div>
+        </div>
+        <div style="padding:.9rem 1.1rem;font-size:.8rem;color:var(--ink2);line-height:1.65">
+          Piękne chwile <strong style="color:var(--ink)">nie są wieczne</strong> — ale fakt ich przemijania nie umniejsza ich wartości. Paradoks: chwila „zostanie na zawsze" w pamięci i jednocześnie „już nie powróci". Bergsonowski motyw czasu subiektywnego.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- KLUCZE INTERPRETACYJNE: BŁĘKITNA CHWILA -->
+  <div class="nw-grid" style="margin-bottom:1.8rem">
+    <div class="nw-card" style="--na:#6aaccc;background:rgba(58,104,128,.07)">
+      <div class="nw-card-icon">📐</div>
+      <div class="nw-card-title">Forma i styl</div>
+      <div class="nw-card-desc">Wiersz jest <strong>melodyjny, rytmiczny</strong>, z regularną budową stroficzną. Języka prostego, ale precyzyjnego — każde słowo niesie emocjonalny ciężar. Powtórzenia wzmacniają efekt elegii.</div>
+    </div>
+    <div class="nw-card" style="--na:var(--gold);background:rgba(184,112,32,.07)">
+      <div class="nw-card-icon">⏳</div>
+      <div class="nw-card-title">Czas w wierszu</div>
+      <div class="nw-card-desc">Podmiot obserwuje, jak czas „odpływa ospale" — to <strong>czas subiektywny</strong> (bergsonowski). Przeszłość i teraźniejszość nakładają się: chwila minęła, ale trwa w wierszu i pamięci.</div>
+    </div>
+    <div class="nw-card" style="--na:#9a70cc;background:rgba(106,60,156,.07)">
+      <div class="nw-card-icon">🌿</div>
+      <div class="nw-card-title">Przyroda jako świadek</div>
+      <div class="nw-card-desc">Błękit „w trawie" — <strong>natura przechowuje chwilę</strong>, ale też ją traci (błękit „zdążył już pożółknąć"). Przyroda jest jednocześnie skarbnicą i zdrajcą pięknych wspomnień.</div>
+    </div>
+    <div class="nw-card" style="--na:#cc6080;background:rgba(122,32,64,.07)">
+      <div class="nw-card-icon">🎭</div>
+      <div class="nw-card-title">Podmiot liryczny</div>
+      <div class="nw-card-desc">Pierwszoosobowy podmiot — <strong>poetka sama przeżywa i komentuje</strong>. Jej wrażliwość jest kobieca, intymna. Nie opisuje — wyznaje. To poezja konfesyjna, bliska doświadczeniu.</div>
+    </div>
+  </div>
+
+  <!-- INTERPRETACJA: O HANI CO SIĘ ZABIŁA -->
+  <div class="nw-section-head"><span class="nw-section-icon">🖤</span><div class="nw-section-title">Interpretacja: „O Hani co się zabiła"</div><div class="nw-section-line"></div></div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;margin-bottom:1.8rem">
+
+    <div style="border:1px solid rgba(122,32,64,.4);border-radius:10px;overflow:hidden">
+      <div style="background:rgba(122,32,64,.13);padding:1.1rem 1.5rem;border-bottom:1px solid rgba(122,32,64,.2)">
+        <div style="font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:#cc6080;margin-bottom:.2rem">Tekst wiersza</div>
+        <div style="font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--ink)">„O Hani co się zabiła"</div>
+      </div>
+      <div style="padding:1.3rem 1.5rem;font-family:'Playfair Display',serif;font-size:.88rem;line-height:2;color:var(--ink);font-style:italic">
+        Hania się zabiła — i co z tego będzie?<br>
+        Matkę tylko boli, bo to matki robota.<br>
+        A reszta nie zmieni swych zwykłych obrzędów,<br>
+        choć trumienka mała i wianuszek złota.<br>
+        <br>
+        Hania się zabiła — i cóż jej przyszło z tego?<br>
+        Ot, leży spokojnie i patrzy w sufit biały.<br>
+        Chciała czegoś więcej. Świat był za ciasny dla niej.<br>
+        Teraz go ma tyle, ile trumna dała.<br>
+        <br>
+        Hania się zabiła — lecz Bóg jej wybaczy,<br>
+        bo Bóg zna ludzki ból i ludzkie zagubienie.<br>
+        A my na pogrzebie popatrzym i zaraz<br>
+        wrócimy do życia i jego codzienności.
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:.9rem">
+
+      <div style="border:1px solid rgba(122,32,64,.25);border-radius:8px;overflow:hidden">
+        <div style="background:rgba(122,32,64,.1);padding:.75rem 1.1rem;border-bottom:1px solid rgba(122,32,64,.15)">
+          <div style="font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:#cc6080">Temat i sytuacja liryczna</div>
+        </div>
+        <div style="padding:.9rem 1.1rem;font-size:.8rem;color:var(--ink2);line-height:1.65">
+          Wiersz opisuje <strong style="color:var(--ink)">samobójstwo młodej dziewczyny — Hani</strong>. Poetka obserwuje reakcję świata na tę tragedię i ujawnia jego <strong style="color:var(--ink)">obojętność i hipokryzję</strong>. Hania ginie, a życie toczy się dalej.
+        </div>
+      </div>
+
+      <div style="border:1px solid rgba(200,75,47,.25);border-radius:8px;overflow:hidden">
+        <div style="background:rgba(200,75,47,.1);padding:.75rem 1.1rem;border-bottom:1px solid rgba(200,75,47,.15)">
+          <div style="font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--coral)">Krytyka społeczna</div>
+        </div>
+        <div style="padding:.9rem 1.1rem;font-size:.8rem;color:var(--ink2);line-height:1.65">
+          Ironiczne powtórzenie <strong style="color:var(--ink)">„Hania się zabiła — i co z tego będzie?"</strong> to zapis społecznej obojętności. Świat nie zatrzymuje się na czyjeś cierpienie. To mocna krytyka bezduszności ludzkiej wspólnoty.
+        </div>
+      </div>
+
+      <div style="border:1px solid rgba(201,168,76,.25);border-radius:8px;overflow:hidden">
+        <div style="background:rgba(201,168,76,.1);padding:.75rem 1.1rem;border-bottom:1px solid rgba(201,168,76,.15)">
+          <div style="font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold)">Empatia wobec Hani</div>
+        </div>
+        <div style="padding:.9rem 1.1rem;font-size:.8rem;color:var(--ink2);line-height:1.65">
+          Poetka nie potępia Hani — <strong style="color:var(--ink)">rozumie jej ból</strong>. „Chciała czegoś więcej. Świat był za ciasny dla niej." To zdanie to wyrok na świat, nie na Hanię. Samobójstwo jako efekt konfliktu wrażliwej jednostki z bezduszną rzeczywistością.
+        </div>
+      </div>
+
+      <div style="border:1px solid rgba(90,122,74,.25);border-radius:8px;overflow:hidden">
+        <div style="background:rgba(90,122,74,.1);padding:.75rem 1.1rem;border-bottom:1px solid rgba(90,122,74,.15)">
+          <div style="font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--n-sage2)">Bóg i wybaczenie</div>
+        </div>
+        <div style="padding:.9rem 1.1rem;font-size:.8rem;color:var(--ink2);line-height:1.65">
+          <strong style="color:var(--ink)">„Bóg jej wybaczy, bo Bóg zna ludzki ból"</strong> — poetka odbiera Kościołowi prawo do potępienia samobójców. Bóg jest tu miłosierny i rozumiejący, nie surowy sędzia. To odważna teologicznie postawa.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- KLUCZE INTERPRETACYJNE: HANIA -->
+  <div class="nw-grid" style="margin-bottom:1.8rem">
+    <div class="nw-card" style="--na:#cc6080;background:rgba(122,32,64,.07)">
+      <div class="nw-card-icon">🔁</div>
+      <div class="nw-card-title">Refren i ironia</div>
+      <div class="nw-card-desc">Powtórzenie „Hania się zabiła" jako <strong>refren-oskarżenie</strong>. Za każdym razem zmienia kontekst — pytanie, skutek, wybaczenie. Ironia jest bronią poetki przeciw obojętności.</div>
+    </div>
+    <div class="nw-card" style="--na:var(--coral);background:rgba(200,75,47,.07)">
+      <div class="nw-card-icon">⚖️</div>
+      <div class="nw-card-title">Jednostka vs społeczeństwo</div>
+      <div class="nw-card-desc">Hania jest <strong>wrażliwą jednostką roztrzaskaną o mur obojętności</strong>. „Świat był za ciasny dla niej" — diagnoza systemu, nie ofiary. Poetka staje po stronie słabszej.</div>
+    </div>
+    <div class="nw-card" style="--na:#9a70cc;background:rgba(106,60,156,.07)">
+      <div class="nw-card-icon">🕯️</div>
+      <div class="nw-card-title">Rytuał pogrzebowy</div>
+      <div class="nw-card-desc">„Trumienka mała i wianuszek złota" — <strong>drobne, konkretne szczegóły</strong> paradoksalnie wzmacniają tragedię. Rytuał jest zimny i mechaniczny, nie wyrasta z prawdziwego smutku.</div>
+    </div>
+    <div class="nw-card" style="--na:var(--n-sage2);background:rgba(90,122,74,.07)">
+      <div class="nw-card-icon">📣</div>
+      <div class="nw-card-title">Przesłanie moralne</div>
+      <div class="nw-card-desc">Wiersz jest <strong>oskarżeniem obojętności</strong> — nie Hani. Wrócimy do „codzienności" i zapomnimy. To powinno nas zawstydzić. Poetka zmusza do rachunku sumienia.</div>
+    </div>
+  </div>
+
+  <!-- TABELA PORÓWNAWCZA -->
+  <div class="nw-section-head"><span class="nw-section-icon">📊</span><div class="nw-section-title">Porównanie obu wierszy</div><div class="nw-section-line"></div></div>
+  <div style="overflow-x:auto;margin-bottom:1.8rem"><table>
+    <thead><tr><th>Element</th><th>„Błękitna chwila"</th><th>„O Hani co się zabiła"</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Temat</strong></td><td>Ulotność pięknej chwili i przemijanie czasu</td><td>Samobójstwo młodej dziewczyny i obojętność świata</td></tr>
+      <tr><td><strong>Nastrój</strong></td><td>Melancholijny, kontemplacyjny, spokojny</td><td>Gorzki, ironiczny, oskarżycielski</td></tr>
+      <tr><td><strong>Śmierć</strong></td><td>Metafora piękna i spokoju, wyzwolenie</td><td>Konkretna, tragiczna, społecznie nierozliczona</td></tr>
+      <tr><td><strong>Podmiot</strong></td><td>Ja liryczne — intymne wyznanie</td><td>Obserwator społeczny — głos oskarżający</td></tr>
+      <tr><td><strong>Forma</strong></td><td>Melodyjny liryk, elegijny rytm</td><td>Ironiczny refren, zdystansowana narracja</td></tr>
+      <tr><td><strong>Przesłanie</strong></td><td>Piękne chwile są cenne mimo przemijania</td><td>Świat winny jest obojętności wobec bólu</td></tr>
+      <tr><td><strong>Bóg</strong></td><td>Śmierć jako spokojne odejście ku niemu</td><td>Bóg miłosierny — wybaczy, czego ludzie nie robią</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="nw-quote" style="border-left-color:#9a70cc">
+    <p>„Iłłakowiczówna pisała o śmierci tak, jakby była starą przyjaciółką — z szacunkiem, bez dramatyzmu, z czułością dla tych, którzy odchodzą i tych, co zostają."</p>
+    <cite>— interpretacja twórczości Kazimiery Iłłakowiczówny</cite>
+  </div>
+
+</div><!-- /view-cards -->
+
+<!-- ===== QUIZ ===== -->
+<div id="view-quiz" style="display:none;position:relative;z-index:1;max-width:800px;margin:0 auto;padding:1.5rem 1.5rem 5rem">
+  <div id="quiz-hub">
+    <div style="text-align:center;padding:1.5rem 0 2rem">
+      <div style="font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:#9a70cc;margin-bottom:.6rem">Temat 5 · Quiz</div>
+      <div style="font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;color:var(--ink);margin-bottom:.4rem">Sprawdź wiedzę o Iłłakowiczównie</div>
+      <div style="font-size:.85rem;color:var(--ink2)">Życie · Charakterystyka · Błękitna chwila · O Hani</div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem">
+      <button class="qhub-card" onclick="launchQuiz('illak','illak')" style="--qc:#9a70cc">
+        <div class="qhub-icon">🌙</div>
+        <div class="qhub-title">Quiz Iłłakowiczówny</div>
+        <div class="qhub-sub">Życie · Twórczość · Błękitna chwila · O Hani co się zabiła</div>
+        <div class="qhub-count" id="hub-score-illak">25 pytań</div>
+      </button>
+      <button class="qhub-card" onclick="launchQuiz('all','illak')" style="--qc:#c9a84c">
+        <div class="qhub-icon">🎯</div>
+        <div class="qhub-title">MEGA QUIZ</div>
+        <div class="qhub-sub">Wszystkie tematy razem — pełne przygotowanie</div>
+        <div class="qhub-count">130+ pytań</div>
+      </button>
+    </div>
+  </div>
+  <div id="quiz-active" style="display:none">
+    <div style="display:flex;align-items:center;gap:.8rem;margin-bottom:1.2rem">
+      <button onclick="backToHub()" style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);color:var(--ink2);font-size:.75rem;padding:.4rem .9rem;border-radius:100px;cursor:pointer">← Wróć</button>
+      <div style="flex:1">
+        <div style="display:flex;justify-content:space-between;margin-bottom:.4rem">
+          <span style="font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink2)" id="qa-label"></span>
+          <span style="font-size:.8rem;font-weight:500;color:var(--gold)" id="qa-score"></span>
+        </div>
+        <div class="quiz-prog-bar"><div class="quiz-prog-fill" id="qa-fill" style="width:0%"></div></div>
+      </div>
+    </div>
+    <div class="quiz-card">
+      <div class="quiz-q-num" id="qa-num"></div>
+      <span class="quiz-cat" id="qa-cat"></span>
+      <div class="quiz-q-text" id="qa-text"></div>
+      <div class="quiz-options" id="qa-opts"></div>
+      <div class="quiz-feedback" id="qa-feedback"></div>
+      <div class="quiz-next-wrap"><button class="quiz-next" id="qa-next" onclick="nextQA()">Następne →</button></div>
+    </div>
+  </div>
+  <div id="quiz-result-screen" style="display:none;text-align:center;padding:2rem 1rem;animation:fadeUp .5s ease">
+    <div class="res-emoji" id="qr-emoji"></div>
+    <div class="res-title" id="qr-title"></div>
+    <div class="res-score-box" style="margin:1rem auto 1.2rem"><div class="res-big" id="qr-big"></div><div class="res-of" id="qr-of"></div></div>
+    <div class="res-bar-wrap"><div class="quiz-prog-bar" style="height:8px;border-radius:4px"><div class="res-bar-fill" id="qr-bar" style="width:0%"></div></div></div>
+    <div class="res-cats" id="qr-cats" style="margin:1.2rem 0"></div>
+    <div class="res-msg" id="qr-msg"></div>
+    <div style="display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap">
+      <button class="res-restart" onclick="replayQuiz()">Jeszcze raz 🔄</button>
+      <button class="res-restart" onclick="backToHub()" style="background:rgba(255,255,255,.08);color:var(--ink)">Wybierz tryb</button>
+      <a href="index.html" class="res-restart" style="background:rgba(255,255,255,.08);color:var(--ink);text-decoration:none">← Hub</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== NOTATKA ===== -->
+<div id="view-nota" style="display:none;position:relative;z-index:1;max-width:900px;margin:0 auto;padding:2rem 1.5rem 4rem">
+
+  <div class="nw-quote" style="border-left-color:#9a70cc">
+    <p>„Pisała o śmierci, jakby była jej przyjaciółką. O bólu — jakby go znała od środka. O pięknie — jakby wiedziała, że zaraz zginie."</p>
+    <cite>— o poezji Kazimiery Iłłakowiczówny</cite>
+  </div>
+
+  <div class="nw-section-head"><span class="nw-section-icon">📋</span><div class="nw-section-title">Notatka podsumowująca — Iłłakowiczówna</div><div class="nw-section-line"></div></div>
+
+  <div class="nw-grid">
+    <div class="nw-card" style="--na:#9a70cc;background:rgba(106,60,156,.07)"><div class="nw-card-icon">👤</div><div class="nw-card-title">Biografia</div><div class="nw-card-desc"><strong>1889–1983</strong>, urodzona w Wilnie. Sekretarka Piłsudskiego (1926–1935). Debiut 1911. 20+ tomów poezji. Emigracja podczas II wojny, powrót 1947, życie i śmierć w Poznaniu.</div></div>
+    <div class="nw-card nw-sage"><div class="nw-card-icon">🎨</div><div class="nw-card-title">Cechy twórczości</div><div class="nw-card-desc"><strong>Liryzm i emocjonalność.</strong> Bajkowość i folkloryzm. Śmierć oswojona. Prostota i precyzja języka. Muzyczność. Perspektywa kobieca. Poza głównymi grupami poetyckimi epoki.</div></div>
+    <div class="nw-card" style="--na:#6aaccc;background:rgba(58,104,128,.07)"><div class="nw-card-icon">🔵</div><div class="nw-card-title">Błękitna chwila</div><div class="nw-card-desc">Temat: <strong>ulotność pięknej chwili</strong>. Błękit = spokój, niebo, śmierć. Śmierć jako piękne odejście. Czas subiektywny (Bergson). Melancholijny liryk, refren nietrwałości.</div></div>
+    <div class="nw-card" style="--na:#cc6080;background:rgba(122,32,64,.07)"><div class="nw-card-icon">🖤</div><div class="nw-card-title">O Hani co się zabiła</div><div class="nw-card-desc">Temat: <strong>samobójstwo i obojętność świata</strong>. Refren ironiczny. Empatia dla Hani, krytyka społeczeństwa. „Świat był za ciasny" — ofiara niewinną. Bóg miłosierny wybaczy.</div></div>
+    <div class="nw-card" style="--na:var(--gold);background:rgba(184,112,32,.07)"><div class="nw-card-icon">📊</div><div class="nw-card-title">Porównanie wierszy</div><div class="nw-card-desc"><strong>Błękitna chwila</strong> — melancholia, kontemplacja, śmierć piękna. <strong>O Hani</strong> — ironia, oskarżenie, śmierć tragiczna. Oba: empatia, śmierć oswojona, perspektywa kobiety.</div></div>
+    <div class="nw-card" style="--na:var(--n-rust2);background:rgba(160,64,42,.07)"><div class="nw-card-icon">🏛️</div><div class="nw-card-title">Miejsce w epoce</div><div class="nw-card-desc">Poza Skamandrem i Awangardą — <strong>oryginalny głos</strong> dwudziestolecia. Łączy bajkowość z realizmem. Jedyna w swoim rodzaju poetka kobieca epoki. Noblistka... prawie — wielokrotnie kandydowała.</div></div>
+  </div>
+
+  <div class="nw-section-head"><span class="nw-section-icon">🧠</span><div class="nw-section-title">Kluczowe pojęcia do zapamiętania</div><div class="nw-section-line"></div></div>
+  <div style="overflow-x:auto"><table>
+    <thead><tr><th>Pojęcie</th><th>Definicja</th><th>Przykład w poezji Iłłakowiczówny</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Śmierć oswojona</strong></td><td>Śmierć jako spokojne, piękne odejście — nie groza</td><td>„Błękitna chwila" — śmierć jako uwolnienie</td></tr>
+      <tr><td><strong>Ironia liryczna</strong></td><td>Dystans i ironia jako narzędzie oskarżenia</td><td>„Hania się zabiła — i co z tego będzie?"</td></tr>
+      <tr><td><strong>Empatia poetycka</strong></td><td>Stanie po stronie słabych i odrzuconych</td><td>Solidarność z Hanią, potępienie obojętności</td></tr>
+      <tr><td><strong>Bajkowość</strong></td><td>Elementy baśni i folkloru w realistycznym kontekście</td><td>Anioły, duchy, oniryczne obrazy w poezji</td></tr>
+      <tr><td><strong>Muzyczność</strong></td><td>Rytm, melodia, powtórzenia jako środki wyrazu</td><td>Refrenowy charakter obu wierszy</td></tr>
+      <tr><td><strong>Czas subiektywny</strong></td><td>Bergsonowski czas przeżywany wewnętrznie</td><td>„Błękitna chwila" — czas odpływa ospale</td></tr>
+    </tbody>
+  </table></div>
+
+</div><!-- /view-nota -->
+
+<div class="streak-badge" id="streak-badge"></div>
+
+<!-- ===== AUDIO PLAYER ===== -->
+<style>body{padding-bottom:4.5rem!important}</style>
+<div id="audio-player" style="position:fixed;bottom:0;left:0;right:0;z-index:100;background:rgba(14,12,8,.97);border-top:1px solid rgba(255,255,255,.1);backdrop-filter:blur(12px);padding:.75rem 1.5rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap">
+  <div style="display:flex;flex-direction:column;min-width:0;flex:0 0 auto">
+    <span style="font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:#9a70cc;line-height:1">Słuchaj</span>
+    <span style="font-family:'Playfair Display',serif;font-size:.9rem;font-weight:700;color:var(--ink);white-space:nowrap">Temat 5 · Iłłakowiczówna</span>
+  </div>
+  <button id="ap-play" onclick="apToggle()" style="flex-shrink:0;width:38px;height:38px;border-radius:50%;background:#9a70cc;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .15s">
+    <svg id="ap-icon-play" width="14" height="14" viewBox="0 0 12 14" fill="#1a1400"><path d="M1 1l10 6L1 13V1z"/></svg>
+    <svg id="ap-icon-pause" width="14" height="14" viewBox="0 0 12 14" fill="#1a1400" style="display:none"><rect x="1" y="1" width="3.5" height="12" rx="1"/><rect x="7.5" y="1" width="3.5" height="12" rx="1"/></svg>
+  </button>
+  <div style="flex:1;display:flex;flex-direction:column;gap:.35rem;min-width:140px">
+    <div style="position:relative;height:4px;background:rgba(255,255,255,.1);border-radius:2px;cursor:pointer" id="ap-bar" onclick="apSeek(event)">
+      <div id="ap-fill" style="height:100%;width:0%;background:#9a70cc;border-radius:2px;transition:width .25s linear"></div>
+      <div id="ap-thumb" style="position:absolute;top:50%;right:calc(100% - 0%);transform:translate(50%,-50%);width:10px;height:10px;border-radius:50%;background:#b899e8;pointer-events:none"></div>
+    </div>
+    <div style="display:flex;justify-content:space-between">
+      <span id="ap-cur" style="font-size:.65rem;color:var(--ink2);font-variant-numeric:tabular-nums">0:00</span>
+      <span id="ap-dur" style="font-size:.65rem;color:var(--ink2);font-variant-numeric:tabular-nums">--:--</span>
+    </div>
+  </div>
+  <div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0">
+    <svg width="13" height="13" viewBox="0 0 16 14" fill="none" stroke="var(--ink2)" stroke-width="1.5"><path d="M1 4h3l4-3v12l-4-3H1V4z"/><path d="M11 3c1.5 1 2.5 2.8 2.5 5s-1 4-2.5 5M13.5 1c2 1.5 3.5 4 3.5 7s-1.5 5.5-3.5 7" stroke-linecap="round"/></svg>
+    <input type="range" id="ap-vol" min="0" max="1" step="0.02" value="1" oninput="apVol(this.value)" style="width:60px;accent-color:#9a70cc">
+  </div>
+  <select id="ap-speed" onchange="apSpeed(this.value)" style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);color:var(--ink2);font-family:'DM Sans',sans-serif;font-size:.7rem;padding:.3rem .5rem;border-radius:6px;cursor:pointer">
+    <option value="0.75">0.75x</option>
+    <option value="1" selected>1x</option>
+    <option value="1.25">1.25x</option>
+    <option value="1.5">1.5x</option>
+    <option value="2">2x</option>
+  </select>
+</div>
+<audio id="ap-audio" src="assets/temat6.mp3" preload="metadata"></audio>
+<script>
+(function(){
+  var au=document.getElementById("ap-audio");
+  var fill=document.getElementById("ap-fill");
+  var thumb=document.getElementById("ap-thumb");
+  var cur=document.getElementById("ap-cur");
+  var dur=document.getElementById("ap-dur");
+  var iconPlay=document.getElementById("ap-icon-play");
+  var iconPause=document.getElementById("ap-icon-pause");
+  function fmt(s){var m=Math.floor(s/60);return m+":"+(Math.floor(s%60)+"").padStart(2,"0");}
+  au.addEventListener("loadedmetadata",function(){dur.textContent=fmt(au.duration);});
+  au.addEventListener("timeupdate",function(){
+    if(!au.duration)return;
+    var p=au.currentTime/au.duration*100;
+    fill.style.width=p+"%";
+    thumb.style.right="calc("+(100-p)+"% - 5px)";
+    cur.textContent=fmt(au.currentTime);
+  });
+  au.addEventListener("ended",function(){iconPlay.style.display="";iconPause.style.display="none";});
+  window.apToggle=function(){
+    if(au.paused){au.play();iconPlay.style.display="none";iconPause.style.display="";}
+    else{au.pause();iconPlay.style.display="";iconPause.style.display="none";}
+  };
+  window.apSeek=function(e){
+    var bar=document.getElementById("ap-bar");
+    var rect=bar.getBoundingClientRect();
+    var p=Math.max(0,Math.min(1,(e.clientX-rect.left)/rect.width));
+    au.currentTime=p*au.duration;
+  };
+  window.apVol=function(v){au.volume=parseFloat(v);};
+  window.apSpeed=function(v){au.playbackRate=parseFloat(v);};
+})();
+</script>
+
+<script src="quiz_engine.js"></script>
+<script>
+const TOPIC_ID = 'illak';
+
+const QB_ILLAK = [
+  // BIOGRAFIA
+  {cat:"Biografia",catColor:"#9a70cc",q:"W jakich latach żyła Kazimiera Iłłakowiczówna?",opts:["1862–1941","1889–1983","1901–1970","1880–1945"],ans:1,explain:"Iłłakowiczówna żyła w latach 1889–1983 — przeżyła 94 lata, była świadkiem obu wojen światowych, odbudowy Polski i PRL-u."},
+  {cat:"Biografia",catColor:"#9a70cc",q:"Jaką funkcję pełniła Iłłakowiczówna w latach 1926–1935?",opts:["Dyrektorka teatru w Warszawie","Sekretarka i bliska współpracownica Józefa Piłsudskiego","Redaktorka naczelna tygodnika literackiego","Ambasadorka RP w Paryżu"],ans:1,explain:"W latach 1926–1935 Iłłakowiczówna pełniła funkcję sekretarki Józefa Piłsudskiego — jednocześnie pisząc poezję."},
+  {cat:"Biografia",catColor:"#9a70cc",q:"Gdzie urodziła się Iłłakowiczówna?",opts:["Warszawa","Kraków","Wilno","Lwów"],ans:2,explain:"Iłłakowiczówna urodziła się w Wilnie — wówczas mieście wielokulturowym na kresach wschodnich."},
+  {cat:"Biografia",catColor:"#9a70cc",q:"Gdzie spędziła II wojnę i gdzie wróciła po jej zakończeniu?",opts:["We Francji — wróciła do Warszawy","Na emigracji w Rumunii i Londynie — wróciła do Poznania (1947)","W Szwajcarii — wróciła do Krakowa","W Londynie — nigdy nie wróciła do Polski"],ans:1,explain:"Iłłakowiczówna przeżyła wojnę na emigracji (Rumunia, Londyn), a w 1947 roku wróciła do Polski. Osiadła w Poznaniu, gdzie mieszkała do śmierci w 1983 roku."},
+  {cat:"Biografia",catColor:"#9a70cc",q:"Kiedy Iłłakowiczówna zadebiutowała jako poetka?",opts:["1901","1911","1920","1930"],ans:1,explain:"Debiut poetycki Iłłakowiczówny miał miejsce w 1911 roku. W ciągu swojej długiej kariery wydała ponad 20 tomów poezji."},
+  // CHARAKTERYSTYKA
+  {cat:"Charakterystyka twórczości",catColor:"#6aaccc",q:"Do której grupy poetyckiej należała Iłłakowiczówna?",opts:["Skamander","Awangarda Krakowska","Żagary","Żadnej — tworzyła niezależnie poza głównymi grupami"],ans:3,explain:"Iłłakowiczówna nie należała ani do Skamandra, ani do Awangardy Krakowskiej. Tworzyła niezależnie — jej głos był oryginalny i niepowtarzalny na tle epoki."},
+  {cat:"Charakterystyka twórczości",catColor:"#6aaccc",q:"Co jest cechą charakterystyczną stylu Iłłakowiczówny?",opts:["Skomplikowany, hermetyczny język","Pozorna prostota języka połączona z głębią emocjonalną i muzycznością","Agresywna awangarda i prowokacja","Chłodny intelektualizm bez emocji"],ans:1,explain:"Jej wiersze są pozornie proste, ale ta prostota jest artystycznym wyborem. Każde słowo jest na swoim miejscu, a melodyjność i rytmiczność tworzą hipnotyzujący efekt."},
+  {cat:"Charakterystyka twórczości",catColor:"#6aaccc",q:"Jaki stosunek do śmierci prezentuje Iłłakowiczówna w swojej poezji?",opts:["Przerażenie i tragizm","Śmierć oswojona — cicha, niekiedy łagodna, nie groza","Całkowite milczenie na temat śmierci","Fascynacja okrucieństwem śmierci"],ans:1,explain:"Śmierć u Iłłakowiczówny jest oswojona — nie przeraża, bywa wyzwoleniem, spokojnym odejściem. Traktuje ją z czułością wobec tych, którzy odchodzą."},
+  {cat:"Charakterystyka twórczości",catColor:"#6aaccc",q:"Czym wyróżniała się Iłłakowiczówna na tle poetów dwudziestolecia?",opts:["Była jedyną poetką piszącą po polsku","Pisała z perspektywy kobiety — jako jedna z pierwszych odważnie o doświadczeniach kobiecych","Jako jedyna pisała po łacinie","Tworzyła wyłącznie dramaty"],ans:1,explain:"Iłłakowiczówna była jedną z pierwszych poetek, które odważnie pisały o doświadczeniach kobiecych — emocjach, ciele, miłości i tożsamości. To było nowatorskie w epoce zdominowanej przez mężczyzn."},
+  {cat:"Charakterystyka twórczości",catColor:"#6aaccc",q:"Co łączy bajkowość i realizm w poezji Iłłakowiczówny?",opts:["Są całkowicie oddzielone — dwa różne okresy twórczości","Łączy je w całość — baśniowy filtr przetwarza realistyczne zdarzenia w symbole","Realizm jest odrzucony na rzecz czystej fantastyki","Bajkowość to tylko styl, bez głębszego znaczenia"],ans:1,explain:"U Iłłakowiczówny bajkowość i realizm współistnieją — konkretne zdarzenia (samobójstwo, chwila zachwytu) zostają przetworzone przez bajkowy filtr i zyskują wymiar symboliczny."},
+  // BŁĘKITNA CHWILA
+  {cat:"Błękitna chwila",catColor:"#3a6880",q:"Jaki jest główny temat wiersza 'Błękitna chwila'?",opts:["Opis bitwy","Ulotność pięknej chwili i niemożność zatrzymania czasu","Miłość do Piłsudskiego","Krytyka mieszczaństwa"],ans:1,explain:"Wiersz opisuje ulotną chwilę zachwytu — moment wewnętrznego spokoju i piękna, który przemija bezpowrotnie. Tematem jest nietrwałość i niemożność zatrzymania czasu."},
+  {cat:"Błękitna chwila",catColor:"#3a6880",q:"Co symbolizuje błękit w wierszu 'Błękitna chwila'?",opts:["Smutek i depresję","Spokój, niebo, transcendencję — kruchość i ulotność piękna","Morze i wodę","Politykę zagraniczną"],ans:1,explain:"Błękit symbolizuje spokój, niebo, transcendencję — ale też kruchość. Chwila jest 'błękitna', bo jest czysta i ulotna jak niebo. Kojarzy się ze śmiercią i wiecznością jednocześnie."},
+  {cat:"Błękitna chwila",catColor:"#3a6880",q:"Jak śmierć przedstawiona jest w 'Błękitnej chwili'?",opts:["Jako nagły, gwałtowny koniec","Jako piękne, spokojne odejście — 'dusza na skrzydłach odfruwa bezkrwawa i lekka'","Jako kara za grzechy","Jako wypadek bez znaczenia"],ans:1,explain:"W 'Błękitnej chwili' śmierć jest porównana do pięknej, spokojnej chwili — 'dusza na skrzydłach odfruwa bezkrwawa i lekka'. Śmierć oswojona przez estetykę."},
+  {cat:"Błękitna chwila",catColor:"#3a6880",q:"Z filozofią którego myśliciela związane jest pojęcie 'czasu subiektywnego' w 'Błękitnej chwili'?",opts:["Nietzschego","Freuda","Bergsona — jego koncepcja durée (czasu przeżywanego)","Kierkegaarda"],ans:2,explain:"Bergsonowski motyw czasu subiektywnego (durée) — czas 'odpływa ospale', chwila trwa w pamięci dłużej niż w rzeczywistości. Bergson wpłynął na całą poezję epoki, w tym na Iłłakowiczównę."},
+  {cat:"Błękitna chwila",catColor:"#3a6880",q:"Jaką rolę pełni przyroda w 'Błękitnej chwili'?",opts:["Jest tłem bez znaczenia","Jest świadkiem chwili — przechowuje błękit, ale też go traci ('zdążył już pożółknąć')","Jest wrogiem człowieka","Nie pojawia się w wierszu"],ans:1,explain:"Przyroda w 'Błękitnej chwili' jest świadkiem — błękit 'w trawie' przechowuje chwilę, ale też ją zdradza, bo 'błękit zdążył już pożółknąć'. Natura jest skarbnicą i zdrajcą wspomnień."},
+  // O HANI
+  {cat:"O Hani co się zabiła",catColor:"#9c3060",q:"Jaki główny temat porusza wiersz 'O Hani co się zabiła'?",opts:["Miłość Hani i jej szczęście","Samobójstwo młodej dziewczyny i obojętność społeczeństwa","Opis polskiej wsi","Krytyka religii"],ans:1,explain:"Wiersz opisuje samobójstwo młodej dziewczyny — Hani. Poetka obserwuje reakcję świata na tę tragedię i ujawnia jego obojętność i hipokryzję."},
+  {cat:"O Hani co się zabiła",catColor:"#9c3060",q:"Jaki efekt artystyczny osiąga poetka przez trzykrotne powtórzenie 'Hania się zabiła'?",opts:["Rytmiczność bez znaczenia","Refren ironiczny — za każdym razem zmienia kontekst, oskarżając obojętność świata","Podkreślenie nastroju spokoju","Opis chronologiczny"],ans:1,explain:"Powtórzenie 'Hania się zabiła' to refren-oskarżenie. Za każdym razem zmienia kontekst (pytanie, skutek, wybaczenie). Ironia jest bronią poetki przeciw obojętności świata."},
+  {cat:"O Hani co się zabiła",catColor:"#9c3060",q:"Jak poetka tłumaczy samobójstwo Hani?",opts:["Hania była zła i zasłużyła na śmierć","'Chciała czegoś więcej. Świat był za ciasny dla niej' — ofiarą jest świat, nie Hania","Hania popełniła błąd z własnej głupoty","Hania zabiła się dla miłości"],ans:1,explain:"'Chciała czegoś więcej. Świat był za ciasny dla niej' — to zdanie to wyrok na świat, nie na Hanię. Samobójstwo jako efekt konfliktu wrażliwej jednostki z bezduszną rzeczywistością."},
+  {cat:"O Hani co się zabiła",catColor:"#9c3060",q:"Jakie jest przesłanie moralne wiersza 'O Hani co się zabiła'?",opts:["Samobójstwo jest zawsze złem moralnym","Świat jest winny obojętności — my wrócimy do codzienności i zapomnimy. To powinno nas zawstydzić","Kościół miał rację potępiając samobójców","Śmierć Hani była dobrym rozwiązaniem"],ans:1,explain:"Wiersz jest oskarżeniem obojętności — nie Hani. 'Wrócimy do życia i jego codzienności' — ta konkluzja to rachunek sumienia dla czytelnika."},
+  {cat:"O Hani co się zabiła",catColor:"#9c3060",q:"Jaki obraz Boga przedstawia poetka w wierszu o Hani?",opts:["Surowego sędziego potępiającego samobójców","Boga miłosiernego, który wybaczy, bo 'Bóg zna ludzki ból i ludzkie zagubienie'","Boga obojętnego wobec ludzkiego cierpienia","Boga nieistniejącego — ateistyczne przesłanie"],ans:1,explain:"'Bóg jej wybaczy, bo Bóg zna ludzki ból' — poetka odbiera Kościołowi prawo do potępienia samobójców. Bóg jest tu miłosierny i rozumiejący. To odważna teologicznie postawa."},
+  // PORÓWNANIE
+  {cat:"Porównanie wierszy",catColor:"#b87020",q:"Co łączy oba wiersze Iłłakowiczówny?",opts:["Oba mówią wyłącznie o miłości romantycznej","Oba dotyczą śmierci, empatii i perspektywy kobiety — różni je nastrój i rodzaj śmierci","Oba są wesołe i optymistyczne","Oba krytykują Kościół katolicki"],ans:1,explain:"Oba wiersze dotyczą śmierci i empatii — różni je nastrój ('Błękitna chwila' — melancholia, 'O Hani' — ironia i oskarżenie) oraz rodzaj śmierci (metaforyczna vs konkretna)."},
+  {cat:"Porównanie wierszy",catColor:"#b87020",q:"Jaka jest kluczowa różnica w nastroju obu wierszy?",opts:["Oba są radosne","'Błękitna chwila' — melancholijny liryk kontemplacyjny. 'O Hani' — gorzki, ironiczny, oskarżycielski","'Błękitna chwila' jest ironiczna, 'O Hani' — melancholijna","Oba są dramatyczne i gwałtowne"],ans:1,explain:"'Błękitna chwila' jest melancholijna i kontemplacyjna — pełna lirycznej zadumy. 'O Hani' jest gorzka i ironiczna — pełna oskarżenia pod adresem obojętnego społeczeństwa."},
+  {cat:"Porównanie wierszy",catColor:"#b87020",q:"Czym różni się podmiot liryczny w obu wierszach?",opts:["W obu jest taki sam — dziecko","'Błękitna chwila' — intymne 'ja' wyznające; 'O Hani' — obserwator społeczny oskarżający","'Błękitna chwila' — narrator zewnętrzny; 'O Hani' — brak podmiotu","Podmiot w obu jest mężczyzną"],ans:1,explain:"W 'Błękitnej chwili' podmiot jest intymny — 'ja' liryczne wyznaje własne przeżycia. W 'O Hani' podmiot staje się obserwatorem społecznym, głosem oskarżającym obojętność zbiorowości."},
+];
+
+if(typeof ALL_BANKS !== 'undefined') {
+  ALL_BANKS['illak'] = QB_ILLAK;
+  ALL_BANKS['all'] = [...(ALL_BANKS['all']||[]), ...QB_ILLAK];
+  BANK_LABELS['illak'] = 'Iłłakowiczówna';
+}
+
+function switchView(v){
+  ['cards','quiz','nota'].forEach(id=>{
+    document.getElementById('view-'+id).style.display='none';
+    document.getElementById('btn-'+id)?.classList.remove('active');
+  });
+  document.getElementById('view-'+v).style.display='block';
+  document.getElementById('btn-'+v)?.classList.add('active');
+}
+
+function renderNavStatus(){
+  const td=getTopicData(TOPIC_ID);const status=td.status||'';
+  const el=document.getElementById('nav-status');
+  el.innerHTML=`
+    <button class="nav-sbtn${status==='done'?' sd':''}" onclick="toggleStatus('done')">✓ Zaliczone</button>
+    <button class="nav-sbtn${status==='focus'?' sf':''}" onclick="toggleStatus('focus')">★ Powtórka</button>
+    <button class="nav-sbtn${status==='hard'?' sh':''}" onclick="toggleStatus('hard')">! Trudny</button>`;
+}
+function toggleStatus(s){
+  const p=gp();if(!p[TOPIC_ID])p[TOPIC_ID]={};
+  p[TOPIC_ID].status=(p[TOPIC_ID].status===s?'':s);sp(p);renderNavStatus();
+}
+renderNavStatus();
+if(typeof updateHubScores==='function') updateHubScores();
+</script>
+</body>
+</html>
