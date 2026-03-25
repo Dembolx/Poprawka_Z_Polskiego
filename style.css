@@ -971,3 +971,198 @@ h1 span {
   line-height: 1.6;
   opacity: 0.7;
 }
+
+/* ============================================================
+   AUDIO PLAYER — responsive, mobile-first
+   ============================================================ */
+body {
+  padding-bottom: 5.5rem !important;
+}
+
+#audio-player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(14, 12, 8, 0.97);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  /* Mobile: 3-row grid */
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto auto;
+  column-gap: 0.7rem;
+  row-gap: 0.3rem;
+  padding: 0.6rem 0.9rem 0.55rem;
+  align-items: center;
+}
+
+/* ── Title (row 1, col 1) ── */
+.ap-title-wrap {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+}
+.ap-eyebrow {
+  font-size: 0.52rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 0.1rem;
+}
+.ap-title {
+  font-family: "Playfair Display", serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ── Play button (row 1, col 2) ── */
+.ap-play-btn {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--gold);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    background 0.15s,
+    transform 0.1s;
+  -webkit-tap-highlight-color: transparent;
+  align-self: center;
+}
+.ap-play-btn:active {
+  background: var(--gold2);
+  transform: scale(0.93);
+}
+
+/* ── Scrubber (row 2, col 1) ── */
+.ap-scrubber-wrap {
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.ap-bar {
+  position: relative;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 3px;
+  cursor: pointer;
+  touch-action: none;
+  user-select: none;
+}
+.ap-fill {
+  height: 100%;
+  width: 0%;
+  background: var(--gold);
+  border-radius: 3px;
+  pointer-events: none;
+  transition: width 0.25s linear;
+}
+.ap-thumb {
+  position: absolute;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--gold2);
+  pointer-events: none;
+  transform: translate(50%, -50%);
+  right: 100%;
+  box-shadow: 0 0 0 3px rgba(232, 201, 106, 0.18);
+  transition: right 0.25s linear;
+}
+.ap-time-row {
+  display: flex;
+  justify-content: space-between;
+}
+.ap-cur,
+.ap-dur {
+  font-size: 0.6rem;
+  color: var(--ink2);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Controls (row 3, full width) ── */
+.ap-controls {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding-top: 0.1rem;
+}
+.ap-speed {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--ink2);
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.66rem;
+  padding: 0.28rem 0.4rem;
+  border-radius: 6px;
+  cursor: pointer;
+  min-width: 56px;
+}
+.ap-vol-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  flex: 1;
+}
+.ap-vol-icon {
+  flex-shrink: 0;
+  opacity: 0.55;
+}
+.ap-vol {
+  flex: 1;
+  accent-color: var(--gold);
+  height: 4px;
+  cursor: pointer;
+  min-width: 60px;
+}
+
+/* ─── Desktop (≥ 520px): collapse to single row ─── */
+@media (min-width: 520px) {
+  #audio-player {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 0.7rem 1rem;
+    padding: 0.7rem 1.5rem;
+  }
+  .ap-title-wrap {
+    flex: 0 0 auto;
+    min-width: 0;
+    max-width: 180px;
+  }
+  .ap-play-btn {
+    flex-shrink: 0;
+    grid-row: unset;
+  }
+  .ap-scrubber-wrap {
+    flex: 1;
+    min-width: 100px;
+  }
+  .ap-controls {
+    flex: 0 0 auto;
+    padding-top: 0;
+  }
+}
