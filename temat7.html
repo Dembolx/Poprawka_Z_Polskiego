@@ -1,0 +1,1814 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Temat 7 · Pawlikowska-Jasnorzewska</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="shared_styles.css" />
+    <style>
+      :root {
+        --rose: #c4607a;
+        --rose2: #e8a0b0;
+        --rose-dim: rgba(196, 96, 122, 0.15);
+        --plum: #7a3d6e;
+        --plum2: #b87aac;
+        --cream: #f5e6d8;
+      }
+      /* ── NAV ── */
+      .topnav {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        background: rgba(14, 12, 8, 0.92);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 0.7rem 1.5rem;
+        flex-wrap: wrap;
+      }
+      .nav-back {
+        font-size: 0.7rem;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: var(--ink2);
+        text-decoration: none;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 0.3rem 0.8rem;
+        border-radius: 100px;
+        transition: all 0.18s;
+        white-space: nowrap;
+      }
+      .nav-back:hover {
+        border-color: var(--gold);
+        color: var(--gold);
+      }
+      .nav-title {
+        font-size: 0.78rem;
+        color: var(--ink2);
+        flex: 1;
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .nav-status-wrap {
+        display: flex;
+        gap: 0.35rem;
+        flex-wrap: wrap;
+      }
+      .nav-sbtn {
+        font-size: 0.58rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        padding: 0.26rem 0.65rem;
+        border-radius: 100px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        background: rgba(255, 255, 255, 0.05);
+        color: var(--ink2);
+        cursor: pointer;
+        transition: all 0.15s;
+        font-family: "DM Sans", sans-serif;
+      }
+      .nav-sbtn:hover {
+        border-color: rgba(255, 255, 255, 0.3);
+        color: var(--ink);
+      }
+      .nav-sbtn.sd {
+        background: rgba(42, 125, 95, 0.2);
+        border-color: #2a7d5f;
+        color: #6acca8;
+      }
+      .nav-sbtn.sf {
+        background: rgba(201, 168, 76, 0.2);
+        border-color: #c9a84c;
+        color: #e8c96a;
+      }
+      .nav-sbtn.sh {
+        background: rgba(200, 75, 47, 0.2);
+        border-color: #c84b2f;
+        color: #f09080;
+      }
+
+      /* ── HEADER ── */
+      header {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        padding: 3rem 2rem 0;
+      }
+      .eyebrow {
+        font-size: 0.72rem;
+        font-weight: 500;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--rose);
+        margin-bottom: 0.7rem;
+      }
+      h1 {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(1.8rem, 5vw, 3.8rem);
+        font-weight: 900;
+        line-height: 1.1;
+        color: var(--ink);
+        letter-spacing: -0.02em;
+      }
+      h1 em {
+        color: var(--rose2);
+        font-style: italic;
+      }
+      .sub {
+        margin-top: 0.6rem;
+        font-size: 0.9rem;
+        color: var(--ink2);
+      }
+      .divider {
+        width: 60px;
+        height: 1px;
+        background: var(--rose);
+        margin: 1.2rem auto 0;
+        opacity: 0.5;
+      }
+
+      /* ── TOGGLE BAR ── */
+      .toggle-bar {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 1.5rem 1rem 0.5rem;
+        flex-wrap: wrap;
+      }
+      .toggle-btn {
+        font-family: "DM Sans", sans-serif;
+        font-size: 0.72rem;
+        font-weight: 500;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        padding: 0.5rem 1.2rem;
+        border-radius: 100px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        background: rgba(255, 255, 255, 0.04);
+        color: var(--ink2);
+        cursor: pointer;
+        transition: all 0.18s;
+      }
+      .toggle-btn:hover {
+        border-color: rgba(255, 255, 255, 0.25);
+        color: var(--ink);
+      }
+      .toggle-btn.active {
+        background: var(--rose-dim);
+        border-color: var(--rose);
+        color: var(--rose2);
+      }
+
+      /* ── PAGE WRAPPER ── */
+      .page {
+        position: relative;
+        z-index: 1;
+        max-width: 1050px;
+        margin: 0 auto;
+        padding: 2rem 1.5rem 5rem;
+      }
+
+      @keyframes fu {
+        from {
+          opacity: 0;
+          transform: translateY(14px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* ── HERO BANNER ── */
+      .hero-band {
+        background: linear-gradient(
+          135deg,
+          rgba(196, 96, 122, 0.18) 0%,
+          rgba(122, 61, 110, 0.15) 50%,
+          rgba(184, 112, 32, 0.1) 100%
+        );
+        border: 1px solid rgba(196, 96, 122, 0.25);
+        border-radius: 14px;
+        padding: 2rem 2.4rem;
+        margin-bottom: 2.5rem;
+        animation: fu 0.5s ease;
+      }
+      .hero-eyebrow {
+        font-size: 0.6rem;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--rose);
+        margin-bottom: 0.5rem;
+      }
+      .hero-title {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(1.4rem, 3vw, 2.2rem);
+        font-weight: 900;
+        color: var(--ink);
+        margin-bottom: 0.6rem;
+        line-height: 1.2;
+      }
+      .hero-title em {
+        color: var(--rose2);
+        font-style: italic;
+      }
+      .hero-sub {
+        font-size: 0.85rem;
+        color: var(--ink2);
+        line-height: 1.7;
+        max-width: 720px;
+      }
+      .hero-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 1rem;
+      }
+      .htag {
+        font-size: 0.62rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        padding: 0.25rem 0.75rem;
+        border-radius: 100px;
+        border: 1px solid;
+        font-weight: 600;
+      }
+
+      /* ── SECTION HEAD ── */
+      .sec-head {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        margin: 2.2rem 0 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+      }
+      .sec-icon {
+        font-size: 1.1rem;
+      }
+      .sec-title {
+        font-family: "Playfair Display", serif;
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--ink);
+      }
+      .sec-line {
+        flex: 1;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.05);
+      }
+
+      /* ── INFO CARDS GRID ── */
+      .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 0.9rem;
+        margin-bottom: 1.5rem;
+      }
+      .icard {
+        background: rgba(255, 255, 255, 0.025);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 10px;
+        padding: 1rem 1.1rem;
+        animation: fu 0.5s ease both;
+      }
+      .icard-icon {
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+      }
+      .icard-title {
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: var(--ink);
+        margin-bottom: 0.3rem;
+      }
+      .icard-desc {
+        font-size: 0.74rem;
+        color: var(--ink2);
+        line-height: 1.6;
+      }
+      .icard-desc strong {
+        color: var(--ink);
+      }
+      .icard.rose {
+        border-color: rgba(196, 96, 122, 0.3);
+        background: rgba(196, 96, 122, 0.06);
+      }
+      .icard.plum {
+        border-color: rgba(122, 61, 110, 0.3);
+        background: rgba(122, 61, 110, 0.06);
+      }
+      .icard.gold {
+        border-color: rgba(201, 168, 76, 0.3);
+        background: rgba(201, 168, 76, 0.06);
+      }
+      .icard.teal {
+        border-color: rgba(42, 125, 95, 0.3);
+        background: rgba(42, 125, 95, 0.06);
+      }
+
+      /* ── NOTE BLOCK ── */
+      .note-block {
+        background: rgba(255, 255, 255, 0.025);
+        border-left: 3px solid var(--rose);
+        border-radius: 0 8px 8px 0;
+        padding: 1rem 1.2rem;
+        margin-bottom: 1rem;
+        font-size: 0.87rem;
+        line-height: 1.75;
+        color: var(--ink2);
+      }
+      .note-block strong {
+        color: var(--ink);
+      }
+      .note-block em {
+        color: var(--rose2);
+        font-style: italic;
+      }
+
+      /* ── POEM CARD ── */
+      .poem-card {
+        background: rgba(196, 96, 122, 0.06);
+        border: 1px solid rgba(196, 96, 122, 0.2);
+        border-radius: 10px;
+        padding: 1.4rem 1.6rem;
+        margin-bottom: 1.2rem;
+        animation: fu 0.5s ease both;
+      }
+      .poem-num {
+        font-size: 0.6rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--rose);
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+      }
+      .poem-title {
+        font-family: "Playfair Display", serif;
+        font-size: 1.05rem;
+        font-weight: 700;
+        color: var(--ink);
+        margin-bottom: 0.8rem;
+      }
+      .poem-text {
+        font-family: "Playfair Display", serif;
+        font-style: italic;
+        font-size: 0.92rem;
+        line-height: 2;
+        color: var(--ink);
+        white-space: pre-line;
+        border-left: 2px solid rgba(196, 96, 122, 0.4);
+        padding-left: 1rem;
+        margin-bottom: 1rem;
+      }
+      .poem-analysis {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 0.6rem;
+        margin-top: 0.8rem;
+      }
+      .pa-item {
+        background: rgba(255, 255, 255, 0.03);
+        border-radius: 7px;
+        padding: 0.55rem 0.8rem;
+      }
+      .pa-label {
+        font-size: 0.58rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--rose);
+        margin-bottom: 0.2rem;
+        font-weight: 600;
+      }
+      .pa-val {
+        font-size: 0.75rem;
+        color: var(--ink2);
+        line-height: 1.5;
+      }
+      .pa-val strong {
+        color: var(--ink);
+      }
+
+      /* ── KW GRID ── */
+      .kw-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+        gap: 0.6rem;
+        margin-bottom: 1.2rem;
+      }
+      .kw {
+        background: rgba(196, 96, 122, 0.07);
+        border: 1px solid rgba(196, 96, 122, 0.2);
+        border-radius: 8px;
+        padding: 0.65rem 0.9rem;
+      }
+      .kw-term {
+        font-size: 0.78rem;
+        font-weight: 600;
+        color: var(--rose2);
+        margin-bottom: 0.15rem;
+      }
+      .kw-def {
+        font-size: 0.7rem;
+        color: var(--ink2);
+        line-height: 1.5;
+      }
+
+      /* ── COMPARE ── */
+      .cmp {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
+      @media (max-width: 560px) {
+        .cmp {
+          grid-template-columns: 1fr;
+        }
+      }
+      .cmp-col {
+        background: rgba(255, 255, 255, 0.025);
+        border-radius: 8px;
+        padding: 1rem 1.1rem;
+      }
+      .cmp-head {
+        font-size: 0.65rem;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 0.7rem;
+        padding-bottom: 0.4rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .cmp-row {
+        font-size: 0.75rem;
+        color: var(--ink2);
+        padding: 0.3rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+        line-height: 1.5;
+      }
+      .cmp-row:last-child {
+        border-bottom: none;
+      }
+      .cmp-row strong {
+        color: var(--ink);
+      }
+
+      /* ── TIMELINE ── */
+      .tl {
+        margin-bottom: 1.2rem;
+      }
+      .tl-item {
+        display: flex;
+        gap: 1rem;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      .tl-item:last-child {
+        border-bottom: none;
+      }
+      .tl-year {
+        font-family: "Playfair Display", serif;
+        font-size: 0.82rem;
+        font-weight: 700;
+        color: var(--rose);
+        width: 3.8rem;
+        flex-shrink: 0;
+        padding-top: 0.1rem;
+      }
+      .tl-text {
+        font-size: 0.8rem;
+        color: var(--ink2);
+        line-height: 1.6;
+      }
+      .tl-text strong {
+        color: var(--ink);
+      }
+
+      /* ── QUIZ ── */
+      .quiz-area {
+        padding: 0;
+      }
+      .quiz-title-bar {
+        font-size: 0.6rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--rose);
+        margin-bottom: 1.2rem;
+        font-weight: 600;
+      }
+      .q-card {
+        background: rgba(196, 96, 122, 0.05);
+        border: 1px solid rgba(196, 96, 122, 0.15);
+        border-radius: 10px;
+        padding: 1.2rem;
+        margin-bottom: 0.8rem;
+      }
+      .q-text {
+        font-size: 0.88rem;
+        font-weight: 500;
+        color: var(--ink);
+        margin-bottom: 0.9rem;
+        line-height: 1.6;
+      }
+      .q-opts {
+        display: flex;
+        flex-direction: column;
+        gap: 0.45rem;
+      }
+      .q-opt {
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 7px;
+        padding: 0.55rem 0.9rem;
+        font-size: 0.8rem;
+        color: var(--ink2);
+        cursor: pointer;
+        transition: all 0.15s;
+        font-family: "DM Sans", sans-serif;
+        text-align: left;
+      }
+      .q-opt:hover:not(.disabled) {
+        border-color: rgba(196, 96, 122, 0.4);
+        color: var(--ink);
+      }
+      .q-opt.correct {
+        background: rgba(42, 125, 95, 0.2);
+        border-color: #2a7d5f;
+        color: #6acca8;
+      }
+      .q-opt.wrong {
+        background: rgba(200, 75, 47, 0.15);
+        border-color: #c84b2f;
+        color: #f09080;
+      }
+      .q-opt.disabled {
+        cursor: default;
+      }
+      .q-feedback {
+        font-size: 0.75rem;
+        color: var(--ink2);
+        margin-top: 0.6rem;
+        padding: 0.5rem 0.7rem;
+        background: rgba(255, 255, 255, 0.03);
+        border-radius: 6px;
+        display: none;
+        line-height: 1.5;
+      }
+      .q-feedback.show {
+        display: block;
+      }
+      .q-feedback.ok {
+        color: #6acca8;
+      }
+      .q-feedback.bad {
+        color: #f09080;
+      }
+      .quiz-score {
+        background: rgba(196, 96, 122, 0.08);
+        border: 1px solid rgba(196, 96, 122, 0.2);
+        border-radius: 8px;
+        padding: 0.8rem 1rem;
+        font-size: 0.82rem;
+        color: var(--rose2);
+        text-align: center;
+        display: none;
+        margin-top: 0.8rem;
+      }
+      .quiz-score.show {
+        display: block;
+      }
+      .quiz-controls {
+        display: flex;
+        gap: 0.6rem;
+        margin-top: 0.8rem;
+        flex-wrap: wrap;
+      }
+      .q-btn {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        color: var(--ink2);
+        font-family: "DM Sans", sans-serif;
+        font-size: 0.72rem;
+        padding: 0.45rem 1rem;
+        border-radius: 100px;
+        cursor: pointer;
+        transition: all 0.15s;
+      }
+      .q-btn:hover {
+        border-color: var(--rose);
+        color: var(--rose2);
+      }
+      .q-btn.primary {
+        background: rgba(196, 96, 122, 0.12);
+        border-color: var(--rose);
+        color: var(--rose2);
+      }
+
+      /* ── NOTE TABLE ── */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.78rem;
+        margin-bottom: 1.2rem;
+      }
+      th {
+        background: rgba(196, 96, 122, 0.1);
+        color: var(--rose2);
+        font-size: 0.62rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        padding: 0.55rem 0.8rem;
+        text-align: left;
+        border-bottom: 1px solid rgba(196, 96, 122, 0.2);
+      }
+      td {
+        padding: 0.55rem 0.8rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        color: var(--ink2);
+        vertical-align: top;
+        line-height: 1.6;
+      }
+      tr:last-child td {
+        border-bottom: none;
+      }
+      td strong {
+        color: var(--ink);
+      }
+
+      @media (max-width: 640px) {
+        .page {
+          padding: 1.5rem 1rem 5rem;
+        }
+        .hero-band {
+          padding: 1.4rem 1.2rem;
+        }
+        .cards-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="topnav">
+      <a href="index.html" class="nav-back">← Hub</a>
+      <span class="nav-title">🌸 Pawlikowska-Jasnorzewska · Pocałunki</span>
+      <div class="nav-status-wrap" id="nav-status"></div>
+    </nav>
+
+    <header>
+      <p class="eyebrow">Temat 7 · Kazimiera Pawlikowska-Jasnorzewska</p>
+      <h1>Życie, twórczość<br />i <em>epigramaty</em></h1>
+      <p class="sub">Tom „Pocałunki" · Analiza · Charakterystyka · Quiz</p>
+      <div class="divider"></div>
+    </header>
+
+    <div class="toggle-bar">
+      <button class="toggle-btn active" id="btn-zycie" onclick="sw('zycie')">
+        👩 Życie i twórczość
+      </button>
+      <button class="toggle-btn" id="btn-epigramaty" onclick="sw('epigramaty')">
+        💋 Epigramaty
+      </button>
+      <button class="toggle-btn" id="btn-analiza" onclick="sw('analiza')">
+        🔍 Analiza
+      </button>
+      <button class="toggle-btn" id="btn-quiz" onclick="sw('quiz')">
+        🎯 Quiz
+      </button>
+      <button class="toggle-btn" id="btn-nota" onclick="sw('nota')">
+        📝 Notatka
+      </button>
+    </div>
+
+    <!-- ================================================================
+     ZAKŁADKA 1: ŻYCIE I TWÓRCZOŚĆ
+     ================================================================ -->
+    <div id="view-zycie" class="page">
+      <div class="hero-band">
+        <div class="hero-eyebrow">
+          Kazimiera Pawlikowska-Jasnorzewska · 1891–1945
+        </div>
+        <div class="hero-title">
+          „<em>Księżniczka poezji polskiej</em>"<br />i mistrzyni miniatury
+          lirycznej
+        </div>
+        <div class="hero-sub">
+          Jedna z najwybitniejszych poetek polskiego dwudziestolecia. Słynna z
+          kunsztu słowa, dowcipu, lekkości formy i głębokiej emocjonalności.
+          Była malarką, dramatopisarką i przede wszystkim — poetką miłości.
+        </div>
+        <div class="hero-tags">
+          <span
+            class="htag"
+            style="
+              color: var(--rose2);
+              border-color: rgba(196, 96, 122, 0.4);
+              background: var(--rose-dim);
+            "
+            >Dwudziestolecie</span
+          >
+          <span
+            class="htag"
+            style="
+              color: var(--plum2);
+              border-color: rgba(122, 61, 110, 0.4);
+              background: rgba(122, 61, 110, 0.1);
+            "
+            >Liryk intymny</span
+          >
+          <span
+            class="htag"
+            style="
+              color: var(--gold);
+              border-color: rgba(201, 168, 76, 0.35);
+              background: rgba(201, 168, 76, 0.08);
+            "
+            >Epigramat</span
+          >
+          <span
+            class="htag"
+            style="
+              color: #6acca8;
+              border-color: rgba(42, 125, 95, 0.35);
+              background: rgba(42, 125, 95, 0.08);
+            "
+            >Skamander (orbituje)</span
+          >
+        </div>
+      </div>
+
+      <div class="sec-head">
+        <span class="sec-icon">📅</span>
+        <div class="sec-title">Biografia — kluczowe daty</div>
+        <div class="sec-line"></div>
+      </div>
+      <div class="tl">
+        <div class="tl-item">
+          <div class="tl-year">1891</div>
+          <div class="tl-text">
+            Urodzi się w Krakowie jako Kazimiera Gustawa Bzowska. Pochodzi z
+            rodziny artystycznej — ojciec Wojciech Kossak, słynny malarz
+            batalistyczny.
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">1906</div>
+          <div class="tl-text">
+            Pierwsze wiersze — zaczyna pisać jako nastolatka. Uczy się
+            malarstwa, interesuje się sztuką i literaturą.
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">1916</div>
+          <div class="tl-text">
+            Pierwszy tom poezji: <strong>„Śpiąca załoga"</strong>. Debiut
+            literacki — wiersze liryczne, intymne.
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">1926</div>
+          <div class="tl-text">
+            Tom <strong>„Pocałunki"</strong> — przełomowe dzieło z epigramatami
+            miłosnymi. Ogromny sukces. Staje się symbolem kobiecej liryki
+            dwudziestolecia.
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">1928</div>
+          <div class="tl-text">
+            Poślubia Jana Gwalberta Pawlikowskiego — stąd nazwisko Pawlikowska.
+            Potem wychodzi za Jana Jasnorzewskiego — podwójne nazwisko.
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">1930s</div>
+          <div class="tl-text">
+            Intensywna twórczość poetycka i dramatyczna. Tomy:
+            <em>Różowa magia</em>, <em>Cisza leśna</em>, <em>Krystalizacje</em>.
+            Dramaty wystawiane w teatrach.
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">1939</div>
+          <div class="tl-text">
+            Wybucha II wojna. Pawlikowska wyjeżdża z mężem do Anglii. Tworzy na
+            emigracji — wiersze wojenne, dramaty. Zmienia ton na tragiczny.
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">1945</div>
+          <div class="tl-text">
+            Umiera na raka w Manchesterze, mając 54 lata. Nie dożywa końca
+            wojny. Pochowana w Manchesterze.
+          </div>
+        </div>
+      </div>
+
+      <div class="sec-head">
+        <span class="sec-icon">✍️</span>
+        <div class="sec-title">Charakterystyka twórczości</div>
+        <div class="sec-line"></div>
+      </div>
+      <div class="cards-grid">
+        <div class="icard rose" style="animation-delay: 0.05s">
+          <div class="icard-icon">💎</div>
+          <div class="icard-title">Miniatura liryczna</div>
+          <div class="icard-desc">
+            Specjalizuje się w
+            <strong>krótkich, skondensowanych wierszach</strong>. Mówi w 4–8
+            wersach to, czego inni nie powiedzą w całym tomie. Mistrzostwo
+            skrótu poetyckiego.
+          </div>
+        </div>
+        <div class="icard plum" style="animation-delay: 0.1s">
+          <div class="icard-icon">💋</div>
+          <div class="icard-title">Tematyka miłości</div>
+          <div class="icard-desc">
+            Miłość jako centralny temat —
+            <strong>pożądanie, tęsknota, rozczarowanie, ironia</strong>. Pisze o
+            miłości kobiecym głosem — bez wstydu, bez eufemizmów.
+          </div>
+        </div>
+        <div class="icard gold" style="animation-delay: 0.15s">
+          <div class="icard-icon">😄</div>
+          <div class="icard-title">Ironia i dowcip</div>
+          <div class="icard-desc">
+            Subtelny humor i autoironia — wyróżnik jej stylu.
+            <strong>Pointy zaskakują</strong>, często wywracają oczekiwania.
+            Gracja i wdzięk nawet w bólu.
+          </div>
+        </div>
+        <div class="icard teal" style="animation-delay: 0.2s">
+          <div class="icard-icon">🎨</div>
+          <div class="icard-title">Wrażliwość malarska</div>
+          <div class="icard-desc">
+            Córka malarza, sama malarka —
+            <strong>obrazowość i kolorystyka</strong> w wierszach. Precyzja
+            wizualnego szczegółu. Synestezja: kolor, zapach, dotyk.
+          </div>
+        </div>
+        <div class="icard rose" style="animation-delay: 0.25s">
+          <div class="icard-icon">🪶</div>
+          <div class="icard-title">Lekkość formy</div>
+          <div class="icard-desc">
+            <strong>Pozorna prostota</strong> — wiersz wydaje się lekki, a
+            niesie głęboką treść. „Księżniczka poezji" — elegancja bez ciężaru,
+            lekkość bez płytkości.
+          </div>
+        </div>
+        <div class="icard plum" style="animation-delay: 0.3s">
+          <div class="icard-icon">👩</div>
+          <div class="icard-title">Perspektywa kobieca</div>
+          <div class="icard-desc">
+            Pionierka <strong>kobiecego głosu w polskiej liryce</strong>. Mówi o
+            kobiecym ciele, pożądaniu i emocjach — odważnie jak nikt wcześniej w
+            polskiej poezji.
+          </div>
+        </div>
+      </div>
+
+      <div class="sec-head">
+        <span class="sec-icon">📚</span>
+        <div class="sec-title">Ważne tomy poetyckie</div>
+        <div class="sec-line"></div>
+      </div>
+      <div class="cards-grid">
+        <div class="icard" style="animation-delay: 0.05s">
+          <div class="icard-icon">🌙</div>
+          <div class="icard-title">Śpiąca załoga (1916)</div>
+          <div class="icard-desc">
+            Debiut poetycki. Wiersze liryczne, intymne, jeszcze kształtujące
+            się.
+          </div>
+        </div>
+        <div class="icard rose" style="animation-delay: 0.1s">
+          <div class="icard-icon">💋</div>
+          <div class="icard-title">Pocałunki (1926)</div>
+          <div class="icard-desc">
+            <strong>Najważniejszy tom.</strong> Epigramaty miłosne — arcydzieło
+            miniatury. Przełom w polskiej liryce kobiecej.
+          </div>
+        </div>
+        <div class="icard" style="animation-delay: 0.15s">
+          <div class="icard-icon">🌸</div>
+          <div class="icard-title">Różowa magia (1924)</div>
+          <div class="icard-desc">
+            Wiersze o miłości, kobiecości, naturze. Kontynuacja intymnej liryki.
+          </div>
+        </div>
+        <div class="icard" style="animation-delay: 0.2s">
+          <div class="icard-icon">🌲</div>
+          <div class="icard-title">Cisza leśna (1928)</div>
+          <div class="icard-desc">
+            Wiersze natury — symbolika lasu, przyrody. Zmiana tonu na bardziej
+            kontemplacyjny.
+          </div>
+        </div>
+        <div class="icard" style="animation-delay: 0.25s">
+          <div class="icard-icon">❄️</div>
+          <div class="icard-title">Krystalizacje (1937)</div>
+          <div class="icard-desc">
+            Dojrzały tom przedwojenny — głębsza refleksja, melancholia,
+            świadomość przemijania.
+          </div>
+        </div>
+        <div class="icard" style="animation-delay: 0.3s">
+          <div class="icard-icon">⚔️</div>
+          <div class="icard-title">Wiersze wojenne (1940s)</div>
+          <div class="icard-desc">
+            Twórczość emigracyjna — ton tragiczny, nostalgia za Polską, diagnoza
+            katastrofy.
+          </div>
+        </div>
+      </div>
+
+      <div class="sec-head">
+        <span class="sec-icon">🌍</span>
+        <div class="sec-title">Kontekst — miejsce w literaturze</div>
+        <div class="sec-line"></div>
+      </div>
+      <div class="cmp">
+        <div class="cmp-col">
+          <div class="cmp-head" style="color: var(--rose2)">
+            🌸 Pawlikowska — czym się wyróżnia
+          </div>
+          <div class="cmp-row">
+            <strong>Forma:</strong> Miniatura, epigramat — mistrzostwo skrótu
+          </div>
+          <div class="cmp-row">
+            <strong>Temat:</strong> Miłość kobieca — pożądanie, ironia, ból
+          </div>
+          <div class="cmp-row">
+            <strong>Ton:</strong> Lekki, dowcipny — nawet o bólu pisze z gracją
+          </div>
+          <div class="cmp-row">
+            <strong>Nowość:</strong> Kobiecy podmiot liryczny bez wstydu i
+            eufemizmu
+          </div>
+          <div class="cmp-row">
+            <strong>Związki:</strong> Bliska Skamandrytem — witalizm, życie,
+            teraźniejszość
+          </div>
+        </div>
+        <div class="cmp-col">
+          <div class="cmp-head" style="color: var(--gold)">
+            📜 Tradycja, którą kontynuuje
+          </div>
+          <div class="cmp-row">
+            <strong>Epigramat:</strong> Tradycja starożytna (Safona, Anakreont)
+            + renesansowa
+          </div>
+          <div class="cmp-row">
+            <strong>Miłość:</strong> Kontynuuje tradycję liryki miłosnej — ale
+            po kobiecemu
+          </div>
+          <div class="cmp-row">
+            <strong>Ironia:</strong> Nawiązanie do romantycznej ironii — dystans
+            wobec uczuć
+          </div>
+          <div class="cmp-row">
+            <strong>Natura:</strong> Symbolizm — przyroda jako zwierciadło
+            emocji
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================================================================
+     ZAKŁADKA 2: EPIGRAMATY
+     ================================================================ -->
+    <div id="view-epigramaty" class="page" style="display: none">
+      <div class="note-block">
+        <strong>Epigramat</strong> — krótki utwór poetycki (zwykle 2–8 wersów)
+        oparty na <em>zaskakującej pointcie</em>. Tradycja starożytna: Grecy,
+        Rzymianie (Marcjalis). W polskiej literaturze — miniatura myśli i
+        uczucia. Pawlikowska czyni z epigramatu swój główny instrument wyrazu.
+      </div>
+
+      <div class="sec-head">
+        <span class="sec-icon">💋</span>
+        <div class="sec-title">
+          Epigramaty z tomu „Pocałunki" (1926) — analiza
+        </div>
+        <div class="sec-line"></div>
+      </div>
+
+      <div class="poem-card" style="animation-delay: 0.05s">
+        <div class="poem-num">Epigramat I · najsłynniejszy</div>
+        <div class="poem-title">Miłość</div>
+        <div class="poem-text">
+          Miłość ci wszystko wybaczy — lecz nie zapomni niczego.
+        </div>
+        <div class="poem-analysis">
+          <div class="pa-item">
+            <div class="pa-label">Temat</div>
+            <div class="pa-val">
+              Paradoks miłości — przebaczenie bez zapomnienia
+            </div>
+          </div>
+          <div class="pa-item">
+            <div class="pa-label">Figura</div>
+            <div class="pa-val">
+              <strong>Antytezy</strong> — wybaczyć vs. nie zapomnieć
+            </div>
+          </div>
+          <div class="pa-item">
+            <div class="pa-label">Pointa</div>
+            <div class="pa-val">
+              Niespodziewana — miłość nie jest bezwarunkowa jak się wydaje
+            </div>
+          </div>
+          <div class="pa-item">
+            <div class="pa-label">Forma</div>
+            <div class="pa-val">2 wersy — maksymalna kondensacja</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="poem-card" style="animation-delay: 0.1s">
+        <div class="poem-num">Epigramat II</div>
+        <div class="poem-title">Miłość (II)</div>
+        <div class="poem-text">
+          Kocham cię. To znaczy: jestem gotowa dla ciebie na wszystko — prócz
+          czekania.
+        </div>
+        <div class="poem-analysis">
+          <div class="pa-item">
+            <div class="pa-label">Temat</div>
+            <div class="pa-val">Miłość jako gotowość — z jednym wyjątkiem</div>
+          </div>
+          <div class="pa-item">
+            <div class="pa-label">Figura</div>
+            <div class="pa-val">
+              <strong>Oksymoron przez negację</strong> — „wszystko, prócz"
+            </div>
+          </div>
+          <div class="pa-item">
+            <div class="pa-label">Pointa</div>
+            <div class="pa-val">
+              Czekanie to największa ofiara — silniejsza niż miłość?
+            </div>
+          </div>
+          <div class="pa-item">
+            <div class="pa-label">Ironia</div>
+            <div class="pa-val">Autoironia wobec własnej niecierpliwości</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="poem-card" style="animation-delay: 0.15s">
+        <div class="poem-num">Epigramat III</div>
+        <div class="poem-title">Pocałunek</div>
+        <div class="poem-text">
+          Dotknęłam twoich ust — i nagle się zrobiło jasno i cicho, jak po
+          strzale.
+        </div>
+        <div class="poem-analysis">
+          <div class="pa-item">
+            <div class="pa-label">Temat</div>
+            <div class="pa-val">Pocałunek jako doświadczenie graniczne</div>
+          </div>
+          <div class="pa-item">
+            <div class="pa-label">Figura</div>
+            <div class="pa-val">
+              <strong>Porównanie</strong> — jak po strzale; synestezja (jasno i
+              cicho)
+            </div>
+          </div>
+          <div class="pa-item">
+            <div class="pa-label">Pointa</div>
+            <div class="pa-val">
+              Miłość i śmierć w jednym obrazie — eros i tanatos
+            </div>
+          </div>
+          <div class="pa-item">
+            <div class="pa-label">Nastrój</div>
+            <div class="pa-val">Czułość przekształca się w gwałtowność</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="poem-card" style="animation-delay: 0.2s">
+        <div class="poem-num">Epigramat IV</div>
+        <div class="poem-title">Nieobecność</div>
+        <div class="poem-text">
+          Byłeś. Nie ma cię. Jaka wielka różnica między niczym a niczym.
+        </div>
+        <div class="poem-analysis">
+          <div class="pa-item">
+            <div class="pa-label">Temat</div>
+            <div class="pa-val">Strata — po miłości zostaje pustka</div>
+          </div>
+          <div class="pa-item">
+            <div class="pa-label">Figura</div>
+            <div class="pa-val">
+              <strong>Paradoks</strong> — różnica między „niczym a niczym"
+            </div>
+          </div>
+          <div class="pa-item">
+            <div class="pa-label">Pointa</div>
+            <div class="pa-val">
+              Przed miłością i po miłości — pozornie to samo, ale całkowicie
+              inne
+            </div>
+          </div>
+          <div class="pa-item">
+            <div class="pa-label">Emocja</div>
+            <div class="pa-val">
+              Ból wyrażony przez pozorną obojętność — kontrolowany ból
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="poem-card" style="animation-delay: 0.25s">
+        <div class="poem-num">Epigramat V</div>
+        <div class="poem-title">Zazdrość</div>
+        <div class="poem-text">
+          Żebym miała tysiąc rąk — wszystkie by były zajęte trzymaniem cię.
+        </div>
+        <div class="poem-analysis">
+          <div class="pa-item">
+            <div class="pa-label">Temat</div>
+            <div class="pa-val">Obsesyjna miłość — pragnienie posiadania</div>
+          </div>
+          <div class="pa-item">
+            <div class="pa-label">Figura</div>
+            <div class="pa-val">
+              <strong>Hiperbola</strong> — tysiąc rąk; tryb warunkowy
+            </div>
+          </div>
+          <div class="pa-item">
+            <div class="pa-label">Pointa</div>
+            <div class="pa-val">
+              Ironia: nadmiar miłości jako więzienie dla kochanego
+            </div>
+          </div>
+          <div class="pa-item">
+            <div class="pa-label">Ton</div>
+            <div class="pa-val">
+              Humorystyczny — autoironia wobec własnej obsesji
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="poem-card" style="animation-delay: 0.3s">
+        <div class="poem-num">Epigramat VI · tonalnie inny</div>
+        <div class="poem-title">Wiosna</div>
+        <div class="poem-text">
+          Przyszłaś znowu, wiosno, z zapachem bzów — a ja nie mam już nikogo,
+          dla kogo chciałabym być piękna.
+        </div>
+        <div class="poem-analysis">
+          <div class="pa-item">
+            <div class="pa-label">Temat</div>
+            <div class="pa-val">
+              Samotność wobec wiosny — kontrast natury i pustki
+            </div>
+          </div>
+          <div class="pa-item">
+            <div class="pa-label">Figura</div>
+            <div class="pa-val">
+              <strong>Apostrofa</strong> do wiosny; symbolika bzu (miłość,
+              wiosna, młodość)
+            </div>
+          </div>
+          <div class="pa-item">
+            <div class="pa-label">Pointa</div>
+            <div class="pa-val">
+              Piękno bez adresata traci sens — miłość nadaje sens zmysłom
+            </div>
+          </div>
+          <div class="pa-item">
+            <div class="pa-label">Nastrój</div>
+            <div class="pa-val">Elegijny — melancholia bez egzaltacji</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================================================================
+     ZAKŁADKA 3: ANALIZA EPIGRAMATU
+     ================================================================ -->
+    <div id="view-analiza" class="page" style="display: none">
+      <div class="sec-head">
+        <span class="sec-icon">🔍</span>
+        <div class="sec-title">Czym jest epigramat — definicja i cechy</div>
+        <div class="sec-line"></div>
+      </div>
+      <div class="kw-grid">
+        <div class="kw">
+          <div class="kw-term">Epigramat</div>
+          <div class="kw-def">
+            Krótki utwór (2–8 wersów) z zaskakującą pointą. Tradycja gr.-łac.
+            Kondensacja myśli i emocji.
+          </div>
+        </div>
+        <div class="kw">
+          <div class="kw-term">Pointa</div>
+          <div class="kw-def">
+            Zaskakujące zakończenie, które odwraca lub pogłębia sens całego
+            wiersza. Serce epigramatu.
+          </div>
+        </div>
+        <div class="kw">
+          <div class="kw-term">Antyteza</div>
+          <div class="kw-def">
+            Zestawienie przeciwieństw — „wybaczyć / nie zapomnieć". Napędza
+            paradoks.
+          </div>
+        </div>
+        <div class="kw">
+          <div class="kw-term">Oksymoron</div>
+          <div class="kw-def">
+            Połączenie sprzeczności w jednym wyrażeniu — „wszystko, prócz".
+          </div>
+        </div>
+        <div class="kw">
+          <div class="kw-term">Paradoks</div>
+          <div class="kw-def">
+            Twierdzenie pozornie sprzeczne, ale prawdziwe — „różnica między
+            niczym a niczym".
+          </div>
+        </div>
+        <div class="kw">
+          <div class="kw-term">Hiperbola</div>
+          <div class="kw-def">
+            Przesadnia — „tysiąc rąk". Służy wyrażeniu intensywności uczucia.
+          </div>
+        </div>
+        <div class="kw">
+          <div class="kw-term">Synestezja</div>
+          <div class="kw-def">
+            Mieszanie zmysłów — „jasno i cicho" (wzrok + słuch).
+            Charakterystyczna dla Pawlikowskiej.
+          </div>
+        </div>
+        <div class="kw">
+          <div class="kw-term">Miniatura liryczna</div>
+          <div class="kw-def">
+            Skrajnie krótki wiersz — maksimum treści w minimum słów.
+          </div>
+        </div>
+      </div>
+
+      <div class="sec-head">
+        <span class="sec-icon">📐</span>
+        <div class="sec-title">Jak analizować epigramat — schemat</div>
+        <div class="sec-line"></div>
+      </div>
+      <div class="note-block">
+        Analizując epigramat Pawlikowskiej, zawsze odpowiedz na
+        <strong>5 pytań</strong>:<br /><br />
+        <strong>1. Temat</strong> — o czym jest wiersz? Co jest opisywanym
+        uczuciem/sytuacją?<br />
+        <strong>2. Podmiot liryczny</strong> — kto mówi? (często: kobieta
+        zakochana, autorka)<br />
+        <strong>3. Figura retoryczna</strong> — antyteza? paradoks? hiperbola?
+        synestezja?<br />
+        <strong>4. Pointa</strong> — gdzie jest zaskoczenie? Co odwraca
+        oczekiwania?<br />
+        <strong>5. Nastrój i ton</strong> — ironiczny? elegijny? czuły?
+        dramatyczny?
+      </div>
+
+      <div class="sec-head">
+        <span class="sec-icon">⚖️</span>
+        <div class="sec-title">Cechy charakterystyczne stylu Pawlikowskiej</div>
+        <div class="sec-line"></div>
+      </div>
+      <div class="cmp">
+        <div class="cmp-col">
+          <div class="cmp-head" style="color: var(--rose2)">
+            💋 Co ją wyróżnia FORMALNIE
+          </div>
+          <div class="cmp-row">
+            <strong>Zwięzłość:</strong> Mówi maksimum w minimum słów
+          </div>
+          <div class="cmp-row">
+            <strong>Pointa:</strong> Zawsze zaskakujące zakończenie
+          </div>
+          <div class="cmp-row">
+            <strong>Rytm:</strong> Wolny wiersz — bez rymu, ale z melodią
+          </div>
+          <div class="cmp-row">
+            <strong>Obrazowość:</strong> Konkretny, zmysłowy obraz zamiast
+            abstrakcji
+          </div>
+          <div class="cmp-row">
+            <strong>Prostota:</strong> Proste słowa — skomplikowane znaczenia
+          </div>
+        </div>
+        <div class="cmp-col">
+          <div class="cmp-head" style="color: var(--plum2)">
+            💜 Co ją wyróżnia TREŚCIOWO
+          </div>
+          <div class="cmp-row">
+            <strong>Kobiecy podmiot:</strong> Mówi jako kobieta, nie wstydzi się
+          </div>
+          <div class="cmp-row">
+            <strong>Ironia:</strong> Dystans wobec własnych emocji
+          </div>
+          <div class="cmp-row">
+            <strong>Paradoks miłości:</strong> Miłość jako sprzeczność, nie
+            ideał
+          </div>
+          <div class="cmp-row">
+            <strong>Eros i tanatos:</strong> Miłość i śmierć w jednym obrazie
+          </div>
+          <div class="cmp-row">
+            <strong>Codzienność:</strong> Wielkie uczucia w małych gestach
+          </div>
+        </div>
+      </div>
+
+      <div class="sec-head">
+        <span class="sec-icon">🎓</span>
+        <div class="sec-title">Tom „Pocałunki" (1926) — znaczenie</div>
+        <div class="sec-line"></div>
+      </div>
+      <div class="note-block">
+        Tom ukazał się w <strong>1926 roku</strong> — jest przełomem w polskiej
+        poezji kobiecej. Po raz pierwszy kobieta mówi o
+        <em>miłości, pożądaniu i ciele</em> bez wstydu, bez przeprosin, z pełną
+        swobodą. Epigramaty z „Pocałunków" stały się klasyką — cytowane, znane,
+        wchodzące do kanonu. Tytuł tomu jest programowy:
+        <strong>pocałunek jako symbol</strong> — intymność, zmysłowość,
+        chwilowość, bliskość.
+      </div>
+
+      <div class="sec-head">
+        <span class="sec-icon">🔗</span>
+        <div class="sec-title">Motywy przewodnie tomu</div>
+        <div class="sec-line"></div>
+      </div>
+      <div class="cards-grid">
+        <div class="icard rose">
+          <div class="icard-icon">💔</div>
+          <div class="icard-title">Paradoks miłości</div>
+          <div class="icard-desc">
+            Miłość nie jest prosta — jest pełna sprzeczności. Przebaczenie vs.
+            pamięć, bliskość vs. ból, wszystko vs. nic.
+          </div>
+        </div>
+        <div class="icard plum">
+          <div class="icard-icon">⏱️</div>
+          <div class="icard-title">Chwilowość</div>
+          <div class="icard-desc">
+            Miłość istnieje w chwili — <strong>tu i teraz</strong>. Chwila
+            pocałunku, chwila obecności. Przemijanie jako temat.
+          </div>
+        </div>
+        <div class="icard gold">
+          <div class="icard-icon">🪞</div>
+          <div class="icard-title">Kobiecość i ciało</div>
+          <div class="icard-desc">
+            Ciało kobiece jako podmiot, nie przedmiot. Kobieta patrzy i pragnie
+            — nie jest tylko obiektem pożądania.
+          </div>
+        </div>
+        <div class="icard teal">
+          <div class="icard-icon">😏</div>
+          <div class="icard-title">Ironia jako tarcza</div>
+          <div class="icard-desc">
+            Ironia chroni przed sentymentalizmem.
+            <strong>Śmiech i ból razem</strong> — nie płacze, ale boli nie
+            mniej.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================================================================
+     ZAKŁADKA 4: QUIZ
+     ================================================================ -->
+    <div id="view-quiz" class="page" style="display: none">
+      <div class="quiz-title-bar">
+        🎯 Quiz — Pawlikowska-Jasnorzewska · Pocałunki
+      </div>
+      <div id="quiz-container"></div>
+      <div class="quiz-score" id="quiz-score"></div>
+      <div class="quiz-controls">
+        <button class="q-btn primary" onclick="checkScore()">
+          Sprawdź wynik
+        </button>
+        <button class="q-btn" onclick="resetQuiz()">↺ Nowe pytania</button>
+      </div>
+    </div>
+
+    <!-- ================================================================
+     ZAKŁADKA 5: NOTATKA
+     ================================================================ -->
+    <div id="view-nota" class="page" style="display: none">
+      <div class="sec-head">
+        <span class="sec-icon">📋</span>
+        <div class="sec-title">Notatka podsumowująca</div>
+        <div class="sec-line"></div>
+      </div>
+
+      <div class="note-block">
+        <strong>Kazimiera Pawlikowska-Jasnorzewska (1891–1945)</strong> —
+        poetka, malarka, dramatopisarka. Córka Wojciecha Kossaka. Zginęła na
+        emigracji w Manchesterze. <em>„Księżniczka poezji polskiej"</em> —
+        mistrzyni miniatury i epigramatu.
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Aspekt</th>
+            <th>Opis</th>
+            <th>Przykład</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Gatunek</strong></td>
+            <td>Epigramat — krótki utwór z pointą</td>
+            <td>„Miłość ci wszystko wybaczy — / lecz nie zapomni niczego."</td>
+          </tr>
+          <tr>
+            <td><strong>Forma</strong></td>
+            <td>Miniatura liryczna, wolny wiersz, brak rymu</td>
+            <td>2–6 wersów, proste słowa, skondensowany sens</td>
+          </tr>
+          <tr>
+            <td><strong>Tematyka</strong></td>
+            <td>Miłość, pożądanie, tęsknota, ironia, strata</td>
+            <td>Pocałunek, nieobecność, zazdrość, wiosna</td>
+          </tr>
+          <tr>
+            <td><strong>Styl</strong></td>
+            <td>Zwięzłość + pointa + ironia + obrazowość</td>
+            <td>Paradoks, antyteza, hiperbola, synestezja</td>
+          </tr>
+          <tr>
+            <td><strong>Nowość</strong></td>
+            <td>Kobiecy podmiot liryczny bez wstydu</td>
+            <td>Kobieta pragnie, mówi o ciele — pionierstwo</td>
+          </tr>
+          <tr>
+            <td><strong>Tom kluczowy</strong></td>
+            <td>Pocałunki (1926)</td>
+            <td>Przełom w polskiej liryce kobiecej</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="sec-head">
+        <span class="sec-icon">🧠</span>
+        <div class="sec-title">Pojęcia do zapamiętania</div>
+        <div class="sec-line"></div>
+      </div>
+      <div class="kw-grid">
+        <div class="kw">
+          <div class="kw-term">Epigramat</div>
+          <div class="kw-def">Krótki utwór z pointą. Tradycja antyczna.</div>
+        </div>
+        <div class="kw">
+          <div class="kw-term">Pointa</div>
+          <div class="kw-def">Zaskakujące zakończenie odwracające sens.</div>
+        </div>
+        <div class="kw">
+          <div class="kw-term">Antyteza</div>
+          <div class="kw-def">Zestawienie przeciwieństw w wierszu.</div>
+        </div>
+        <div class="kw">
+          <div class="kw-term">Paradoks</div>
+          <div class="kw-def">Sprzeczne, ale prawdziwe twierdzenie.</div>
+        </div>
+        <div class="kw">
+          <div class="kw-term">Miniatura liryczna</div>
+          <div class="kw-def">Bardzo krótki wiersz — maks. treści.</div>
+        </div>
+        <div class="kw">
+          <div class="kw-term">Synestezja</div>
+          <div class="kw-def">Mieszanie wrażeń zmysłowych.</div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      /* ── View switching ── */
+      function sw(v) {
+        ["zycie", "epigramaty", "analiza", "quiz", "nota"].forEach((id) => {
+          document.getElementById("view-" + id).style.display = "none";
+          document.getElementById("btn-" + id).classList.remove("active");
+        });
+        document.getElementById("view-" + v).style.display = "block";
+        document.getElementById("btn-" + v).classList.add("active");
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      /* ── Progress helpers (shared with quiz_engine) ── */
+      function gp() {
+        try {
+          return JSON.parse(localStorage.getItem("polski_progress") || "{}");
+        } catch {
+          return {};
+        }
+      }
+      function sp(d) {
+        try {
+          localStorage.setItem("polski_progress", JSON.stringify(d));
+        } catch {}
+      }
+      function getTopicData(id) {
+        return gp()[id] || {};
+      }
+
+      /* ── Nav status ── */
+      const TOPIC_ID = "pawlikowska";
+      function renderNavStatus() {
+        const td = getTopicData(TOPIC_ID);
+        const st = td.status || "";
+        document.getElementById("nav-status").innerHTML = `
+    <button class="nav-sbtn${st === "done" ? " sd" : ""}" onclick="toggleSt('done')">✓ Zaliczone</button>
+    <button class="nav-sbtn${st === "focus" ? " sf" : ""}" onclick="toggleSt('focus')">★ Powtórka</button>
+    <button class="nav-sbtn${st === "hard" ? " sh" : ""}" onclick="toggleSt('hard')">! Trudny</button>`;
+      }
+      function toggleSt(s) {
+        const p = gp();
+        if (!p[TOPIC_ID]) p[TOPIC_ID] = {};
+        p[TOPIC_ID].status = p[TOPIC_ID].status === s ? "" : s;
+        sp(p);
+        renderNavStatus();
+      }
+      renderNavStatus();
+
+      /* ── QUIZ ── */
+      const ALL_Q = [
+        {
+          q: "Kiedy urodziła się Pawlikowska-Jasnorzewska?",
+          opts: ["1880", "1891", "1901", "1910"],
+          ans: 1,
+          fb: "Urodziła się w 1891 roku w Krakowie jako Kazimiera Gustawa Bzowska.",
+        },
+        {
+          q: "Jak nazywał się ojciec poetki?",
+          opts: [
+            "Jan Kossak",
+            "Stefan Kossak",
+            "Wojciech Kossak",
+            "Adam Kossak",
+          ],
+          ans: 2,
+          fb: "Ojciec Wojciech Kossak był słynnym malarzem batalistycznym.",
+        },
+        {
+          q: "W którym roku ukazał się tom 'Pocałunki'?",
+          opts: ["1916", "1924", "1926", "1930"],
+          ans: 2,
+          fb: "Tom 'Pocałunki' ukazał się w 1926 roku i stał się przełomem w polskiej liryce kobiecej.",
+        },
+        {
+          q: "Jak zginęła Pawlikowska-Jasnorzewska?",
+          opts: [
+            "Zginęła w Powstaniu Warszawskim",
+            "Umarła z głodu w obozie",
+            "Umarła na raka w Manchesterze na emigracji",
+            "Zginęła w bombardowaniu Warszawy",
+          ],
+          ans: 2,
+          fb: "Umarła na raka w Manchesterze w 1945 roku, nie dożywając końca wojny.",
+        },
+        {
+          q: "Czym jest epigramat?",
+          opts: [
+            "Długi poemat epicki",
+            "Krótki utwór z zaskakującą pointą",
+            "Dramat historyczny",
+            "Powieść poetycka",
+          ],
+          ans: 1,
+          fb: "Epigramat — krótki utwór poetycki (2–8 wersów) oparty na zaskakującej pointcie. Tradycja antyczna.",
+        },
+        {
+          q: "Jaką figurę retoryczną widać w 'Miłość ci wszystko wybaczy — lecz nie zapomni niczego'?",
+          opts: ["Hiperbola", "Synestezja", "Antyteza", "Apostrofa"],
+          ans: 2,
+          fb: "Antyteza — zestawienie przeciwieństw: wybaczyć vs. nie zapomnieć. Napędza paradoks.",
+        },
+        {
+          q: "Co oznacza pojęcie 'miniatura liryczna'?",
+          opts: [
+            "Powieść w pigułce",
+            "Bardzo krótki wiersz — maksimum treści w minimum słów",
+            "Małe pismo literackie",
+            "Krótki esej",
+          ],
+          ans: 1,
+          fb: "Miniatura liryczna to skrajnie krótki wiersz, w którym każde słowo niesie maksymalny ładunek znaczeniowy.",
+        },
+        {
+          q: "Jaką nowość wniosła Pawlikowska do polskiej poezji?",
+          opts: [
+            "Wprowadzenie rymu",
+            "Kobiecy podmiot liryczny mówiący o miłości bez wstydu",
+            "Epopeja narodowa",
+            "Wiersz sylabiczny",
+          ],
+          ans: 1,
+          fb: "Pionierka kobiecego głosu — mówi o kobiecym ciele, pożądaniu i emocjach odważnie jak nikt wcześniej.",
+        },
+        {
+          q: "Skąd pochodzi pseudonim 'Księżniczka poezji polskiej'?",
+          opts: [
+            "Sam ją tak nazywał Tuwim",
+            "Przydomek od krytyków za elegancję i lekkość formy",
+            "Tytuł jej dramatu",
+            "Od imienia bohaterki jej wierszy",
+          ],
+          ans: 1,
+          fb: "Przydomek nadany przez krytyków za połączenie elegancji, lekkości formy i głębokiej emocjonalności.",
+        },
+        {
+          q: "Co symbolizuje obraz 'jasno i cicho, jak po strzale' w epigramacie?",
+          opts: [
+            "Radość spotkania",
+            "Spokój natury",
+            "Eros i tanatos — miłość i śmierć w jednym obrazie",
+            "Ból rozstania",
+          ],
+          ans: 2,
+          fb: "Obraz łączy eros (miłość, pocałunek) z tanatosem (śmierć, strzał) — charakterystyczne dla Pawlikowskiej.",
+        },
+        {
+          q: "Jaki jest temat epigramatu 'Nieobecność' (Byłeś. Nie ma cię.)?",
+          opts: [
+            "Radość powrotu",
+            "Strata — po miłości zostaje pustka",
+            "Zazdrość",
+            "Oczekiwanie na miłość",
+          ],
+          ans: 1,
+          fb: "Temat to strata — paradoks 'różnicy między niczym a niczym': przed i po miłości, pozornie to samo, całkowicie inne.",
+        },
+        {
+          q: "Czym charakteryzuje się ironia w wierszach Pawlikowskiej?",
+          opts: [
+            "Jest złośliwa i raniąca",
+            "Chroni przed sentymentalizmem — śmiech i ból razem",
+            "Jest powierzchowna i pusta",
+            "Dotyczy wyłącznie innych ludzi",
+          ],
+          ans: 1,
+          fb: "Ironia jako tarcza — dystans wobec własnych emocji. Pawlikowska nie płacze, ale boli nie mniej. Śmiech i ból razem.",
+        },
+        {
+          q: "Jaką figurę retoryczną zawiera 'Żebym miała tysiąc rąk — wszystkie by były zajęte trzymaniem cię'?",
+          opts: ["Metafora", "Paradoks", "Apostrofa", "Hiperbola"],
+          ans: 3,
+          fb: "Hiperbola — 'tysiąc rąk' to przesadnia służąca wyrażeniu intensywności uczucia.",
+        },
+        {
+          q: "W jakim mieście Pawlikowska spędziła ostatnie lata i umarła?",
+          opts: ["Paryż", "Londyn", "Manchester", "Nowy Jork"],
+          ans: 2,
+          fb: "Pawlikowska wyjechała z mężem do Anglii w 1939 r. i umarła w Manchesterze w 1945 roku.",
+        },
+        {
+          q: "Czym jest 'pointa' w epigramacie?",
+          opts: [
+            "Tytuł wiersza",
+            "Pierwszy wers",
+            "Zaskakujące zakończenie odwracające lub pogłębiające sens",
+            "Refren",
+          ],
+          ans: 2,
+          fb: "Pointa — serce epigramatu. Zaskakujące zakończenie, które odwraca oczekiwania lub pogłębia sens całego wiersza.",
+        },
+        {
+          q: "Jakie zmysły łączy synestezja w 'jasno i cicho'?",
+          opts: [
+            "Dotyk i smak",
+            "Wzrok i słuch",
+            "Węch i dotyk",
+            "Smak i węch",
+          ],
+          ans: 1,
+          fb: "Synestezja — 'jasno' (wzrok) + 'cicho' (słuch). Mieszanie wrażeń zmysłowych charakterystyczne dla Pawlikowskiej.",
+        },
+        {
+          q: "Jak brzmi debiutancki tom Pawlikowskiej?",
+          opts: ["Pocałunki", "Różowa magia", "Śpiąca załoga", "Krystalizacje"],
+          ans: 2,
+          fb: "Debiut poetycki to 'Śpiąca załoga' (1916). Najważniejszy tom to późniejszy 'Pocałunki' (1926).",
+        },
+        {
+          q: "Z jakim nurtem literackim jest powiązana Pawlikowska?",
+          opts: [
+            "Futuryzm",
+            "Ekspresjonizm",
+            "Skamander (bliska, orbituje wokół)",
+            "Awangarda krakowska",
+          ],
+          ans: 2,
+          fb: "Pawlikowska jest bliska Skamandrytem — witalizm, codzienność, teraźniejszość — choć formalnie nie należy do grupy.",
+        },
+      ];
+
+      let quizState = { qs: [], ans: {} };
+
+      function shuffle(a) {
+        const b = [...a];
+        for (let i = b.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [b[i], b[j]] = [b[j], b[i]];
+        }
+        return b;
+      }
+
+      function prepQuiz() {
+        const pool = shuffle(ALL_Q).slice(0, 8);
+        return pool.map((q) => {
+          const opts = [...q.opts];
+          const correct = opts[q.ans];
+          for (let i = opts.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [opts[i], opts[j]] = [opts[j], opts[i]];
+          }
+          return { q: q.q, opts, ci: opts.indexOf(correct), fb: q.fb };
+        });
+      }
+
+      function buildQuiz() {
+        quizState = { qs: prepQuiz(), ans: {} };
+        const c = document.getElementById("quiz-container");
+        c.innerHTML = "";
+        document.getElementById("quiz-score").classList.remove("show");
+        quizState.qs.forEach((q, qi) => {
+          const card = document.createElement("div");
+          card.className = "q-card";
+          card.innerHTML = `<div class="q-text">${qi + 1}. ${q.q}</div>
+      <div class="q-opts">${q.opts.map((o, oi) => `<button class="q-opt" id="qo-${qi}-${oi}" onclick="ans(${qi},${oi})">${o}</button>`).join("")}</div>
+      <div class="q-feedback" id="qf-${qi}"></div>`;
+          c.appendChild(card);
+        });
+      }
+
+      function ans(qi, oi) {
+        if (quizState.ans[qi] !== undefined) return;
+        quizState.ans[qi] = oi;
+        const q = quizState.qs[qi];
+        q.opts.forEach((_, i) => {
+          const b = document.getElementById(`qo-${qi}-${i}`);
+          if (b) b.classList.add("disabled");
+        });
+        const ch = document.getElementById(`qo-${qi}-${oi}`);
+        const co = document.getElementById(`qo-${qi}-${q.ci}`);
+        if (ch) ch.classList.add(oi === q.ci ? "correct" : "wrong");
+        if (co && oi !== q.ci) co.classList.add("correct");
+        const fb = document.getElementById(`qf-${qi}`);
+        if (fb) {
+          fb.textContent = q.fb;
+          fb.classList.add("show", oi === q.ci ? "ok" : "bad");
+        }
+      }
+
+      function checkScore() {
+        const total = quizState.qs.length;
+        if (Object.keys(quizState.ans).length < total) {
+          alert("Odpowiedz na wszystkie pytania!");
+          return;
+        }
+        let c = 0;
+        quizState.qs.forEach((q, qi) => {
+          if (quizState.ans[qi] === q.ci) c++;
+        });
+        const pct = Math.round((c / total) * 100);
+        const el = document.getElementById("quiz-score");
+        el.textContent =
+          (pct >= 80 ? "🎉" : pct >= 60 ? "👍" : "📚") +
+          ` Wynik: ${c}/${total} (${pct}%)`;
+        el.classList.add("show");
+        /* save progress */
+        const p = gp();
+        if (!p[TOPIC_ID]) p[TOPIC_ID] = {};
+        p[TOPIC_ID].lastPct = pct;
+        if (!p[TOPIC_ID].history) p[TOPIC_ID].history = [];
+        p[TOPIC_ID].history.push({ pct, ts: Date.now() });
+        sp(p);
+      }
+
+      function resetQuiz() {
+        buildQuiz();
+      }
+
+      /* init */
+      buildQuiz();
+    </script>
+  </body>
+</html>

@@ -4,64 +4,145 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Polski – Sprawdzian · Hub</title>
-    <link rel="shortcut icon" href="assets/lucid-origin_Elegant_minimalist_logo_for_a_premium_educational_app_focused_on_literature_and_-0.jpg" type="image/x-icon"/>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="style.css"/>
+    <link
+      rel="shortcut icon"
+      href="assets/lucid-origin_Elegant_minimalist_logo_for_a_premium_educational_app_focused_on_literature_and_-0.jpg"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <p class="ey">Analiza Literacka · Polski</p>
       <h1><span>Sprawdzian</span> · Hub</h1>
-      <p class="sub">Ferdydurke · Przedwiośnie · Dwudziestolecie · Skamander · Futuryzm · Iłłakowiczówna · Twój postęp</p>
+      <p class="sub">
+        Ferdydurke · Przedwiośnie · Dwudziestolecie · Skamander · Lechoń ·
+        Pawlikowska · Futuryzm · Rok 1984 · Twój postęp
+      </p>
       <div class="div"></div>
     </header>
 
     <div class="page">
+      <!-- OVERALL PROGRESS -->
       <div class="ob">
         <div class="ot">
           <div class="otitle">📊 Twój postęp ogólny</div>
           <div class="opct" id="op">—</div>
         </div>
-        <div class="pb"><div class="pf" id="ob" style="width:0%"></div></div>
-        <div class="stats-row" id="stats-row"><div class="stat-pill">Brak wyników</div></div>
+        <div class="pb"><div class="pf" id="ob" style="width: 0%"></div></div>
+        <div class="stats-row" id="stats-row">
+          <div class="stat-pill" id="stat-avg">Brak wyników</div>
+        </div>
       </div>
 
-      <div id="now-studying-section" style="display:none;margin-bottom:2rem">
+      <!-- NOW STUDYING -->
+      <div id="now-studying-section" style="display: none; margin-bottom: 2rem">
         <div class="now-label">🔥 Teraz się uczę</div>
         <div class="tg" id="tg-now"></div>
       </div>
 
+      <!-- TAB BAR -->
       <div class="tab-bar">
-        <button class="tab-btn active" id="tab-active" onclick="switchTab('active')">📖 Do nauki <span class="tab-count" id="count-active"></span></button>
-        <button class="tab-btn" id="tab-passed" onclick="switchTab('passed')">✅ Zdane <span class="tab-count" id="count-passed"></span></button>
+        <button
+          class="tab-btn active"
+          id="tab-active"
+          onclick="switchTab('active')"
+        >
+          📖 Do nauki <span class="tab-count" id="count-active"></span>
+        </button>
+        <button class="tab-btn" id="tab-passed" onclick="switchTab('passed')">
+          ✅ Zdane <span class="tab-count" id="count-passed"></span>
+        </button>
       </div>
 
+      <!-- ACTIVE TOPICS VIEW -->
       <div id="view-active">
-        <div class="tg-label" id="lbl-ferdydurke">📚 Ferdydurke · Gombrowicz 1937</div>
+        <div class="tg-label" id="lbl-ferdydurke">
+          📚 Ferdydurke · Gombrowicz 1937
+        </div>
         <div class="tg" id="tg-ferdydurke"></div>
-        <div class="tg-label" id="lbl-przedwiosnie">🌿 Przedwiośnie · Żeromski 1924</div>
+        <div class="tg-label" id="lbl-przedwiosnie">
+          🌿 Przedwiośnie · Żeromski 1924
+        </div>
         <div class="tg" id="tg-przedwiosnie"></div>
-        <div class="tg-label" id="lbl-epoka">🏛️ Dwudziestolecie międzywojenne</div>
+        <div class="tg-label" id="lbl-epoka">
+          🏛️ Dwudziestolecie międzywojenne
+        </div>
         <div class="tg" id="tg-epoka"></div>
-        <div class="tg-label" id="lbl-skamander">🌸 Skamander · Julian Tuwim</div>
+        <div class="tg-label" id="lbl-skamander">
+          🌸 Skamander · Tuwim · Lechoń · Pawlikowska
+        </div>
         <div class="tg" id="tg-skamander"></div>
-        <div class="tg-label" id="lbl-futuryzm">⚙️ Futuryzm · Bruno Jasieński</div>
+        <div class="tg-label" id="lbl-futuryzm">
+          ⚙️ Futuryzm · Bruno Jasieński
+        </div>
         <div class="tg" id="tg-futuryzm"></div>
-        <div class="tg-label" id="lbl-illak">🌙 Kazimiera Iłłakowiczówna</div>
-        <div class="tg" id="tg-illak"></div>
-        <div id="all-done-msg" style="display:none;text-align:center;padding:3rem 1rem">
-          <div style="font-size:3rem;margin-bottom:1rem">🎉</div>
-          <div style="font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:var(--ink);margin-bottom:.5rem">Wszystkie tematy zdane!</div>
-          <div style="color:var(--ink2);font-size:.9rem">Przełącz na zakładkę „Zdane".</div>
+        <div class="tg-label" id="lbl-lektury">📖 Lektury · Proza światowa</div>
+        <div class="tg" id="tg-lektury"></div>
+        <div
+          id="all-done-msg"
+          style="display: none; text-align: center; padding: 3rem 1rem"
+        >
+          <div style="font-size: 3rem; margin-bottom: 1rem">🎉</div>
+          <div
+            style="
+              font-family: &quot;Playfair Display&quot;, serif;
+              font-size: 1.6rem;
+              font-weight: 700;
+              color: var(--ink);
+              margin-bottom: 0.5rem;
+            "
+          >
+            Wszystkie tematy zdane!
+          </div>
+          <div style="color: var(--ink2); font-size: 0.9rem">
+            Przełącz na zakładkę „Zdane", aby zobaczyć archiwum.
+          </div>
         </div>
       </div>
 
-      <div id="view-passed" style="display:none">
-        <div style="background:rgba(42,125,95,.08);border:1px solid rgba(42,125,95,.2);border-radius:10px;padding:1rem 1.4rem;margin-bottom:1.4rem;font-size:.82rem;color:#6acca8;line-height:1.5">
-          ✅ Tematy oznaczone jako <strong>zdane w kodzie</strong> (flaga <code style="background:rgba(255,255,255,.07);padding:.1rem .4rem;border-radius:4px;font-size:.78rem">false</code>).
+      <!-- PASSED TOPICS VIEW -->
+      <div id="view-passed" style="display: none">
+        <div
+          style="
+            background: rgba(42, 125, 95, 0.08);
+            border: 1px solid rgba(42, 125, 95, 0.2);
+            border-radius: 10px;
+            padding: 1rem 1.4rem;
+            margin-bottom: 1.4rem;
+            font-size: 0.82rem;
+            color: #6acca8;
+            line-height: 1.5;
+          "
+        >
+          ✅ Tematy oznaczone jako <strong>zdane w kodzie</strong> (flaga
+          <code
+            style="
+              background: rgba(255, 255, 255, 0.07);
+              padding: 0.1rem 0.4rem;
+              border-radius: 4px;
+              font-size: 0.78rem;
+            "
+            >false</code
+          >).
         </div>
         <div class="tg" id="tg-passed"></div>
-        <div id="no-passed-msg" style="display:none;text-align:center;padding:3rem 1rem;color:var(--ink2);font-size:.9rem">Brak zdanych tematów.</div>
+        <div
+          id="no-passed-msg"
+          style="
+            display: none;
+            text-align: center;
+            padding: 3rem 1rem;
+            color: var(--ink2);
+            font-size: 0.9rem;
+          "
+        >
+          Brak zdanych tematów.
+        </div>
       </div>
 
       <div class="stitle">📌 Zaznacz status każdego tematu</div>
@@ -69,212 +150,732 @@
 
       <div class="stitle">💡 Jak korzystać</div>
       <div class="tips">
-        <div class="tip"><div class="ti">🎯</div><div class="tt2">Ucz się tematycznie</div><div class="td">Każdy temat ma własną stronę z teorią, notatką i quizem.</div></div>
-        <div class="tip"><div class="ti">📌</div><div class="tt2">Zaznaczaj postęp</div><div class="td">Po przerobieniu zaznacz „Zaliczone". Trudne oznacz „Do powtórki".</div></div>
-        <div class="tip"><div class="ti">🔥</div><div class="tt2">Teraz się uczę</div><div class="td">Ustaw flagę <code style="background:rgba(255,255,255,.08);padding:.05rem .35rem;border-radius:3px">"now"</code> — temat trafi na górę strony.</div></div>
-        <div class="tip"><div class="ti">💡</div><div class="tt2">Zdane tematy</div><div class="td">Zmień flagę na <code style="background:rgba(255,255,255,.08);padding:.05rem .35rem;border-radius:3px">false</code> — temat przeniesie się do zakładki „Zdane".</div></div>
+        <div class="tip">
+          <div class="ti">🎯</div>
+          <div class="tt2">Ucz się tematycznie</div>
+          <div class="td">
+            Każdy temat ma własną stronę z teorią, notatką i quizem.
+          </div>
+        </div>
+        <div class="tip">
+          <div class="ti">📌</div>
+          <div class="tt2">Zaznaczaj postęp</div>
+          <div class="td">
+            Po przerobieniu zaznacz „Zaliczone". Trudne oznacz „Do powtórki".
+          </div>
+        </div>
+        <div class="tip">
+          <div class="ti">🔥</div>
+          <div class="tt2">Teraz się uczę</div>
+          <div class="td">
+            Ustaw flagę
+            <code
+              style="
+                background: rgba(255, 255, 255, 0.08);
+                padding: 0.05rem 0.35rem;
+                border-radius: 3px;
+              "
+              >"now"</code
+            >
+            — temat trafi na górę strony.
+          </div>
+        </div>
+        <div class="tip">
+          <div class="ti">💡</div>
+          <div class="tt2">Zdane tematy</div>
+          <div class="td">
+            Zmień flagę na
+            <code
+              style="
+                background: rgba(255, 255, 255, 0.08);
+                padding: 0.05rem 0.35rem;
+                border-radius: 3px;
+              "
+              >false</code
+            >
+            — temat przeniesie się do zakładki „Zdane".
+          </div>
+        </div>
       </div>
-      <button class="rb" onclick="confirmReset()">🗑 Wyczyść dane postępu</button>
+      <button class="rb" onclick="confirmReset()">
+        🗑 Wyczyść dane postępu
+      </button>
     </div>
 
-    <button id="dev-toggle" onclick="toggleDevPanel()" title="Panel dewelopera">⚙️</button>
+    <!-- DEV PANEL -->
+    <button id="dev-toggle" onclick="toggleDevPanel()" title="Panel dewelopera">
+      ⚙️
+    </button>
     <div id="dev-panel">
       <div class="dp-head">
-        <div><div class="dp-title">⚙️ Panel dewelopera</div><div class="dp-sub">Ręczne zarządzanie zaliczonymi tematami</div></div>
+        <div>
+          <div class="dp-title">⚙️ Panel dewelopera</div>
+          <div class="dp-sub">Ręczne zarządzanie zaliczonymi tematami</div>
+        </div>
         <button class="dp-close" onclick="toggleDevPanel()">✕</button>
       </div>
       <div class="dp-bulk">
-        <button class="dp-bulk-btn" onclick="bulkDone()">✓ Zalicz wszystkie</button>
-        <button class="dp-bulk-btn" onclick="bulkClear()">○ Odznacz wszystkie</button>
-        <button class="dp-bulk-btn danger" onclick="confirmReset()">🗑 Reset danych</button>
+        <button class="dp-bulk-btn" onclick="bulkDone()">
+          ✓ Zalicz wszystkie
+        </button>
+        <button class="dp-bulk-btn" onclick="bulkClear()">
+          ○ Odznacz wszystkie
+        </button>
+        <button class="dp-bulk-btn danger" onclick="confirmReset()">
+          🗑 Reset danych
+        </button>
       </div>
       <div id="dp-body"></div>
-      <div class="dp-info">Zaliczone tematy są <strong style="color:var(--ink)">wyszarzone i przekreślone</strong> na głównej liście.</div>
+      <div class="dp-info">
+        Zaliczone tematy są
+        <strong style="color: var(--ink)">wyszarzone i przekreślone</strong> na
+        głównej liście.
+      </div>
     </div>
 
     <style>
-      .stats-row{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.7rem;align-items:center}
-      .stat-pill{font-size:.72rem;color:var(--ink2);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);border-radius:100px;padding:.22rem .75rem;white-space:nowrap;line-height:1.5}
-      .stat-pill.sp-avg{color:var(--gold);background:rgba(201,168,76,.1);border-color:rgba(201,168,76,.25)}
-      .stat-pill.sp-done{color:#6acca8;background:rgba(42,125,95,.1);border-color:rgba(42,125,95,.25)}
-      .stat-pill.sp-now{color:#f97316;background:rgba(249,115,22,.1);border-color:rgba(249,115,22,.3)}
-      .now-label{font-size:.65rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#f97316;margin-bottom:.9rem;display:flex;align-items:center;gap:.5rem}
-      .now-label::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:#f97316;box-shadow:0 0 0 3px rgba(249,115,22,.25);animation:pulse 1.6s ease-in-out infinite}
-      @keyframes pulse{0%,100%{box-shadow:0 0 0 3px rgba(249,115,22,.25)}50%{box-shadow:0 0 0 7px rgba(249,115,22,.05)}}
-      .tc.is-now{border-color:rgba(249,115,22,.5)!important;box-shadow:0 0 0 1px rgba(249,115,22,.2),0 4px 24px rgba(249,115,22,.12)}
-      .tc.is-now::before{background:#f97316!important}
-      .tc.is-now::after{content:"🔥 Uczę się";position:absolute;top:.7rem;right:.9rem;font-size:.58rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#f97316;background:rgba(249,115,22,.12);border:1px solid rgba(249,115,22,.35);border-radius:100px;padding:.2rem .65rem;pointer-events:none}
-      .tab-bar{display:flex;gap:.5rem;margin:1.6rem 0 1.2rem;border-bottom:1px solid rgba(255,255,255,.08);padding-bottom:0}
-      .tab-btn{font-family:'DM Sans',sans-serif;font-size:.8rem;font-weight:500;letter-spacing:.08em;padding:.55rem 1.3rem .7rem;background:transparent;border:none;border-bottom:2px solid transparent;color:var(--ink2,#a89f88);cursor:pointer;transition:all .18s;display:flex;align-items:center;gap:.45rem;margin-bottom:-1px}
-      .tab-btn:hover{color:var(--ink,#f0ead8)}
-      .tab-btn.active{color:var(--gold,#c9a84c);border-bottom-color:var(--gold,#c9a84c)}
-      .tab-count{font-size:.65rem;font-weight:600;letter-spacing:.05em;background:rgba(255,255,255,.08);border-radius:100px;padding:.15rem .55rem;color:inherit}
-      .tab-btn.active .tab-count{background:rgba(201,168,76,.2)}
-      .tc.is-passed{opacity:.55;filter:grayscale(.4)}
-      .tc.is-passed::after{content:"✅ Zdane";position:absolute;top:.7rem;right:.9rem;font-size:.6rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#6acca8;background:rgba(42,125,95,.18);border:1px solid rgba(42,125,95,.35);border-radius:100px;padding:.2rem .6rem}
-      .badge-now{font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#f97316;background:rgba(249,115,22,.12);border:1px solid rgba(249,115,22,.35);border-radius:100px;padding:.15rem .55rem;margin-left:.5rem;vertical-align:middle}
-      .badge-passed{font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:#6acca8;background:rgba(42,125,95,.15);border:1px solid rgba(42,125,95,.3);border-radius:100px;padding:.15rem .55rem;margin-left:.5rem;vertical-align:middle}
-      .sr-now{border-color:rgba(249,115,22,.3)!important;background:rgba(249,115,22,.04)!important}
+      .stats-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 0.7rem;
+        align-items: center;
+      }
+      .stat-pill {
+        font-size: 0.72rem;
+        color: var(--ink2);
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.09);
+        border-radius: 100px;
+        padding: 0.22rem 0.75rem;
+        white-space: nowrap;
+        line-height: 1.5;
+        transition: all 0.2s;
+      }
+      .stat-pill.sp-avg {
+        color: var(--gold);
+        background: rgba(201, 168, 76, 0.1);
+        border-color: rgba(201, 168, 76, 0.25);
+      }
+      .stat-pill.sp-done {
+        color: #6acca8;
+        background: rgba(42, 125, 95, 0.1);
+        border-color: rgba(42, 125, 95, 0.25);
+      }
+      .stat-pill.sp-now {
+        color: #f97316;
+        background: rgba(249, 115, 22, 0.1);
+        border-color: rgba(249, 115, 22, 0.3);
+      }
+      .now-label {
+        font-size: 0.65rem;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #f97316;
+        margin-bottom: 0.9rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      .now-label::before {
+        content: "";
+        display: inline-block;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #f97316;
+        box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.25);
+        animation: pulse 1.6s ease-in-out infinite;
+      }
+      @keyframes pulse {
+        0%,
+        100% {
+          box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.25);
+        }
+        50% {
+          box-shadow: 0 0 0 7px rgba(249, 115, 22, 0.05);
+        }
+      }
+      .tc.is-now {
+        border-color: rgba(249, 115, 22, 0.5) !important;
+        box-shadow:
+          0 0 0 1px rgba(249, 115, 22, 0.2),
+          0 4px 24px rgba(249, 115, 22, 0.12);
+      }
+      .tc.is-now::before {
+        background: #f97316 !important;
+      }
+      .tc.is-now::after {
+        content: "🔥 Uczę się";
+        position: absolute;
+        top: 0.7rem;
+        right: 0.9rem;
+        font-size: 0.58rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #f97316;
+        background: rgba(249, 115, 22, 0.12);
+        border: 1px solid rgba(249, 115, 22, 0.35);
+        border-radius: 100px;
+        padding: 0.2rem 0.65rem;
+        pointer-events: none;
+      }
+      .tab-bar {
+        display: flex;
+        gap: 0.5rem;
+        margin: 1.6rem 0 1.2rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        padding-bottom: 0;
+      }
+      .tab-btn {
+        font-family: "DM Sans", sans-serif;
+        font-size: 0.8rem;
+        font-weight: 500;
+        letter-spacing: 0.08em;
+        padding: 0.55rem 1.3rem 0.7rem;
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid transparent;
+        color: var(--ink2, #a89f88);
+        cursor: pointer;
+        transition: all 0.18s;
+        display: flex;
+        align-items: center;
+        gap: 0.45rem;
+        margin-bottom: -1px;
+      }
+      .tab-btn:hover {
+        color: var(--ink, #f0ead8);
+      }
+      .tab-btn.active {
+        color: var(--gold, #c9a84c);
+        border-bottom-color: var(--gold, #c9a84c);
+      }
+      .tab-count {
+        font-size: 0.65rem;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 100px;
+        padding: 0.15rem 0.55rem;
+        color: inherit;
+      }
+      .tab-btn.active .tab-count {
+        background: rgba(201, 168, 76, 0.2);
+      }
+      .tc.is-passed {
+        opacity: 0.55;
+        filter: grayscale(0.4);
+      }
+      .tc.is-passed::after {
+        content: "✅ Zdane";
+        position: absolute;
+        top: 0.7rem;
+        right: 0.9rem;
+        font-size: 0.6rem;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #6acca8;
+        background: rgba(42, 125, 95, 0.18);
+        border: 1px solid rgba(42, 125, 95, 0.35);
+        border-radius: 100px;
+        padding: 0.2rem 0.6rem;
+      }
+      .badge-now {
+        font-size: 0.62rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #f97316;
+        background: rgba(249, 115, 22, 0.12);
+        border: 1px solid rgba(249, 115, 22, 0.35);
+        border-radius: 100px;
+        padding: 0.15rem 0.55rem;
+        margin-left: 0.5rem;
+        vertical-align: middle;
+      }
+      .badge-passed {
+        font-size: 0.65rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #6acca8;
+        background: rgba(42, 125, 95, 0.15);
+        border: 1px solid rgba(42, 125, 95, 0.3);
+        border-radius: 100px;
+        padding: 0.15rem 0.55rem;
+        margin-left: 0.5rem;
+        vertical-align: middle;
+      }
+      .sr-now {
+        border-color: rgba(249, 115, 22, 0.3) !important;
+        background: rgba(249, 115, 22, 0.04) !important;
+      }
     </style>
 
     <script>
       /* ============================================================
          ★★★  FLAGI TEMATÓW  ★★★
          true   = DO NAUKI
-         false  = ZDANY (przenosi do zakładki "Zdane")
-         "now"  = TERAZ SIĘ UCZĘ (pojawia się na górze)
+         false  = ZDANY
+         "now"  = TERAZ SIĘ UCZĘ
          ============================================================ */
       const TOPIC_FLAGS = {
-        temat1:          "now",   // Ferdydurke
-        temat2:          false,  // Nawłoć
-        temat3:          false,  // Wizje odbudowy Polski
-        temat4:          "now",   // Przedwiośnie – Analiza
-        temat6:          true,   // Iłłakowiczówna
-        temat8:          true,   // Futuryzm i Jasieński
-        temat9:          true,
-        temat10:         "now", // Fundament filozoficzny epoki
-        wojna_okupacja:  true,
+        temat1: "now", // Ferdydurke
+        temat2: false, // Nawłoć
+        temat3: false, // Wizje odbudowy Polski
+        temat4: "now", // Przedwiośnie – Analiza
+        temat5: true, // Jan Lechoń
+        temat6: true, // Iłłakowiczówna
+        temat7: true, // Pawlikowska
+        temat8: true, // Futuryzm i Jasieński
+        temat9: true, // Skamander · Tuwim
+        temat10: "now", // Fundament filozoficzny epoki
+        rok1984: true, // Rok 1984 · Orwell  ← NOWY
+        wojna_okupacja: true,
       };
 
       const T = [
-        { id:"ferdydurke",       flagKey:"temat1",         group:"ferdydurke",   l:"Ferdydurke",                   e:"📚", c:"#c84b2f", f:"temat1.html",          d:"Tytuł · Absurd · Awangarda · Groteska · Symbole · Miejsce akcji · Gombrowicz 1937" },
-        { id:"nawloc",           flagKey:"temat2",         group:"przedwiosnie", l:"Nawłoć",                       e:"🌿", c:"#2a7d5f", f:"temat2.html",          d:"Przestrzeń · Kontrast społeczny · Bohaterowie · Znaczenie dworku · Żeromski 1924" },
-        { id:"wizje",            flagKey:"temat3",         group:"przedwiosnie", l:"Wizje odbudowy Polski",        e:"🏛️", c:"#2458a0", f:"temat3.html",          d:"Seweryn · Szklane domy · Gajowiec · Lulek · Dylemat Cezarego · Żeromski 1924" },
-        { id:"przedwiosnie",     flagKey:"temat4",         group:"przedwiosnie", l:"Przedwiośnie – Analiza",       e:"🌱", c:"#b87020", f:"temat4.html",          d:"Fabuła · Charakterystyka bohaterów · Tytuł · Analiza porównawcza" },
-        { id:"dwudziestolecie",  flagKey:"temat10",        group:"epoka",        l:"Fundament filozoficzny epoki", e:"🏛️", c:"#9c3060", f:"temat10.html",         d:"Daty 1918–1939 · Hasła epoki · Freud, Nietzsche, Bergson · Kierunki literackie" },
-        { id:"skamander_tuwim",  flagKey:"temat9",         group:"skamander",    l:"Skamander · Julian Tuwim",     e:"🌸", c:"#6a3d9c", f:"temat9.html",          d:"Program Skamandra · Witalizm · Urbanizm · Do krytyków · Słowisień · Rzecz czarnoleska" },
-        { id:"futuryzm_jasienski",flagKey:"temat8",        group:"futuryzm",     l:"Futuryści · Bruno Jasieński",  e:"⚙️", c:"#c0362a", f:"temat8.html",          d:"Program futuryzmu · Reforma ortografii · But w butonierce · Manifesty" },
-        { id:"illak",            flagKey:"temat6",         group:"illak",        l:"Kazimiera Iłłakowiczówna",     e:"🌙", c:"#9a70cc", f:"temat6.html",          d:"Życie i twórczość · Charakterystyka poezji · Błękitna chwila · O Hani co się zabiła" },
-        { id:"wojna_okupacja",   flagKey:"wojna_okupacja", group:"epoka",        l:"Wojna i okupacja",             e:"⚔️", c:"#7a5c20", f:"wojna_i_okupacja.html", d:"II wojna · Baczyński · Miłosz · Różewicz · Borowski · Herling-Grudziński" },
+        {
+          id: "ferdydurke",
+          flagKey: "temat1",
+          group: "ferdydurke",
+          l: "Ferdydurke",
+          e: "📚",
+          c: "#c84b2f",
+          f: "temat1.html",
+          d: "Tytuł · Absurd · Awangarda · Groteska · Symbole · Miejsce akcji · Gombrowicz 1937",
+        },
+        {
+          id: "nawloc",
+          flagKey: "temat2",
+          group: "przedwiosnie",
+          l: "Nawłoć",
+          e: "🌿",
+          c: "#2a7d5f",
+          f: "temat2.html",
+          d: "Przestrzeń · Kontrast społeczny · Bohaterowie · Znaczenie dworku · Żeromski 1924",
+        },
+        {
+          id: "wizje",
+          flagKey: "temat3",
+          group: "przedwiosnie",
+          l: "Wizje odbudowy Polski",
+          e: "🏛️",
+          c: "#2458a0",
+          f: "temat3.html",
+          d: "Seweryn · Szklane domy · Gajowiec · Lulek · Dylemat Cezarego · Żeromski 1924",
+        },
+        {
+          id: "przedwiosnie",
+          flagKey: "temat4",
+          group: "przedwiosnie",
+          l: "Przedwiośnie – Analiza",
+          e: "🌱",
+          c: "#b87020",
+          f: "temat4.html",
+          d: "Fabuła · Charakterystyka bohaterów · Tytuł · Analiza porównawcza",
+        },
+        {
+          id: "dwudziestolecie",
+          flagKey: "temat10",
+          group: "epoka",
+          l: "Fundament filozoficzny",
+          e: "🏛️",
+          c: "#9c3060",
+          f: "temat10.html",
+          d: "Daty 1918–1939 · Hasła epoki · Freud, Nietzsche, Bergson · Kierunki literackie",
+        },
+        {
+          id: "lechoń",
+          flagKey: "temat5",
+          group: "skamander",
+          l: "Jan Lechoń",
+          e: "🪶",
+          c: "#2458a0",
+          f: "temat5.html",
+          d: "Życie · Herostrates · Mochnacki · Sejm · Pytasz co… · Spotkanie · Karmazynowy poemat",
+        },
+        {
+          id: "skamander_tuwim",
+          flagKey: "temat9",
+          group: "skamander",
+          l: "Skamander · Julian Tuwim",
+          e: "🌸",
+          c: "#6a3d9c",
+          f: "temat9.html",
+          d: "Program Skamandra · Witalizm · Urbanizm · Do krytyków · Słowisień · Rzecz czarnoleska",
+        },
+        {
+          id: "illakowiczowna",
+          flagKey: "temat6",
+          group: "skamander",
+          l: "Kazimiera Iłłakowiczówna",
+          e: "✒️",
+          c: "#8a4fb0",
+          f: "temat6.html",
+          d: "Życie · Liryka osobista · Religijność · Prostota języka · Refleksyjność · Motywy egzystencjalne",
+        },
+        {
+          id: "pawlikowska",
+          flagKey: "temat7",
+          group: "skamander",
+          l: "Pawlikowska-Jasnorzewska",
+          e: "🌸",
+          c: "#c4607a",
+          f: "temat7.html",
+          d: "Życie · Twórczość · Epigramaty · Tom Pocałunki · Analiza miniatur lirycznych",
+        },
+        {
+          id: "futuryzm_jasienski",
+          flagKey: "temat8",
+          group: "futuryzm",
+          l: "Futuryści · Bruno Jasieński",
+          e: "⚙️",
+          c: "#c0362a",
+          f: "temat8.html",
+          d: "Program futuryzmu · Reforma ortografii · But w butonierce · Manifesty",
+        },
+        // ★ NOWY TEMAT — ROK 1984 ★
+        {
+          id: "rok1984",
+          flagKey: "rok1984",
+          group: "lektury",
+          l: "Rok 1984 · George Orwell",
+          e: "📖",
+          c: "#c84b2f",
+          f: "rok1984.html",
+          d: "Dystopia · Totalitaryzm · Wielki Brat · Nowomowa · Winston Smith · Sala 101 · 1949",
+        },
+        {
+          id: "wojna_okupacja",
+          flagKey: "wojna_okupacja",
+          group: "epoka",
+          l: "Wojna i okupacja",
+          e: "⚔️",
+          c: "#7a5c20",
+          f: "wojna_i_okupacja.html",
+          d: "II wojna · Baczyński · Miłosz · Różewicz · Borowski · Herling-Grudziński",
+        },
       ];
 
-      function getFlag(t){return TOPIC_FLAGS[t.flagKey];}
-      function isPassed(t){return getFlag(t)===false;}
-      function isNow(t){return getFlag(t)==="now";}
-      function isActive(t){return !isPassed(t);}
-
-      const SC={
-        "":    {l:"Nie zaczęty",i:"○",c:"#a89f88",b:"rgba(168,159,136,.1)"},
-        done:  {l:"Zaliczone ✓",i:"✓",c:"#2a7d5f",b:"rgba(42,125,95,.15)"},
-        focus: {l:"Do powtórki",i:"★",c:"#c9a84c",b:"rgba(201,168,76,.15)"},
-        hard:  {l:"Trudny",     i:"!",c:"#c84b2f",b:"rgba(200,75,47,.15)"},
-      };
-      function gp(){try{return JSON.parse(localStorage.getItem("polski_progress")||"{}");}catch{return {};}}
-      function sp(d){try{localStorage.setItem("polski_progress",JSON.stringify(d));}catch{}}
-      function setStatus(id,s){const p=gp();if(!p[id])p[id]={};p[id].status=p[id].status===s?"":s;sp(p);renderAll();}
-
-      let currentTab="active";
-      function switchTab(tab){
-        currentTab=tab;
-        document.getElementById("view-active").style.display=tab==="active"?"":"none";
-        document.getElementById("view-passed").style.display=tab==="passed"?"":"none";
-        document.getElementById("tab-active").classList.toggle("active",tab==="active");
-        document.getElementById("tab-passed").classList.toggle("active",tab==="passed");
+      /* ── Flag helpers ── */
+      function getFlag(t) {
+        return TOPIC_FLAGS[t.flagKey];
+      }
+      function isPassed(t) {
+        return getFlag(t) === false;
+      }
+      function isNow(t) {
+        return getFlag(t) === "now";
+      }
+      function isActive(t) {
+        return !isPassed(t);
       }
 
-      function buildCard(t,p,i){
-        const td=p[t.id]||{};const st=td.status||"";const sc=SC[st];
-        const lp=td.lastPct;const hist=(td.history||[]).slice(-3).map(h=>h.pct+"%").join(" → ");
-        const isDone=st==="done";const passed=isPassed(t);const now=isNow(t);
-        const a=document.createElement("a");
-        a.href=t.f;
-        a.className="tc"+(isDone?" is-done":"")+(passed?" is-passed":"")+(now?" is-now":"");
-        a.style.cssText=`--tc:${now?"#f97316":t.c};animation-delay:${i*.07}s;position:relative`;
-        a.innerHTML=`
+      /* ── Progress ── */
+      const SC = {
+        "": {
+          l: "Nie zaczęty",
+          i: "○",
+          c: "#a89f88",
+          b: "rgba(168,159,136,.1)",
+        },
+        done: {
+          l: "Zaliczone ✓",
+          i: "✓",
+          c: "#2a7d5f",
+          b: "rgba(42,125,95,.15)",
+        },
+        focus: {
+          l: "Do powtórki",
+          i: "★",
+          c: "#c9a84c",
+          b: "rgba(201,168,76,.15)",
+        },
+        hard: { l: "Trudny", i: "!", c: "#c84b2f", b: "rgba(200,75,47,.15)" },
+      };
+      function gp() {
+        try {
+          return JSON.parse(localStorage.getItem("polski_progress") || "{}");
+        } catch {
+          return {};
+        }
+      }
+      function sp(d) {
+        try {
+          localStorage.setItem("polski_progress", JSON.stringify(d));
+        } catch {}
+      }
+      function setStatus(id, s) {
+        const p = gp();
+        if (!p[id]) p[id] = {};
+        p[id].status = p[id].status === s ? "" : s;
+        sp(p);
+        renderAll();
+      }
+
+      /* ── Tab ── */
+      let currentTab = "active";
+      function switchTab(tab) {
+        currentTab = tab;
+        document.getElementById("view-active").style.display =
+          tab === "active" ? "" : "none";
+        document.getElementById("view-passed").style.display =
+          tab === "passed" ? "" : "none";
+        document
+          .getElementById("tab-active")
+          .classList.toggle("active", tab === "active");
+        document
+          .getElementById("tab-passed")
+          .classList.toggle("active", tab === "passed");
+      }
+
+      /* ── Card builder ── */
+      function buildCard(t, p, i) {
+        const td = p[t.id] || {};
+        const st = td.status || "";
+        const sc = SC[st];
+        const lp = td.lastPct;
+        const hist = (td.history || [])
+          .slice(-3)
+          .map((h) => h.pct + "%")
+          .join(" → ");
+        const isDone = st === "done";
+        const passed = isPassed(t);
+        const now = isNow(t);
+        const a = document.createElement("a");
+        a.href = t.f;
+        a.className =
+          "tc" +
+          (isDone ? " is-done" : "") +
+          (passed ? " is-passed" : "") +
+          (now ? " is-now" : "");
+        a.style.cssText = `--tc:${now ? "#f97316" : t.c};animation-delay:${i * 0.07}s;position:relative`;
+        a.innerHTML = `
           <div class="tci">
-            <div class="tct"><div class="tce">${t.e}</div><div class="tcb" style="color:${sc.c};border-color:${sc.c}55;background:${sc.b}">${sc.i} ${sc.l}</div></div>
-            <div class="tcn${isDone?" done-text":""}">${t.l}${isDone?' <span style="font-size:.9rem;opacity:.5">✓</span>':""}</div>
+            <div class="tct">
+              <div class="tce">${t.e}</div>
+              <div class="tcb" style="color:${sc.c};border-color:${sc.c}55;background:${sc.b}">${sc.i} ${sc.l}</div>
+            </div>
+            <div class="tcn${isDone ? " done-text" : ""}">${t.l}${isDone ? ' <span style="font-size:.9rem;opacity:.5">✓</span>' : ""}</div>
             <div class="tcd">${t.d}</div>
-            <div class="tcr"><div class="tcsb"><div class="tcsf" style="width:${lp||0}%"></div></div><div class="tcst">${lp!==undefined?lp+"% ostatni quiz":"Brak wyników"}</div></div>
+            <div class="tcr">
+              <div class="tcsb"><div class="tcsf" style="width:${lp || 0}%"></div></div>
+              <div class="tcst">${lp !== undefined ? lp + "% ostatni quiz" : "Brak wyników"}</div>
+            </div>
           </div>
-          <div class="tcf"><div class="tch">${hist||"Brak historii"}</div><div class="tcg">${isDone?"Zaliczone ✓":"Otwórz →"}</div></div>`;
+          <div class="tcf">
+            <div class="tch">${hist || "Brak historii"}</div>
+            <div class="tcg">${isDone ? "Zaliczone ✓" : "Otwórz →"}</div>
+          </div>`;
         return a;
       }
 
-      function renderAll(){
-        const p=gp();
-        const pcts=T.map(t=>p[t.id]?.lastPct).filter(x=>x!==undefined);
-        const nowTopics=T.filter(t=>isNow(t));
-        const passedTopics=T.filter(t=>isPassed(t));
-        const activeTopics=T.filter(t=>isActive(t)&&!isNow(t));
-        const allActive=[...nowTopics,...activeTopics];
-        const total=T.length;
-        const doneCount=T.filter(t=>p[t.id]?.status==="done").length;
-        const srow=document.getElementById("stats-row");
-        const opEl=document.getElementById("op");
-        const barEl=document.getElementById("ob");
-        if(!pcts.length){
-          opEl.textContent="—";barEl.style.width="0%";
-          srow.innerHTML=`<div class="stat-pill">📚 ${total} tematów</div><div class="stat-pill sp-done">✅ Zdanych: ${passedTopics.length}</div><div class="stat-pill sp-now">🔥 Uczę się: ${nowTopics.length}</div><div class="stat-pill">📖 Pozostało: ${allActive.length}</div>`;
+      /* ── MAIN RENDER ── */
+      function renderAll() {
+        const p = gp();
+        const pcts = T.map((t) => p[t.id]?.lastPct).filter(
+          (x) => x !== undefined,
+        );
+        const nowTopics = T.filter((t) => isNow(t));
+        const passedTopics = T.filter((t) => isPassed(t));
+        const activeTopics = T.filter((t) => isActive(t) && !isNow(t));
+        const allActive = [...nowTopics, ...activeTopics];
+        const total = T.length;
+        const doneCount = T.filter((t) => p[t.id]?.status === "done").length;
+        const leftCount = allActive.length;
+        const opEl = document.getElementById("op");
+        const barEl = document.getElementById("ob");
+        const srow = document.getElementById("stats-row");
+        if (!pcts.length) {
+          opEl.textContent = "—";
+          barEl.style.width = "0%";
+          srow.innerHTML = `
+            <div class="stat-pill sp-total">📚 ${total} tematów</div>
+            <div class="stat-pill sp-done">✅ Zdanych: ${passedTopics.length}</div>
+            <div class="stat-pill sp-now">🔥 Uczę się: ${nowTopics.length}</div>
+            <div class="stat-pill sp-left">📖 Pozostało: ${leftCount}</div>`;
         } else {
-          const avg=Math.round(pcts.reduce((a,b)=>a+b,0)/pcts.length);
-          opEl.textContent=avg+"%";barEl.style.width=avg+"%";
-          srow.innerHTML=`<div class="stat-pill sp-avg">Średnia: ${avg}%</div><div class="stat-pill sp-done">✅ Zdanych: ${passedTopics.length}/${total}</div><div class="stat-pill sp-now">🔥 Uczę się: ${nowTopics.length}</div><div class="stat-pill">📖 Zaliczone: ${doneCount}/${total}</div>`;
+          const avg = Math.round(pcts.reduce((a, b) => a + b, 0) / pcts.length);
+          opEl.textContent = avg + "%";
+          barEl.style.width = avg + "%";
+          srow.innerHTML = `
+            <div class="stat-pill sp-avg">Średnia: ${avg}%</div>
+            <div class="stat-pill sp-done">✅ Zdanych: ${passedTopics.length}/${total}</div>
+            <div class="stat-pill sp-now">🔥 Uczę się: ${nowTopics.length}</div>
+            <div class="stat-pill sp-left">📖 Zaliczone: ${doneCount}/${total}</div>`;
         }
-        document.getElementById("count-active").textContent=allActive.length;
-        document.getElementById("count-passed").textContent=passedTopics.length;
+        document.getElementById("count-active").textContent = allActive.length;
+        document.getElementById("count-passed").textContent =
+          passedTopics.length;
 
-        const nowSection=document.getElementById("now-studying-section");
-        const nowGrid=document.getElementById("tg-now");
-        nowGrid.innerHTML="";
-        if(nowTopics.length){nowSection.style.display="";nowTopics.forEach((t,i)=>nowGrid.appendChild(buildCard(t,p,i)));}
-        else{nowSection.style.display="none";}
+        /* NOW section */
+        const nowSection = document.getElementById("now-studying-section");
+        const nowGrid = document.getElementById("tg-now");
+        nowGrid.innerHTML = "";
+        if (nowTopics.length) {
+          nowSection.style.display = "";
+          nowTopics.forEach((t, i) => nowGrid.appendChild(buildCard(t, p, i)));
+        } else nowSection.style.display = "none";
 
-        const groups={ferdydurke:document.getElementById("tg-ferdydurke"),przedwiosnie:document.getElementById("tg-przedwiosnie"),epoka:document.getElementById("tg-epoka"),skamander:document.getElementById("tg-skamander"),futuryzm:document.getElementById("tg-futuryzm"),illak:document.getElementById("tg-illak")};
-        Object.values(groups).forEach(el=>el.innerHTML="");
-        const gwA=new Set(activeTopics.map(t=>t.group));
-        ["ferdydurke","przedwiosnie","epoka","skamander","futuryzm","illak"].forEach(grp=>{
-          const lbl=document.getElementById("lbl-"+grp);const show=gwA.has(grp);
-          if(lbl)lbl.style.display=show?"":"none";
-          if(groups[grp])groups[grp].style.display=show?"":"none";
+        /* ACTIVE groups */
+        const groups = {
+          ferdydurke: document.getElementById("tg-ferdydurke"),
+          przedwiosnie: document.getElementById("tg-przedwiosnie"),
+          epoka: document.getElementById("tg-epoka"),
+          skamander: document.getElementById("tg-skamander"),
+          futuryzm: document.getElementById("tg-futuryzm"),
+          lektury: document.getElementById("tg-lektury"),
+        };
+        Object.values(groups).forEach((el) => (el.innerHTML = ""));
+        const groupsWithActive = new Set(activeTopics.map((t) => t.group));
+        [
+          "ferdydurke",
+          "przedwiosnie",
+          "epoka",
+          "skamander",
+          "futuryzm",
+          "lektury",
+        ].forEach((grp) => {
+          const lbl = document.getElementById("lbl-" + grp);
+          const show = groupsWithActive.has(grp);
+          if (lbl) lbl.style.display = show ? "" : "none";
+          if (groups[grp]) groups[grp].style.display = show ? "" : "none";
         });
-        activeTopics.forEach((t,i)=>{const grp=groups[t.group]||groups["epoka"];if(grp)grp.appendChild(buildCard(t,p,i));});
-        document.getElementById("all-done-msg").style.display=activeTopics.length===0&&nowTopics.length===0?"":"none";
+        activeTopics.forEach((t, i) => {
+          const grp = groups[t.group] || groups["epoka"];
+          if (grp) grp.appendChild(buildCard(t, p, i));
+        });
+        document.getElementById("all-done-msg").style.display =
+          activeTopics.length === 0 && nowTopics.length === 0 ? "" : "none";
 
-        const passedGrid=document.getElementById("tg-passed");
-        passedGrid.innerHTML="";
-        passedTopics.forEach((t,i)=>passedGrid.appendChild(buildCard(t,p,i)));
-        document.getElementById("no-passed-msg").style.display=passedTopics.length===0?"":"none";
+        /* PASSED grid */
+        const passedGrid = document.getElementById("tg-passed");
+        passedGrid.innerHTML = "";
+        passedTopics.forEach((t, i) =>
+          passedGrid.appendChild(buildCard(t, p, i)),
+        );
+        document.getElementById("no-passed-msg").style.display =
+          passedTopics.length === 0 ? "" : "none";
 
-        const sg=document.getElementById("sg");sg.innerHTML="";
-        T.forEach((t,i)=>{
-          const td=p[t.id]||{};const cur=td.status||"";const isDone=cur==="done";
-          const passed=isPassed(t);const now=isNow(t);
-          const row=document.createElement("div");
-          row.className="sr"+(isDone?" is-done":"")+(now?" sr-now":"");
-          row.style.animationDelay=i*.06+"s";
-          row.innerHTML=`<span style="font-size:1.2rem">${t.e}</span><div class="sn${isDone?" done-strike":""}">${t.l}${now?'<span class="badge-now">🔥 Uczę się</span>':""}${passed?'<span class="badge-passed">✅ zdane</span>':""}</div><div class="sbw"><button class="sb${cur==="done"?" sd":""}" onclick="setStatus('${t.id}','done')">✓ Zaliczone</button><button class="sb${cur==="focus"?" sf":""}" onclick="setStatus('${t.id}','focus')">★ Powtórka</button><button class="sb${cur==="hard"?" sh":""}" onclick="setStatus('${t.id}','hard')">! Trudny</button></div>`;
+        /* STATUS ROWS */
+        const sg = document.getElementById("sg");
+        sg.innerHTML = "";
+        T.forEach((t, i) => {
+          const td = p[t.id] || {};
+          const cur = td.status || "";
+          const isDone = cur === "done";
+          const passed = isPassed(t);
+          const now = isNow(t);
+          const row = document.createElement("div");
+          row.className =
+            "sr" + (isDone ? " is-done" : "") + (now ? " sr-now" : "");
+          row.style.animationDelay = i * 0.06 + "s";
+          row.innerHTML = `
+            <span style="font-size:1.2rem">${t.e}</span>
+            <div class="sn${isDone ? " done-strike" : ""}">
+              ${t.l}
+              ${now ? '<span class="badge-now">🔥 Uczę się</span>' : ""}
+              ${passed ? '<span class="badge-passed">✅ zdane</span>' : ""}
+            </div>
+            <div class="sbw">
+              <button class="sb${cur === "done" ? " sd" : ""}"  onclick="setStatus('${t.id}','done')">✓ Zaliczone</button>
+              <button class="sb${cur === "focus" ? " sf" : ""}" onclick="setStatus('${t.id}','focus')">★ Powtórka</button>
+              <button class="sb${cur === "hard" ? " sh" : ""}"  onclick="setStatus('${t.id}','hard')">! Trudny</button>
+            </div>`;
           sg.appendChild(row);
         });
         renderDevPanel();
       }
 
-      const GROUP_LABELS={ferdydurke:"📚 Ferdydurke",przedwiosnie:"🌿 Przedwiośnie",epoka:"🏛️ Dwudziestolecie",skamander:"🌸 Skamander",futuryzm:"⚙️ Futuryzm",illak:"🌙 Iłłakowiczówna"};
-      function renderDevPanel(){
-        const p=gp();const body=document.getElementById("dp-body");body.innerHTML="";
-        const grps={};T.forEach(t=>{if(!grps[t.group])grps[t.group]=[];grps[t.group].push(t);});
-        Object.entries(grps).forEach(([grp,topics])=>{
-          const sec=document.createElement("div");sec.className="dp-section";
-          const title=document.createElement("div");title.className="dp-section-title";title.textContent=GROUP_LABELS[grp]||grp;sec.appendChild(title);
-          topics.forEach(t=>{
-            const td=p[t.id]||{};const isDone=td.status==="done";const now=isNow(t);const passed=isPassed(t);
-            const row=document.createElement("div");row.className="dp-row";
-            row.innerHTML=`<div class="dp-emoji">${t.e}</div><div class="dp-name${isDone?" done":""}">${t.l}${now?'<span style="font-size:.6rem;color:#f97316;margin-left:.4rem">🔥</span>':""}${passed?'<span style="font-size:.6rem;color:#6acca8;margin-left:.4rem">✅</span>':""}</div><label class="dp-switch"><input type="checkbox" ${isDone?"checked":""} onchange="devToggle('${t.id}',this.checked)"/><span class="dp-slider"></span></label>`;
+      /* ── DEV PANEL ── */
+      const GROUP_LABELS = {
+        ferdydurke: "📚 Ferdydurke",
+        przedwiosnie: "🌿 Przedwiośnie",
+        epoka: "🏛️ Dwudziestolecie",
+        skamander: "🌸 Skamander",
+        futuryzm: "⚙️ Futuryzm",
+        lektury: "📖 Lektury",
+      };
+      function renderDevPanel() {
+        const p = gp();
+        const body = document.getElementById("dp-body");
+        body.innerHTML = "";
+        const grps = {};
+        T.forEach((t) => {
+          if (!grps[t.group]) grps[t.group] = [];
+          grps[t.group].push(t);
+        });
+        Object.entries(grps).forEach(([grp, topics]) => {
+          const sec = document.createElement("div");
+          sec.className = "dp-section";
+          const title = document.createElement("div");
+          title.className = "dp-section-title";
+          title.textContent = GROUP_LABELS[grp] || grp;
+          sec.appendChild(title);
+          topics.forEach((t) => {
+            const td = p[t.id] || {};
+            const isDone = td.status === "done";
+            const now = isNow(t);
+            const passed = isPassed(t);
+            const row = document.createElement("div");
+            row.className = "dp-row";
+            row.innerHTML = `
+              <div class="dp-emoji">${t.e}</div>
+              <div class="dp-name${isDone ? " done" : ""}">${t.l}${now ? '<span style="font-size:.6rem;color:#f97316;margin-left:.4rem">🔥</span>' : ""}${passed ? '<span style="font-size:.6rem;color:#6acca8;margin-left:.4rem">✅</span>' : ""}</div>
+              <label class="dp-switch"><input type="checkbox" ${isDone ? "checked" : ""} onchange="devToggle('${t.id}',this.checked)"/><span class="dp-slider"></span></label>`;
             sec.appendChild(row);
           });
           body.appendChild(sec);
         });
       }
-      function devToggle(id,c){const p=gp();if(!p[id])p[id]={};p[id].status=c?"done":"";sp(p);renderAll();}
-      function bulkDone(){const p=gp();T.forEach(t=>{if(!p[t.id])p[t.id]={};p[t.id].status="done";});sp(p);renderAll();}
-      function bulkClear(){const p=gp();T.forEach(t=>{if(p[t.id])p[t.id].status="";});sp(p);renderAll();}
-      function toggleDevPanel(){document.getElementById("dev-panel").classList.toggle("open");}
-      function confirmReset(){if(confirm("Wyczyścić wszystkie dane postępu i wyniki quizów?")){localStorage.removeItem("polski_progress");renderAll();}}
+      function devToggle(id, c) {
+        const p = gp();
+        if (!p[id]) p[id] = {};
+        p[id].status = c ? "done" : "";
+        sp(p);
+        renderAll();
+      }
+      function bulkDone() {
+        const p = gp();
+        T.forEach((t) => {
+          if (!p[t.id]) p[t.id] = {};
+          p[t.id].status = "done";
+        });
+        sp(p);
+        renderAll();
+      }
+      function bulkClear() {
+        const p = gp();
+        T.forEach((t) => {
+          if (p[t.id]) p[t.id].status = "";
+        });
+        sp(p);
+        renderAll();
+      }
+      function toggleDevPanel() {
+        document.getElementById("dev-panel").classList.toggle("open");
+      }
+      function confirmReset() {
+        if (confirm("Wyczyścić wszystkie dane postępu i wyniki quizów?")) {
+          localStorage.removeItem("polski_progress");
+          renderAll();
+        }
+      }
 
       renderAll();
-      document.addEventListener("click",e=>{
-        const panel=document.getElementById("dev-panel");const toggle=document.getElementById("dev-toggle");
-        if(panel.classList.contains("open")&&!panel.contains(e.target)&&!toggle.contains(e.target))panel.classList.remove("open");
+      document.addEventListener("click", (e) => {
+        const panel = document.getElementById("dev-panel");
+        const toggle = document.getElementById("dev-toggle");
+        if (
+          panel.classList.contains("open") &&
+          !panel.contains(e.target) &&
+          !toggle.contains(e.target)
+        )
+          panel.classList.remove("open");
       });
     </script>
   </body>

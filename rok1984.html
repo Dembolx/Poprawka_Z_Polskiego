@@ -1,0 +1,1979 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Rok 1984 · George Orwell · Lektura</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="shared_styles.css" />
+  </head>
+  <body>
+    <nav class="topnav">
+      <a href="index.html" class="nav-back">← Hub</a>
+      <span class="nav-title">📖 Rok 1984 · George Orwell</span>
+      <div class="nav-status-wrap" id="nav-status"></div>
+    </nav>
+
+    <header>
+      <p class="eyebrow">Lektura · George Orwell · 1949</p>
+      <h1>Rok <span>1984</span></h1>
+      <p class="sub">
+        Dystopia · Totalitaryzm · Nowomowa · Winston Smith · Wielki Brat ·
+        Prawda i wolność
+      </p>
+      <div class="divider"></div>
+    </header>
+
+    <div class="toggle-bar">
+      <button
+        class="toggle-btn active"
+        id="btn-cards"
+        onclick="switchView('cards')"
+      >
+        📋 Teoria
+      </button>
+      <button class="toggle-btn" id="btn-quiz" onclick="switchView('quiz')">
+        🎯 Quiz
+      </button>
+      <button class="toggle-btn" id="btn-nota" onclick="switchView('nota')">
+        📝 Notatka
+      </button>
+    </div>
+
+    <!-- ===== TEORIA ===== -->
+    <div
+      id="view-cards"
+      style="
+        position: relative;
+        z-index: 1;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 2rem 2rem 4rem;
+      "
+    >
+      <div
+        class="nw-hero"
+        style="
+          background: linear-gradient(
+            135deg,
+            rgba(200, 75, 47, 0.13) 0%,
+            rgba(36, 88, 160, 0.1) 50%,
+            rgba(42, 125, 95, 0.08) 100%
+          );
+        "
+      >
+        <div class="nw-hero-eyebrow" style="color: #c84b2f">
+          Dystopia · Literatura powszechna · XX wiek
+        </div>
+        <div class="nw-hero-title">
+          George Orwell — <em style="color: #e87050">Rok 1984</em>
+        </div>
+        <div class="nw-hero-sub">
+          Jedna z najważniejszych powieści politycznych XX wieku. Opublikowana w
+          1949 roku, jest przerażająco aktualną wizją totalitarnego państwa, w
+          którym władza kontroluje nie tylko czyny, ale i myśli obywateli. „Rok
+          1984" stworzył słowa i pojęcia, które weszły na stałe do języka —
+          Wielki Brat, nowomowa, doublethink, Sala 101. To powieść o tym, co
+          dzieje się z człowiekiem, gdy pozbawia się go prawdy, wolności i
+          miłości.
+        </div>
+        <div class="nw-hero-tags">
+          <span
+            class="nw-tag"
+            style="
+              color: #c84b2f;
+              border-color: rgba(200, 75, 47, 0.4);
+              background: rgba(200, 75, 47, 0.1);
+            "
+            >Dystopia</span
+          >
+          <span
+            class="nw-tag"
+            style="
+              color: #6aaccc;
+              border-color: rgba(58, 104, 128, 0.5);
+              background: rgba(58, 104, 128, 0.1);
+            "
+            >Totalitaryzm</span
+          >
+          <span
+            class="nw-tag"
+            style="
+              color: var(--n-sage2);
+              border-color: rgba(90, 122, 74, 0.4);
+              background: rgba(90, 122, 74, 0.1);
+            "
+            >1949</span
+          >
+          <span
+            class="nw-tag"
+            style="
+              color: var(--gold);
+              border-color: rgba(201, 168, 76, 0.4);
+              background: rgba(201, 168, 76, 0.1);
+            "
+            >Nowomowa</span
+          >
+          <span
+            class="nw-tag"
+            style="
+              color: #9a70cc;
+              border-color: rgba(106, 60, 156, 0.4);
+              background: rgba(106, 60, 156, 0.1);
+            "
+            >Antyutopia</span
+          >
+        </div>
+      </div>
+
+      <!-- KONTEKST I AUTOR -->
+      <div class="nw-section-head">
+        <span class="nw-section-icon">👤</span>
+        <div class="nw-section-title">Autor i kontekst powstania</div>
+        <div class="nw-section-line"></div>
+      </div>
+
+      <div
+        style="
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 1.4rem;
+          margin-bottom: 1.8rem;
+        "
+      >
+        <div
+          style="
+            border: 1px solid rgba(200, 75, 47, 0.4);
+            border-radius: 10px;
+            overflow: hidden;
+          "
+        >
+          <div
+            style="
+              background: rgba(200, 75, 47, 0.12);
+              padding: 1.3rem 1.8rem;
+              border-bottom: 1px solid rgba(200, 75, 47, 0.18);
+            "
+          >
+            <div
+              style="
+                font-size: 0.6rem;
+                letter-spacing: 0.2em;
+                text-transform: uppercase;
+                color: #e87050;
+                margin-bottom: 0.3rem;
+              "
+            >
+              Dane biograficzne
+            </div>
+            <div
+              style="
+                font-family: &quot;Playfair Display&quot;, serif;
+                font-size: 1.1rem;
+                font-weight: 700;
+                color: var(--ink);
+              "
+            >
+              Kim był George Orwell?
+            </div>
+          </div>
+          <div style="padding: 1.2rem 1.8rem">
+            <div class="nw-grid" style="margin-bottom: 0; gap: 0.8rem">
+              <div
+                class="nw-card"
+                style="
+                  --na: #c84b2f;
+                  background: rgba(200, 75, 47, 0.07);
+                  padding: 1rem 1.1rem;
+                "
+              >
+                <div
+                  class="nw-card-icon"
+                  style="font-size: 1.2rem; margin-bottom: 0.4rem"
+                >
+                  📅
+                </div>
+                <div class="nw-card-title" style="font-size: 0.9rem">
+                  1903–1950
+                </div>
+                <div class="nw-card-desc">
+                  Właściwie Eric Arthur Blair. Urodzony w Indiach Brytyjskich,
+                  wychowany w Anglii. Umarł rok po publikacji „Roku 1984" — na
+                  gruźlicę, w wieku 46 lat.
+                </div>
+              </div>
+              <div
+                class="nw-card"
+                style="
+                  --na: #c84b2f;
+                  background: rgba(200, 75, 47, 0.07);
+                  padding: 1rem 1.1rem;
+                "
+              >
+                <div
+                  class="nw-card-icon"
+                  style="font-size: 1.2rem; margin-bottom: 0.4rem"
+                >
+                  ✍️
+                </div>
+                <div class="nw-card-title" style="font-size: 0.9rem">
+                  Dziennikarz i pisarz
+                </div>
+                <div class="nw-card-desc">
+                  Walczył w hiszpańskiej wojnie domowej po stronie republikanów.
+                  Doświadczenie totalitaryzmu (stalinizmu i faszyzmu)
+                  ukształtowało jego twórczość polityczną.
+                </div>
+              </div>
+              <div
+                class="nw-card"
+                style="
+                  --na: #c84b2f;
+                  background: rgba(200, 75, 47, 0.07);
+                  padding: 1rem 1.1rem;
+                "
+              >
+                <div
+                  class="nw-card-icon"
+                  style="font-size: 1.2rem; margin-bottom: 0.4rem"
+                >
+                  📚
+                </div>
+                <div class="nw-card-title" style="font-size: 0.9rem">
+                  Folwark zwierzęcy (1945)
+                </div>
+                <div class="nw-card-desc">
+                  Alegoryczna satyra na rewolucję bolszewicką i stalinizm.
+                  Bezpośredni poprzednik „Roku 1984" — razem tworzą
+                  najważniejszy dorobek Orwella.
+                </div>
+              </div>
+              <div
+                class="nw-card"
+                style="
+                  --na: #c84b2f;
+                  background: rgba(200, 75, 47, 0.07);
+                  padding: 1rem 1.1rem;
+                "
+              >
+                <div
+                  class="nw-card-icon"
+                  style="font-size: 1.2rem; margin-bottom: 0.4rem"
+                >
+                  🌍
+                </div>
+                <div class="nw-card-title" style="font-size: 0.9rem">
+                  Kontekst historyczny
+                </div>
+                <div class="nw-card-desc">
+                  Powieść powstała w 1948 roku (tytuł to odwrócone cyfry roku).
+                  Orwell pisał ją obserwując stalinowski ZSRR i hitlerowskie
+                  Niemcy — oba reżimy były wzorcem dla Oceanii.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          style="
+            border: 1px solid rgba(36, 88, 160, 0.4);
+            border-radius: 10px;
+            overflow: hidden;
+          "
+        >
+          <div
+            style="
+              background: rgba(36, 88, 160, 0.12);
+              padding: 1.3rem 1.8rem;
+              border-bottom: 1px solid rgba(36, 88, 160, 0.18);
+            "
+          >
+            <div
+              style="
+                font-size: 0.6rem;
+                letter-spacing: 0.2em;
+                text-transform: uppercase;
+                color: #6aaccc;
+                margin-bottom: 0.3rem;
+              "
+            >
+              Świat przedstawiony
+            </div>
+            <div
+              style="
+                font-family: &quot;Playfair Display&quot;, serif;
+                font-size: 1.1rem;
+                font-weight: 700;
+                color: var(--ink);
+              "
+            >
+              Oceania — totalitarne supermocarstwo
+            </div>
+          </div>
+          <div style="padding: 1.2rem 1.8rem">
+            <div class="nw-grid" style="margin-bottom: 0; gap: 0.8rem">
+              <div
+                class="nw-card"
+                style="
+                  --na: #2458a0;
+                  background: rgba(36, 88, 160, 0.07);
+                  padding: 1rem 1.1rem;
+                "
+              >
+                <div
+                  class="nw-card-icon"
+                  style="font-size: 1.2rem; margin-bottom: 0.4rem"
+                >
+                  🗺️
+                </div>
+                <div class="nw-card-title" style="font-size: 0.9rem">
+                  Trzy supermocarswa
+                </div>
+                <div class="nw-card-desc">
+                  <strong>Oceania</strong> (Anglosfera),
+                  <strong>Eurasia</strong> (Europa+ZSRR),
+                  <strong>Eastasia</strong> (Azja). Ciągle walczą — nie po to,
+                  by wygrać, lecz by utrzymać społeczeństwo w posłuszeństwie
+                  przez strach.
+                </div>
+              </div>
+              <div
+                class="nw-card"
+                style="
+                  --na: #2458a0;
+                  background: rgba(36, 88, 160, 0.07);
+                  padding: 1rem 1.1rem;
+                "
+              >
+                <div
+                  class="nw-card-icon"
+                  style="font-size: 1.2rem; margin-bottom: 0.4rem"
+                >
+                  🏛️
+                </div>
+                <div class="nw-card-title" style="font-size: 0.9rem">
+                  Cztery ministerstwa
+                </div>
+                <div class="nw-card-desc">
+                  <strong>Prawdy</strong> (fałszuje historię),
+                  <strong>Miłości</strong> (torturuje),
+                  <strong>Obfitości</strong> (zarządza niedoborem),
+                  <strong>Pokoju</strong> (prowadzi wojnę). Nazwy są
+                  odwrotnością ich funkcji.
+                </div>
+              </div>
+              <div
+                class="nw-card"
+                style="
+                  --na: #2458a0;
+                  background: rgba(36, 88, 160, 0.07);
+                  padding: 1rem 1.1rem;
+                "
+              >
+                <div
+                  class="nw-card-icon"
+                  style="font-size: 1.2rem; margin-bottom: 0.4rem"
+                >
+                  👁️
+                </div>
+                <div class="nw-card-title" style="font-size: 0.9rem">
+                  Wielki Brat
+                </div>
+                <div class="nw-card-desc">
+                  Twarz Partii — może jest fikcją. „Wielki Brat patrzy na
+                  ciebie" — teleekrany w każdym mieszkaniu. Nie można uciec od
+                  spojrzenia władzy.
+                </div>
+              </div>
+              <div
+                class="nw-card"
+                style="
+                  --na: #2458a0;
+                  background: rgba(36, 88, 160, 0.07);
+                  padding: 1rem 1.1rem;
+                "
+              >
+                <div
+                  class="nw-card-icon"
+                  style="font-size: 1.2rem; margin-bottom: 0.4rem"
+                >
+                  🔴
+                </div>
+                <div class="nw-card-title" style="font-size: 0.9rem">
+                  Rok 1984 — kiedy?
+                </div>
+                <div class="nw-card-desc">
+                  Akcja toczy się w bliżej nieokreślonej przyszłości — sam
+                  Winston nie jest pewien, który to rok. Czas jest narzędziem
+                  kontroli, nie obiektywną miarą.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOHATEROWIE -->
+      <div class="nw-section-head">
+        <span class="nw-section-icon">👥</span>
+        <div class="nw-section-title">Bohaterowie</div>
+        <div class="nw-section-line"></div>
+      </div>
+
+      <div
+        class="nw-chars"
+        style="
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+          margin-bottom: 1.8rem;
+        "
+      >
+        <div class="nw-char" style="--nc: #c84b2f">
+          <div class="nw-char-emoji">🕵️</div>
+          <div class="nw-char-name">Winston Smith</div>
+          <div class="nw-char-role" style="color: #c84b2f">Protagonista</div>
+          <div class="nw-char-desc">
+            Pracownik Ministerstwa Prawdy — przepisuje historię. 39-letni,
+            chudy, z wrzodami. Marzy o buncie, prowadzi tajny dziennik. Jego
+            bunt jest od początku skazany na klęskę.
+          </div>
+        </div>
+        <div class="nw-char" style="--nc: #c4607a">
+          <div class="nw-char-emoji">💃</div>
+          <div class="nw-char-name">Julia</div>
+          <div class="nw-char-role" style="color: #c4607a">Miłość Winstona</div>
+          <div class="nw-char-desc">
+            Pracuje przy maszynach do pisania prozy pornograficznej. Buntuje się
+            przez seks i przyjemności, nie przez ideologię. Pragmatyczna — nie
+            interesuje ją filozofia wolności.
+          </div>
+        </div>
+        <div class="nw-char" style="--nc: #9a70cc">
+          <div class="nw-char-emoji">🎭</div>
+          <div class="nw-char-name">O'Brien</div>
+          <div class="nw-char-role" style="color: #9a70cc">
+            Pozorny sojusznik / Inkwizytor
+          </div>
+          <div class="nw-char-desc">
+            Wysokiej rangi członek Partii Wewnętrznej. Winston myśli, że jest w
+            ruchu oporu — to pułapka. O'Brien to twarz totalitaryzmu:
+            inteligentny, spokojny, bezwzględny.
+          </div>
+        </div>
+        <div class="nw-char" style="--nc: #b87020">
+          <div class="nw-char-emoji">📚</div>
+          <div class="nw-char-name">Emmanuel Goldstein</div>
+          <div class="nw-char-role" style="color: #b87020">
+            Wróg publiczny nr 1
+          </div>
+          <div class="nw-char-desc">
+            Może fikcyjna postać stworzona przez Partię. Autor „Teorii i
+            praktyki oligarchicznego kolektywizmu" — opozycja, która istnieje
+            tylko po to, by być niszczona w „Dwóch minutach nienawiści".
+          </div>
+        </div>
+        <div class="nw-char" style="--nc: #2a7d5f">
+          <div class="nw-char-emoji">🍷</div>
+          <div class="nw-char-name">Pan Charrington</div>
+          <div class="nw-char-role" style="color: #2a7d5f">
+            Agent Policji Myśli
+          </div>
+          <div class="nw-char-desc">
+            Pozornie stary antykwariusz, wynajmuje Winstonowi i Julii pokój. W
+            rzeczywistości jest agentem Policji Myśli — obserwuje ich od
+            początku. Zdrada doskonała.
+          </div>
+        </div>
+        <div class="nw-char" style="--nc: #6aaccc">
+          <div class="nw-char-emoji">🔬</div>
+          <div class="nw-char-name">Syme</div>
+          <div class="nw-char-role" style="color: #6aaccc">
+            Lingwista / ofiara systemu
+          </div>
+          <div class="nw-char-desc">
+            Pracuje nad dziesiątą edycją Słownika Nowomowy. Rozumie za dużo — i
+            dlatego musi zniknąć. Winston to przeczuwa. Syme jest przykładem:
+            inteligencja jest niebezpieczna.
+          </div>
+        </div>
+      </div>
+
+      <!-- NOWOMOWA I POJĘCIA -->
+      <div class="nw-section-head">
+        <span class="nw-section-icon">🗣️</span>
+        <div class="nw-section-title">Nowomowa i kluczowe pojęcia Orwella</div>
+        <div class="nw-section-line"></div>
+      </div>
+
+      <div
+        style="
+          background: rgba(255, 255, 255, 0.03);
+          border: 1px solid rgba(255, 255, 255, 0.08);
+          border-radius: 10px;
+          padding: 1.8rem;
+          margin-bottom: 1.8rem;
+        "
+      >
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.4rem;
+          "
+        >
+          <div style="border-left: 3px solid #c84b2f; padding-left: 1rem">
+            <div
+              style="
+                font-family: &quot;Playfair Display&quot;, serif;
+                font-size: 1.1rem;
+                font-weight: 700;
+                color: #e87050;
+                margin-bottom: 0.35rem;
+              "
+            >
+              Nowomowa (Newspeak)
+            </div>
+            <div
+              style="font-size: 0.78rem; color: var(--ink2); line-height: 1.6"
+            >
+              Język stworzony przez Partię. Cel:
+              <strong style="color: var(--ink)"
+                >uczynić myślenie o buncie dosłownie niemożliwym</strong
+              >
+              przez eliminację słów. Jeśli nie ma słowa „wolność", nie można o
+              niej myśleć. Językoznawstwo jako narzędzie zniewolenia.
+            </div>
+          </div>
+
+          <div style="border-left: 3px solid #9a70cc; padding-left: 1rem">
+            <div
+              style="
+                font-family: &quot;Playfair Display&quot;, serif;
+                font-size: 1.1rem;
+                font-weight: 700;
+                color: #9a70cc;
+                margin-bottom: 0.35rem;
+              "
+            >
+              Dwójmyślenie (Doublethink)
+            </div>
+            <div
+              style="font-size: 0.78rem; color: var(--ink2); line-height: 1.6"
+            >
+              Zdolność do
+              <strong style="color: var(--ink)"
+                >jednoczesnego wierzenia w dwie sprzeczne prawdy</strong
+              >. „Wojna to pokój. Wolność to niewola. Ignorancja to siła."
+              Fundament mentalny systemu — pozwala akceptować absurd bez
+              konfliktu.
+            </div>
+          </div>
+
+          <div style="border-left: 3px solid #2458a0; padding-left: 1rem">
+            <div
+              style="
+                font-family: &quot;Playfair Display&quot;, serif;
+                font-size: 1.1rem;
+                font-weight: 700;
+                color: #6aaccc;
+                margin-bottom: 0.35rem;
+              "
+            >
+              Zbrodnia myśli (Thoughtcrime)
+            </div>
+            <div
+              style="font-size: 0.78rem; color: var(--ink2); line-height: 1.6"
+            >
+              Samo
+              <strong style="color: var(--ink)"
+                >pomyślenie czegoś sprzecznego z Partią</strong
+              >
+              jest przestępstwem. Nie trzeba działać — wystarczy mieć
+              niedozwoloną myśl. Policja Myśli tropuje „twarzyprzestępców" —
+              ludzi, których miny zdradzają niezgodę.
+            </div>
+          </div>
+
+          <div style="border-left: 3px solid var(--gold); padding-left: 1rem">
+            <div
+              style="
+                font-family: &quot;Playfair Display&quot;, serif;
+                font-size: 1.1rem;
+                font-weight: 700;
+                color: var(--gold);
+                margin-bottom: 0.35rem;
+              "
+            >
+              Teleekrany
+            </div>
+            <div
+              style="font-size: 0.78rem; color: var(--ink2); line-height: 1.6"
+            >
+              <strong style="color: var(--ink)">Dwukierunkowe ekrany</strong> —
+              nadają i odbierają obraz i dźwięk jednocześnie. Nie można ich
+              wyłączyć (tylko wyżsi rangą mogą ściszyć). Fizyczna metafora
+              totalnej inwigilacji.
+            </div>
+          </div>
+
+          <div style="border-left: 3px solid #2a7d5f; padding-left: 1rem">
+            <div
+              style="
+                font-family: &quot;Playfair Display&quot;, serif;
+                font-size: 1.1rem;
+                font-weight: 700;
+                color: var(--n-sage2);
+                margin-bottom: 0.35rem;
+              "
+            >
+              Dwie minuty nienawiści
+            </div>
+            <div
+              style="font-size: 0.78rem; color: var(--ink2); line-height: 1.6"
+            >
+              Codzienny
+              <strong style="color: var(--ink)"
+                >rytuał zbiorowej agresji</strong
+              >
+              skierowanej na Goldsteina i wrogów Partii. Mechanizm kontroli
+              emocjonalnej — nienawiść do zewnętrznego wroga zastępuje bunt
+              przeciw władzy.
+            </div>
+          </div>
+
+          <div style="border-left: 3px solid #b87020; padding-left: 1rem">
+            <div
+              style="
+                font-family: &quot;Playfair Display&quot;, serif;
+                font-size: 1.1rem;
+                font-weight: 700;
+                color: var(--amber);
+                margin-bottom: 0.35rem;
+              "
+            >
+              Proletariusze (Prole)
+            </div>
+            <div
+              style="font-size: 0.78rem; color: var(--ink2); line-height: 1.6"
+            >
+              85% populacji —
+              <strong style="color: var(--ink)"
+                >poza zasięgiem pełnej kontroli</strong
+              >, bo Partia ich nie liczy. Winston wierzy, że tylko „prole" mogą
+              obalić system. Ironia: są zbyt zajęci przeżyciem, by się buntować.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- HASŁA PARTII -->
+      <div class="nw-section-head">
+        <span class="nw-section-icon">📢</span>
+        <div class="nw-section-title">
+          Trzy hasła Partii — analiza paradoksów
+        </div>
+        <div class="nw-section-line"></div>
+      </div>
+
+      <div
+        style="
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 1.2rem;
+          margin-bottom: 1.8rem;
+        "
+      >
+        <div
+          style="
+            border: 1px solid rgba(200, 75, 47, 0.4);
+            border-radius: 10px;
+            overflow: hidden;
+          "
+        >
+          <div
+            style="
+              background: rgba(200, 75, 47, 0.15);
+              padding: 1rem 1.3rem;
+              text-align: center;
+              border-bottom: 1px solid rgba(200, 75, 47, 0.2);
+            "
+          >
+            <div
+              style="
+                font-family: &quot;Playfair Display&quot;, serif;
+                font-size: 1rem;
+                font-weight: 900;
+                color: #e87050;
+                letter-spacing: 0.05em;
+              "
+            >
+              WOJNA TO POKÓJ
+            </div>
+          </div>
+          <div
+            style="
+              padding: 1rem 1.3rem;
+              font-size: 0.78rem;
+              color: var(--ink2);
+              line-height: 1.6;
+            "
+          >
+            Ciągła wojna
+            <strong style="color: var(--ink)"
+              >utrzymuje pokój społeczny wewnątrz</strong
+            >
+            — kanalizuje agresję na zewnętrznego wroga. Ekonomia wojenna
+            eliminuje nadwyżki, które mogłyby dać ludziom niezależność.
+          </div>
+        </div>
+
+        <div
+          style="
+            border: 1px solid rgba(106, 60, 156, 0.4);
+            border-radius: 10px;
+            overflow: hidden;
+          "
+        >
+          <div
+            style="
+              background: rgba(106, 60, 156, 0.15);
+              padding: 1rem 1.3rem;
+              text-align: center;
+              border-bottom: 1px solid rgba(106, 60, 156, 0.2);
+            "
+          >
+            <div
+              style="
+                font-family: &quot;Playfair Display&quot;, serif;
+                font-size: 1rem;
+                font-weight: 900;
+                color: #9a70cc;
+                letter-spacing: 0.05em;
+              "
+            >
+              WOLNOŚĆ TO NIEWOLA
+            </div>
+          </div>
+          <div
+            style="
+              padding: 1rem 1.3rem;
+              font-size: 0.78rem;
+              color: var(--ink2);
+              line-height: 1.6;
+            "
+          >
+            Człowiek
+            <strong style="color: var(--ink)"
+              >wolny jest słaby i zagubiony</strong
+            >
+            — uzależnienie od Partii daje bezpieczeństwo. Paradoks: oddając
+            wolność, „zyskujesz" przynależność i ochronę. Manipulacja
+            egzystencjalna.
+          </div>
+        </div>
+
+        <div
+          style="
+            border: 1px solid rgba(36, 88, 160, 0.4);
+            border-radius: 10px;
+            overflow: hidden;
+          "
+        >
+          <div
+            style="
+              background: rgba(36, 88, 160, 0.15);
+              padding: 1rem 1.3rem;
+              text-align: center;
+              border-bottom: 1px solid rgba(36, 88, 160, 0.2);
+            "
+          >
+            <div
+              style="
+                font-family: &quot;Playfair Display&quot;, serif;
+                font-size: 1rem;
+                font-weight: 900;
+                color: #6aaccc;
+                letter-spacing: 0.05em;
+              "
+            >
+              IGNORANCJA TO SIŁA
+            </div>
+          </div>
+          <div
+            style="
+              padding: 1rem 1.3rem;
+              font-size: 0.78rem;
+              color: var(--ink2);
+              line-height: 1.6;
+            "
+          >
+            Im mniej obywatel wie o rzeczywistości, tym
+            <strong style="color: var(--ink)">silniejsza jest Partia</strong>.
+            Wiedza umożliwia bunt — ignorancja zapewnia posłuszeństwo. Dlatego
+            historia jest ciągle przepisywana.
+          </div>
+        </div>
+      </div>
+
+      <!-- FABUŁA — TRZY CZĘŚCI -->
+      <div class="nw-section-head">
+        <span class="nw-section-icon">📖</span>
+        <div class="nw-section-title">Fabuła — trzy części powieści</div>
+        <div class="nw-section-line"></div>
+      </div>
+
+      <div class="nw-grid" style="margin-bottom: 1.8rem">
+        <div
+          class="nw-card"
+          style="--na: #c84b2f; background: rgba(200, 75, 47, 0.07)"
+        >
+          <div class="nw-card-icon">📔</div>
+          <div class="nw-card-title">Część I — Bunt wewnętrzny</div>
+          <div class="nw-card-desc">
+            Winston zaczyna pisać tajny <strong>dziennik</strong> — pierwszy akt
+            zdrady. Poznaje środowisko: pracę w Ministerstwie Prawdy
+            (fałszowanie historii), rytuały Partii, Londyn w ruinie. Fascynacja
+            O'Brienem jako potencjalnym sojusznikiem. Uczucie osaczenia i
+            niemożliwości buntu.
+          </div>
+        </div>
+
+        <div
+          class="nw-card"
+          style="--na: #c4607a; background: rgba(196, 96, 122, 0.07)"
+        >
+          <div class="nw-card-icon">❤️</div>
+          <div class="nw-card-title">Część II — Miłość i nadzieja</div>
+          <div class="nw-card-desc">
+            Romans z <strong>Julią</strong> — miłość jako akt polityczny. Tajny
+            pokój u Charringtona jako azyl. Kontakt z O'Brienem — Winston myśli,
+            że wstępuje do „Bractwa". Lektura książki Goldsteina. Chwilowe
+            złudzenie, że bunt jest możliwy. Szczęście trwa — do aresztowania.
+          </div>
+        </div>
+
+        <div
+          class="nw-card"
+          style="--na: #9a70cc; background: rgba(106, 60, 156, 0.07)"
+        >
+          <div class="nw-card-icon">💀</div>
+          <div class="nw-card-title">Część III — Złamanie</div>
+          <div class="nw-card-desc">
+            <strong>Ministerstwo Miłości</strong> — tortury fizyczne i
+            psychiczne. O'Brien jako inkwizytor: nie chce śmierci Winstona —
+            chce jego <strong>autentycznej miłości do Wielkiego Brata</strong>.
+            <strong>Sala 101</strong>: Winstonowy klatka ze szczurami — zdradza
+            Julię. Pełne złamanie. Finał: „Kochał Wielkiego Brata."
+          </div>
+        </div>
+
+        <div
+          class="nw-card"
+          style="--na: var(--gold); background: rgba(201, 168, 76, 0.07)"
+        >
+          <div class="nw-card-icon">🔑</div>
+          <div class="nw-card-title">Kluczowy moment — Sala 101</div>
+          <div class="nw-card-desc">
+            Każdy człowiek ma coś, czego
+            <strong>boi się najbardziej na świecie</strong> — to trafia do Sali
+            101. Dla Winstona to szczury. Kiedy woła „Zróbcie to Julii!", klęska
+            jest kompletna: zdradził jedyną osobę, którą kochał. System
+            zwyciężył całkowicie.
+          </div>
+        </div>
+      </div>
+
+      <!-- TEMATY I SYMBOLE -->
+      <div class="nw-section-head">
+        <span class="nw-section-icon">🔎</span>
+        <div class="nw-section-title">Kluczowe tematy i symbole</div>
+        <div class="nw-section-line"></div>
+      </div>
+
+      <div
+        style="
+          background: rgba(255, 255, 255, 0.03);
+          border: 1px solid rgba(255, 255, 255, 0.08);
+          border-radius: 10px;
+          overflow: hidden;
+          margin-bottom: 1.8rem;
+        "
+      >
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0">
+          <div
+            style="
+              padding: 1.4rem 1.8rem;
+              border-right: 1px solid rgba(255, 255, 255, 0.07);
+              border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+            "
+          >
+            <div
+              style="
+                font-family: &quot;Playfair Display&quot;, serif;
+                font-size: 1rem;
+                font-weight: 700;
+                color: #e87050;
+                margin-bottom: 0.5rem;
+              "
+            >
+              🧠 Kontrola przeszłości = kontrola przyszłości
+            </div>
+            <div
+              style="font-size: 0.79rem; color: var(--ink2); line-height: 1.6"
+            >
+              „Kto kontroluje przeszłość, kontroluje przyszłość. Kto kontroluje
+              teraźniejszość, kontroluje przeszłość." Winston przepisuje
+              historię — to jego praca. Archiwum jest ciągłym falsyfikatem.
+              Tożsamość narodu opiera się na kłamstwie.
+            </div>
+          </div>
+
+          <div
+            style="
+              padding: 1.4rem 1.8rem;
+              border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+            "
+          >
+            <div
+              style="
+                font-family: &quot;Playfair Display&quot;, serif;
+                font-size: 1rem;
+                font-weight: 700;
+                color: #9a70cc;
+                margin-bottom: 0.5rem;
+              "
+            >
+              ❤️ Miłość jako bunt
+            </div>
+            <div
+              style="font-size: 0.79rem; color: var(--ink2); line-height: 1.6"
+            >
+              Prywatność i miłość są wywrotowe — Partia niszczy więzy
+              emocjonalne, bo lojalność ma być skierowana wyłącznie ku niej.
+              Romans Winstona i Julii jest politycznym aktem oporu zanim jeszcze
+              stanie się polityczny.
+            </div>
+          </div>
+
+          <div
+            style="
+              padding: 1.4rem 1.8rem;
+              border-right: 1px solid rgba(255, 255, 255, 0.07);
+            "
+          >
+            <div
+              style="
+                font-family: &quot;Playfair Display&quot;, serif;
+                font-size: 1rem;
+                font-weight: 700;
+                color: #6aaccc;
+                margin-bottom: 0.5rem;
+              "
+            >
+              🌳 Symbol papierowego przycisk do listów
+            </div>
+            <div
+              style="font-size: 0.79rem; color: var(--ink2); line-height: 1.6"
+            >
+              Szklany przycisk z koralem, który Winston kupuje u Charringtona.
+              Symbol <strong>kruchości piękna i prywatności</strong>. Kiedy
+              zostaje rozbity przez Policję Myśli podczas aresztowania — to
+              metafora zniszczenia ich świata.
+            </div>
+          </div>
+
+          <div style="padding: 1.4rem 1.8rem">
+            <div
+              style="
+                font-family: &quot;Playfair Display&quot;, serif;
+                font-size: 1rem;
+                font-weight: 700;
+                color: var(--gold);
+                margin-bottom: 0.5rem;
+              "
+            >
+              📖 Dziennik Winstona
+            </div>
+            <div
+              style="font-size: 0.79rem; color: var(--ink2); line-height: 1.6"
+            >
+              Pisanie dziennika to
+              <strong>zbrodnia myśli utrwalona fizycznie</strong>. Winston
+              kieruje go do przyszłego czytelnika — „do epoki, w której myślenie
+              będzie wolne". Dziennik to akt wiary w możliwość przyszłości bez
+              Partii.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- INTERPRETACJE -->
+      <div class="nw-section-head">
+        <span class="nw-section-icon">🧩</span>
+        <div class="nw-section-title">Interpretacje i przesłanie powieści</div>
+        <div class="nw-section-line"></div>
+      </div>
+
+      <div class="nw-grid" style="margin-bottom: 1.8rem">
+        <div
+          class="nw-card"
+          style="--na: #c84b2f; background: rgba(200, 75, 47, 0.07)"
+        >
+          <div class="nw-card-icon">⚠️</div>
+          <div class="nw-card-title">Ostrzeżenie przed totalitaryzmem</div>
+          <div class="nw-card-desc">
+            Powieść to <strong>przestroga</strong> — nie proroctwo. Orwell
+            pokazuje, dokąd prowadzi droga stalinizmu i faszyzmu. Żadne państwo
+            nie może bezkarnie rościć sobie prawa do umysłów swoich obywateli.
+          </div>
+        </div>
+        <div
+          class="nw-card"
+          style="--na: #9a70cc; background: rgba(106, 60, 156, 0.07)"
+        >
+          <div class="nw-card-icon">🌐</div>
+          <div class="nw-card-title">Aktualność w świecie cyfrowym</div>
+          <div class="nw-card-desc">
+            Teleekrany = smartfony i media społecznościowe. Inwigilacja, fake
+            news, propaganda — pojęcia Orwella są bardziej aktualne niż
+            kiedykolwiek. Dlatego „Rok 1984" wraca do list bestsellerów po
+            każdym skandalu politycznym.
+          </div>
+        </div>
+        <div
+          class="nw-card"
+          style="--na: var(--gold); background: rgba(201, 168, 76, 0.07)"
+        >
+          <div class="nw-card-icon">🧠</div>
+          <div class="nw-card-title">Język kształtuje myślenie</div>
+          <div class="nw-card-desc">
+            Hipoteza Sapira-Whorfa w powieści: <strong>nowomowa</strong> to
+            demonstracja, że kontrola języka to kontrola myśli. Jeśli nie masz
+            słów na pojęcie — nie możesz go pomyśleć. Przesłanie dla filozofii
+            języka.
+          </div>
+        </div>
+        <div
+          class="nw-card"
+          style="--na: var(--n-sage); background: rgba(90, 122, 74, 0.07)"
+        >
+          <div class="nw-card-icon">🫀</div>
+          <div class="nw-card-title">Klęska nie jest pesymizmem</div>
+          <div class="nw-card-desc">
+            Winston przegrywa — ale powieść nie jest nihilistyczna. Orwell
+            pokazuje, <strong>co należy chronić</strong>, skoro można to
+            utracić: prawdę, miłość, pamięć, prywatność. Klęska jest
+            ostrzeżeniem, nie wyrokiem.
+          </div>
+        </div>
+      </div>
+
+      <!-- TABELA PORÓWNAWCZA -->
+      <div class="nw-section-head">
+        <span class="nw-section-icon">📊</span>
+        <div class="nw-section-title">
+          Rok 1984 a inne dystopie — porównanie
+        </div>
+        <div class="nw-section-line"></div>
+      </div>
+      <div style="overflow-x: auto; margin-bottom: 1.8rem">
+        <table>
+          <thead>
+            <tr>
+              <th>Element</th>
+              <th>Rok 1984 (Orwell)</th>
+              <th>Nowy wspaniały świat (Huxley)</th>
+              <th>My (Zamiatyn)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Metoda kontroli</strong></td>
+              <td>Strach, ból, inwigilacja</td>
+              <td>Przyjemność, narkotyki, kondycjonowanie</td>
+              <td>Matematyczna perfekcja, brak prywatności</td>
+            </tr>
+            <tr>
+              <td><strong>Język</strong></td>
+              <td>Nowomowa — okrojony</td>
+              <td>Normalny, ale ubogi emocjonalnie</td>
+              <td>Numeryczny, bezosobowy</td>
+            </tr>
+            <tr>
+              <td><strong>Rodzina</strong></td>
+              <td>Zniszczona — dzieci donosicielami</td>
+              <td>Nie istnieje — dzieci z fabryk</td>
+              <td>Zredukowana do funkcji</td>
+            </tr>
+            <tr>
+              <td><strong>Religia</strong></td>
+              <td>Wielki Brat jako quasi-bóg</td>
+              <td>Ford jako bóg konsumpcji</td>
+              <td>Matematyka jako religia</td>
+            </tr>
+            <tr>
+              <td><strong>Finał protagonisty</strong></td>
+              <td>Złamany, kocha Wielkiego Brata</td>
+              <td>Samobójstwo</td>
+              <td>Lobotomia</td>
+            </tr>
+            <tr>
+              <td><strong>Rok publikacji</strong></td>
+              <td>1949</td>
+              <td>1932</td>
+              <td>1924</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="nw-quote" style="border-left-color: #c84b2f">
+        <p>
+          „Jeśli chcesz obrazu przyszłości, wyobraź sobie but tratujący ludzką
+          twarz — na zawsze."
+        </p>
+        <cite>— O'Brien do Winstona, Rok 1984, część III</cite>
+      </div>
+    </div>
+    <!-- /view-cards -->
+
+    <!-- ===== QUIZ ===== -->
+    <div
+      id="view-quiz"
+      style="
+        display: none;
+        position: relative;
+        z-index: 1;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 1.5rem 1.5rem 5rem;
+      "
+    >
+      <div id="quiz-hub">
+        <div style="text-align: center; padding: 1.5rem 0 2rem">
+          <div
+            style="
+              font-size: 0.65rem;
+              letter-spacing: 0.22em;
+              text-transform: uppercase;
+              color: #c84b2f;
+              margin-bottom: 0.6rem;
+            "
+          >
+            Rok 1984 · Quiz
+          </div>
+          <div
+            style="
+              font-family: &quot;Playfair Display&quot;, serif;
+              font-size: 2rem;
+              font-weight: 900;
+              color: var(--ink);
+              margin-bottom: 0.4rem;
+            "
+          >
+            Sprawdź wiedzę o Roku 1984
+          </div>
+          <div style="font-size: 0.85rem; color: var(--ink2)">
+            Bohaterowie · Nowomowa · Fabuła · Interpretacje
+          </div>
+        </div>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1rem;
+          "
+        >
+          <button
+            class="qhub-card"
+            onclick="launchQuiz('rok1984', 'rok1984')"
+            style="--qc: #c84b2f"
+          >
+            <div class="qhub-icon">📖</div>
+            <div class="qhub-title">Quiz Roku 1984</div>
+            <div class="qhub-sub">
+              Autor · Fabuła · Bohaterowie · Nowomowa · Tematy
+            </div>
+            <div class="qhub-count" id="hub-score-rok1984">25 pytań</div>
+          </button>
+          <button
+            class="qhub-card"
+            onclick="launchQuiz('all', 'rok1984')"
+            style="--qc: #c9a84c"
+          >
+            <div class="qhub-icon">🎯</div>
+            <div class="qhub-title">MEGA QUIZ</div>
+            <div class="qhub-sub">
+              Wszystkie tematy razem — pełne przygotowanie
+            </div>
+            <div class="qhub-count">130+ pytań</div>
+          </button>
+        </div>
+      </div>
+      <div id="quiz-active" style="display: none">
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            margin-bottom: 1.2rem;
+          "
+        >
+          <button
+            onclick="backToHub()"
+            style="
+              background: rgba(255, 255, 255, 0.07);
+              border: 1px solid rgba(255, 255, 255, 0.12);
+              color: var(--ink2);
+              font-size: 0.75rem;
+              padding: 0.4rem 0.9rem;
+              border-radius: 100px;
+              cursor: pointer;
+            "
+          >
+            ← Wróć
+          </button>
+          <div style="flex: 1">
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 0.4rem;
+              "
+            >
+              <span
+                style="
+                  font-size: 0.7rem;
+                  letter-spacing: 0.12em;
+                  text-transform: uppercase;
+                  color: var(--ink2);
+                "
+                id="qa-label"
+              ></span>
+              <span
+                style="font-size: 0.8rem; font-weight: 500; color: var(--gold)"
+                id="qa-score"
+              ></span>
+            </div>
+            <div class="quiz-prog-bar">
+              <div class="quiz-prog-fill" id="qa-fill" style="width: 0%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="quiz-card">
+          <div class="quiz-q-num" id="qa-num"></div>
+          <span class="quiz-cat" id="qa-cat"></span>
+          <div class="quiz-q-text" id="qa-text"></div>
+          <div class="quiz-options" id="qa-opts"></div>
+          <div class="quiz-feedback" id="qa-feedback"></div>
+          <div class="quiz-next-wrap">
+            <button class="quiz-next" id="qa-next" onclick="nextQA()">
+              Następne →
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        id="quiz-result-screen"
+        style="
+          display: none;
+          text-align: center;
+          padding: 2rem 1rem;
+          animation: fadeUp 0.5s ease;
+        "
+      >
+        <div class="res-emoji" id="qr-emoji"></div>
+        <div class="res-title" id="qr-title"></div>
+        <div class="res-score-box" style="margin: 1rem auto 1.2rem">
+          <div class="res-big" id="qr-big"></div>
+          <div class="res-of" id="qr-of"></div>
+        </div>
+        <div class="res-bar-wrap">
+          <div class="quiz-prog-bar" style="height: 8px; border-radius: 4px">
+            <div class="res-bar-fill" id="qr-bar" style="width: 0%"></div>
+          </div>
+        </div>
+        <div class="res-cats" id="qr-cats" style="margin: 1.2rem 0"></div>
+        <div class="res-msg" id="qr-msg"></div>
+        <div
+          style="
+            display: flex;
+            gap: 0.8rem;
+            justify-content: center;
+            flex-wrap: wrap;
+          "
+        >
+          <button class="res-restart" onclick="replayQuiz()">
+            Jeszcze raz 🔄
+          </button>
+          <button
+            class="res-restart"
+            onclick="backToHub()"
+            style="background: rgba(255, 255, 255, 0.08); color: var(--ink)"
+          >
+            Wybierz tryb
+          </button>
+          <a
+            href="index.html"
+            class="res-restart"
+            style="
+              background: rgba(255, 255, 255, 0.08);
+              color: var(--ink);
+              text-decoration: none;
+            "
+            >← Hub</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== NOTATKA ===== -->
+    <div
+      id="view-nota"
+      style="
+        display: none;
+        position: relative;
+        z-index: 1;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 2rem 1.5rem 4rem;
+      "
+    >
+      <div class="nw-quote" style="border-left-color: #c84b2f">
+        <p>
+          „Kto kontroluje przeszłość, kontroluje przyszłość. Kto kontroluje
+          teraźniejszość, kontroluje przeszłość."
+        </p>
+        <cite>— Hasło Partii, George Orwell, Rok 1984</cite>
+      </div>
+
+      <div class="nw-section-head">
+        <span class="nw-section-icon">📋</span>
+        <div class="nw-section-title">Notatka podsumowująca — Rok 1984</div>
+        <div class="nw-section-line"></div>
+      </div>
+
+      <div class="nw-grid">
+        <div
+          class="nw-card"
+          style="--na: #c84b2f; background: rgba(200, 75, 47, 0.07)"
+        >
+          <div class="nw-card-icon">👤</div>
+          <div class="nw-card-title">Autor i data</div>
+          <div class="nw-card-desc">
+            <strong>George Orwell</strong> (Eric Blair), 1903–1950. Napisane w
+            1948, opublikowane w 1949. Wcześniej:
+            <em>Folwark zwierzęcy</em> (1945). Inspiracje: stalinowski ZSRR i
+            nazistowskie Niemcy. Tytuł = odwrócone cyfry roku napisania.
+          </div>
+        </div>
+        <div
+          class="nw-card"
+          style="--na: #2458a0; background: rgba(36, 88, 160, 0.07)"
+        >
+          <div class="nw-card-icon">🗺️</div>
+          <div class="nw-card-title">Świat — Oceania</div>
+          <div class="nw-card-desc">
+            Totalitarne supermocarstwo. <strong>Wielki Brat</strong> — twarz
+            władzy. Teleekrany — ciągła inwigilacja. 4 ministerstwa (Prawdy,
+            Miłości, Obfitości, Pokoju) — wszystkie kłamliwe nazwy. Trzy
+            supermocarswa w wiecznej wojnie.
+          </div>
+        </div>
+        <div
+          class="nw-card"
+          style="--na: #c4607a; background: rgba(196, 96, 122, 0.07)"
+        >
+          <div class="nw-card-icon">👥</div>
+          <div class="nw-card-title">Bohaterowie</div>
+          <div class="nw-card-desc">
+            <strong>Winston Smith</strong> — buntownik złamany przez system.
+            <strong>Julia</strong> — miłość jako bunt.
+            <strong>O'Brien</strong> — agent Partii w roli przyjaciela.
+            <strong>Charrington</strong> — agent Policji Myśli.
+            <strong>Goldstein</strong> — wróg publiczny nr 1 (może fikcja).
+          </div>
+        </div>
+        <div
+          class="nw-card"
+          style="--na: #9a70cc; background: rgba(106, 60, 156, 0.07)"
+        >
+          <div class="nw-card-icon">🗣️</div>
+          <div class="nw-card-title">Nowomowa i pojęcia</div>
+          <div class="nw-card-desc">
+            <strong>Nowomowa</strong> — eliminacja słów = eliminacja myśli.
+            <strong>Dwójmyślenie</strong> — dwie sprzeczne prawdy naraz.
+            <strong>Zbrodnia myśli</strong> — nielegalna myśl.
+            <strong>Dwie minuty nienawiści</strong> — rytuał zbiorowej agresji.
+            <strong>Sala 101</strong> — największy lęk.
+          </div>
+        </div>
+        <div
+          class="nw-card"
+          style="--na: var(--gold); background: rgba(201, 168, 76, 0.07)"
+        >
+          <div class="nw-card-icon">📖</div>
+          <div class="nw-card-title">Fabuła — 3 części</div>
+          <div class="nw-card-desc">
+            <strong>I</strong>: Winston zaczyna dziennik — bunt wewnętrzny.
+            <strong>II</strong>: Romans z Julią, kontakt z O'Brienem, złudzenie
+            Bractwa. <strong>III</strong>: Ministerstwo Miłości — tortury, Sala
+            101, zdrada Julii. Finał: „Kochał Wielkiego Brata."
+          </div>
+        </div>
+        <div
+          class="nw-card"
+          style="--na: var(--n-rust2); background: rgba(160, 64, 42, 0.07)"
+        >
+          <div class="nw-card-icon">💡</div>
+          <div class="nw-card-title">Przesłanie</div>
+          <div class="nw-card-desc">
+            Ostrzeżenie przed totalitaryzmem. Kontrola języka = kontrola myśli.
+            Prywatność i miłość są politycznie wywrotowe. Aktualność:
+            inwigilacja cyfrowa, fake news, propaganda.
+            <strong>Klęska Winstona to ostrzeżenie, nie wyrok.</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="nw-section-head" style="margin-top: 2rem">
+        <span class="nw-section-icon">🧠</span>
+        <div class="nw-section-title">Kluczowe pojęcia do zapamiętania</div>
+        <div class="nw-section-line"></div>
+      </div>
+      <div style="overflow-x: auto">
+        <table>
+          <thead>
+            <tr>
+              <th>Pojęcie</th>
+              <th>Definicja</th>
+              <th>Przykład w powieści</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Nowomowa (Newspeak)</strong></td>
+              <td>Uproszczony język eliminujący możliwość buntu</td>
+              <td>Syme pracuje nad słownikiem — mniej słów = mniej myśli</td>
+            </tr>
+            <tr>
+              <td><strong>Dwójmyślenie</strong></td>
+              <td>Jednoczesna wiara w dwie sprzeczne prawdy</td>
+              <td>„Wojna to pokój" — akceptowane bez konfliktu</td>
+            </tr>
+            <tr>
+              <td><strong>Zbrodnia myśli</strong></td>
+              <td>Nielegalna myśl sprzeczna z Partią</td>
+              <td>Winston pisze dziennik — to już zbrodnia</td>
+            </tr>
+            <tr>
+              <td><strong>Teleekran</strong></td>
+              <td>Dwukierunkowy ekran do inwigilacji</td>
+              <td>W każdym mieszkaniu, nie można wyłączyć</td>
+            </tr>
+            <tr>
+              <td><strong>Sala 101</strong></td>
+              <td>Pokój z największym indywidualnym strachem</td>
+              <td>Dla Winstona — klatka ze szczurami</td>
+            </tr>
+            <tr>
+              <td><strong>Policja Myśli</strong></td>
+              <td>Tajna policja tropiąca zbrodnie myśli</td>
+              <td>Charrington — agent Policji Myśli</td>
+            </tr>
+            <tr>
+              <td><strong>Prole</strong></td>
+              <td>85% populacji — poza pełną kontrolą Partii</td>
+              <td>Winston wierzy, że tylko oni mogą obalić system</td>
+            </tr>
+            <tr>
+              <td><strong>Wielki Brat</strong></td>
+              <td>Twarz Partii — może fikcyjna postać</td>
+              <td>„Wielki Brat patrzy na ciebie" — plakaty wszędzie</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="nw-section-head" style="margin-top: 2rem">
+        <span class="nw-section-icon">📢</span>
+        <div class="nw-section-title">Trzy hasła Partii — skrót</div>
+        <div class="nw-section-line"></div>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem">
+        <div
+          style="
+            background: rgba(200, 75, 47, 0.1);
+            border: 1px solid rgba(200, 75, 47, 0.3);
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+          "
+        >
+          <div
+            style="
+              font-family: &quot;Playfair Display&quot;, serif;
+              font-weight: 900;
+              color: #e87050;
+              font-size: 0.95rem;
+              margin-bottom: 0.4rem;
+            "
+          >
+            WOJNA TO POKÓJ
+          </div>
+          <div style="font-size: 0.72rem; color: var(--ink2)">
+            Wojna zewnętrzna = porządek wewnętrzny
+          </div>
+        </div>
+        <div
+          style="
+            background: rgba(106, 60, 156, 0.1);
+            border: 1px solid rgba(106, 60, 156, 0.3);
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+          "
+        >
+          <div
+            style="
+              font-family: &quot;Playfair Display&quot;, serif;
+              font-weight: 900;
+              color: #9a70cc;
+              font-size: 0.95rem;
+              margin-bottom: 0.4rem;
+            "
+          >
+            WOLNOŚĆ TO NIEWOLA
+          </div>
+          <div style="font-size: 0.72rem; color: var(--ink2)">
+            Zależność od Partii = bezpieczeństwo
+          </div>
+        </div>
+        <div
+          style="
+            background: rgba(36, 88, 160, 0.1);
+            border: 1px solid rgba(36, 88, 160, 0.3);
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+          "
+        >
+          <div
+            style="
+              font-family: &quot;Playfair Display&quot;, serif;
+              font-weight: 900;
+              color: #6aaccc;
+              font-size: 0.95rem;
+              margin-bottom: 0.4rem;
+            "
+          >
+            IGNORANCJA TO SIŁA
+          </div>
+          <div style="font-size: 0.72rem; color: var(--ink2)">
+            Im mniej wiesz, tym silniejsza Partia
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /view-nota -->
+
+    <div class="streak-badge" id="streak-badge"></div>
+
+    <script src="quiz_engine.js"></script>
+    <script>
+      const TOPIC_ID = "rok1984";
+
+      const QB_ROK1984 = [
+        // AUTOR
+        {
+          cat: "Autor i kontekst",
+          catColor: "#c84b2f",
+          q: "Jak brzmi prawdziwe imię i nazwisko George'a Orwella?",
+          opts: [
+            "George Herbert Orwell",
+            "Eric Arthur Blair",
+            "Arthur George Wells",
+            "Edward James Orwell",
+          ],
+          ans: 1,
+          explain:
+            "George Orwell to pseudonim literacki. Prawdziwe imię pisarza to Eric Arthur Blair (1903–1950). Pseudonimu używał, by odciąć się od swojego uprzywilejowanego pochodzenia klasowego.",
+        },
+        {
+          cat: "Autor i kontekst",
+          catColor: "#c84b2f",
+          q: "W którym roku opublikowano 'Rok 1984'?",
+          opts: ["1945", "1948", "1949", "1952"],
+          ans: 2,
+          explain:
+            "'Rok 1984' opublikowano w 1949 roku. Pisany był w 1948 roku — stąd tytuł: Orwell odwrócił dwie ostatnie cyfry roku napisania: 48 → 84.",
+        },
+        {
+          cat: "Autor i kontekst",
+          catColor: "#c84b2f",
+          q: "Jakie totalitarne systemy były inspiracją dla 'Roku 1984'?",
+          opts: [
+            "Faszyzm włoski i komunizm chiński",
+            "Stalinowski ZSRR i nazistowskie Niemcy",
+            "Frankistowska Hiszpania i Japonia",
+            "Kolonialna Brytania i Arabia Saudyjska",
+          ],
+          ans: 1,
+          explain:
+            "Orwell obserwował zarówno stalinowski ZSRR, jak i hitlerowskie Niemcy — oba reżimy stały się wzorcem dla Oceanii. Sam walczył w hiszpańskiej wojnie domowej i z bliska widział mechanizmy totalitaryzmu.",
+        },
+        {
+          cat: "Autor i kontekst",
+          catColor: "#c84b2f",
+          q: "Jakie inne słynne dzieło Orwella poprzedza 'Rok 1984'?",
+          opts: [
+            "Podróże Guliwera",
+            "Folwark zwierzęcy (1945)",
+            "Władca much",
+            "Nowy wspaniały świat",
+          ],
+          ans: 1,
+          explain:
+            "'Folwark zwierzęcy' (1945) to alegoryczna satyra na rewolucję bolszewicką i stalinizm. Razem z 'Rokiem 1984' tworzy najważniejszy dorobek Orwella. Oba dzieła krytykują totalitaryzm — jedno poprzez alegorię, drugie przez dystopię.",
+        },
+        // ŚWIAT
+        {
+          cat: "Świat Oceanii",
+          catColor: "#2458a0",
+          q: "Jak nazywają się trzy supermocarswa w 'Roku 1984'?",
+          opts: [
+            "Oceania, Europia, Azjatia",
+            "Oceania, Eurasia, Eastasia",
+            "Anglosfera, Rosja, Chiny",
+            "Atlantia, Europa, Pacyfika",
+          ],
+          ans: 1,
+          explain:
+            "Trzy supermocarswa to: Oceania (Anglosfera), Eurasia (Europa+ZSRR) i Eastasia (Azja Wschodnia). Ciągłe wojny między nimi służą utrzymaniu wewnętrznego porządku — nie prowadzi się ich po to, by wygrać.",
+        },
+        {
+          cat: "Świat Oceanii",
+          catColor: "#2458a0",
+          q: "Jakie są cztery ministerstwa Oceanii i co jest ich prawdziwą funkcją?",
+          opts: [
+            "Prawdy (informuje), Miłości (opiekuje się), Obfitości (bogaci), Pokoju (broni)",
+            "Prawdy (fałszuje historię), Miłości (torturuje), Obfitości (zarządza głodem), Pokoju (prowadzi wojnę)",
+            "Prawdy (cenzuruje), Miłości (nagradza), Obfitości (przydziela jedzenie), Pokoju (szkoli wojsko)",
+            "Są cztery ministerstwa o zwykłych funkcjach — nazwy są prawidłowe",
+          ],
+          ans: 1,
+          explain:
+            "Nazwy ministerstw są odwróceniem ich funkcji: Ministerstwo Prawdy fałszuje historię, Ministerstwo Miłości torturuje, Ministerstwo Obfitości zarządza niedoborem, Ministerstwo Pokoju prowadzi wojnę. To kwintesencja dwójmyślenia.",
+        },
+        {
+          cat: "Świat Oceanii",
+          catColor: "#2458a0",
+          q: "Co to są teleekrany?",
+          opts: [
+            "Telewizory propagandowe tylko do odbioru",
+            "Dwukierunkowe ekrany do inwigilacji — nadają i odbierają obraz i dźwięk",
+            "Ekrany cyfrowe do nauki nowomowy",
+            "Lustra z ukrytymi kamerami",
+          ],
+          ans: 1,
+          explain:
+            "Teleekrany są dwukierunkowe — nadają programy propagandowe i jednocześnie obserwują obywateli. Nie można ich wyłączyć (tylko wyżsi rangą mogą ściszyć). Są fizyczną metaforą totalnej inwigilacji.",
+        },
+        {
+          cat: "Świat Oceanii",
+          catColor: "#2458a0",
+          q: "Czym są 'Dwie minuty nienawiści'?",
+          opts: [
+            "Codzienny rytuał zbiorowej agresji skierowanej na Goldsteina i wrogów Partii",
+            "Godzinny wieczorny program telewizyjny z wiadomościami",
+            "Kara za drobne wykroczenia pracownicze",
+            "Szkolna lekcja historii Oceanii",
+          ],
+          ans: 0,
+          explain:
+            "'Dwie minuty nienawiści' to codzienny rytuał zbiorowej agresji skierowanej na Goldsteina i innych wrogów Partii. Mechanizm kontroli emocjonalnej — nienawiść do zewnętrznego wroga zastępuje bunt przeciw władzy.",
+        },
+        // BOHATEROWIE
+        {
+          cat: "Bohaterowie",
+          catColor: "#9c3060",
+          q: "Gdzie pracuje Winston Smith?",
+          opts: [
+            "W Ministerstwie Miłości jako strażnik",
+            "W Ministerstwie Prawdy — przepisuje artykuły historyczne zgodnie z aktualną linią Partii",
+            "W Ministerstwie Pokoju jako oficer",
+            "W fabryce teleekranów",
+          ],
+          ans: 1,
+          explain:
+            "Winston pracuje w Ministerstwie Prawdy — jego zadaniem jest przepisywanie historycznych artykułów i dokumentów tak, aby zgadzały się z aktualną linią polityczną Partii. To największa ironia jego pracy.",
+        },
+        {
+          cat: "Bohaterowie",
+          catColor: "#9c3060",
+          q: "Jak Julia buntuje się przeciw Partii?",
+          opts: [
+            "Pisze manifesty polityczne i kolportuje ulotki",
+            "Przez seks i osobiste przyjemności — pragmatycznie, bez filozofii ideologicznej",
+            "Organizuje zbrojne podziemie",
+            "Sabotuje teleekrany w fabryce",
+          ],
+          ans: 1,
+          explain:
+            "Julia buntuje się przez ciało i przyjemności — seks, dobre jedzenie, perfumy — nie przez ideologię. Mówi Winstonowi wprost, że nie interesuje ją filozofia wolności. To pragmatyczny, osobisty bunt, nie polityczny.",
+        },
+        {
+          cat: "Bohaterowie",
+          catColor: "#9c3060",
+          q: "Kim okazuje się O'Brien?",
+          opts: [
+            "Autentycznym przywódcą Bractwa Goldsteina",
+            "Agentem Policji Myśli i Partii Wewnętrznej — pułapka dla Winstona",
+            "Sekretnym sojusznikiem, który ratuje Winstona",
+            "Piłotem z innego supermocarswa",
+          ],
+          ans: 1,
+          explain:
+            "O'Brien przez lata udawał potencjalnego sojusznika, by zwabić Winstona. Jest wysoko postawionym członkiem Partii Wewnętrznej i sam prowadzi tortury Winstona. To najbardziej gorzkie zderzenie z iluzją: sojusznik jako oprawca.",
+        },
+        {
+          cat: "Bohaterowie",
+          catColor: "#9c3060",
+          q: "Kim naprawdę jest pan Charrington, u którego Winston wynajmuje pokój?",
+          opts: [
+            "Starym antykwariuszem sympatyzującym z Bractwem",
+            "Agentem Policji Myśli — obserwuje Winstona i Julię od początku",
+            "Prole, który nie wie nic o Partii",
+            "Emerytowanym członkiem Partii Wewnętrznej",
+          ],
+          ans: 1,
+          explain:
+            "Charrington wydawał się sympatycznym starym antykwariuszem. W rzeczywistości jest agentem Policji Myśli — przez cały czas obserwował Winstona i Julię. To on prowadzi aresztowanie. Zdrada doskonała.",
+        },
+        {
+          cat: "Bohaterowie",
+          catColor: "#9c3060",
+          q: "Dlaczego Syme musi zniknąć?",
+          opts: [
+            "Był zbyt leniwy i nie wykonywał pracy",
+            "Rozumiał cel nowomowy zbyt dobrze — wiedza jest niebezpieczna",
+            "Nawiązał kontakt z Bractwem Goldsteina",
+            "Sabotował produkcję Słownika",
+          ],
+          ans: 1,
+          explain:
+            "Syme pracuje nad słownikiem Nowomowy i doskonale rozumie jej cel. Winston przeczuwa, że Syme zostanie wymazany właśnie dlatego — jest zbyt inteligentny i świadomy. System nie toleruje tych, którzy myślą zbyt jasno.",
+        },
+        // NOWOMOWA I POJĘCIA
+        {
+          cat: "Nowomowa i pojęcia",
+          catColor: "#6a3d9c",
+          q: "Co to jest nowomowa (Newspeak) i jaki jest jej cel?",
+          opts: [
+            "Nowy język artystyczny Oceanii dla poezji",
+            "Uproszczony język, którego celem jest uniemożliwienie myślenia o buncie przez eliminację słów",
+            "Szyfr używany przez Policję Myśli",
+            "Język propagandowy wyłącznie w telewizji",
+          ],
+          ans: 1,
+          explain:
+            "Nowomowa to język stworzony przez Partię. Jej cel: uczynić myślenie o buncie dosłownie niemożliwym przez stopniową eliminację słów. Jeśli nie ma słowa 'wolność', nie można o niej myśleć. To językoznawstwo jako narzędzie totalitarnego zniewolenia.",
+        },
+        {
+          cat: "Nowomowa i pojęcia",
+          catColor: "#6a3d9c",
+          q: "Co oznacza pojęcie 'dwójmyślenie' (doublethink)?",
+          opts: [
+            "Zdolność myślenia w dwóch językach jednocześnie",
+            "Zdolność do jednoczesnego wierzenia w dwie sprzeczne prawdy",
+            "Technika interrogacyjna Policji Myśli",
+            "Rodzaj ćwiczenia pamięci dla pracowników Partii",
+          ],
+          ans: 1,
+          explain:
+            "Dwójmyślenie to zdolność do akceptowania dwóch wzajemnie sprzecznych prawd jednocześnie bez poczucia konfliktu. Umożliwia to akceptację absurdów jak 'Wojna to pokój'. To fundament mentalny systemu totalitarnego.",
+        },
+        {
+          cat: "Nowomowa i pojęcia",
+          catColor: "#6a3d9c",
+          q: "Co to jest 'zbrodnia myśli' (thoughtcrime)?",
+          opts: [
+            "Pisanie zakazanych słów na ścianach",
+            "Sam fakt pomyślenia czegoś sprzecznego z Partią — bez żadnego działania",
+            "Czytanie zakazanych książek",
+            "Kontakt z Bractwem Goldsteina",
+          ],
+          ans: 1,
+          explain:
+            "Zbrodnia myśli to samo myślenie sprzeczne z Partią — nawet bez żadnego działania zewnętrznego. Nie trzeba działać — wystarczy mieć niedozwoloną myśl. Policja Myśli tropuje 'twarzyprzestępców' przez wyraz twarzy.",
+        },
+        {
+          cat: "Nowomowa i pojęcia",
+          catColor: "#6a3d9c",
+          q: "Co to jest 'Sala 101' i czym jest dla Winstona?",
+          opts: [
+            "Sala przesłuchań z silnym światłem",
+            "Pokój, w którym umieszcza się indywidualny, największy lęk danej osoby — dla Winstona: klatka ze szczurami",
+            "Kwatera główna Policji Myśli",
+            "Sala, w której Winston pisze zeznania",
+          ],
+          ans: 1,
+          explain:
+            "Sala 101 to miejsce, gdzie O'Brien umieszcza to, czego każdy człowiek boi się najbardziej. Dla Winstona to klatka ze szczurami przymocowana do twarzy. Kiedy krzyczy 'Zróbcie to Julii!' — zdradza miłość i jest kompletnie złamany.",
+        },
+        {
+          cat: "Nowomowa i pojęcia",
+          catColor: "#6a3d9c",
+          q: "Kim są 'prole' (proletariusze) w Oceanii?",
+          opts: [
+            "Elita Partii Wewnętrznej",
+            "85% populacji — poza pełną kontrolą Partii, zbyt zajęci przeżyciem by się buntować",
+            "Tajni agenci Policji Myśli wśród ludu",
+            "Żołnierze frontowi wojen Oceanii",
+          ],
+          ans: 1,
+          explain:
+            "Prole to 85% populacji — Partia ich nie kontroluje tak intensywnie, bo ich nie liczy. Winston naiwnie wierzy, że tylko prole mogą obalić system. Ironia: są zbyt zajęci przeżyciem codziennym, by myśleć o buncie.",
+        },
+        // FABUŁA
+        {
+          cat: "Fabuła",
+          catColor: "#b87020",
+          q: "Co jest pierwszym aktem buntu Winstona?",
+          opts: [
+            "Romans z Julią",
+            "Pisanie tajnego dziennika",
+            "Kontakt z O'Brienem",
+            "Kradzież jedzenia z ministerstwa",
+          ],
+          ans: 1,
+          explain:
+            "Pisanie tajnego dziennika to pierwszy i fundamentalny akt buntu Winstona — utrwala myśl, która jest 'zbrodnią myśli'. Kieruje go do przyszłości: 'Do epoki, w której myślenie będzie wolne.'",
+        },
+        {
+          cat: "Fabuła",
+          catColor: "#b87020",
+          q: "Co symbolizuje szklany przycisk do listów z koralem, który Winston kupuje?",
+          opts: [
+            "Bogactwo dawnych czasów, które Partia zniszczyła",
+            "Kruchość piękna i prywatności — rozbity przez Policję Myśli podczas aresztowania",
+            "Miłość Winstona do Julii",
+            "Pamiątkę po matce Winstona",
+          ],
+          ans: 1,
+          explain:
+            "Szklany przycisk z koralem symbolizuje kruchość piękna i prywatności. Kiedy podczas aresztowania zostaje rozbity przez Policję Myśli — to metafora zniszczenia świata Winstona i Julii. Piękno nie przeżywa konfrontacji z przemocą.",
+        },
+        {
+          cat: "Fabuła",
+          catColor: "#b87020",
+          q: "Jakie jest ostatnie zdanie powieści i co oznacza?",
+          opts: [
+            "'Julia zginęła — i on był wolny.' — nadzieja na wolność",
+            "'Kochał Wielkiego Brata.' — całkowite złamanie Winstona, system odniósł absolutne zwycięstwo",
+            "'Pobiegł do okna — i skoczył.' — ucieczka przez śmierć",
+            "'Napisze prawdę — i świat się dowie.' — nadzieja",
+          ],
+          ans: 1,
+          explain:
+            "Ostatnie zdanie 'Kochał Wielkiego Brata' to najgorzejsze możliwe zakończenie — Winston nie tylko się poddał, ale naprawdę zaczął kochać Partię. System nie wymagał śmierci — wymagał autentycznej, wewnętrznej miłości. I to osiągnął.",
+        },
+        {
+          cat: "Fabuła",
+          catColor: "#b87020",
+          q: "Na czym polega dramat Sali 101 i co Winston robi w kulminacyjnym momencie?",
+          opts: [
+            "Odmawia zeznań — umiera z godnością",
+            "Woła 'Zróbcie to Julii!' — zdradza ukochaną, by ocalić siebie od szczurów",
+            "Ucieka z celi i dociera do Bractwa",
+            "Atakuje O'Briena",
+          ],
+          ans: 1,
+          explain:
+            "W Sali 101 O'Brien zbliża do twarzy Winstona klatkę ze szczurami. W panice Winston woła: 'Zróbcie to Julii! Nie mnie!' — zdradza jedyną osobę, którą kochał. To jest moment totalnej klęski: Partia uzyskała pełną władzę nad jego duszą.",
+        },
+        // TEMATY
+        {
+          cat: "Tematy i interpretacje",
+          catColor: "#3a6820",
+          q: "Jakie jest główne przesłanie hasła 'Kto kontroluje przeszłość, kontroluje przyszłość'?",
+          opts: [
+            "Historia jest nieważna dla teraźniejszości",
+            "Fałszując historię Partia kontroluje tożsamość narodu i uniemożliwia obiektywną ocenę rzeczywistości",
+            "Przyszłość można przewidzieć przez badanie historii",
+            "Orwell zaleca studiowanie historii",
+          ],
+          ans: 1,
+          explain:
+            "Hasło opisuje mechanizm totalitarnej manipulacji: kto kontroluje, co jest 'prawdą' o przeszłości, kontroluje to, jak ludzie rozumieją teraźniejszość i co uważają za możliwe w przyszłości. Winston przepisuje historię — to sedno jego pracy.",
+        },
+        {
+          cat: "Tematy i interpretacje",
+          catColor: "#3a6820",
+          q: "Dlaczego miłość Winstona i Julii jest aktem politycznym?",
+          opts: [
+            "Bo naruszają przepisy dotyczące zawierania małżeństw",
+            "Bo Partia niszczy więzy emocjonalne — prywatność i miłość są wywrotowe, bo lojalność ma być tylko wobec Partii",
+            "Bo są pracownikami różnych ministerstw",
+            "Bo Julia jest szpiegiem Eastasii",
+          ],
+          ans: 1,
+          explain:
+            "Partia celowo niszczy więzy emocjonalne między ludźmi — rodzinę, przyjaźń, miłość. Każda prywatna lojalność jest zagrożeniem, bo odciąga od lojalności wobec Partii. Dlatego romans jest politycznie wywrotowy już przez samo swoje istnienie.",
+        },
+        {
+          cat: "Tematy i interpretacje",
+          catColor: "#3a6820",
+          q: "Jak 'Rok 1984' odnosi się do współczesności?",
+          opts: [
+            "Jest całkowicie nieaktualny — totalitaryzm minął",
+            "Teleekrany = smartfony, inwigilacja cyfrowa, fake news, propaganda — pojęcia Orwella są bardziej aktualne niż kiedykolwiek",
+            "Ostrzega wyłącznie przed komunizmem",
+            "Mówi tylko o historii XX wieku",
+          ],
+          ans: 1,
+          explain:
+            "Teleekrany odpowiadają dziś smartfonom i śledzeniu cyfrowemu; dwójmyślenie — mediom społecznościowym i bańkom informacyjnym; nowomowa — mowie nienawiści i manipulacji językiem. Dlatego powieść wraca na listy bestsellerów po każdym politycznym skandalu.",
+        },
+      ];
+
+      if (typeof ALL_BANKS !== "undefined") {
+        ALL_BANKS["rok1984"] = QB_ROK1984;
+        ALL_BANKS["all"] = [...(ALL_BANKS["all"] || []), ...QB_ROK1984];
+        BANK_LABELS["rok1984"] = "Rok 1984";
+      }
+
+      function switchView(v) {
+        ["cards", "quiz", "nota"].forEach((id) => {
+          document.getElementById("view-" + id).style.display = "none";
+          document.getElementById("btn-" + id)?.classList.remove("active");
+        });
+        document.getElementById("view-" + v).style.display = "block";
+        document.getElementById("btn-" + v)?.classList.add("active");
+      }
+
+      function renderNavStatus() {
+        const td = getTopicData(TOPIC_ID);
+        const status = td.status || "";
+        const el = document.getElementById("nav-status");
+        el.innerHTML = `
+    <button class="nav-sbtn${status === "done" ? " sd" : ""}" onclick="toggleStatus('done')">✓ Zaliczone</button>
+    <button class="nav-sbtn${status === "focus" ? " sf" : ""}" onclick="toggleStatus('focus')">★ Powtórka</button>
+    <button class="nav-sbtn${status === "hard" ? " sh" : ""}" onclick="toggleStatus('hard')">! Trudny</button>`;
+      }
+      function toggleStatus(s) {
+        const p = gp();
+        if (!p[TOPIC_ID]) p[TOPIC_ID] = {};
+        p[TOPIC_ID].status = p[TOPIC_ID].status === s ? "" : s;
+        sp(p);
+        renderNavStatus();
+      }
+      renderNavStatus();
+      if (typeof updateHubScores === "function") updateHubScores();
+    </script>
+  </body>
+</html>
