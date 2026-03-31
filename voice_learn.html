@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Polski · Lekcje Głosowe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="shortcut icon" href="assets/lucid-origin_Elegant_minimalist_logo_for_a_premium_educational_app_focused_on_literature_and_-0.jpg" type="image/x-icon">
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#0e0c08;
+      --ink:#f0ead8;
+      --ink2:#a89f88;
+      --ink3:#6b6455;
+      --gold:#c9a84c;
+      --gold2:#e8c96a;
+      --coral:#c84b2f;
+      --teal:#2a7d5f;
+      --blue:#2458a0;
+    }
+    body{
+      background:var(--bg);color:var(--ink);
+      font-family:'DM Sans',sans-serif;
+      min-height:100vh;padding-bottom:9rem;overflow-x:hidden;
+    }
+    body::before{
+      content:'';position:fixed;inset:0;
+      background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+      opacity:.35;pointer-events:none;z-index:0;
+    }
+    .back{
+      position:fixed;top:1.1rem;left:1.2rem;z-index:500;
+      display:inline-flex;align-items:center;gap:.4rem;
+      font-size:.68rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+      color:var(--ink3);text-decoration:none;
+      background:rgba(14,12,8,.88);
+      border:1px solid rgba(255,255,255,.1);
+      padding:.4rem .9rem .4rem .7rem;
+      border-radius:100px;
+      backdrop-filter:blur(10px);
+      transition:color .2s,border-color .2s;
+    }
+    .back:hover{color:var(--gold);border-color:rgba(201,168,76,.35);}
+    .back svg{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:2.2;flex-shrink:0;}
+    header{position:relative;z-index:1;text-align:center;padding:4rem 2rem 0;}
+    .eyebrow{font-size:.66rem;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem;}
+    h1{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,5.5vw,3.6rem);font-weight:900;line-height:1;letter-spacing:-.02em;}
+    h1 em{color:var(--gold2);font-style:italic;}
+    .sub{margin-top:.5rem;font-size:.85rem;color:var(--ink2);}
+    .hdivider{width:46px;height:1px;background:var(--gold);margin:1.1rem auto 0;opacity:.4;}
+    .page{position:relative;z-index:1;max-width:860px;margin:0 auto;padding:2.2rem 1.4rem;}
+    #now-banner{
+      background:linear-gradient(135deg,rgba(201,168,76,.1),rgba(201,168,76,.03));
+      border:1px solid rgba(201,168,76,.28);border-radius:14px;
+      padding:1.3rem 1.7rem;margin-bottom:2rem;display:none;animation:fu .3s ease;
+    }
+    #now-banner.visible{display:block;}
+    .nb-eyebrow{font-size:.54rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:.45rem;display:flex;align-items:center;gap:.45rem;}
+    .nb-dot{width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 3px rgba(201,168,76,.25);animation:pulse 1.6s ease-in-out infinite;flex-shrink:0;}
+    @keyframes pulse{0%,100%{box-shadow:0 0 0 3px rgba(201,168,76,.25);}50%{box-shadow:0 0 0 8px rgba(201,168,76,.05);}}
+    .nb-title{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;color:var(--gold2);margin-bottom:.2rem;}
+    .nb-sub{font-size:.75rem;color:var(--ink2);}
+    .nb-scrubber{margin-top:.9rem;}
+    .nb-bar{position:relative;height:5px;background:rgba(255,255,255,.1);border-radius:3px;cursor:pointer;touch-action:none;}
+    .nb-fill{height:100%;width:0%;background:linear-gradient(90deg,var(--teal),var(--gold));border-radius:3px;pointer-events:none;}
+    .nb-time{display:flex;justify-content:space-between;margin-top:.3rem;font-size:.58rem;color:var(--ink3);font-variant-numeric:tabular-nums;}
+    .stats-row{display:flex;flex-wrap:wrap;gap:.45rem;margin-bottom:1.4rem;}
+    .stat-pill{font-size:.68rem;color:var(--ink2);background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:100px;padding:.2rem .72rem;white-space:nowrap;}
+    .stat-pill.sp-now{color:#f97316;background:rgba(249,115,22,.08);border-color:rgba(249,115,22,.25);}
+    .stat-pill.sp-done{color:#6acca8;background:rgba(42,125,95,.09);border-color:rgba(42,125,95,.22);}
+    .tab-bar{display:flex;gap:.4rem;border-bottom:1px solid rgba(255,255,255,.07);margin-bottom:1.6rem;padding-bottom:0;}
+    .tab-btn{font-family:'DM Sans',sans-serif;font-size:.78rem;font-weight:500;letter-spacing:.08em;padding:.5rem 1.2rem .65rem;background:transparent;border:none;border-bottom:2px solid transparent;color:var(--ink2);cursor:pointer;transition:all .18s;display:flex;align-items:center;gap:.4rem;margin-bottom:-1px;}
+    .tab-btn:hover{color:var(--ink);}
+    .tab-btn.active{color:var(--gold);border-bottom-color:var(--gold);}
+    .tab-count{font-size:.62rem;font-weight:600;letter-spacing:.05em;background:rgba(255,255,255,.07);border-radius:100px;padding:.12rem .5rem;color:inherit;}
+    .tab-btn.active .tab-count{background:rgba(201,168,76,.18);}
+    .sec-label{font-size:.57rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink3);margin:2rem 0 .85rem;padding-bottom:.38rem;border-bottom:1px solid rgba(255,255,255,.06);}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.95rem;margin-bottom:.5rem;}
+    @media(max-width:580px){.grid{grid-template-columns:1fr;}}
+    .card{background:rgba(255,255,255,.024);border:1px solid rgba(255,255,255,.09);border-radius:12px;overflow:hidden;cursor:pointer;transition:transform .2s,border-color .2s,background .2s;animation:fu .5s ease both;position:relative;}
+    .card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--cc,var(--gold));opacity:.7;}
+    .card:hover{transform:translateY(-3px);border-color:rgba(255,255,255,.17);background:rgba(255,255,255,.04);}
+    .card.is-playing{border-color:rgba(201,168,76,.45);background:rgba(201,168,76,.06);box-shadow:0 0 0 1px rgba(201,168,76,.15),0 6px 28px rgba(201,168,76,.08);}
+    .card.is-listened{opacity:.5;filter:grayscale(.3);}
+    .card.is-now-topic::after{content:'🔥 Uczę się';position:absolute;top:.65rem;right:.85rem;font-size:.53rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#f97316;background:rgba(249,115,22,.1);border:1px solid rgba(249,115,22,.3);border-radius:100px;padding:.17rem .58rem;pointer-events:none;}
+    .card.is-passed-topic::after{content:'✅ Zdane';position:absolute;top:.65rem;right:.85rem;font-size:.53rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#6acca8;background:rgba(42,125,95,.12);border:1px solid rgba(42,125,95,.3);border-radius:100px;padding:.17rem .58rem;pointer-events:none;}
+    .card-body{padding:1.15rem 1.35rem .95rem;}
+    .card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:.65rem;}
+    .card-emoji{font-size:1.45rem;}
+    .card-badge{font-size:.53rem;letter-spacing:.1em;text-transform:uppercase;padding:.18rem .55rem;border-radius:100px;border:1px solid rgba(255,255,255,.11);color:var(--ink3);background:rgba(255,255,255,.04);}
+    .card-title{font-family:'Playfair Display',serif;font-size:.97rem;font-weight:700;color:var(--ink);margin-bottom:.22rem;line-height:1.25;}
+    .card-desc{font-size:.7rem;color:var(--ink2);line-height:1.5;margin-bottom:.85rem;}
+    .card-prog{display:flex;align-items:center;gap:.55rem;}
+    .cpbar{flex:1;height:3px;background:rgba(255,255,255,.07);border-radius:2px;overflow:hidden;}
+    .cpfill{height:100%;width:0%;background:var(--cc,var(--gold));border-radius:2px;transition:width .4s;}
+    .cptime{font-size:.6rem;color:var(--ink3);white-space:nowrap;}
+    .card-foot{display:flex;align-items:center;justify-content:space-between;padding:.6rem 1.35rem;background:rgba(255,255,255,.02);border-top:1px solid rgba(255,255,255,.05);}
+    .cf-dur{font-size:.63rem;color:var(--ink3);}
+    .cf-btn{display:flex;align-items:center;gap:.38rem;font-size:.63rem;letter-spacing:.1em;text-transform:uppercase;color:var(--cc,var(--gold));font-weight:600;}
+    .cf-icon{width:21px;height:21px;border-radius:50%;background:var(--cc,var(--gold));display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+    .cf-icon svg{width:8px;height:8px;fill:var(--bg);margin-left:1px;}
+    .empty-msg{text-align:center;padding:3rem 1rem;color:var(--ink3);font-size:.85rem;}
+    #gplayer{position:fixed;bottom:0;left:0;right:0;z-index:300;background:rgba(10,9,6,.97);border-top:1px solid rgba(255,255,255,.1);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);display:none;padding:.6rem 1rem .55rem;}
+    #gplayer.visible{display:block;}
+    .gp-inner{max-width:860px;margin:0 auto;display:grid;grid-template-columns:1fr auto;grid-template-rows:auto auto auto;column-gap:.8rem;row-gap:.22rem;align-items:center;}
+    .gp-title-wrap{grid-column:1;grid-row:1;}
+    .gp-eyebrow{font-size:.48rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);line-height:1;margin-bottom:.06rem;}
+    .gp-title{font-family:'Playfair Display',serif;font-size:.8rem;font-weight:700;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+    .gp-play{grid-column:2;grid-row:1/3;width:40px;height:40px;border-radius:50%;background:var(--gold);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .15s,transform .1s;flex-shrink:0;align-self:center;}
+    .gp-play:active{background:var(--gold2);transform:scale(.92);}
+    .gp-play svg{width:14px;height:14px;fill:var(--bg);}
+    .gp-scrub{grid-column:1;grid-row:2;}
+    .gp-bar{position:relative;height:5px;background:rgba(255,255,255,.1);border-radius:3px;cursor:pointer;touch-action:none;}
+    .gp-fill{height:100%;width:0%;background:linear-gradient(90deg,var(--teal),var(--gold));border-radius:3px;pointer-events:none;}
+    .gp-times{display:flex;justify-content:space-between;margin-top:.28rem;font-size:.57rem;color:var(--ink3);font-variant-numeric:tabular-nums;}
+    .gp-controls{grid-column:1/-1;grid-row:3;display:flex;align-items:center;gap:.55rem;padding-top:.12rem;}
+    .gp-speed{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.13);color:var(--ink2);font-family:'DM Sans',sans-serif;font-size:.63rem;padding:.24rem .42rem;border-radius:6px;cursor:pointer;min-width:52px;}
+    .gp-speed option{background:#1a1600;}
+    .gp-vol{flex:1;accent-color:var(--gold);cursor:pointer;min-width:55px;}
+    .gp-prev,.gp-next{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);color:var(--ink2);font-family:'DM Sans',sans-serif;font-size:.6rem;padding:.24rem .65rem;border-radius:100px;cursor:pointer;transition:all .15s;white-space:nowrap;}
+    .gp-prev:hover,.gp-next:hover{border-color:var(--gold);color:var(--gold);}
+    @media(min-width:520px){
+      #gplayer{padding:.7rem 1.5rem;}
+      .gp-inner{display:flex;flex-direction:row;flex-wrap:nowrap;align-items:center;gap:.8rem 1rem;}
+      .gp-title-wrap{flex:0 0 auto;max-width:165px;}
+      .gp-play{flex-shrink:0;}
+      .gp-scrub{flex:1;min-width:100px;}
+      .gp-controls{flex:0 0 auto;padding-top:0;}
+    }
+    @keyframes fu{from{opacity:0;transform:translateY(13px);}to{opacity:1;transform:translateY(0);}}
+  </style>
+</head>
+<body>
+
+<a class="back" href="index.html">
+  <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+  Hub
+</a>
+
+<header>
+  <p class="eyebrow">Analiza Literacka · Polski</p>
+  <h1>Lekcje <em>Głosowe</em></h1>
+  <p class="sub">Słuchaj teorii w drodze do szkoły · wszystkie tematy w jednym miejscu</p>
+  <div class="hdivider"></div>
+</header>
+
+<div class="page">
+
+  <div id="now-banner">
+    <div class="nb-eyebrow"><div class="nb-dot"></div> Teraz odtwarzasz</div>
+    <div class="nb-title" id="nb-title">—</div>
+    <div class="nb-sub"   id="nb-sub">—</div>
+    <div class="nb-scrubber">
+      <div class="nb-bar" id="nb-bar"><div class="nb-fill" id="nb-fill"></div></div>
+      <div class="nb-time"><span id="nb-cur">0:00</span><span id="nb-dur">—</span></div>
+    </div>
+  </div>
+
+  <div class="stats-row" id="stats-row"></div>
+
+  <div class="tab-bar">
+    <button class="tab-btn active" id="tab-now"    onclick="switchTab('now')">   🔥 Uczę się  <span class="tab-count" id="cnt-now"></span></button>
+    <button class="tab-btn"        id="tab-active" onclick="switchTab('active')">📖 Do nauki  <span class="tab-count" id="cnt-active"></span></button>
+    <button class="tab-btn"        id="tab-passed" onclick="switchTab('passed')">✅ Zdane     <span class="tab-count" id="cnt-passed"></span></button>
+  </div>
+
+  <div id="view-now"></div>
+  <div id="view-active" style="display:none"></div>
+  <div id="view-passed" style="display:none"></div>
+
+</div>
+
+<div id="gplayer">
+  <div class="gp-inner">
+    <div class="gp-title-wrap">
+      <div class="gp-eyebrow">▶ Odtwarzasz</div>
+      <div class="gp-title" id="gp-title">—</div>
+    </div>
+    <button class="gp-play" id="gp-play" onclick="togglePlay()">
+      <svg id="gp-icon" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+    </button>
+    <div class="gp-scrub">
+      <div class="gp-bar" id="gp-bar"><div class="gp-fill" id="gp-fill"></div></div>
+      <div class="gp-times"><span id="gp-cur">0:00</span><span id="gp-dur">—</span></div>
+    </div>
+    <div class="gp-controls">
+      <button class="gp-prev" onclick="playPrev()">⏮ Poprz.</button>
+      <button class="gp-next" onclick="playNext()">Nast. ⏭</button>
+      <select class="gp-speed" id="gp-speed">
+        <option value="0.8">0.8×</option>
+        <option value="1" selected>1×</option>
+        <option value="1.25">1.25×</option>
+        <option value="1.5">1.5×</option>
+        <option value="1.75">1.75×</option>
+        <option value="2">2×</option>
+      </select>
+      <input class="gp-vol" type="range" min="0" max="1" step="0.02" value="1" id="gp-vol"/>
+    </div>
+  </div>
+</div>
+
+<audio id="audio"></audio>
+
+<script>
+/* ── TOPIC FLAGS (zsynchronizowane z index.html) ── */
+const TOPIC_FLAGS = {
+  temat1:         false,   // Ferdydurke          — zdane
+  temat2:         false,   // Nawłoć               — zdane
+  temat3:         false,   // Wizje odbudowy       — zdane
+  temat4:         false,   // Przedwiośnie analiza — zdane
+  temat5:         true,    // Jan Lechoń
+  temat6:         true,    // Iłłakowiczówna
+  temat7:         true,    // Pawlikowska
+  temat8:         'now',   // Futuryzm · Jasieński
+  temat9:         'now',   // Skamander · Tuwim
+  temat10:        'now',   // Fundament filozoficzny
+  rok1984:        true,    // Rok 1984 · Orwell
+  wojna_okupacja: true,    // Wojna i okupacja (hub)
+  temat11:        'now',   // Война i okupacja — lekcja głosowa
+};
+
+const TRACKS = [
+  {id:'temat10', flagKey:'temat10', group:'epoka',        emoji:'🏛️', color:'#9c3060',
+   title:'Fundament filozoficzny epoki',
+   desc:'Daty 1918–1939 · Hasła epoki · Freud, Nietzsche, Bergson · Kierunki literackie',
+   src:'assets/temat10.mp3'},
+  {id:'temat9',  flagKey:'temat9',  group:'skamander',    emoji:'🌸', color:'#6a3d9c',
+   title:'Skamander · Julian Tuwim',
+   desc:'Program grupy · Witalizm · Urbanizm · Do krytyków · Słowisień · Rzecz czarnoleska',
+   src:'assets/temat9.mp3'},
+  {id:'temat5',  flagKey:'temat5',  group:'skamander',    emoji:'🪶', color:'#2458a0',
+   title:'Jan Lechoń',
+   desc:'Życie · Herostrates · Mochnacki · Sejm · Pytasz co… · Karmazynowy poemat',
+   src:'assets/temat5.mp3'},
+  {id:'temat6',  flagKey:'temat6',  group:'skamander',    emoji:'✒️', color:'#8a4fb0',
+   title:'Kazimiera Iłłakowiczówna',
+   desc:'Liryka osobista · Religijność · Prostota języka · Motywy egzystencjalne',
+   src:'assets/temat6.mp3'},
+  {id:'temat7',  flagKey:'temat7',  group:'skamander',    emoji:'🌸', color:'#c4607a',
+   title:'Pawlikowska-Jasnorzewska',
+   desc:'Życie · Epigramaty · Tom Pocałunki · Miniatury liryczne',
+   src:'assets/temat7.mp3'},
+  {id:'temat8',  flagKey:'temat8',  group:'futuryzm',     emoji:'⚙️', color:'#c0362a',
+   title:'Futuryści · Bruno Jasieński',
+   desc:'Program futuryzmu · Reforma ortografii · But w butonierce · Manifesty',
+   src:'assets/temat8.mp3'},
+  {id:'temat2',  flagKey:'temat2',  group:'przedwiosnie', emoji:'🌿', color:'#2a7d5f',
+   title:'Nawłoć',
+   desc:'Przestrzeń · Kontrast społeczny · Bohaterowie · Znaczenie dworku',
+   src:'assets/temat2.mp3'},
+  {id:'temat3',  flagKey:'temat3',  group:'przedwiosnie', emoji:'🏛️', color:'#2458a0',
+   title:'Wizje odbudowy Polski',
+   desc:'Seweryn · Szklane domy · Gajowiec · Lulek · Dylemat Cezarego',
+   src:'assets/temat3.mp3'},
+  {id:'temat4',  flagKey:'temat4',  group:'przedwiosnie', emoji:'🌱', color:'#b87020',
+   title:'Przedwiośnie – Analiza',
+   desc:'Fabuła · Charakterystyka bohaterów · Tytuł · Analiza porównawcza',
+   src:'assets/temat4.mp3'},
+  {id:'temat1',  flagKey:'temat1',  group:'ferdydurke',   emoji:'📚', color:'#c84b2f',
+   title:'Ferdydurke',
+   desc:'Tytuł · Absurd · Awangarda · Groteska · Symbole · Miejsce akcji',
+   src:'assets/temat1.mp3'},
+  {id:'rok1984', flagKey:'rok1984', group:'lektury',      emoji:'📖', color:'#c84b2f',
+   title:'Rok 1984 · George Orwell',
+   desc:'Dystopia · Totalitaryzm · Wielki Brat · Nowomowa · Winston Smith',
+   src:'assets/rok1984.mp3'},
+  {id:'temat11', flagKey:'temat11', group:'lektury',      emoji:'⚔️', color:'#7a5c20',
+   title:'Война i okupacja',
+   desc:'Baczyński · Miłosz · Różewicz · Borowski · Herling-Grudziński · Apokalipsa',
+   src:'assets/temat11.mp3'},
+];
+
+const GROUP_META  = {
+  epoka:        '🏛️ Dwudziestolecie międzywojenne',
+  skamander:    '🌸 Skamander · Poeci',
+  futuryzm:     '⚙️ Futuryzm',
+  przedwiosnie: '🌿 Przedwiośnie · Żeromski',
+  ferdydurke:   '📚 Ferdydurke · Gombrowicz',
+  lektury:      '📖 Lektury · Proza światowa',
+};
+const GROUP_ORDER = ['epoka','skamander','futuryzm','przedwiosnie','ferdydurke','lektury'];
+
+const audio = document.getElementById('audio');
+let currentIdx = -1;
+
+const fmt = s => (!isFinite(s)||isNaN(s)) ? '—' : Math.floor(s/60)+':'+(Math.floor(s%60)<10?'0':'')+Math.floor(s%60);
+
+const isPassed = t => TOPIC_FLAGS[t.flagKey] === false;
+const isNow    = t => TOPIC_FLAGS[t.flagKey] === 'now';
+const isActive = t => TOPIC_FLAGS[t.flagKey] === true;
+
+const getListened = () => { try{return JSON.parse(localStorage.getItem('vl_done')||'[]');}catch{return[];} };
+const getProgress = () => { try{return JSON.parse(localStorage.getItem('vl_prog')||'{}');}catch{return{};} };
+function markListened(id){ const d=getListened(); if(!d.includes(id)){d.push(id);localStorage.setItem('vl_done',JSON.stringify(d));} }
+function saveProgress(id,pct){ try{ const p=getProgress(); p[id]=pct; localStorage.setItem('vl_prog',JSON.stringify(p)); }catch{} }
+
+function buildCard(t, i){
+  const flag     = TOPIC_FLAGS[t.flagKey];
+  const listened = getListened();
+  const prog     = getProgress();
+  const pct      = prog[t.id]||0;
+  const hasListened = listened.includes(t.id);
+  const isPlayingNow = currentIdx>=0 && TRACKS[currentIdx].id===t.id;
+
+  const card = document.createElement('div');
+  card.className = 'card'
+    + (isPlayingNow ? ' is-playing' : '')
+    + (flag===false ? ' is-passed-topic' : '')
+    + (flag==='now' ? ' is-now-topic' : '')
+    + (hasListened && flag!==false ? ' is-listened' : '');
+  card.id = 'card-'+t.id;
+  card.style.cssText = `--cc:${t.color};animation-delay:${i*0.06}s`;
+
+  let bText='Gotowa', bColor='', bBg='', bBorder='';
+  if(isPlayingNow){ bText='▶ Gra'; bColor='var(--gold)'; bBg='rgba(201,168,76,.1)'; bBorder='rgba(201,168,76,.4)'; }
+  else if(hasListened){ bText='✓ Odsłuchano'; bColor='#6acca8'; bBg='rgba(42,125,95,.1)'; bBorder='rgba(42,125,95,.35)'; }
+
+  card.innerHTML = `
+    <div class="card-body">
+      <div class="card-top">
+        <div class="card-emoji">${t.emoji}</div>
+        <div class="card-badge" id="badge-${t.id}"
+             style="color:${bColor};background:${bBg};border-color:${bBorder||'rgba(255,255,255,.11)'}">${bText}</div>
+      </div>
+      <div class="card-title">${t.title}</div>
+      <div class="card-desc">${t.desc}</div>
+      <div class="card-prog">
+        <div class="cpbar"><div class="cpfill" id="cpf-${t.id}" style="width:${pct}%"></div></div>
+        <div class="cptime" id="cpt-${t.id}">${pct>0?pct+'%':'—'}</div>
+      </div>
+    </div>
+    <div class="card-foot">
+      <div class="cf-dur" id="cfd-${t.id}">Ładowanie…</div>
+      <div class="cf-btn">
+        <div class="cf-icon"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        Odtwórz
+      </div>
+    </div>`;
+  card.addEventListener('click', ()=>playTrack(TRACKS.indexOf(t)));
+  return card;
+}
+
+function renderView(viewId, tracks){
+  const el=document.getElementById(viewId);
+  el.innerHTML='';
+  if(!tracks.length){ el.innerHTML='<div class="empty-msg">Brak lekcji w tej kategorii.</div>'; return; }
+  const grouped={};
+  GROUP_ORDER.forEach(g=>grouped[g]=[]);
+  tracks.forEach(t=>{ if(grouped[t.group]) grouped[t.group].push(t); });
+  let ci=0;
+  GROUP_ORDER.forEach(g=>{
+    const list=grouped[g]; if(!list.length)return;
+    const lbl=document.createElement('div'); lbl.className='sec-label'; lbl.textContent=GROUP_META[g]; el.appendChild(lbl);
+    const grid=document.createElement('div'); grid.className='grid';
+    list.forEach(t=>grid.appendChild(buildCard(t,ci++)));
+    el.appendChild(grid);
+  });
+}
+
+function renderAll(){
+  const now    = TRACKS.filter(t=>isNow(t));
+  const active = TRACKS.filter(t=>isActive(t));
+  const passed = TRACKS.filter(t=>isPassed(t));
+  const listened = getListened();
+
+  document.getElementById('cnt-now').textContent    = now.length;
+  document.getElementById('cnt-active').textContent = active.length;
+  document.getElementById('cnt-passed').textContent = passed.length;
+
+  document.getElementById('stats-row').innerHTML = `
+    <div class="stat-pill sp-now">🔥 Uczę się: ${now.length}</div>
+    <div class="stat-pill">📖 Do nauki: ${active.length}</div>
+    <div class="stat-pill sp-done">✅ Zdane: ${passed.length}</div>
+    <div class="stat-pill sp-done">🎧 Odsłuchane: ${listened.length}/${TRACKS.length}</div>`;
+
+  renderView('view-now',    now);
+  renderView('view-active', active);
+  renderView('view-passed', passed);
+  loadDurations();
+}
+
+function switchTab(tab){
+  ['now','active','passed'].forEach(t=>{
+    document.getElementById('view-'+t).style.display  = t===tab ? '' : 'none';
+    document.getElementById('tab-'+t).classList.toggle('active', t===tab);
+  });
+}
+
+function loadDurations(){
+  TRACKS.forEach(t=>{
+    const el=document.getElementById('cfd-'+t.id);
+    if(!el)return;
+    const a=new Audio(); a.src=t.src;
+    a.addEventListener('loadedmetadata',()=>{ if(el)el.textContent=fmt(a.duration); });
+    a.addEventListener('error',()=>{ if(el)el.textContent='Brak pliku'; });
+  });
+}
+
+function setBadge(id, playing){
+  const b=document.getElementById('badge-'+id); if(!b)return;
+  if(playing){
+    b.textContent='▶ Gra'; b.style.color='var(--gold)'; b.style.background='rgba(201,168,76,.1)'; b.style.borderColor='rgba(201,168,76,.4)';
+  } else if(getListened().includes(id)){
+    b.textContent='✓ Odsłuchano'; b.style.color='#6acca8'; b.style.background='rgba(42,125,95,.1)'; b.style.borderColor='rgba(42,125,95,.35)';
+  } else {
+    b.textContent='Gotowa'; b.style.color=''; b.style.background=''; b.style.borderColor='';
+  }
+}
+
+function playTrack(idx){
+  if(idx<0||idx>=TRACKS.length)return;
+  const t=TRACKS[idx];
+  if(currentIdx>=0 && currentIdx!==idx){
+    const old=document.getElementById('card-'+TRACKS[currentIdx].id);
+    if(old)old.classList.remove('is-playing');
+    setBadge(TRACKS[currentIdx].id, false);
+  }
+  currentIdx=idx;
+  audio.src=t.src;
+  audio.play().catch(()=>{});
+  const card=document.getElementById('card-'+t.id);
+  if(card){ card.classList.add('is-playing'); card.scrollIntoView({behavior:'smooth',block:'nearest'}); }
+  setBadge(t.id, true);
+  document.getElementById('gp-title').textContent=t.title;
+  document.getElementById('gplayer').classList.add('visible');
+  setPlayIcon(true);
+  document.getElementById('nb-title').textContent=t.title;
+  document.getElementById('nb-sub').textContent=t.desc;
+  document.getElementById('now-banner').classList.add('visible');
+}
+
+function togglePlay(){ audio.paused ? audio.play().catch(()=>{}) : audio.pause(); }
+function playNext(){ playTrack((currentIdx+1)%TRACKS.length); }
+function playPrev(){ if(audio.currentTime>3){audio.currentTime=0;return;} playTrack((currentIdx-1+TRACKS.length)%TRACKS.length); }
+function setPlayIcon(p){
+  document.getElementById('gp-icon').innerHTML = p
+    ? '<rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/>'
+    : '<polygon points="5,3 19,12 5,21"/>';
+}
+
+audio.addEventListener('timeupdate',()=>{
+  const pct=audio.duration?audio.currentTime/audio.duration*100:0;
+  const t=TRACKS[currentIdx];
+  ['gp-fill','nb-fill'].forEach(id=>{ const e=document.getElementById(id); if(e)e.style.width=pct+'%'; });
+  ['gp-cur','nb-cur'].forEach(id=>{ const e=document.getElementById(id); if(e)e.textContent=fmt(audio.currentTime); });
+  ['gp-dur','nb-dur'].forEach(id=>{ const e=document.getElementById(id); if(e)e.textContent=fmt(audio.duration); });
+  if(t){
+    const cpf=document.getElementById('cpf-'+t.id); if(cpf)cpf.style.width=pct+'%';
+    const cpt=document.getElementById('cpt-'+t.id); if(cpt)cpt.textContent=Math.round(pct)+'%';
+    saveProgress(t.id,Math.round(pct));
+  }
+});
+audio.addEventListener('play',  ()=>setPlayIcon(true));
+audio.addEventListener('pause', ()=>setPlayIcon(false));
+audio.addEventListener('ended', ()=>{
+  const t=TRACKS[currentIdx];
+  if(t){ markListened(t.id); setBadge(t.id,false); renderAll(); }
+  setTimeout(()=>playNext(),1200);
+});
+
+function makeScrubber(barId){
+  const bar=document.getElementById(barId); if(!bar)return;
+  let drag=false;
+  const seek=e=>{ const r=bar.getBoundingClientRect(); const x=Math.max(0,Math.min((e.touches?e.touches[0].clientX:e.clientX)-r.left,r.width)); if(audio.duration)audio.currentTime=(x/r.width)*audio.duration; };
+  bar.addEventListener('mousedown',  e=>{drag=true;seek(e);});
+  bar.addEventListener('touchstart', e=>{drag=true;seek(e);},{passive:true});
+  document.addEventListener('mousemove',  e=>{if(drag)seek(e);});
+  document.addEventListener('touchmove',  e=>{if(drag)seek(e);},{passive:true});
+  document.addEventListener('mouseup',  ()=>drag=false);
+  document.addEventListener('touchend', ()=>drag=false);
+}
+makeScrubber('gp-bar');
+makeScrubber('nb-bar');
+
+document.getElementById('gp-speed').addEventListener('change', function(){ audio.playbackRate=parseFloat(this.value); });
+document.getElementById('gp-vol').addEventListener('input',   function(){ audio.volume=parseFloat(this.value); });
+
+renderAll();
+switchTab('now');
+</script>
+</body>
+</html>
