@@ -24,6 +24,18 @@
         Pawlikowska · Futuryzm · Rok 1984 · Twój postęp
       </p>
       <div class="div"></div>
+      <a href="assets/pytania.jpg" target="_blank" style="
+  display:inline-flex;align-items:center;gap:.5rem;
+  margin-top:1.4rem;
+  font-family:'DM Sans',sans-serif;
+  font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+  color:#0e0c08;background:#2a7d5f;
+  padding:.55rem 1.4rem;border-radius:100px;
+  text-decoration:none;
+  transition:background .2s;
+" onmouseover="this.style.background='#3aad85'" onmouseout="this.style.background='#2a7d5f'">
+  📋 Pytania
+</a>
       <a href="voice_learn.html" style="
   display:inline-flex;align-items:center;gap:.5rem;
   margin-top:1.4rem;
@@ -428,243 +440,72 @@
     </style>
 
     <script>
-      /* ============================================================
-         ★★★  FLAGI TEMATÓW  ★★★
-         true   = DO NAUKI
-         false  = ZDANY
-         "now"  = TERAZ SIĘ UCZĘ
-         ============================================================ */
       const TOPIC_FLAGS = {
-        temat1: false, // Ferdydurke
-        temat2: false, // Nawłoć
-        temat3: false, // Wizje odbudowy Polski
-        temat4: false, // Przedwiośnie – Analiza
-        temat5: "now", // Jan Lechoń
-        temat6: "now", // Iłłakowiczówna
-        temat7: "now", // Pawlikowska
-        temat8: false , // Futuryzm i Jasieński
-        temat9: "now" , // Skamander · Tuwim
-        temat10: false, // Fundament filozoficzny epoki
-        rok1984: true, // Rok 1984 · Orwell  ← NOWY
+        temat1: false,
+        temat2: false,
+        temat3: false,
+        temat4: false,
+        temat5: "now",
+        temat6: "now",
+        temat7: "now",
+        temat8: false,
+        temat9: "now",
+        temat10: false,
+        rok1984: true,
         wojna_okupacja: true,
       };
 
       const T = [
-        {
-          id: "ferdydurke",
-          flagKey: "temat1",
-          group: "ferdydurke",
-          l: "Ferdydurke",
-          e: "📚",
-          c: "#c84b2f",
-          f: "temat1.html",
-          d: "Tytuł · Absurd · Awangarda · Groteska · Symbole · Miejsce akcji · Gombrowicz 1937",
-        },
-        {
-          id: "nawloc",
-          flagKey: "temat2",
-          group: "przedwiosnie",
-          l: "Nawłoć",
-          e: "🌿",
-          c: "#2a7d5f",
-          f: "temat2.html",
-          d: "Przestrzeń · Kontrast społeczny · Bohaterowie · Znaczenie dworku · Żeromski 1924",
-        },
-        {
-          id: "wizje",
-          flagKey: "temat3",
-          group: "przedwiosnie",
-          l: "Wizje odbudowy Polski",
-          e: "🏛️",
-          c: "#2458a0",
-          f: "temat3.html",
-          d: "Seweryn · Szklane domy · Gajowiec · Lulek · Dylemat Cezarego · Żeromski 1924",
-        },
-        {
-          id: "przedwiosnie",
-          flagKey: "temat4",
-          group: "przedwiosnie",
-          l: "Przedwiośnie – Analiza",
-          e: "🌱",
-          c: "#b87020",
-          f: "temat4.html",
-          d: "Fabuła · Charakterystyka bohaterów · Tytuł · Analiza porównawcza",
-        },
-        {
-          id: "dwudziestolecie",
-          flagKey: "temat10",
-          group: "epoka",
-          l: "Fundament filozoficzny",
-          e: "🏛️",
-          c: "#9c3060",
-          f: "temat10.html",
-          d: "Daty 1918–1939 · Hasła epoki · Freud, Nietzsche, Bergson · Kierunki literackie",
-        },
-        {
-          id: "lechoń",
-          flagKey: "temat5",
-          group: "skamander",
-          l: "Jan Lechoń",
-          e: "🪶",
-          c: "#2458a0",
-          f: "temat5.html",
-          d: "Życie · Herostrates · Mochnacki · Sejm · Pytasz co… · Spotkanie · Karmazynowy poemat",
-        },
-        {
-          id: "skamander_tuwim",
-          flagKey: "temat9",
-          group: "skamander",
-          l: "Skamander · Julian Tuwim",
-          e: "🌸",
-          c: "#6a3d9c",
-          f: "temat9.html",
-          d: "Program Skamandra · Witalizm · Urbanizm · Do krytyków · Słowisień · Rzecz czarnoleska",
-        },
-        {
-          id: "illakowiczowna",
-          flagKey: "temat6",
-          group: "skamander",
-          l: "Kazimiera Iłłakowiczówna",
-          e: "✒️",
-          c: "#8a4fb0",
-          f: "temat6.html",
-          d: "Życie · Liryka osobista · Religijność · Prostota języka · Refleksyjność · Motywy egzystencjalne",
-        },
-        {
-          id: "pawlikowska",
-          flagKey: "temat7",
-          group: "skamander",
-          l: "Pawlikowska-Jasnorzewska",
-          e: "🌸",
-          c: "#c4607a",
-          f: "temat7.html",
-          d: "Życie · Twórczość · Epigramaty · Tom Pocałunki · Analiza miniatur lirycznych",
-        },
-        {
-          id: "futuryzm_jasienski",
-          flagKey: "temat8",
-          group: "futuryzm",
-          l: "Futuryści · Bruno Jasieński",
-          e: "⚙️",
-          c: "#c0362a",
-          f: "temat8.html",
-          d: "Program futuryzmu · Reforma ortografii · But w butonierce · Manifesty",
-        },
-        // ★ NOWY TEMAT — ROK 1984 ★
-        {
-          id: "rok1984",
-          flagKey: "rok1984",
-          group: "lektury",
-          l: "Rok 1984 · George Orwell",
-          e: "📖",
-          c: "#c84b2f",
-          f: "rok1984.html",
-          d: "Dystopia · Totalitaryzm · Wielki Brat · Nowomowa · Winston Smith · Sala 101 · 1949",
-        },
-        {
-          id: "wojna_okupacja",
-          flagKey: "wojna_okupacja",
-          group: "epoka",
-          l: "Wojna i okupacja",
-          e: "⚔️",
-          c: "#7a5c20",
-          f: "wojna_i_okupacja.html",
-          d: "II wojna · Baczyński · Miłosz · Różewicz · Borowski · Herling-Grudziński",
-        },
+        { id: "ferdydurke", flagKey: "temat1", group: "ferdydurke", l: "Ferdydurke", e: "📚", c: "#c84b2f", f: "temat1.html", d: "Tytuł · Absurd · Awangarda · Groteska · Symbole · Miejsce akcji · Gombrowicz 1937" },
+        { id: "nawloc", flagKey: "temat2", group: "przedwiosnie", l: "Nawłoć", e: "🌿", c: "#2a7d5f", f: "temat2.html", d: "Przestrzeń · Kontrast społeczny · Bohaterowie · Znaczenie dworku · Żeromski 1924" },
+        { id: "wizje", flagKey: "temat3", group: "przedwiosnie", l: "Wizje odbudowy Polski", e: "🏛️", c: "#2458a0", f: "temat3.html", d: "Seweryn · Szklane domy · Gajowiec · Lulek · Dylemat Cezarego · Żeromski 1924" },
+        { id: "przedwiosnie", flagKey: "temat4", group: "przedwiosnie", l: "Przedwiośnie – Analiza", e: "🌱", c: "#b87020", f: "temat4.html", d: "Fabuła · Charakterystyka bohaterów · Tytuł · Analiza porównawcza" },
+        { id: "dwudziestolecie", flagKey: "temat10", group: "epoka", l: "Fundament filozoficzny", e: "🏛️", c: "#9c3060", f: "temat10.html", d: "Daty 1918–1939 · Hasła epoki · Freud, Nietzsche, Bergson · Kierunki literackie" },
+        { id: "lechoń", flagKey: "temat5", group: "skamander", l: "Jan Lechoń", e: "🪶", c: "#2458a0", f: "temat5.html", d: "Życie · Herostrates · Mochnacki · Sejm · Pytasz co… · Spotkanie · Karmazynowy poemat" },
+        { id: "skamander_tuwim", flagKey: "temat9", group: "skamander", l: "Skamander · Julian Tuwim", e: "🌸", c: "#6a3d9c", f: "temat9.html", d: "Program Skamandra · Witalizm · Urbanizm · Do krytyków · Słowisień · Rzecz czarnoleska" },
+        { id: "illakowiczowna", flagKey: "temat6", group: "skamander", l: "Kazimiera Iłłakowiczówna", e: "✒️", c: "#8a4fb0", f: "temat6.html", d: "Życie · Liryka osobista · Religijność · Prostota języka · Refleksyjność · Motywy egzystencjalne" },
+        { id: "pawlikowska", flagKey: "temat7", group: "skamander", l: "Pawlikowska-Jasnorzewska", e: "🌸", c: "#c4607a", f: "temat7.html", d: "Życie · Twórczość · Epigramaty · Tom Pocałunki · Analiza miniatur lirycznych" },
+        { id: "futuryzm_jasienski", flagKey: "temat8", group: "futuryzm", l: "Futuryści · Bruno Jasieński", e: "⚙️", c: "#c0362a", f: "temat8.html", d: "Program futuryzmu · Reforma ortografii · But w butonierce · Manifesty" },
+        { id: "rok1984", flagKey: "rok1984", group: "lektury", l: "Rok 1984 · George Orwell", e: "📖", c: "#c84b2f", f: "rok1984.html", d: "Dystopia · Totalitaryzm · Wielki Brat · Nowomowa · Winston Smith · Sala 101 · 1949" },
+        { id: "wojna_okupacja", flagKey: "wojna_okupacja", group: "epoka", l: "Wojna i okupacja", e: "⚔️", c: "#7a5c20", f: "wojna_i_okupacja.html", d: "II wojna · Baczyński · Miłosz · Różewicz · Borowski · Herling-Grudziński" },
       ];
 
-      /* ── Flag helpers ── */
-      function getFlag(t) {
-        return TOPIC_FLAGS[t.flagKey];
-      }
-      function isPassed(t) {
-        return getFlag(t) === false;
-      }
-      function isNow(t) {
-        return getFlag(t) === "now";
-      }
-      function isActive(t) {
-        return !isPassed(t);
-      }
+      function getFlag(t) { return TOPIC_FLAGS[t.flagKey]; }
+      function isPassed(t) { return getFlag(t) === false; }
+      function isNow(t) { return getFlag(t) === "now"; }
+      function isActive(t) { return !isPassed(t); }
 
-      /* ── Progress ── */
       const SC = {
-        "": {
-          l: "Nie zaczęty",
-          i: "○",
-          c: "#a89f88",
-          b: "rgba(168,159,136,.1)",
-        },
-        done: {
-          l: "Zaliczone ✓",
-          i: "✓",
-          c: "#2a7d5f",
-          b: "rgba(42,125,95,.15)",
-        },
-        focus: {
-          l: "Do powtórki",
-          i: "★",
-          c: "#c9a84c",
-          b: "rgba(201,168,76,.15)",
-        },
+        "": { l: "Nie zaczęty", i: "○", c: "#a89f88", b: "rgba(168,159,136,.1)" },
+        done: { l: "Zaliczone ✓", i: "✓", c: "#2a7d5f", b: "rgba(42,125,95,.15)" },
+        focus: { l: "Do powtórki", i: "★", c: "#c9a84c", b: "rgba(201,168,76,.15)" },
         hard: { l: "Trudny", i: "!", c: "#c84b2f", b: "rgba(200,75,47,.15)" },
       };
-      function gp() {
-        try {
-          return JSON.parse(localStorage.getItem("polski_progress") || "{}");
-        } catch {
-          return {};
-        }
-      }
-      function sp(d) {
-        try {
-          localStorage.setItem("polski_progress", JSON.stringify(d));
-        } catch {}
-      }
-      function setStatus(id, s) {
-        const p = gp();
-        if (!p[id]) p[id] = {};
-        p[id].status = p[id].status === s ? "" : s;
-        sp(p);
-        renderAll();
-      }
+      function gp() { try { return JSON.parse(localStorage.getItem("polski_progress") || "{}"); } catch { return {}; } }
+      function sp(d) { try { localStorage.setItem("polski_progress", JSON.stringify(d)); } catch {} }
+      function setStatus(id, s) { const p = gp(); if (!p[id]) p[id] = {}; p[id].status = p[id].status === s ? "" : s; sp(p); renderAll(); }
 
-      /* ── Tab ── */
       let currentTab = "active";
       function switchTab(tab) {
         currentTab = tab;
-        document.getElementById("view-active").style.display =
-          tab === "active" ? "" : "none";
-        document.getElementById("view-passed").style.display =
-          tab === "passed" ? "" : "none";
-        document
-          .getElementById("tab-active")
-          .classList.toggle("active", tab === "active");
-        document
-          .getElementById("tab-passed")
-          .classList.toggle("active", tab === "passed");
+        document.getElementById("view-active").style.display = tab === "active" ? "" : "none";
+        document.getElementById("view-passed").style.display = tab === "passed" ? "" : "none";
+        document.getElementById("tab-active").classList.toggle("active", tab === "active");
+        document.getElementById("tab-passed").classList.toggle("active", tab === "passed");
       }
 
-      /* ── Card builder ── */
       function buildCard(t, p, i) {
         const td = p[t.id] || {};
         const st = td.status || "";
         const sc = SC[st];
         const lp = td.lastPct;
-        const hist = (td.history || [])
-          .slice(-3)
-          .map((h) => h.pct + "%")
-          .join(" → ");
+        const hist = (td.history || []).slice(-3).map((h) => h.pct + "%").join(" → ");
         const isDone = st === "done";
         const passed = isPassed(t);
         const now = isNow(t);
         const a = document.createElement("a");
         a.href = t.f;
-        a.className =
-          "tc" +
-          (isDone ? " is-done" : "") +
-          (passed ? " is-passed" : "") +
-          (now ? " is-now" : "");
+        a.className = "tc" + (isDone ? " is-done" : "") + (passed ? " is-passed" : "") + (now ? " is-now" : "");
         a.style.cssText = `--tc:${now ? "#f97316" : t.c};animation-delay:${i * 0.07}s;position:relative`;
         a.innerHTML = `
           <div class="tci">
@@ -686,12 +527,9 @@
         return a;
       }
 
-      /* ── MAIN RENDER ── */
       function renderAll() {
         const p = gp();
-        const pcts = T.map((t) => p[t.id]?.lastPct).filter(
-          (x) => x !== undefined,
-        );
+        const pcts = T.map((t) => p[t.id]?.lastPct).filter((x) => x !== undefined);
         const nowTopics = T.filter((t) => isNow(t));
         const passedTopics = T.filter((t) => isPassed(t));
         const activeTopics = T.filter((t) => isActive(t) && !isNow(t));
@@ -721,10 +559,8 @@
             <div class="stat-pill sp-left">📖 Zaliczone: ${doneCount}/${total}</div>`;
         }
         document.getElementById("count-active").textContent = allActive.length;
-        document.getElementById("count-passed").textContent =
-          passedTopics.length;
+        document.getElementById("count-passed").textContent = passedTopics.length;
 
-        /* NOW section */
         const nowSection = document.getElementById("now-studying-section");
         const nowGrid = document.getElementById("tg-now");
         nowGrid.innerHTML = "";
@@ -733,7 +569,6 @@
           nowTopics.forEach((t, i) => nowGrid.appendChild(buildCard(t, p, i)));
         } else nowSection.style.display = "none";
 
-        /* ACTIVE groups */
         const groups = {
           ferdydurke: document.getElementById("tg-ferdydurke"),
           przedwiosnie: document.getElementById("tg-przedwiosnie"),
@@ -744,14 +579,7 @@
         };
         Object.values(groups).forEach((el) => (el.innerHTML = ""));
         const groupsWithActive = new Set(activeTopics.map((t) => t.group));
-        [
-          "ferdydurke",
-          "przedwiosnie",
-          "epoka",
-          "skamander",
-          "futuryzm",
-          "lektury",
-        ].forEach((grp) => {
+        ["ferdydurke", "przedwiosnie", "epoka", "skamander", "futuryzm", "lektury"].forEach((grp) => {
           const lbl = document.getElementById("lbl-" + grp);
           const show = groupsWithActive.has(grp);
           if (lbl) lbl.style.display = show ? "" : "none";
@@ -761,30 +589,23 @@
           const grp = groups[t.group] || groups["epoka"];
           if (grp) grp.appendChild(buildCard(t, p, i));
         });
-        document.getElementById("all-done-msg").style.display =
-          activeTopics.length === 0 && nowTopics.length === 0 ? "" : "none";
+        document.getElementById("all-done-msg").style.display = activeTopics.length === 0 && nowTopics.length === 0 ? "" : "none";
 
-        /* PASSED grid */
         const passedGrid = document.getElementById("tg-passed");
         passedGrid.innerHTML = "";
-        passedTopics.forEach((t, i) =>
-          passedGrid.appendChild(buildCard(t, p, i)),
-        );
-        document.getElementById("no-passed-msg").style.display =
-          passedTopics.length === 0 ? "" : "none";
+        passedTopics.forEach((t, i) => passedGrid.appendChild(buildCard(t, p, i)));
+        document.getElementById("no-passed-msg").style.display = passedTopics.length === 0 ? "" : "none";
 
-        /* STATUS ROWS */
         const sg = document.getElementById("sg");
         sg.innerHTML = "";
         T.forEach((t, i) => {
           const td = p[t.id] || {};
           const cur = td.status || "";
           const isDone = cur === "done";
-          const passed = isPassed(t);
           const now = isNow(t);
+          const passed = isPassed(t);
           const row = document.createElement("div");
-          row.className =
-            "sr" + (isDone ? " is-done" : "") + (now ? " sr-now" : "");
+          row.className = "sr" + (isDone ? " is-done" : "") + (now ? " sr-now" : "");
           row.style.animationDelay = i * 0.06 + "s";
           row.innerHTML = `
             <span style="font-size:1.2rem">${t.e}</span>
@@ -803,7 +624,6 @@
         renderDevPanel();
       }
 
-      /* ── DEV PANEL ── */
       const GROUP_LABELS = {
         ferdydurke: "📚 Ferdydurke",
         przedwiosnie: "🌿 Przedwiośnie",
@@ -817,10 +637,7 @@
         const body = document.getElementById("dp-body");
         body.innerHTML = "";
         const grps = {};
-        T.forEach((t) => {
-          if (!grps[t.group]) grps[t.group] = [];
-          grps[t.group].push(t);
-        });
+        T.forEach((t) => { if (!grps[t.group]) grps[t.group] = []; grps[t.group].push(t); });
         Object.entries(grps).forEach(([grp, topics]) => {
           const sec = document.createElement("div");
           sec.className = "dp-section";
@@ -844,49 +661,17 @@
           body.appendChild(sec);
         });
       }
-      function devToggle(id, c) {
-        const p = gp();
-        if (!p[id]) p[id] = {};
-        p[id].status = c ? "done" : "";
-        sp(p);
-        renderAll();
-      }
-      function bulkDone() {
-        const p = gp();
-        T.forEach((t) => {
-          if (!p[t.id]) p[t.id] = {};
-          p[t.id].status = "done";
-        });
-        sp(p);
-        renderAll();
-      }
-      function bulkClear() {
-        const p = gp();
-        T.forEach((t) => {
-          if (p[t.id]) p[t.id].status = "";
-        });
-        sp(p);
-        renderAll();
-      }
-      function toggleDevPanel() {
-        document.getElementById("dev-panel").classList.toggle("open");
-      }
-      function confirmReset() {
-        if (confirm("Wyczyścić wszystkie dane postępu i wyniki quizów?")) {
-          localStorage.removeItem("polski_progress");
-          renderAll();
-        }
-      }
+      function devToggle(id, c) { const p = gp(); if (!p[id]) p[id] = {}; p[id].status = c ? "done" : ""; sp(p); renderAll(); }
+      function bulkDone() { const p = gp(); T.forEach((t) => { if (!p[t.id]) p[t.id] = {}; p[t.id].status = "done"; }); sp(p); renderAll(); }
+      function bulkClear() { const p = gp(); T.forEach((t) => { if (p[t.id]) p[t.id].status = ""; }); sp(p); renderAll(); }
+      function toggleDevPanel() { document.getElementById("dev-panel").classList.toggle("open"); }
+      function confirmReset() { if (confirm("Wyczyścić wszystkie dane postępu i wyniki quizów?")) { localStorage.removeItem("polski_progress"); renderAll(); } }
 
       renderAll();
       document.addEventListener("click", (e) => {
         const panel = document.getElementById("dev-panel");
         const toggle = document.getElementById("dev-toggle");
-        if (
-          panel.classList.contains("open") &&
-          !panel.contains(e.target) &&
-          !toggle.contains(e.target)
-        )
+        if (panel.classList.contains("open") && !panel.contains(e.target) && !toggle.contains(e.target))
           panel.classList.remove("open");
       });
     </script>
