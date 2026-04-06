@@ -35,7 +35,6 @@
         --green: #3a6820;
         --ok: #2a7d5f;
         --err: #c84b2f;
-        /* Skamander palette */
         --sk-violet: #6a3d9c;
         --sk-violet2: #9a6dcc;
         --sk-rose: #b04070;
@@ -63,7 +62,6 @@
         z-index: 0;
       }
 
-      /* NAV */
       .topnav {
         position: relative;
         z-index: 10;
@@ -85,10 +83,7 @@
         text-decoration: none;
         transition: all 0.15s;
       }
-      .nav-back:hover {
-        border-color: var(--gold);
-        color: var(--gold);
-      }
+      .nav-back:hover { border-color: var(--gold); color: var(--gold); }
       .nav-title {
         font-size: 0.78rem;
         font-weight: 500;
@@ -114,27 +109,11 @@
         font-family: "DM Sans", sans-serif;
         transition: all 0.15s;
       }
-      .nav-sbtn:hover {
-        border-color: rgba(255, 255, 255, 0.3);
-        color: var(--ink);
-      }
-      .nav-sbtn.sd {
-        background: rgba(42, 125, 95, 0.2);
-        border-color: #2a7d5f;
-        color: #6acca8;
-      }
-      .nav-sbtn.sf {
-        background: rgba(201, 168, 76, 0.2);
-        border-color: #c9a84c;
-        color: #e8c96a;
-      }
-      .nav-sbtn.sh {
-        background: rgba(200, 75, 47, 0.2);
-        border-color: #c84b2f;
-        color: #f09080;
-      }
+      .nav-sbtn:hover { border-color: rgba(255,255,255,0.3); color: var(--ink); }
+      .nav-sbtn.sd { background: rgba(42,125,95,0.2); border-color: #2a7d5f; color: #6acca8; }
+      .nav-sbtn.sf { background: rgba(201,168,76,0.2); border-color: #c9a84c; color: #e8c96a; }
+      .nav-sbtn.sh { background: rgba(200,75,47,0.2); border-color: #c84b2f; color: #f09080; }
 
-      /* HEADER */
       header {
         position: relative;
         z-index: 1;
@@ -157,24 +136,10 @@
         color: var(--ink);
         letter-spacing: -0.02em;
       }
-      h1 span {
-        color: var(--gold2);
-        font-style: italic;
-      }
-      .sub {
-        margin-top: 0.6rem;
-        font-size: 0.9rem;
-        color: var(--ink2);
-      }
-      .divider {
-        width: 60px;
-        height: 1px;
-        background: var(--gold);
-        margin: 1.2rem auto 0;
-        opacity: 0.5;
-      }
+      h1 span { color: var(--gold2); font-style: italic; }
+      .sub { margin-top: 0.6rem; font-size: 0.9rem; color: var(--ink2); }
+      .divider { width: 60px; height: 1px; background: var(--gold); margin: 1.2rem auto 0; opacity: 0.5; }
 
-      /* TOGGLE BAR */
       .toggle-bar {
         position: relative;
         z-index: 10;
@@ -186,8 +151,8 @@
         flex-wrap: wrap;
       }
       .toggle-btn {
-        background: rgba(255, 255, 255, 0.05);
-        border: 1px solid rgba(255, 255, 255, 0.12);
+        background: rgba(255,255,255,0.05);
+        border: 1px solid rgba(255,255,255,0.12);
         color: var(--ink2);
         font-family: "DM Sans", sans-serif;
         font-size: 0.78rem;
@@ -202,17 +167,9 @@
         align-items: center;
         gap: 0.5rem;
       }
-      .toggle-btn:hover {
-        border-color: rgba(255, 255, 255, 0.25);
-        color: var(--ink);
-      }
-      .toggle-btn.active {
-        background: var(--gold);
-        border-color: var(--gold);
-        color: #1a1400;
-      }
+      .toggle-btn:hover { border-color: rgba(255,255,255,0.25); color: var(--ink); }
+      .toggle-btn.active { background: var(--gold); border-color: var(--gold); color: #1a1400; }
 
-      /* PAGE */
       .page {
         position: relative;
         z-index: 1;
@@ -221,46 +178,26 @@
         padding: 2rem 2rem 3rem;
       }
 
-      /* SECTION HEAD */
       .sec-head {
         display: flex;
         align-items: center;
         gap: 0.9rem;
         margin: 2.6rem 0 1.3rem;
       }
-      .sec-icon {
-        font-size: 1.4rem;
-        flex-shrink: 0;
-      }
-      .sec-title {
-        font-family: "Playfair Display", serif;
-        font-size: 1.25rem;
-        font-weight: 700;
-        color: var(--ink);
-      }
-      .sec-line {
-        flex: 1;
-        height: 1px;
-        background: rgba(255, 255, 255, 0.08);
-      }
+      .sec-icon { font-size: 1.4rem; flex-shrink: 0; }
+      .sec-title { font-family: "Playfair Display", serif; font-size: 1.25rem; font-weight: 700; color: var(--ink); }
+      .sec-line { flex: 1; height: 1px; background: rgba(255,255,255,0.08); }
 
       @keyframes fadeUp {
-        from {
-          opacity: 0;
-          transform: translateY(18px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
+        from { opacity: 0; transform: translateY(18px); }
+        to { opacity: 1; transform: translateY(0); }
       }
 
-      /* HERO CARD */
       .hero-card {
         position: relative;
         border-radius: 8px;
         overflow: hidden;
-        border: 1px solid rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255,255,255,0.1);
         padding: 2.4rem 2.4rem 2rem;
         margin-bottom: 2rem;
         animation: fadeUp 0.5s ease both;
@@ -269,1823 +206,500 @@
         content: "";
         position: absolute;
         inset: 0;
-        background: repeating-linear-gradient(
-          135deg,
-          transparent,
-          transparent 24px,
-          rgba(106, 61, 156, 0.04) 24px,
-          rgba(106, 61, 156, 0.04) 25px
-        );
+        background: repeating-linear-gradient(135deg, transparent, transparent 24px, rgba(106,61,156,0.04) 24px, rgba(106,61,156,0.04) 25px);
         pointer-events: none;
       }
       .hero-card::after {
         content: "";
         position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
+        top: 0; left: 0; right: 0;
         height: 3px;
-        background: linear-gradient(
-          90deg,
-          var(--sk-violet),
-          var(--sk-rose),
-          var(--sk-ochre)
-        );
+        background: linear-gradient(90deg, var(--sk-violet), var(--sk-rose), var(--sk-ochre));
       }
-      .hero-eyebrow {
-        font-size: 0.65rem;
-        letter-spacing: 0.22em;
-        text-transform: uppercase;
-        color: var(--sk-violet2);
-        margin-bottom: 0.6rem;
-      }
-      .hero-title {
-        font-family: "Playfair Display", serif;
-        font-size: clamp(1.5rem, 3.5vw, 2.6rem);
-        font-weight: 900;
-        line-height: 1.1;
-        color: var(--ink);
-        margin-bottom: 0.5rem;
-      }
-      .hero-title em {
-        font-style: italic;
-        color: var(--sk-violet2);
-      }
-      .hero-sub {
-        font-size: 0.87rem;
-        color: var(--ink2);
-        line-height: 1.65;
-        max-width: 640px;
-      }
-      .hero-tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        margin-top: 1.2rem;
-      }
-      .hero-tag {
-        font-size: 0.64rem;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        padding: 0.26rem 0.75rem;
-        border-radius: 100px;
-        border: 1px solid;
-      }
+      .hero-eyebrow { font-size: 0.65rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--sk-violet2); margin-bottom: 0.6rem; }
+      .hero-title { font-family: "Playfair Display", serif; font-size: clamp(1.5rem,3.5vw,2.6rem); font-weight: 900; line-height: 1.1; color: var(--ink); margin-bottom: 0.5rem; }
+      .hero-title em { font-style: italic; color: var(--sk-violet2); }
+      .hero-sub { font-size: 0.87rem; color: var(--ink2); line-height: 1.65; max-width: 640px; }
+      .hero-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.2rem; }
+      .hero-tag { font-size: 0.64rem; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.26rem 0.75rem; border-radius: 100px; border: 1px solid; }
 
-      /* GRIDS */
-      .grid2 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1.2rem;
-      }
-      .grid3 {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.2rem;
-      }
-      @media (max-width: 720px) {
-        .grid2,
-        .grid3 {
-          grid-template-columns: 1fr;
-        }
-      }
-      @media (min-width: 481px) and (max-width: 720px) {
-        .grid3 {
-          grid-template-columns: 1fr 1fr;
-        }
-      }
+      .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+      .grid3 { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.2rem; }
+      @media (max-width: 720px) { .grid2, .grid3 { grid-template-columns: 1fr; } }
+      @media (min-width: 481px) and (max-width: 720px) { .grid3 { grid-template-columns: 1fr 1fr; } }
 
-      /* NW CARD */
       .nw-card {
         border-radius: 6px;
-        border: 1px solid rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255,255,255,0.08);
         padding: 1.4rem 1.5rem 1.5rem;
         position: relative;
         overflow: hidden;
-        transition:
-          transform 0.22s,
-          border-color 0.22s;
+        transition: transform 0.22s, border-color 0.22s;
         animation: fadeUp 0.5s ease both;
       }
-      .nw-card:hover {
-        transform: translateY(-3px);
-        border-color: rgba(255, 255, 255, 0.18);
-      }
-      .nw-card::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 3px;
-        background: var(--na);
-      }
-      .nw-card-icon {
-        font-size: 1.6rem;
-        margin-bottom: 0.7rem;
-      }
-      .nw-card-title {
-        font-family: "Playfair Display", serif;
-        font-size: 1.05rem;
-        font-weight: 700;
-        color: var(--ink);
-        margin-bottom: 0.5rem;
-      }
-      .nw-card-desc {
-        font-size: 0.8rem;
-        color: var(--ink2);
-        line-height: 1.65;
-      }
-      .nw-card-desc strong {
-        color: var(--ink);
-        font-weight: 500;
-      }
-      .c-violet {
-        --na: var(--sk-violet2);
-        background: rgba(106, 61, 156, 0.07);
-      }
-      .c-rose {
-        --na: var(--sk-rose2);
-        background: rgba(176, 64, 112, 0.07);
-      }
-      .c-forest {
-        --na: var(--sk-forest2);
-        background: rgba(42, 96, 64, 0.07);
-      }
-      .c-ochre {
-        --na: var(--sk-ochre2);
-        background: rgba(160, 104, 32, 0.07);
-      }
-      .c-teal {
-        --na: var(--teal);
-        background: rgba(42, 125, 95, 0.07);
-      }
-      .c-amber {
-        --na: var(--amber);
-        background: rgba(184, 112, 32, 0.07);
-      }
-      .c-blue {
-        --na: var(--blue);
-        background: rgba(36, 88, 160, 0.07);
-      }
-      .c-coral {
-        --na: var(--coral);
-        background: rgba(200, 75, 47, 0.07);
-      }
+      .nw-card:hover { transform: translateY(-3px); border-color: rgba(255,255,255,0.18); }
+      .nw-card::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--na); }
+      .nw-card-icon { font-size: 1.6rem; margin-bottom: 0.7rem; }
+      .nw-card-title { font-family: "Playfair Display", serif; font-size: 1.05rem; font-weight: 700; color: var(--ink); margin-bottom: 0.5rem; }
+      .nw-card-desc { font-size: 0.8rem; color: var(--ink2); line-height: 1.65; }
+      .nw-card-desc strong { color: var(--ink); font-weight: 500; }
+      .c-violet { --na: var(--sk-violet2); background: rgba(106,61,156,0.07); }
+      .c-rose { --na: var(--sk-rose2); background: rgba(176,64,112,0.07); }
+      .c-forest { --na: var(--sk-forest2); background: rgba(42,96,64,0.07); }
+      .c-ochre { --na: var(--sk-ochre2); background: rgba(160,104,32,0.07); }
+      .c-teal { --na: var(--teal); background: rgba(42,125,95,0.07); }
+      .c-amber { --na: var(--amber); background: rgba(184,112,32,0.07); }
+      .c-blue { --na: var(--blue); background: rgba(36,88,160,0.07); }
+      .c-coral { --na: var(--coral); background: rgba(200,75,47,0.07); }
 
-      /* POETS LIST */
-      .poets-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-        gap: 1rem;
-        margin-bottom: 2rem;
-      }
-      .poet-card {
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        border-radius: 6px;
-        padding: 1.1rem 1.2rem;
+      .poets-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(160px,1fr)); gap: 1rem; margin-bottom: 2rem; }
+      .poet-card { border: 1px solid rgba(255,255,255,0.08); border-radius: 6px; padding: 1.1rem 1.2rem; position: relative; animation: fadeUp 0.5s ease both; }
+      .poet-card::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: var(--pc); }
+      .poet-icon { font-size: 1.5rem; margin-bottom: 0.45rem; }
+      .poet-name { font-weight: 600; font-size: 0.9rem; color: var(--ink); margin-bottom: 0.15rem; }
+      .poet-sub { font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--pc); margin-bottom: 0.35rem; }
+      .poet-desc { font-size: 0.74rem; color: var(--ink2); line-height: 1.5; }
+
+      .nw-quote { margin: 0 0 1.4rem; padding: 1.2rem 1.6rem; border-left: 3px solid var(--sk-violet); background: rgba(106,61,156,0.07); border-radius: 0 6px 6px 0; }
+      .nw-quote p { font-family: "Playfair Display", serif; font-size: 1.05rem; font-style: italic; color: #d0c0f8; line-height: 1.65; }
+      .nw-quote cite { display: block; margin-top: 0.6rem; font-size: 0.72rem; color: var(--ink2); letter-spacing: 0.08em; }
+
+      .poem-wrap { border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; overflow: hidden; margin-bottom: 1.6rem; animation: fadeUp 0.5s ease both; }
+      .poem-head { display: flex; align-items: center; justify-content: space-between; padding: 1.2rem 1.6rem; background: rgba(255,255,255,0.04); border-bottom: 1px solid rgba(255,255,255,0.07); cursor: pointer; gap: 1rem; }
+      .poem-head-left { flex: 1; }
+      .poem-label { font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.3rem; }
+      .poem-title { font-family: "Playfair Display", serif; font-size: 1.2rem; font-weight: 700; color: var(--ink); }
+      .poem-year { font-size: 0.75rem; color: var(--ink2); }
+      .poem-chevron { font-size: 1rem; color: var(--ink2); transition: transform 0.3s; flex-shrink: 0; }
+      .poem-chevron.open { transform: rotate(180deg); }
+      .poem-body { display: none; padding: 1.6rem; }
+      .poem-body.open { display: block; }
+      .poem-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 1.8rem; }
+      @media (max-width: 680px) { .poem-cols { grid-template-columns: 1fr; } }
+      .poem-text { font-family: "Playfair Display", serif; font-size: 0.95rem; font-style: italic; line-height: 1.9; color: #d8ccb0; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); border-radius: 6px; padding: 1.2rem 1.4rem; white-space: pre-line; }
+      .poem-analysis { display: flex; flex-direction: column; gap: 0.9rem; }
+      .pa-block { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); border-radius: 6px; padding: 0.9rem 1.1rem; }
+      .pa-label { font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.4rem; }
+      .pa-text { font-size: 0.8rem; color: var(--ink2); line-height: 1.65; }
+      .pa-text strong { color: var(--ink); font-weight: 500; }
+
+      table { width: 100%; border-collapse: collapse; font-size: 0.8rem; animation: fadeUp 0.5s ease both; }
+      th, td { padding: 0.65rem 1rem; text-align: left; }
+      th { border-bottom: 1px solid rgba(255,255,255,0.12); color: var(--ink2); font-weight: 500; font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; }
+      tr { border-bottom: 1px solid rgba(255,255,255,0.06); }
+      tr:nth-child(even) { background: rgba(255,255,255,0.02); }
+      td:first-child { font-weight: 500; color: var(--ink); }
+
+      .cmp-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; animation: fadeUp 0.5s ease both; margin-bottom: 2rem; }
+      .cmp-table th { padding: 0.7rem 1rem; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.12); color: var(--ink2); font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; background: rgba(255,255,255,0.03); }
+      .cmp-table td { padding: 0.7rem 1rem; border-bottom: 1px solid rgba(255,255,255,0.06); font-size: 0.8rem; color: var(--ink2); vertical-align: top; line-height: 1.6; }
+      .cmp-table td:first-child { font-weight: 600; color: var(--gold); white-space: nowrap; }
+      .cmp-table tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+
+      .terms-grid { display: grid; grid-template-columns: repeat(auto-fill,minmax(220px,1fr)); gap: 0.9rem; margin-bottom: 2rem; }
+      .term-card { border: 1px solid rgba(255,255,255,0.08); border-radius: 6px; padding: 0.9rem 1.1rem; background: rgba(255,255,255,0.03); animation: fadeUp 0.5s ease both; }
+      .term-name { font-weight: 600; font-size: 0.88rem; color: var(--gold2); margin-bottom: 0.3rem; }
+      .term-def { font-size: 0.78rem; color: var(--ink2); line-height: 1.55; }
+
+      .quiz-hub-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; margin-bottom: 1.5rem; }
+      @media (max-width: 560px) { .quiz-hub-grid { grid-template-columns: 1fr; } }
+      .qhub-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 1.4rem 1.5rem; cursor: pointer; text-align: left; transition: all 0.2s; position: relative; overflow: hidden; }
+      .qhub-card::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--qc); }
+      .qhub-card:hover { border-color: var(--qc); background: rgba(255,255,255,0.07); transform: translateY(-2px); }
+      .qhub-icon { font-size: 1.8rem; margin-bottom: 0.6rem; }
+      .qhub-title { font-family: "Playfair Display", serif; font-size: 1.1rem; font-weight: 700; color: var(--ink); margin-bottom: 0.3rem; }
+      .qhub-sub { font-size: 0.75rem; color: var(--ink2); line-height: 1.5; margin-bottom: 0.7rem; }
+      .qhub-count { font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--qc); font-weight: 600; }
+
+      .quiz-prog-bar { height: 3px; background: rgba(255,255,255,0.08); border-radius: 2px; overflow: hidden; margin-bottom: 1.5rem; }
+      .quiz-prog-fill { height: 100%; background: var(--gold); border-radius: 2px; transition: width 0.4s ease; }
+      .quiz-cat { display: inline-block; font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; padding: 0.28rem 0.75rem; border-radius: 100px; border: 1px solid; margin-bottom: 1.1rem; }
+      .quiz-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.09); border-radius: 10px; padding: 2rem 2rem 1.8rem; animation: fadeUp 0.35s ease both; }
+      .quiz-q-num { font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink2); margin-bottom: 0.7rem; }
+      .quiz-q-text { font-family: "Playfair Display", serif; font-size: 1.3rem; font-weight: 700; line-height: 1.45; color: var(--ink); margin-bottom: 1.6rem; }
+      .quiz-options { display: flex; flex-direction: column; gap: 0.75rem; }
+      .quiz-opt { display: flex; align-items: flex-start; gap: 1rem; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 0.85rem 1.1rem; cursor: pointer; transition: all 0.18s; text-align: left; color: var(--ink); font-family: "DM Sans", sans-serif; font-size: 0.9rem; line-height: 1.4; width: 100%; }
+      .quiz-opt:hover:not(.answered) { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.22); }
+      .quiz-opt .opt-letter { font-size: 0.7rem; font-weight: 600; width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 0.05em; background: rgba(255,255,255,0.08); color: var(--ink2); transition: all 0.18s; }
+      .quiz-opt.correct { background: rgba(42,125,95,0.18); border-color: var(--ok); }
+      .quiz-opt.correct .opt-letter { background: var(--ok); color: #fff; }
+      .quiz-opt.wrong { background: rgba(200,75,47,0.15); border-color: var(--err); }
+      .quiz-opt.wrong .opt-letter { background: var(--err); color: #fff; }
+      .quiz-opt.answered { cursor: default; }
+      .quiz-feedback { margin-top: 1.2rem; padding: 0.9rem 1.1rem; border-radius: 8px; font-size: 0.83rem; line-height: 1.55; border: 1px solid; display: none; }
+      .quiz-feedback.show { display: block; animation: fadeUp 0.25s ease; }
+      .quiz-feedback.ok { background: rgba(42,125,95,0.12); border-color: rgba(42,125,95,0.4); color: #a8d9c8; }
+      .quiz-feedback.bad { background: rgba(200,75,47,0.12); border-color: rgba(200,75,47,0.4); color: #f0c4b8; }
+      .quiz-feedback strong { display: block; margin-bottom: 0.25rem; }
+      .quiz-next-wrap { margin-top: 1.4rem; display: flex; align-items: center; justify-content: space-between; }
+      .quiz-score-info { font-size: 0.78rem; color: var(--ink2); }
+      .quiz-next { background: var(--gold); color: #1a1400; border: none; font-family: "DM Sans", sans-serif; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.65rem 1.6rem; border-radius: 100px; cursor: pointer; transition: all 0.18s; display: none; }
+      .quiz-next:hover { background: var(--gold2); }
+      .quiz-next.show { display: block; animation: fadeUp 0.2s ease; }
+      .quiz-back-btn { background: none; border: 1px solid rgba(255,255,255,0.12); color: var(--ink2); font-family: "DM Sans", sans-serif; font-size: 0.72rem; padding: 0.5rem 1.2rem; border-radius: 100px; cursor: pointer; transition: all 0.15s; margin-bottom: 1.2rem; }
+      .quiz-back-btn:hover { border-color: var(--coral); color: var(--coral); }
+
+      .res-wrap { text-align: center; padding: 2rem 0; }
+      .res-emoji { font-size: 4rem; margin-bottom: 1rem; }
+      .res-title { font-family: "Playfair Display", serif; font-size: 2rem; font-weight: 900; color: var(--ink); margin-bottom: 0.5rem; }
+      .res-score-box { display: inline-flex; flex-direction: column; align-items: center; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 1.8rem 3rem; margin-bottom: 1.5rem; }
+      .res-big { font-family: "Playfair Display", serif; font-size: 4rem; font-weight: 900; color: var(--gold); line-height: 1; }
+      .res-of { font-size: 0.8rem; color: var(--ink2); letter-spacing: 0.1em; text-transform: uppercase; margin-top: 0.4rem; }
+      .res-bar-wrap { max-width: 340px; margin: 0 auto 1.5rem; height: 8px; background: rgba(255,255,255,0.08); border-radius: 4px; overflow: hidden; }
+      .res-bar-fill { height: 100%; border-radius: 4px; background: var(--gold); transition: width 1s ease 0.3s; width: 0%; }
+      .res-cats { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.8rem; margin: 1.2rem 0; }
+      .res-cat-chip { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 0.65rem 1rem; font-size: 0.78rem; }
+      .res-cat-chip .rcc-name { color: var(--ink2); margin-bottom: 0.2rem; font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; }
+      .res-cat-chip .rcc-val { font-weight: 600; }
+      .res-msg { font-size: 0.9rem; color: var(--ink2); line-height: 1.7; max-width: 480px; margin: 0 auto 1.5rem; }
+      .res-restart { background: var(--gold); color: #1a1400; border: none; font-family: "DM Sans", sans-serif; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.75rem 2.2rem; border-radius: 100px; cursor: pointer; transition: all 0.2s; margin: 0.5rem; }
+      .res-restart:hover { background: var(--gold2); transform: translateY(-2px); }
+      .res-back-btn { background: none; border: 1px solid rgba(255,255,255,0.15); color: var(--ink2); font-family: "DM Sans", sans-serif; font-size: 0.82rem; padding: 0.75rem 2rem; border-radius: 100px; cursor: pointer; transition: all 0.2s; margin: 0.5rem; }
+      .res-back-btn:hover { border-color: var(--ink2); color: var(--ink); }
+
+      .streak-badge { position: fixed; top: 50%; left: 50%; transform: translate(-50%,-50%) scale(0); z-index: 999; font-size: 2.5rem; font-weight: 900; font-family: "Playfair Display", serif; color: var(--gold2); text-shadow: 0 0 30px rgba(201,168,76,0.6); pointer-events: none; transition: transform 0.25s cubic-bezier(0.34,1.56,0.64,1), opacity 0.3s; opacity: 0; }
+      .streak-badge.show { transform: translate(-50%,-60%) scale(1); opacity: 1; }
+
+      .pillar-list { list-style: none; display: flex; flex-direction: column; gap: 0.75rem; margin-top: 0.6rem; }
+      .pillar-list li { display: grid; grid-template-columns: auto 1fr; gap: 0.75rem; align-items: start; }
+      .pdot { width: 7px; height: 7px; border-radius: 50%; background: var(--na); margin-top: 0.42em; flex-shrink: 0; }
+      .p-title { font-size: 0.88rem; font-weight: 500; color: var(--ink); line-height: 1.3; }
+      .p-sub { font-size: 0.78rem; color: var(--ink2); margin-top: 0.1rem; line-height: 1.4; }
+
+      .tab-content { display: none; }
+      .tab-content.active { display: block; }
+
+      /* ===== NOTATKA STYLES ===== */
+      .nota-hero {
         position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+        border: 1px solid rgba(255,255,255,0.1);
+        padding: 2rem 2.2rem 1.8rem;
+        margin-bottom: 2rem;
         animation: fadeUp 0.5s ease both;
       }
-      .poet-card::before {
+      .nota-hero::after {
         content: "";
         position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 2px;
-        background: var(--pc);
+        top: 0; left: 0; right: 0;
+        height: 3px;
+        background: linear-gradient(90deg, var(--sk-violet), var(--gold), var(--sk-forest2));
       }
-      .poet-icon {
-        font-size: 1.5rem;
-        margin-bottom: 0.45rem;
-      }
-      .poet-name {
-        font-weight: 600;
-        font-size: 0.9rem;
-        color: var(--ink);
-        margin-bottom: 0.15rem;
-      }
-      .poet-sub {
-        font-size: 0.7rem;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-        color: var(--pc);
-        margin-bottom: 0.35rem;
-      }
-      .poet-desc {
-        font-size: 0.74rem;
-        color: var(--ink2);
-        line-height: 1.5;
-      }
+      .nota-eyebrow { font-size: 0.62rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem; }
+      .nota-hero-title { font-family: "Playfair Display", serif; font-size: clamp(1.4rem,3vw,2.2rem); font-weight: 900; color: var(--ink); margin-bottom: 0.5rem; }
+      .nota-hero-title em { font-style: italic; color: var(--gold2); }
+      .nota-hero-sub { font-size: 0.85rem; color: var(--ink2); line-height: 1.65; max-width: 620px; }
+      .nota-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 1rem; }
+      .nota-tag { font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.22rem 0.7rem; border-radius: 100px; border: 1px solid; }
 
-      /* QUOTE */
-      .nw-quote {
-        margin: 0 0 1.4rem;
-        padding: 1.2rem 1.6rem;
-        border-left: 3px solid var(--sk-violet);
-        background: rgba(106, 61, 156, 0.07);
+      .nota-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px,1fr)); gap: 1rem; margin-bottom: 1.8rem; }
+      .nota-card {
+        border-radius: 6px;
+        border: 1px solid rgba(255,255,255,0.08);
+        border-top: 2px solid var(--na, var(--gold));
+        padding: 1.1rem 1.2rem 1.2rem;
+        background: rgba(255,255,255,0.03);
+        animation: fadeUp 0.5s ease both;
+      }
+      .nota-card-title { font-weight: 600; font-size: 0.9rem; color: var(--ink); margin-bottom: 0.35rem; }
+      .nota-card-body { font-size: 0.78rem; color: var(--ink2); line-height: 1.6; }
+      .nota-card-body strong { color: var(--ink); font-weight: 500; }
+
+      .nota-quote { margin: 0 0 1.4rem; padding: 1.1rem 1.5rem; border-left: 3px solid var(--sk-violet); background: rgba(106,61,156,0.07); border-radius: 0 6px 6px 0; }
+      .nota-quote p { font-family: "Playfair Display", serif; font-size: 1rem; font-style: italic; color: #d0c0f8; line-height: 1.65; }
+      .nota-quote cite { display: block; margin-top: 0.5rem; font-size: 0.7rem; color: var(--ink2); letter-spacing: 0.08em; }
+
+      .nota-wiersz-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        margin-bottom: 1.8rem;
+      }
+      @media (max-width: 720px) { .nota-wiersz-row { grid-template-columns: 1fr; } }
+      .nota-wiersz-card {
+        border: 1px solid rgba(255,255,255,0.08);
+        border-radius: 8px;
+        overflow: hidden;
+        animation: fadeUp 0.5s ease both;
+      }
+      .nota-wiersz-head {
+        padding: 0.8rem 1.1rem;
+        border-bottom: 1px solid rgba(255,255,255,0.06);
+      }
+      .nota-wiersz-label { font-size: 0.58rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.2rem; }
+      .nota-wiersz-title { font-family: "Playfair Display", serif; font-size: 1rem; font-weight: 700; color: var(--ink); }
+      .nota-wiersz-body { padding: 0.9rem 1.1rem; }
+      .nota-wiersz-row-item { display: flex; gap: 0.5rem; margin-bottom: 0.55rem; font-size: 0.76rem; line-height: 1.5; }
+      .nota-wiersz-row-item:last-child { margin-bottom: 0; }
+      .nota-wiersz-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; margin-top: 0.4em; }
+      .nota-wiersz-key { color: var(--gold); font-weight: 500; margin-right: 0.2rem; }
+      .nota-wiersz-val { color: var(--ink2); }
+
+      .nota-pojecia-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px,1fr)); gap: 0.75rem; margin-bottom: 1.8rem; }
+      .nota-pojecie {
+        border: 1px solid rgba(255,255,255,0.07);
+        border-left: 3px solid var(--gold);
         border-radius: 0 6px 6px 0;
-      }
-      .nw-quote p {
-        font-family: "Playfair Display", serif;
-        font-size: 1.05rem;
-        font-style: italic;
-        color: #d0c0f8;
-        line-height: 1.65;
-      }
-      .nw-quote cite {
-        display: block;
-        margin-top: 0.6rem;
-        font-size: 0.72rem;
-        color: var(--ink2);
-        letter-spacing: 0.08em;
-      }
-
-      /* POEM CARD */
-      .poem-wrap {
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 10px;
-        overflow: hidden;
-        margin-bottom: 1.6rem;
+        padding: 0.75rem 1rem;
+        background: rgba(255,255,255,0.02);
         animation: fadeUp 0.5s ease both;
       }
-      .poem-head {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 1.2rem 1.6rem;
-        background: rgba(255, 255, 255, 0.04);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.07);
-        cursor: pointer;
-        gap: 1rem;
-      }
-      .poem-head-left {
-        flex: 1;
-      }
-      .poem-label {
-        font-size: 0.6rem;
-        letter-spacing: 0.2em;
-        text-transform: uppercase;
-        color: var(--gold);
-        margin-bottom: 0.3rem;
-      }
-      .poem-title {
-        font-family: "Playfair Display", serif;
-        font-size: 1.2rem;
-        font-weight: 700;
-        color: var(--ink);
-      }
-      .poem-year {
-        font-size: 0.75rem;
-        color: var(--ink2);
-      }
-      .poem-chevron {
-        font-size: 1rem;
-        color: var(--ink2);
-        transition: transform 0.3s;
-        flex-shrink: 0;
-      }
-      .poem-chevron.open {
-        transform: rotate(180deg);
-      }
-      .poem-body {
-        display: none;
-        padding: 1.6rem;
-      }
-      .poem-body.open {
-        display: block;
-      }
-      .poem-cols {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1.8rem;
-      }
-      @media (max-width: 680px) {
-        .poem-cols {
-          grid-template-columns: 1fr;
-        }
-      }
-      .poem-text {
-        font-family: "Playfair Display", serif;
-        font-size: 0.95rem;
-        font-style: italic;
-        line-height: 1.9;
-        color: #d8ccb0;
-        background: rgba(255, 255, 255, 0.03);
-        border: 1px solid rgba(255, 255, 255, 0.07);
-        border-radius: 6px;
-        padding: 1.2rem 1.4rem;
-        white-space: pre-line;
-      }
-      .poem-analysis {
-        display: flex;
-        flex-direction: column;
-        gap: 0.9rem;
-      }
-      .pa-block {
-        background: rgba(255, 255, 255, 0.03);
-        border: 1px solid rgba(255, 255, 255, 0.07);
-        border-radius: 6px;
-        padding: 0.9rem 1.1rem;
-      }
-      .pa-label {
-        font-size: 0.6rem;
-        letter-spacing: 0.18em;
-        text-transform: uppercase;
-        color: var(--gold);
-        margin-bottom: 0.4rem;
-      }
-      .pa-text {
-        font-size: 0.8rem;
-        color: var(--ink2);
-        line-height: 1.65;
-      }
-      .pa-text strong {
-        color: var(--ink);
-        font-weight: 500;
-      }
-
-      /* TABLE */
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        font-size: 0.8rem;
-        animation: fadeUp 0.5s ease both;
-      }
-      th,
-      td {
-        padding: 0.65rem 1rem;
-        text-align: left;
-      }
-      th {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-        color: var(--ink2);
-        font-weight: 500;
-        font-size: 0.68rem;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-      }
-      tr {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-      }
-      tr:nth-child(even) {
-        background: rgba(255, 255, 255, 0.02);
-      }
-      td:first-child {
-        font-weight: 500;
-        color: var(--ink);
-      }
-
-      /* COMPARISON TABLE */
-      .cmp-table {
-        width: 100%;
-        border-collapse: collapse;
-        font-size: 0.8rem;
-        animation: fadeUp 0.5s ease both;
-        margin-bottom: 2rem;
-      }
-      .cmp-table th {
-        padding: 0.7rem 1rem;
-        text-align: left;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-        color: var(--ink2);
-        font-size: 0.68rem;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        background: rgba(255, 255, 255, 0.03);
-      }
-      .cmp-table td {
-        padding: 0.7rem 1rem;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-        font-size: 0.8rem;
-        color: var(--ink2);
-        vertical-align: top;
-        line-height: 1.6;
-      }
-      .cmp-table td:first-child {
-        font-weight: 600;
-        color: var(--gold);
-        white-space: nowrap;
-      }
-      .cmp-table tr:nth-child(even) td {
-        background: rgba(255, 255, 255, 0.02);
-      }
-
-      /* KEY TERMS */
-      .terms-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-        gap: 0.9rem;
-        margin-bottom: 2rem;
-      }
-      .term-card {
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        border-radius: 6px;
-        padding: 0.9rem 1.1rem;
-        background: rgba(255, 255, 255, 0.03);
-        animation: fadeUp 0.5s ease both;
-      }
-      .term-name {
-        font-weight: 600;
-        font-size: 0.88rem;
-        color: var(--gold2);
-        margin-bottom: 0.3rem;
-      }
-      .term-def {
-        font-size: 0.78rem;
-        color: var(--ink2);
-        line-height: 1.55;
-      }
-
-      /* QUIZ */
-      .quiz-hub-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1.2rem;
-        margin-bottom: 1.5rem;
-      }
-      @media (max-width: 560px) {
-        .quiz-hub-grid {
-          grid-template-columns: 1fr;
-        }
-      }
-      .qhub-card {
-        background: rgba(255, 255, 255, 0.04);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 10px;
-        padding: 1.4rem 1.5rem;
-        cursor: pointer;
-        text-align: left;
-        transition: all 0.2s;
-        position: relative;
-        overflow: hidden;
-      }
-      .qhub-card::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 3px;
-        background: var(--qc);
-      }
-      .qhub-card:hover {
-        border-color: var(--qc);
-        background: rgba(255, 255, 255, 0.07);
-        transform: translateY(-2px);
-      }
-      .qhub-icon {
-        font-size: 1.8rem;
-        margin-bottom: 0.6rem;
-      }
-      .qhub-title {
-        font-family: "Playfair Display", serif;
-        font-size: 1.1rem;
-        font-weight: 700;
-        color: var(--ink);
-        margin-bottom: 0.3rem;
-      }
-      .qhub-sub {
-        font-size: 0.75rem;
-        color: var(--ink2);
-        line-height: 1.5;
-        margin-bottom: 0.7rem;
-      }
-      .qhub-count {
-        font-size: 0.65rem;
-        letter-spacing: 0.15em;
-        text-transform: uppercase;
-        color: var(--qc);
-        font-weight: 600;
-      }
-
-      .quiz-prog-bar {
-        height: 3px;
-        background: rgba(255, 255, 255, 0.08);
-        border-radius: 2px;
-        overflow: hidden;
-        margin-bottom: 1.5rem;
-      }
-      .quiz-prog-fill {
-        height: 100%;
-        background: var(--gold);
-        border-radius: 2px;
-        transition: width 0.4s ease;
-      }
-      .quiz-cat {
-        display: inline-block;
-        font-size: 0.6rem;
-        letter-spacing: 0.18em;
-        text-transform: uppercase;
-        padding: 0.28rem 0.75rem;
-        border-radius: 100px;
-        border: 1px solid;
-        margin-bottom: 1.1rem;
-      }
-      .quiz-card {
-        background: rgba(255, 255, 255, 0.03);
-        border: 1px solid rgba(255, 255, 255, 0.09);
-        border-radius: 10px;
-        padding: 2rem 2rem 1.8rem;
-        animation: fadeUp 0.35s ease both;
-      }
-      .quiz-q-num {
-        font-size: 0.65rem;
-        letter-spacing: 0.18em;
-        text-transform: uppercase;
-        color: var(--ink2);
-        margin-bottom: 0.7rem;
-      }
-      .quiz-q-text {
-        font-family: "Playfair Display", serif;
-        font-size: 1.3rem;
-        font-weight: 700;
-        line-height: 1.45;
-        color: var(--ink);
-        margin-bottom: 1.6rem;
-      }
-      .quiz-options {
-        display: flex;
-        flex-direction: column;
-        gap: 0.75rem;
-      }
-      .quiz-opt {
-        display: flex;
-        align-items: flex-start;
-        gap: 1rem;
-        background: rgba(255, 255, 255, 0.04);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 8px;
-        padding: 0.85rem 1.1rem;
-        cursor: pointer;
-        transition: all 0.18s;
-        text-align: left;
-        color: var(--ink);
-        font-family: "DM Sans", sans-serif;
-        font-size: 0.9rem;
-        line-height: 1.4;
-        width: 100%;
-      }
-      .quiz-opt:hover:not(.answered) {
-        background: rgba(255, 255, 255, 0.08);
-        border-color: rgba(255, 255, 255, 0.22);
-      }
-      .quiz-opt .opt-letter {
-        font-size: 0.7rem;
-        font-weight: 600;
-        width: 22px;
-        height: 22px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-shrink: 0;
-        margin-top: 0.05em;
-        background: rgba(255, 255, 255, 0.08);
-        color: var(--ink2);
-        transition: all 0.18s;
-      }
-      .quiz-opt.correct {
-        background: rgba(42, 125, 95, 0.18);
-        border-color: var(--ok);
-      }
-      .quiz-opt.correct .opt-letter {
-        background: var(--ok);
-        color: #fff;
-      }
-      .quiz-opt.wrong {
-        background: rgba(200, 75, 47, 0.15);
-        border-color: var(--err);
-      }
-      .quiz-opt.wrong .opt-letter {
-        background: var(--err);
-        color: #fff;
-      }
-      .quiz-opt.answered {
-        cursor: default;
-      }
-      .quiz-feedback {
-        margin-top: 1.2rem;
-        padding: 0.9rem 1.1rem;
-        border-radius: 8px;
-        font-size: 0.83rem;
-        line-height: 1.55;
-        border: 1px solid;
-        display: none;
-      }
-      .quiz-feedback.show {
-        display: block;
-        animation: fadeUp 0.25s ease;
-      }
-      .quiz-feedback.ok {
-        background: rgba(42, 125, 95, 0.12);
-        border-color: rgba(42, 125, 95, 0.4);
-        color: #a8d9c8;
-      }
-      .quiz-feedback.bad {
-        background: rgba(200, 75, 47, 0.12);
-        border-color: rgba(200, 75, 47, 0.4);
-        color: #f0c4b8;
-      }
-      .quiz-feedback strong {
-        display: block;
-        margin-bottom: 0.25rem;
-      }
-      .quiz-next-wrap {
-        margin-top: 1.4rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-      .quiz-score-info {
-        font-size: 0.78rem;
-        color: var(--ink2);
-      }
-      .quiz-next {
-        background: var(--gold);
-        color: #1a1400;
-        border: none;
-        font-family: "DM Sans", sans-serif;
-        font-size: 0.82rem;
-        font-weight: 600;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-        padding: 0.65rem 1.6rem;
-        border-radius: 100px;
-        cursor: pointer;
-        transition: all 0.18s;
-        display: none;
-      }
-      .quiz-next:hover {
-        background: var(--gold2);
-      }
-      .quiz-next.show {
-        display: block;
-        animation: fadeUp 0.2s ease;
-      }
-      .quiz-back-btn {
-        background: none;
-        border: 1px solid rgba(255, 255, 255, 0.12);
-        color: var(--ink2);
-        font-family: "DM Sans", sans-serif;
-        font-size: 0.72rem;
-        padding: 0.5rem 1.2rem;
-        border-radius: 100px;
-        cursor: pointer;
-        transition: all 0.15s;
-        margin-bottom: 1.2rem;
-      }
-      .quiz-back-btn:hover {
-        border-color: var(--coral);
-        color: var(--coral);
-      }
-
-      /* RESULTS */
-      .res-wrap {
-        text-align: center;
-        padding: 2rem 0;
-      }
-      .res-emoji {
-        font-size: 4rem;
-        margin-bottom: 1rem;
-      }
-      .res-title {
-        font-family: "Playfair Display", serif;
-        font-size: 2rem;
-        font-weight: 900;
-        color: var(--ink);
-        margin-bottom: 0.5rem;
-      }
-      .res-score-box {
-        display: inline-flex;
-        flex-direction: column;
-        align-items: center;
-        background: rgba(255, 255, 255, 0.04);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 12px;
-        padding: 1.8rem 3rem;
-        margin-bottom: 1.5rem;
-      }
-      .res-big {
-        font-family: "Playfair Display", serif;
-        font-size: 4rem;
-        font-weight: 900;
-        color: var(--gold);
-        line-height: 1;
-      }
-      .res-of {
-        font-size: 0.8rem;
-        color: var(--ink2);
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        margin-top: 0.4rem;
-      }
-      .res-bar-wrap {
-        max-width: 340px;
-        margin: 0 auto 1.5rem;
-        height: 8px;
-        background: rgba(255, 255, 255, 0.08);
-        border-radius: 4px;
-        overflow: hidden;
-      }
-      .res-bar-fill {
-        height: 100%;
-        border-radius: 4px;
-        background: var(--gold);
-        transition: width 1s ease 0.3s;
-        width: 0%;
-      }
-      .res-cats {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.8rem;
-        margin: 1.2rem 0;
-      }
-      .res-cat-chip {
-        background: rgba(255, 255, 255, 0.04);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 8px;
-        padding: 0.65rem 1rem;
-        font-size: 0.78rem;
-      }
-      .res-cat-chip .rcc-name {
-        color: var(--ink2);
-        margin-bottom: 0.2rem;
-        font-size: 0.65rem;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-      }
-      .res-cat-chip .rcc-val {
-        font-weight: 600;
-      }
-      .res-msg {
-        font-size: 0.9rem;
-        color: var(--ink2);
-        line-height: 1.7;
-        max-width: 480px;
-        margin: 0 auto 1.5rem;
-      }
-      .res-restart {
-        background: var(--gold);
-        color: #1a1400;
-        border: none;
-        font-family: "DM Sans", sans-serif;
-        font-size: 0.82rem;
-        font-weight: 600;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        padding: 0.75rem 2.2rem;
-        border-radius: 100px;
-        cursor: pointer;
-        transition: all 0.2s;
-        margin: 0.5rem;
-      }
-      .res-restart:hover {
-        background: var(--gold2);
-        transform: translateY(-2px);
-      }
-      .res-back-btn {
-        background: none;
-        border: 1px solid rgba(255, 255, 255, 0.15);
-        color: var(--ink2);
-        font-family: "DM Sans", sans-serif;
-        font-size: 0.82rem;
-        padding: 0.75rem 2rem;
-        border-radius: 100px;
-        cursor: pointer;
-        transition: all 0.2s;
-        margin: 0.5rem;
-      }
-      .res-back-btn:hover {
-        border-color: var(--ink2);
-        color: var(--ink);
-      }
-
-      .streak-badge {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(0);
-        z-index: 999;
-        font-size: 2.5rem;
-        font-weight: 900;
-        font-family: "Playfair Display", serif;
-        color: var(--gold2);
-        text-shadow: 0 0 30px rgba(201, 168, 76, 0.6);
-        pointer-events: none;
-        transition:
-          transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1),
-          opacity 0.3s;
-        opacity: 0;
-      }
-      .streak-badge.show {
-        transform: translate(-50%, -60%) scale(1);
-        opacity: 1;
-      }
-
-      /* PROGRAMME PILLARS */
-      .pillar-list {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        gap: 0.75rem;
-        margin-top: 0.6rem;
-      }
-      .pillar-list li {
-        display: grid;
-        grid-template-columns: auto 1fr;
-        gap: 0.75rem;
-        align-items: start;
-      }
-      .pdot {
-        width: 7px;
-        height: 7px;
-        border-radius: 50%;
-        background: var(--na);
-        margin-top: 0.42em;
-        flex-shrink: 0;
-      }
-      .p-title {
-        font-size: 0.88rem;
-        font-weight: 500;
-        color: var(--ink);
-        line-height: 1.3;
-      }
-      .p-sub {
-        font-size: 0.78rem;
-        color: var(--ink2);
-        margin-top: 0.1rem;
-        line-height: 1.4;
-      }
-
-      /* HIDDEN SECTIONS */
-      .tab-content {
-        display: none;
-      }
-      .tab-content.active {
-        display: block;
-      }
+      .nota-pojecie-name { font-weight: 600; font-size: 0.85rem; color: var(--gold2); margin-bottom: 0.2rem; }
+      .nota-pojecie-def { font-size: 0.75rem; color: var(--ink2); line-height: 1.55; }
     </style>
   </head>
   <body>
-    <!-- NAV -->
     <nav class="topnav">
       <a href="index.html" class="nav-back">← Hub</a>
       <span class="nav-title">Temat 9 · Skamander i Julian Tuwim</span>
       <div class="nav-status-wrap">
-        <button class="nav-sbtn" id="nb-done" onclick="navStatus('done')">
-          ✓ Zaliczone
-        </button>
-        <button class="nav-sbtn" id="nb-focus" onclick="navStatus('focus')">
-          ★ Powtórka
-        </button>
-        <button class="nav-sbtn" id="nb-hard" onclick="navStatus('hard')">
-          ! Trudny
-        </button>
+        <button class="nav-sbtn" id="nb-done" onclick="navStatus('done')">✓ Zaliczone</button>
+        <button class="nav-sbtn" id="nb-focus" onclick="navStatus('focus')">★ Powtórka</button>
+        <button class="nav-sbtn" id="nb-hard" onclick="navStatus('hard')">! Trudny</button>
       </div>
     </nav>
 
     <header>
       <p class="eyebrow">Dwudziestolecie · Temat 9</p>
       <h1>Skamander &amp; <span>Julian Tuwim</span></h1>
-      <p class="sub">
-        Program literacki · Twórczość · Interpretacja trzech wierszy
-      </p>
+      <p class="sub">Program literacki · Twórczość · Interpretacja trzech wierszy</p>
       <div class="divider"></div>
     </header>
 
-    <!-- TOGGLE BAR -->
     <div class="toggle-bar">
-      <button class="toggle-btn active" onclick="showTab('teoria')">
-        📜 Teoria
-      </button>
-      <button class="toggle-btn" onclick="showTab('wiersze')">
-        🖋 Wiersze
-      </button>
+      <button class="toggle-btn active" onclick="showTab('teoria')">📜 Teoria</button>
+      <button class="toggle-btn" onclick="showTab('wiersze')">🖋 Wiersze</button>
       <button class="toggle-btn" onclick="showTab('quiz')">🎯 Quiz</button>
+      <button class="toggle-btn" onclick="showTab('notatka')">📝 Notatka</button>
     </div>
 
     <div class="page">
+
       <!-- ===================== TEORIA ===================== -->
       <div id="tab-teoria" class="tab-content active">
-        <!-- HERO -->
         <div class="hero-card">
           <div class="hero-eyebrow">Grupa poetycka · 1918–1939</div>
-          <div class="hero-title">
-            Skamander — <em>rewolucja w białych rękawiczkach</em>
-          </div>
-          <div class="hero-sub">
-            Skamander to najważniejsza grupa poetycka dwudziestolecia
-            międzywojennego. Odrzucili patetyczny ton romantyczny i Młodopolski
-            symbolizm — ich poezja miała mówić językiem żywym, współczesnym,
-            miejskim. Zamiast wieszczów — zwykły człowiek. Zamiast narodu —
-            jednostka. Zamiast wieczności — dzisiaj.
-          </div>
+          <div class="hero-title">Skamander — <em>rewolucja w białych rękawiczkach</em></div>
+          <div class="hero-sub">Skamander to najważniejsza grupa poetycka dwudziestolecia międzywojennego. Odrzucili patetyczny ton romantyczny i Młodopolski symbolizm — ich poezja miała mówić językiem żywym, współczesnym, miejskim. Zamiast wieszczów — zwykły człowiek. Zamiast narodu — jednostka. Zamiast wieczności — dzisiaj.</div>
           <div class="hero-tags">
-            <span
-              class="hero-tag"
-              style="
-                color: var(--sk-violet2);
-                border-color: var(--sk-violet2) 55;
-              "
-              >✦ 1918 — zalożenie</span
-            >
-            <span
-              class="hero-tag"
-              style="color: var(--sk-rose2); border-color: var(--sk-rose2) 55"
-              >✦ Kawiarnia Pod Pikadorem</span
-            >
-            <span
-              class="hero-tag"
-              style="color: var(--sk-ochre2); border-color: var(--sk-ochre2) 55"
-              >✦ Pismo „Skamander"</span
-            >
-            <span
-              class="hero-tag"
-              style="
-                color: var(--sk-forest2);
-                border-color: var(--sk-forest2) 55;
-              "
-              >✦ Witalizm · Klasycyzm · Miasto</span
-            >
+            <span class="hero-tag" style="color:var(--sk-violet2);border-color:var(--sk-violet2)55">✦ 1918 — założenie</span>
+            <span class="hero-tag" style="color:var(--sk-rose2);border-color:var(--sk-rose2)55">✦ Kawiarnia Pod Pikadorem</span>
+            <span class="hero-tag" style="color:var(--sk-ochre2);border-color:var(--sk-ochre2)55">✦ Pismo „Skamander"</span>
+            <span class="hero-tag" style="color:var(--sk-forest2);border-color:var(--sk-forest2)55">✦ Witalizm · Klasycyzm · Miasto</span>
           </div>
         </div>
 
-        <!-- GENEZA -->
-        <div class="sec-head">
-          <div class="sec-icon">🏛️</div>
-          <div class="sec-title">Geneza i historia grupy</div>
-          <div class="sec-line"></div>
-        </div>
+        <div class="sec-head"><div class="sec-icon">🏛️</div><div class="sec-title">Geneza i historia grupy</div><div class="sec-line"></div></div>
         <div class="grid2">
-          <div class="nw-card c-violet" style="animation-delay: 0.05s">
+          <div class="nw-card c-violet" style="animation-delay:0.05s">
             <div class="nw-card-icon">🏠</div>
             <div class="nw-card-title">Kawiarnia Pod Pikadorem</div>
-            <div class="nw-card-desc">
-              Siedziba grupy w Warszawie — tu w
-              <strong>1918 roku</strong> debiutowali Tuwim, Lechoń, Wierzyński,
-              Słonimski i Iwaszkiewicz. Kawiarnia stała się centrum życia
-              literackiego odrodzonej Polski.
-            </div>
+            <div class="nw-card-desc">Siedziba grupy w Warszawie — tu w <strong>1918 roku</strong> debiutowali Tuwim, Lechoń, Wierzyński, Słonimski i Iwaszkiewicz. Kawiarnia stała się centrum życia literackiego odrodzonej Polski.</div>
           </div>
-          <div class="nw-card c-rose" style="animation-delay: 0.1s">
+          <div class="nw-card c-rose" style="animation-delay:0.1s">
             <div class="nw-card-icon">📰</div>
             <div class="nw-card-title">Pismo „Skamander"</div>
-            <div class="nw-card-desc">
-              Własne pismo literackie (od 1920) — prezentowało program i wiersze
-              grupy. Nazwa pochodzi od rzeki Skamander płynącej u murów Troi —
-              symbol <strong>nowego, wolnego piękna</strong>.
-            </div>
+            <div class="nw-card-desc">Własne pismo literackie (od 1920) — prezentowało program i wiersze grupy. Nazwa pochodzi od rzeki Skamander płynącej u murów Troi — symbol <strong>nowego, wolnego piękna</strong>.</div>
           </div>
-          <div class="nw-card c-forest" style="animation-delay: 0.15s">
+          <div class="nw-card c-forest" style="animation-delay:0.15s">
             <div class="nw-card-icon">🇵🇱</div>
             <div class="nw-card-title">Kontekst historyczny</div>
-            <div class="nw-card-desc">
-              Skamander powstaje w roku odzyskania niepodległości. Polska jest
-              wolna — nie potrzeba już poezji bojowej ani mesjanistycznej.
-              <strong>Czas na poezję zwykłego życia</strong>.
-            </div>
+            <div class="nw-card-desc">Skamander powstaje w roku odzyskania niepodległości. Polska jest wolna — nie potrzeba już poezji bojowej ani mesjanistycznej. <strong>Czas na poezję zwykłego życia</strong>.</div>
           </div>
-          <div class="nw-card c-ochre" style="animation-delay: 0.2s">
+          <div class="nw-card c-ochre" style="animation-delay:0.2s">
             <div class="nw-card-icon">🔗</div>
             <div class="nw-card-title">Brak sztywnego manifestu</div>
-            <div class="nw-card-desc">
-              Skamander nie wydał programowego manifestu — poeci łączyło
-              <strong>pokrewieństwo wrażliwości</strong>, nie doktryna. Każdy
-              zachował odrębność: Tuwim — żywioł, Lechoń — historia, Wierzyński
-              — sport.
-            </div>
+            <div class="nw-card-desc">Skamander nie wydał programowego manifestu — poeci łączyło <strong>pokrewieństwo wrażliwości</strong>, nie doktryna. Każdy zachował odrębność: Tuwim — żywioł, Lechoń — historia, Wierzyński — sport.</div>
           </div>
         </div>
 
-        <!-- PROGRAM -->
-        <div class="sec-head">
-          <div class="sec-icon">📜</div>
-          <div class="sec-title">Program literacki Skamandra</div>
-          <div class="sec-line"></div>
-        </div>
-
+        <div class="sec-head"><div class="sec-icon">📜</div><div class="sec-title">Program literacki Skamandra</div><div class="sec-line"></div></div>
         <div class="nw-quote">
-          <p>
-            „Chcemy być poetami dnia dzisiejszego, wierzącymi głęboko i
-            szczerze, że poezja jest wieczna tylko wówczas, gdy jest naprawdę
-            współczesna."
-          </p>
+          <p>„Chcemy być poetami dnia dzisiejszego, wierzącymi głęboko i szczerze, że poezja jest wieczna tylko wówczas, gdy jest naprawdę współczesna."</p>
           <cite>— Julian Tuwim, Słowo wstępne do pisma „Skamander"</cite>
         </div>
-
         <div class="grid2">
-          <div class="nw-card c-violet" style="animation-delay: 0.05s">
+          <div class="nw-card c-violet" style="animation-delay:0.05s">
             <div class="nw-card-icon">🚶</div>
             <div class="nw-card-title">1. Zwykły człowiek jako podmiot</div>
             <ul class="pillar-list">
-              <li>
-                <div class="pdot"></div>
-                <div>
-                  <div class="p-title">Odrzucenie wieszcza i profety</div>
-                  <div class="p-sub">
-                    Poeta nie jest wybrańcem narodu — jest jednym z wielu,
-                    obserwuje ulicę, tramwaj, tłum.
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="pdot"></div>
-                <div>
-                  <div class="p-title">Demokratyzacja poezji</div>
-                  <div class="p-sub">
-                    Bohater poetycki to robotnik, mieszkaniec miasta,
-                    przechodzeń — nie rycerz ani mesjanista.
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="pdot"></div>
-                <div>
-                  <div class="p-title">Podmiotowość jednostki</div>
-                  <div class="p-sub">
-                    Celem jest wyraz indywidualnego przeżycia — nie zbiorowa
-                    misja.
-                  </div>
-                </div>
-              </li>
+              <li><div class="pdot"></div><div><div class="p-title">Odrzucenie wieszcza i profety</div><div class="p-sub">Poeta nie jest wybrańcem narodu — jest jednym z wielu, obserwuje ulicę, tramwaj, tłum.</div></div></li>
+              <li><div class="pdot"></div><div><div class="p-title">Demokratyzacja poezji</div><div class="p-sub">Bohater poetycki to robotnik, mieszkaniec miasta, przechodzeń — nie rycerz ani mesjanista.</div></div></li>
+              <li><div class="pdot"></div><div><div class="p-title">Podmiotowość jednostki</div><div class="p-sub">Celem jest wyraz indywidualnego przeżycia — nie zbiorowa misja.</div></div></li>
             </ul>
           </div>
-          <div class="nw-card c-rose" style="animation-delay: 0.1s">
+          <div class="nw-card c-rose" style="animation-delay:0.1s">
             <div class="nw-card-icon">🌆</div>
             <div class="nw-card-title">2. Urbanizm i nowoczesność</div>
             <ul class="pillar-list">
-              <li>
-                <div class="pdot"></div>
-                <div>
-                  <div class="p-title">Miasto jako temat</div>
-                  <div class="p-sub">
-                    Warszawa, ulica, kawiarnia, tramwaj — przestrzeń miejska
-                    wchodzi do poezji jako pełnoprawny świat.
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="pdot"></div>
-                <div>
-                  <div class="p-title">Cywilizacja i technika</div>
-                  <div class="p-sub">
-                    Akceptacja nowoczesności — nie tęsknota za wiejską arkadią,
-                    lecz fascynacja tempem życia.
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="pdot"></div>
-                <div>
-                  <div class="p-title">Dynamizm i ruch</div>
-                  <div class="p-sub">
-                    Rytm wiersza odpowiada rytmowi miasta — szybki, żywy,
-                    potoczysty.
-                  </div>
-                </div>
-              </li>
+              <li><div class="pdot"></div><div><div class="p-title">Miasto jako temat</div><div class="p-sub">Warszawa, ulica, kawiarnia, tramwaj — przestrzeń miejska wchodzi do poezji jako pełnoprawny świat.</div></div></li>
+              <li><div class="pdot"></div><div><div class="p-title">Cywilizacja i technika</div><div class="p-sub">Akceptacja nowoczesności — nie tęsknota za wiejską arkadią, lecz fascynacja tempem życia.</div></div></li>
+              <li><div class="pdot"></div><div><div class="p-title">Dynamizm i ruch</div><div class="p-sub">Rytm wiersza odpowiada rytmowi miasta — szybki, żywy, potoczysty.</div></div></li>
             </ul>
           </div>
-          <div class="nw-card c-forest" style="animation-delay: 0.15s">
+          <div class="nw-card c-forest" style="animation-delay:0.15s">
             <div class="nw-card-icon">🌿</div>
             <div class="nw-card-title">3. Witalizm i pochwała życia</div>
             <ul class="pillar-list">
-              <li>
-                <div class="pdot"></div>
-                <div>
-                  <div class="p-title">Radość istnienia</div>
-                  <div class="p-sub">
-                    Afirmacja życia w całej jego zmysłowości — wbrew dekadencji
-                    Młodej Polski.
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="pdot"></div>
-                <div>
-                  <div class="p-title">Cielesność i zmysłowość</div>
-                  <div class="p-sub">
-                    Ciało, natura, instynkt — nie są wstydliwe. Skamander
-                    gloryfikuje żywiołowość.
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="pdot"></div>
-                <div>
-                  <div class="p-title">Optymizm (z wyjątkami)</div>
-                  <div class="p-sub">
-                    Nie zawsze — u Tuwima witalizm miesza się z bólem. Ale
-                    wyjściowa postawa to TAK dla życia.
-                  </div>
-                </div>
-              </li>
+              <li><div class="pdot"></div><div><div class="p-title">Radość istnienia</div><div class="p-sub">Afirmacja życia w całej jego zmysłowości — wbrew dekadencji Młodej Polski.</div></div></li>
+              <li><div class="pdot"></div><div><div class="p-title">Cielesność i zmysłowość</div><div class="p-sub">Ciało, natura, instynkt — nie są wstydliwe. Skamander gloryfikuje żywiołowość.</div></div></li>
+              <li><div class="pdot"></div><div><div class="p-title">Optymizm (z wyjątkami)</div><div class="p-sub">Nie zawsze — u Tuwima witalizm miesza się z bólem. Ale wyjściowa postawa to TAK dla życia.</div></div></li>
             </ul>
           </div>
-          <div class="nw-card c-ochre" style="animation-delay: 0.2s">
+          <div class="nw-card c-ochre" style="animation-delay:0.2s">
             <div class="nw-card-icon">🔤</div>
             <div class="nw-card-title">4. Język — rewolucja słowa</div>
             <ul class="pillar-list">
-              <li>
-                <div class="pdot"></div>
-                <div>
-                  <div class="p-title">Mowa potoczna w wierszu</div>
-                  <div class="p-sub">
-                    Słownictwo codzienne, kolokwializmy, uliczny idiom — bez
-                    patosu i archaizmów.
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="pdot"></div>
-                <div>
-                  <div class="p-title">Muzyczność i brzmienie</div>
-                  <div class="p-sub">
-                    Tuwim szczególnie dbał o instrumentację głoskową — słowo
-                    brzmi, nie tylko znaczy.
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="pdot"></div>
-                <div>
-                  <div class="p-title">Neologizmy i gry słowne</div>
-                  <div class="p-sub">
-                    Tworzenie nowych słów, przekształcanie znaczeń — język jako
-                    materiał plastyczny.
-                  </div>
-                </div>
-              </li>
+              <li><div class="pdot"></div><div><div class="p-title">Mowa potoczna w wierszu</div><div class="p-sub">Słownictwo codzienne, kolokwializmy, uliczny idiom — bez patosu i archaizmów.</div></div></li>
+              <li><div class="pdot"></div><div><div class="p-title">Muzyczność i brzmienie</div><div class="p-sub">Tuwim szczególnie dbał o instrumentację głoskową — słowo brzmi, nie tylko znaczy.</div></div></li>
+              <li><div class="pdot"></div><div><div class="p-title">Neologizmy i gry słowne</div><div class="p-sub">Tworzenie nowych słów, przekształcanie znaczeń — język jako materiał plastyczny.</div></div></li>
             </ul>
           </div>
         </div>
-
-        <div class="grid2" style="margin-top: 1.2rem">
-          <div class="nw-card c-blue" style="animation-delay: 0.25s">
+        <div class="grid2" style="margin-top:1.2rem">
+          <div class="nw-card c-blue" style="animation-delay:0.25s">
             <div class="nw-card-icon">📖</div>
             <div class="nw-card-title">5. Nawiązanie do klasycyzmu</div>
             <ul class="pillar-list">
-              <li>
-                <div class="pdot"></div>
-                <div>
-                  <div class="p-title">Forma klasyczna, treść nowa</div>
-                  <div class="p-sub">
-                    Skamandryci nie odrzucali tradycyjnych form (sonet, strofa
-                    regularyczna) — wypełniali je nową treścią.
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="pdot"></div>
-                <div>
-                  <div class="p-title">Kochanowski jako wzorzec</div>
-                  <div class="p-sub">
-                    Tuwim wprost nawiązuje do Jana z Czarnolasu — tradycja
-                    klasyczna jako punkt odniesienia, nie ciężar.
-                  </div>
-                </div>
-              </li>
+              <li><div class="pdot"></div><div><div class="p-title">Forma klasyczna, treść nowa</div><div class="p-sub">Skamandryci nie odrzucali tradycyjnych form (sonet, strofa regularyczna) — wypełniali je nową treścią.</div></div></li>
+              <li><div class="pdot"></div><div><div class="p-title">Kochanowski jako wzorzec</div><div class="p-sub">Tuwim wprost nawiązuje do Jana z Czarnolasu — tradycja klasyczna jako punkt odniesienia, nie ciężar.</div></div></li>
             </ul>
           </div>
-          <div class="nw-card c-amber" style="animation-delay: 0.3s">
+          <div class="nw-card c-amber" style="animation-delay:0.3s">
             <div class="nw-card-icon">⚔️</div>
             <div class="nw-card-title">6. Stosunek do poprzedników</div>
             <ul class="pillar-list">
-              <li>
-                <div class="pdot"></div>
-                <div>
-                  <div class="p-title">Bunt wobec Młodej Polski</div>
-                  <div class="p-sub">
-                    Odrzucenie dekadenckiego pesymizmu, estetyzmu i symbolizmu —
-                    Skamander to optymizm i konkret.
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="pdot"></div>
-                <div>
-                  <div class="p-title">Polemika z romantyzmem</div>
-                  <div class="p-sub">
-                    Nie misja narodowa — lecz indywidualne przeżycie. Nie prorok
-                    — lecz człowiek.
-                  </div>
-                </div>
-              </li>
+              <li><div class="pdot"></div><div><div class="p-title">Bunt wobec Młodej Polski</div><div class="p-sub">Odrzucenie dekadenckiego pesymizmu, estetyzmu i symbolizmu — Skamander to optymizm i konkret.</div></div></li>
+              <li><div class="pdot"></div><div><div class="p-title">Polemika z romantyzmem</div><div class="p-sub">Nie misja narodowa — lecz indywidualne przeżycie. Nie prorok — lecz człowiek.</div></div></li>
             </ul>
           </div>
         </div>
 
-        <!-- POECI -->
-        <div class="sec-head">
-          <div class="sec-icon">✍️</div>
-          <div class="sec-title">Pięciu głównych poetów Skamandra</div>
-          <div class="sec-line"></div>
-        </div>
+        <div class="sec-head"><div class="sec-icon">✍️</div><div class="sec-title">Pięciu głównych poetów Skamandra</div><div class="sec-line"></div></div>
         <div class="poets-grid">
-          <div
-            class="poet-card"
-            style="--pc: var(--sk-violet2); animation-delay: 0.05s"
-          >
-            <div class="poet-icon">🔥</div>
-            <div class="poet-name">Julian Tuwim</div>
-            <div class="poet-sub">1894–1953</div>
-            <div class="poet-desc">
-              Żywioł słowa, witalizm, miłość do języka polskiego, skomplikowana
-              tożsamość (Żyd-Polak). Najwybitniejszy z grupy.
-            </div>
-          </div>
-          <div
-            class="poet-card"
-            style="--pc: var(--sk-rose2); animation-delay: 0.1s"
-          >
-            <div class="poet-icon">🏛️</div>
-            <div class="poet-name">Jan Lechoń</div>
-            <div class="poet-sub">1899–1956</div>
-            <div class="poet-desc">
-              Fascynacja historią Polski, patriotyzm, napięcie między tradycją a
-              nowoczesnością. „Herostrates".
-            </div>
-          </div>
-          <div
-            class="poet-card"
-            style="--pc: var(--sk-forest2); animation-delay: 0.15s"
-          >
-            <div class="poet-icon">🏆</div>
-            <div class="poet-name">Kazimierz Wierzyński</div>
-            <div class="poet-sub">1894–1969</div>
-            <div class="poet-desc">
-              Witalizm, sport, olimpizm, radość życia. Laureat Złotego Wawrzynu
-              na olimpiadzie w Amsterdamie 1928.
-            </div>
-          </div>
-          <div
-            class="poet-card"
-            style="--pc: var(--sk-ochre2); animation-delay: 0.2s"
-          >
-            <div class="poet-icon">💡</div>
-            <div class="poet-name">Antoni Słonimski</div>
-            <div class="poet-sub">1895–1976</div>
-            <div class="poet-desc">
-              Racjonalizm, sceptycyzm, ironia. Felietonista i dramaturg. Broń:
-              poczucie humoru i rozum.
-            </div>
-          </div>
-          <div class="poet-card" style="--pc: #5a8ab0; animation-delay: 0.25s">
-            <div class="poet-icon">🎭</div>
-            <div class="poet-name">Jarosław Iwaszkiewicz</div>
-            <div class="poet-sub">1894–1980</div>
-            <div class="poet-desc">
-              Piękno, śmierć, eros, melancholia. Wybitny prozaik i dramaturg —
-              potem oddzielna droga twórcza.
-            </div>
-          </div>
+          <div class="poet-card" style="--pc:var(--sk-violet2);animation-delay:0.05s"><div class="poet-icon">🔥</div><div class="poet-name">Julian Tuwim</div><div class="poet-sub">1894–1953</div><div class="poet-desc">Żywioł słowa, witalizm, miłość do języka polskiego, skomplikowana tożsamość (Żyd-Polak). Najwybitniejszy z grupy.</div></div>
+          <div class="poet-card" style="--pc:var(--sk-rose2);animation-delay:0.1s"><div class="poet-icon">🏛️</div><div class="poet-name">Jan Lechoń</div><div class="poet-sub">1899–1956</div><div class="poet-desc">Fascynacja historią Polski, patriotyzm, napięcie między tradycją a nowoczesnością. „Herostrates".</div></div>
+          <div class="poet-card" style="--pc:var(--sk-forest2);animation-delay:0.15s"><div class="poet-icon">🏆</div><div class="poet-name">Kazimierz Wierzyński</div><div class="poet-sub">1894–1969</div><div class="poet-desc">Witalizm, sport, olimpizm, radość życia. Laureat Złotego Wawrzynu na olimpiadzie w Amsterdamie 1928.</div></div>
+          <div class="poet-card" style="--pc:var(--sk-ochre2);animation-delay:0.2s"><div class="poet-icon">💡</div><div class="poet-name">Antoni Słonimski</div><div class="poet-sub">1895–1976</div><div class="poet-desc">Racjonalizm, sceptycyzm, ironia. Felietonista i dramaturg. Broń: poczucie humoru i rozum.</div></div>
+          <div class="poet-card" style="--pc:#5a8ab0;animation-delay:0.25s"><div class="poet-icon">🎭</div><div class="poet-name">Jarosław Iwaszkiewicz</div><div class="poet-sub">1894–1980</div><div class="poet-desc">Piękno, śmierć, eros, melancholia. Wybitny prozaik i dramaturg — potem oddzielna droga twórcza.</div></div>
         </div>
 
-        <!-- TUWIM PORTRET -->
-        <div class="sec-head">
-          <div class="sec-icon">🖊️</div>
-          <div class="sec-title">Julian Tuwim — portret twórcy</div>
-          <div class="sec-line"></div>
-        </div>
+        <div class="sec-head"><div class="sec-icon">🖊️</div><div class="sec-title">Julian Tuwim — portret twórcy</div><div class="sec-line"></div></div>
         <div class="grid2">
-          <div class="nw-card c-violet" style="animation-delay: 0.05s">
-            <div class="nw-card-icon">📅</div>
-            <div class="nw-card-title">Życie i biografia</div>
-            <div class="nw-card-desc">
-              Urodzony w <strong>1894 w Łodzi</strong> w zasymilowanej rodzinie
-              żydowskiej. Polskojęzyczny, czujący się Polakiem — ale napięcie
-              tożsamościowe (Żyd-Polak) jest kluczowe dla jego poezji. Studia w
-              Warszawie, debiut 1913.
-              <strong>Emigracja podczas II wś (1939–1946)</strong> — Nowy Jork,
-              Rio. Powrót do Polski, śmierć 1953.
-            </div>
-          </div>
-          <div class="nw-card c-rose" style="animation-delay: 0.1s">
-            <div class="nw-card-icon">❤️</div>
-            <div class="nw-card-title">Miłość do języka polskiego</div>
-            <div class="nw-card-desc">
-              Język polski był dla Tuwima <strong>ojczyzną</strong> — głębiej
-              niż ziemia i historia. „Jestem Polakiem, bo tak mi się podoba."
-              Fascynacja brzmienią słów, ich plastycznością — szukał
-              <strong>muzyki ukrytej w mowie</strong>. Neologizmy, onomatopeje,
-              rytm — język jako materiał rzeźbiarski.
-            </div>
-          </div>
-          <div class="nw-card c-forest" style="animation-delay: 0.15s">
-            <div class="nw-card-icon">🌊</div>
-            <div class="nw-card-title">Witalizm i dionizyjskość</div>
-            <div class="nw-card-desc">
-              Tuwim chciał poezji pełnej krwi, ruchu, namiętności — w duchu
-              <strong>dionizyjskim</strong> (Nietzsche). Wiersze pulsują
-              energią: tłum, ulica, radość, ból, gniew.
-              <strong>„Wiosna" (1919)</strong> — manifest witalizmu w wersji
-              ekstatycznej.
-            </div>
-          </div>
-          <div class="nw-card c-ochre" style="animation-delay: 0.2s">
-            <div class="nw-card-icon">🎭</div>
-            <div class="nw-card-title">Tożsamość i ból</div>
-            <div class="nw-card-desc">
-              Obok witalizmu — <strong>głęboki ból tożsamościowy</strong>. „My,
-              Żydzi polscy" (1944) — esej-manifest pisany w Nowym Jorku po
-              wieści o Holokauście. Kochał Polskę, ale czuł się w niej obcy. To
-              napięcie nadaje głębię najlepszym wierszom.
-            </div>
-          </div>
+          <div class="nw-card c-violet" style="animation-delay:0.05s"><div class="nw-card-icon">📅</div><div class="nw-card-title">Życie i biografia</div><div class="nw-card-desc">Urodzony w <strong>1894 w Łodzi</strong> w zasymilowanej rodzinie żydowskiej. Polskojęzyczny, czujący się Polakiem — ale napięcie tożsamościowe (Żyd-Polak) jest kluczowe dla jego poezji. Studia w Warszawie, debiut 1913. <strong>Emigracja podczas II wś (1939–1946)</strong> — Nowy Jork, Rio. Powrót do Polski, śmierć 1953.</div></div>
+          <div class="nw-card c-rose" style="animation-delay:0.1s"><div class="nw-card-icon">❤️</div><div class="nw-card-title">Miłość do języka polskiego</div><div class="nw-card-desc">Język polski był dla Tuwima <strong>ojczyzną</strong> — głębiej niż ziemia i historia. „Jestem Polakiem, bo tak mi się podoba." Fascynacja brzmieniami słów, ich plastycznością — szukał <strong>muzyki ukrytej w mowie</strong>. Neologizmy, onomatopeje, rytm — język jako materiał rzeźbiarski.</div></div>
+          <div class="nw-card c-forest" style="animation-delay:0.15s"><div class="nw-card-icon">🌊</div><div class="nw-card-title">Witalizm i dionizyjskość</div><div class="nw-card-desc">Tuwim chciał poezji pełnej krwi, ruchu, namiętności — w duchu <strong>dionizyjskim</strong> (Nietzsche). Wiersze pulsują energią: tłum, ulica, radość, ból, gniew. <strong>„Wiosna" (1919)</strong> — manifest witalizmu w wersji ekstatycznej.</div></div>
+          <div class="nw-card c-ochre" style="animation-delay:0.2s"><div class="nw-card-icon">🎭</div><div class="nw-card-title">Tożsamość i ból</div><div class="nw-card-desc">Obok witalizmu — <strong>głęboki ból tożsamościowy</strong>. „My, Żydzi polscy" (1944) — esej-manifest pisany w Nowym Jorku po wieści o Holokauście. Kochał Polskę, ale czuł się w niej obcy. To napięcie nadaje głębię najlepszym wierszom.</div></div>
         </div>
 
-        <!-- PORÓWNANIE Z AWANGARDĄ -->
-        <div class="sec-head">
-          <div class="sec-icon">⚡</div>
-          <div class="sec-title">
-            Skamander a Awangarda Krakowska — porównanie
-          </div>
-          <div class="sec-line"></div>
-        </div>
-        <div style="overflow-x: auto; margin-bottom: 2rem">
+        <div class="sec-head"><div class="sec-icon">⚡</div><div class="sec-title">Skamander a Awangarda Krakowska — porównanie</div><div class="sec-line"></div></div>
+        <div style="overflow-x:auto;margin-bottom:2rem">
           <table class="cmp-table">
-            <thead>
-              <tr>
-                <th>Kryterium</th>
-                <th>Skamander</th>
-                <th>Awangarda Krakowska (Peiper, Przyboś)</th>
-              </tr>
-            </thead>
+            <thead><tr><th>Kryterium</th><th>Skamander</th><th>Awangarda Krakowska (Peiper, Przyboś)</th></tr></thead>
             <tbody>
-              <tr>
-                <td>Stosunek do formy</td>
-                <td>Klasyczna forma, modernistyczna treść</td>
-                <td>Rewolucja formalna, wiersz wolny, elipsa</td>
-              </tr>
-              <tr>
-                <td>Język</td>
-                <td>Potoczny, muzyczny, zmysłowy</td>
-                <td>Skondensowany, intelektualny, metaforyczny</td>
-              </tr>
-              <tr>
-                <td>Podmiot</td>
-                <td>Człowiek ulicy, indywidualista</td>
-                <td>Zbiorowość, robot, praca, „masa"</td>
-              </tr>
-              <tr>
-                <td>Miasto</td>
-                <td>Zmysłowe, ludzkie, radosne</td>
-                <td>Cywilizacyjne, techniczne, progresywne</td>
-              </tr>
-              <tr>
-                <td>Manifest</td>
-                <td>Brak sztywnego — luźna wspólnota wrażliwości</td>
-                <td>Dokładne manifesty (Peiper „Tędy")</td>
-              </tr>
-              <tr>
-                <td>Emocje</td>
-                <td>Witalizm, ekstatyczność, subiektywizm</td>
-                <td>Intelektualizm, chłód, obiektywizm</td>
-              </tr>
+              <tr><td>Stosunek do formy</td><td>Klasyczna forma, modernistyczna treść</td><td>Rewolucja formalna, wiersz wolny, elipsa</td></tr>
+              <tr><td>Język</td><td>Potoczny, muzyczny, zmysłowy</td><td>Skondensowany, intelektualny, metaforyczny</td></tr>
+              <tr><td>Podmiot</td><td>Człowiek ulicy, indywidualista</td><td>Zbiorowość, robot, praca, „masa"</td></tr>
+              <tr><td>Miasto</td><td>Zmysłowe, ludzkie, radosne</td><td>Cywilizacyjne, techniczne, progresywne</td></tr>
+              <tr><td>Manifest</td><td>Brak sztywnego — luźna wspólnota wrażliwości</td><td>Dokładne manifesty (Peiper „Tędy")</td></tr>
+              <tr><td>Emocje</td><td>Witalizm, ekstatyczność, subiektywizm</td><td>Intelektualizm, chłód, obiektywizm</td></tr>
             </tbody>
           </table>
         </div>
 
-        <!-- KLUCZOWE POJĘCIA -->
-        <div class="sec-head">
-          <div class="sec-icon">🔑</div>
-          <div class="sec-title">Kluczowe pojęcia i terminy</div>
-          <div class="sec-line"></div>
-        </div>
+        <div class="sec-head"><div class="sec-icon">🔑</div><div class="sec-title">Kluczowe pojęcia i terminy</div><div class="sec-line"></div></div>
         <div class="terms-grid">
-          <div class="term-card" style="animation-delay: 0.05s">
-            <div class="term-name">Witalizm</div>
-            <div class="term-def">
-              Filozofia afirmacji życia — radość, dynamizm, cielesność. Poezja
-              ma tętnić energią, nie lamentować.
-            </div>
-          </div>
-          <div class="term-card" style="animation-delay: 0.1s">
-            <div class="term-name">Urbanizm poetycki</div>
-            <div class="term-def">
-              Miasto jako pełnoprawny temat liryczny — ulica, tłum, tramwaj,
-              kawiarnia zamiast natury i arkadii.
-            </div>
-          </div>
-          <div class="term-card" style="animation-delay: 0.15s">
-            <div class="term-name">Klasycyzm formalny</div>
-            <div class="term-def">
-              Korzystanie z tradycyjnych form wierszowych (strofa, rymy, rytm) —
-              ale z nową treścią.
-            </div>
-          </div>
-          <div class="term-card" style="animation-delay: 0.2s">
-            <div class="term-name">Demokratyzacja poezji</div>
-            <div class="term-def">
-              Odejście od elitaryzmu — poezja dla wszystkich, o wszystkich.
-              Bohater poetycki = zwykły człowiek.
-            </div>
-          </div>
-          <div class="term-card" style="animation-delay: 0.25s">
-            <div class="term-name">Instrumentacja głoskowa</div>
-            <div class="term-def">
-              Celowe dobieranie głosek dla efektu dźwiękowego — aliteracje,
-              onomatopeje, rymy wewnętrzne.
-            </div>
-          </div>
-          <div class="term-card" style="animation-delay: 0.3s">
-            <div class="term-name">Dionizyjskość</div>
-            <div class="term-def">
-              Za Nietzschem — żywioł, irracjonalność, ekstaza, siła życiowa.
-              Antyteza apollińskiego ładu.
-            </div>
-          </div>
-          <div class="term-card" style="animation-delay: 0.35s">
-            <div class="term-name">Metapoezja</div>
-            <div class="term-def">
-              Wiersz o pisaniu wiersza — poeta rozmyśla nad naturą swojej sztuki
-              i języka. Tuwim był w tym mistrzem.
-            </div>
-          </div>
-          <div class="term-card" style="animation-delay: 0.4s">
-            <div class="term-name">Neologizm poetycki</div>
-            <div class="term-def">
-              Nowo ukute słowo — Tuwim tworzył własne wyrazy by wyrazić to, na
-              co polszczyzna nie miała nazwy.
-            </div>
-          </div>
+          <div class="term-card" style="animation-delay:0.05s"><div class="term-name">Witalizm</div><div class="term-def">Filozofia afirmacji życia — radość, dynamizm, cielesność. Poezja ma tętnić energią, nie lamentować.</div></div>
+          <div class="term-card" style="animation-delay:0.1s"><div class="term-name">Urbanizm poetycki</div><div class="term-def">Miasto jako pełnoprawny temat liryczny — ulica, tłum, tramwaj, kawiarnia zamiast natury i arkadii.</div></div>
+          <div class="term-card" style="animation-delay:0.15s"><div class="term-name">Klasycyzm formalny</div><div class="term-def">Korzystanie z tradycyjnych form wierszowych (strofa, rymy, rytm) — ale z nową treścią.</div></div>
+          <div class="term-card" style="animation-delay:0.2s"><div class="term-name">Demokratyzacja poezji</div><div class="term-def">Odejście od elitaryzmu — poezja dla wszystkich, o wszystkich. Bohater poetycki = zwykły człowiek.</div></div>
+          <div class="term-card" style="animation-delay:0.25s"><div class="term-name">Instrumentacja głoskowa</div><div class="term-def">Celowe dobieranie głosek dla efektu dźwiękowego — aliteracje, onomatopeje, rymy wewnętrzne.</div></div>
+          <div class="term-card" style="animation-delay:0.3s"><div class="term-name">Dionizyjskość</div><div class="term-def">Za Nietzschem — żywioł, irracjonalność, ekstaza, siła życiowa. Antyteza apollińskiego ładu.</div></div>
+          <div class="term-card" style="animation-delay:0.35s"><div class="term-name">Metapoezja</div><div class="term-def">Wiersz o pisaniu wiersza — poeta rozmyśla nad naturą swojej sztuki i języka. Tuwim był w tym mistrzem.</div></div>
+          <div class="term-card" style="animation-delay:0.4s"><div class="term-name">Neologizm poetycki</div><div class="term-def">Nowo ukute słowo — Tuwim tworzył własne wyrazy by wyrazić to, na co polszczyzna nie miała nazwy.</div></div>
         </div>
       </div>
       <!-- end teoria -->
 
       <!-- ===================== WIERSZE ===================== -->
       <div id="tab-wiersze" class="tab-content">
-        <div class="sec-head" style="margin-top: 1rem">
-          <div class="sec-icon">🖋</div>
-          <div class="sec-title">Interpretacja trzech wierszy Tuwima</div>
-          <div class="sec-line"></div>
-        </div>
+        <div class="sec-head" style="margin-top:1rem"><div class="sec-icon">🖋</div><div class="sec-title">Interpretacja trzech wierszy Tuwima</div><div class="sec-line"></div></div>
+        <p style="font-size:0.85rem;color:var(--ink2);line-height:1.7;margin-bottom:1.8rem">Kliknij tytuł wiersza, aby rozwinąć pełną analizę. Każdy wiersz to inny wymiar Tuwimowskiej poetyki.</p>
 
-        <p
-          style="
-            font-size: 0.85rem;
-            color: var(--ink2);
-            line-height: 1.7;
-            margin-bottom: 1.8rem;
-          "
-        >
-          Kliknij tytuł wiersza, aby rozwinąć pełną analizę. Każdy wiersz to
-          inny wymiar Tuwimowskiej poetyki.
-        </p>
-
-        <!-- WIERSZ 1: DO KRYTYKÓW -->
         <div class="poem-wrap">
           <div class="poem-head" onclick="togglePoem('p1')">
-            <div class="poem-head-left">
-              <div class="poem-label">Wiersz 1 · Manifest poetycki</div>
-              <div class="poem-title">„Do krytyków"</div>
-              <div class="poem-year">
-                1918 · z tomu <em>Czyhanie na Boga</em>
-              </div>
-            </div>
+            <div class="poem-head-left"><div class="poem-label">Wiersz 1 · Manifest poetycki</div><div class="poem-title">„Do krytyków"</div><div class="poem-year">1918 · z tomu <em>Czyhanie na Boga</em></div></div>
             <div class="poem-chevron" id="chev-p1">▼</div>
           </div>
           <div class="poem-body" id="body-p1">
             <div class="poem-cols">
               <div>
-                <div class="poem-text">
-                  Nie mam nic do gadania z wami, Mądrzy, porządni krytycy! Wy —
-                  z przeszklanemi słowami, Ja — z ulicą i tłumicą. Wy z
-                  przepysznym mistrzostwem Nad słowami się pastwiąc — Ja,
-                  zwariowany hostem Przy karczmie życia wrzastem. Biorę słowa
-                  jak chmury, Jak wiatry nierozpędzone, Jak wzburzone struny,
-                  Jak krew rozognioną. I słowa mi rwą żyły, I słowa mnie unoszą
-                  — Skąd ta przeklęta siła? Idę, bo muszę, bo proszą. (fragment
-                  / rekonstrukcja dla celów edukacyjnych)
-                </div>
-                <p
-                  style="
-                    font-size: 0.7rem;
-                    color: var(--ink2);
-                    margin-top: 0.8rem;
-                    font-style: italic;
-                  "
-                >
-                  * Tekst przytoczony w celach edukacyjnych w formie skróconej.
-                  Pełny wiersz dostępny w wydaniach dzieł Tuwima.
-                </p>
+                <div class="poem-text">Nie mam nic do gadania z wami, Mądrzy, porządni krytycy! Wy — z przeszklanemi słowami, Ja — z ulicą i tłumicą. Wy z przepysznym mistrzostwem Nad słowami się pastwiąc — Ja, zwariowany hostem Przy karczmie życia wrzastem. Biorę słowa jak chmury, Jak wiatry nierozpędzone, Jak wzburzone struny, Jak krew rozognioną. I słowa mi rwą żyły, I słowa mnie unoszą — Skąd ta przeklęta siła? Idę, bo muszę, bo proszą. (fragment / rekonstrukcja dla celów edukacyjnych)</div>
+                <p style="font-size:0.7rem;color:var(--ink2);margin-top:0.8rem;font-style:italic">* Tekst przytoczony w celach edukacyjnych w formie skróconej.</p>
               </div>
               <div class="poem-analysis">
-                <div class="pa-block">
-                  <div class="pa-label">🎯 Temat i sytuacja liryczna</div>
-                  <div class="pa-text">
-                    Podmiot liryczny — <strong>sam poeta</strong> — zwraca się
-                    wprost do krytyków literackich. Kontrast: wy (krytycy,
-                    porządek, intelekt) vs. ja (ulica, żywioł, instynkt). Wiersz
-                    jest <strong>manifestem poetyckim</strong> — deklaracją
-                    stylu i wartości.
-                  </div>
-                </div>
-                <div class="pa-block">
-                  <div class="pa-label">⚡ Główna opozycja</div>
-                  <div class="pa-text">
-                    <strong>Krytycy</strong> = „przeszklane słowa" (zimne,
-                    dystans, intelektualizm, estetyzm) vs.
-                    <strong>Poeta</strong> = ulica, tłum, krzyk, krew, wicher.
-                    Tuwim afirmuje żywioł nad akademicką kontrolą.
-                  </div>
-                </div>
-                <div class="pa-block">
-                  <div class="pa-label">🔊 Język i środki stylistyczne</div>
-                  <div class="pa-text">
-                    <strong>Apostrofa</strong> — bezpośrednie zwrot do
-                    krytyków.<br />
-                    <strong>Enumeracja</strong> — nagromadzenie żywiołowych
-                    metafor (chmury, wiatry, krew).<br />
-                    <strong>Anafora</strong> — powtórzenia „Jak..." budują
-                    narastające napięcie.<br />
-                    <strong>Potoczność</strong> — „nie mam nic do gadania" —
-                    celowy kolokwializm.
-                  </div>
-                </div>
-                <div class="pa-block">
-                  <div class="pa-label">🏛️ Związek ze Skamandrem</div>
-                  <div class="pa-text">
-                    Wiersz realizuje program Skamandra:
-                    <strong>demokratyzacja</strong> (ulica i tłum),
-                    <strong>witalizm</strong> (krew, siła, żywioł),
-                    <strong>bunt wobec estetyzmu</strong> Młodej Polski. Tuwim
-                    opowiada się za poezją żywą, nie muzealną.
-                  </div>
-                </div>
-                <div class="pa-block">
-                  <div class="pa-label">
-                    💡 Kluczowy wniosek interpretacyjny
-                  </div>
-                  <div class="pa-text">
-                    „Do krytyków" to
-                    <strong
-                      >świadome odcięcie się od modeli poezji elitarnej</strong
-                    >. Tuwim nie chce akademickiej poprawności — chce słowa,
-                    które boli, unosi, porywa. Słowo jest dla niego siłą
-                    fizyczną, nie intelektualnym konstruktem.
-                  </div>
-                </div>
+                <div class="pa-block"><div class="pa-label">🎯 Temat i sytuacja liryczna</div><div class="pa-text">Podmiot liryczny — <strong>sam poeta</strong> — zwraca się wprost do krytyków literackich. Kontrast: wy (krytycy, porządek, intelekt) vs. ja (ulica, żywioł, instynkt). Wiersz jest <strong>manifestem poetyckim</strong>.</div></div>
+                <div class="pa-block"><div class="pa-label">⚡ Główna opozycja</div><div class="pa-text"><strong>Krytycy</strong> = „przeszklane słowa" (zimne, intelektualizm) vs. <strong>Poeta</strong> = ulica, tłum, krzyk, krew, wicher. Tuwim afirmuje żywioł nad akademicką kontrolą.</div></div>
+                <div class="pa-block"><div class="pa-label">🔊 Środki stylistyczne</div><div class="pa-text"><strong>Apostrofa</strong> — zwrot do krytyków.<br><strong>Enumeracja</strong> — metafory żywiołu (chmury, wiatry, krew).<br><strong>Anafora</strong> — „Jak..." buduje napięcie.<br><strong>Potoczność</strong> — celowy kolokwializm.</div></div>
+                <div class="pa-block"><div class="pa-label">💡 Wniosek</div><div class="pa-text"><strong>Świadome odcięcie się od poezji elitarnej.</strong> Słowo jest siłą fizyczną, nie intelektualnym konstruktem.</div></div>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- WIERSZ 2: SŁOWISIEŃ -->
         <div class="poem-wrap">
           <div class="poem-head" onclick="togglePoem('p2')">
-            <div class="poem-head-left">
-              <div class="poem-label">
-                Wiersz 2 · Metapoezja · Muzyczność języka
-              </div>
-              <div class="poem-title">„Słowisień"</div>
-              <div class="poem-year">1936 · z tomu <em>Treść gorejąca</em></div>
-            </div>
+            <div class="poem-head-left"><div class="poem-label">Wiersz 2 · Metapoezja · Muzyczność języka</div><div class="poem-title">„Słowisień"</div><div class="poem-year">1936 · z tomu <em>Treść gorejąca</em></div></div>
             <div class="poem-chevron" id="chev-p2">▼</div>
           </div>
           <div class="poem-body" id="body-p2">
             <div class="poem-cols">
               <div>
-                <div class="poem-text">
-                  W lipcu, w ciepłym, gęstym lipcu, Który mi przez usta idzie,
-                  Ciemnoniebieskim lipcu Pełnym bzu i bzyczenia — Kiedy słowik w
-                  kwitnącej wiśni Słowieni, słowieje, słowiśni, I słowem i snem
-                  i wiśnią Słowi, wieszcząc, słowiśni — Hen! hen! O śpiewny
-                  ptaku! Tyś mi jest słowem i śpiewem, Tyś mi jest pieśnią i
-                  ptakiem, Tyś wiśnią i słowem, i drzewem! (fragment /
-                  rekonstrukcja dla celów edukacyjnych)
-                </div>
-                <p
-                  style="
-                    font-size: 0.7rem;
-                    color: var(--ink2);
-                    margin-top: 0.8rem;
-                    font-style: italic;
-                  "
-                >
-                  * Tekst w formie skróconej dla celów edukacyjnych. Pełny
-                  wiersz — wydania zbiorowe Tuwima.
-                </p>
+                <div class="poem-text">W lipcu, w ciepłym, gęstym lipcu, Który mi przez usta idzie, Ciemnoniebieskim lipcu Pełnym bzu i bzyczenia — Kiedy słowik w kwitnącej wiśni Słowieni, słowieje, słowiśni, I słowem i snem i wiśnią Słowi, wieszcząc, słowiśni — Hen! hen! O śpiewny ptaku! Tyś mi jest słowem i śpiewem, Tyś mi jest pieśnią i ptakiem, Tyś wiśnią i słowem, i drzewem! (fragment / rekonstrukcja dla celów edukacyjnych)</div>
+                <p style="font-size:0.7rem;color:var(--ink2);margin-top:0.8rem;font-style:italic">* Tekst w formie skróconej dla celów edukacyjnych.</p>
               </div>
               <div class="poem-analysis">
-                <div class="pa-block">
-                  <div class="pa-label">📝 Neologizm w tytule</div>
-                  <div class="pa-text">
-                    <strong>„Słowisień"</strong> — zlepek słów:
-                    <em>słowik</em> + <em>wrzesień/sierpień</em>? Albo
-                    <em>słowo</em> + <em>pieśń</em>? Tuwim tworzy słowo-twór,
-                    który sam jest muzyczny.
-                    <strong>Tytuł jest poetyckim eksperymentem</strong> — zanim
-                    przeczytamy wiersz, już słyszymy jego temat.
-                  </div>
-                </div>
-                <div class="pa-block">
-                  <div class="pa-label">🎵 Muzyczność — serce wiersza</div>
-                  <div class="pa-text">
-                    <strong>Paronomazja</strong> (gra słów brzmiących podobnie):
-                    słowik, słowić, słowień, słowieje, słowisień, słowo —
-                    łańcuch dźwiękowy tworzący melodię.<br />
-                    <strong>Aliteracja</strong> — nawroty głoski „sl-", „sw-"
-                    imitują śpiew ptaka.<br />
-                    <strong>Onomatopeja</strong> — „bzyczenie", brzmienie
-                    otwartych samogłosek.
-                  </div>
-                </div>
-                <div class="pa-block">
-                  <div class="pa-label">🌿 Symbolika</div>
-                  <div class="pa-text">
-                    <strong>Słowik</strong> = tradycyjny symbol poezji i pieśni.
-                    <strong>Wiśnia, lipiec, bz</strong> = natura jako źródło
-                    języka. Tuwim łączy słowo poetyckie z żywiotem natury —
-                    <strong>język rodzi się jak kwiat, śpiewa jak ptak</strong>.
-                  </div>
-                </div>
-                <div class="pa-block">
-                  <div class="pa-label">🔄 Metapoetycki wymiar</div>
-                  <div class="pa-text">
-                    Wiersz jest <strong>o pisaniu wiersza</strong> — słowik to
-                    poeta, śpiew to poezja. Tuwim bawi się granicą między naturą
-                    a językiem.
-                    <strong
-                      >Słowo i ptak, pieśń i wiśnia stają się jednym</strong
-                    >
-                    — granice między rzeczywistością a językiem zacierają się.
-                  </div>
-                </div>
-                <div class="pa-block">
-                  <div class="pa-label">
-                    💡 Kluczowy wniosek interpretacyjny
-                  </div>
-                  <div class="pa-text">
-                    „Słowisień" to
-                    <strong>demonstracja Tuwimowskiego credo</strong>: język
-                    jest żywiołem, materią plastyczną — nie tylko narzędziem
-                    komunikacji. Wiersz nie opowiada —
-                    <strong>ON SAM JEST muzycznym przeżyciem języka</strong>. To
-                    metapoezja w czystej postaci.
-                  </div>
-                </div>
+                <div class="pa-block"><div class="pa-label">📝 Neologizm w tytule</div><div class="pa-text"><strong>„Słowisień"</strong> — zlepek: <em>słowik</em> + <em>pieśń</em>. Tuwim tworzy słowo-twór, który sam jest muzyczny. <strong>Tytuł jest poetyckim eksperymentem.</strong></div></div>
+                <div class="pa-block"><div class="pa-label">🎵 Muzyczność</div><div class="pa-text"><strong>Paronomazja</strong>: słowik → słowić → słowień → słowieje → słowo — łańcuch dźwiękowy.<br><strong>Aliteracja</strong> — nawroty „sl-", „sw-" imitują śpiew ptaka.<br><strong>Onomatopeja</strong> — „bzyczenie".</div></div>
+                <div class="pa-block"><div class="pa-label">🔄 Metapoetycki wymiar</div><div class="pa-text">Wiersz jest <strong>o pisaniu wiersza</strong> — słowik=poeta, śpiew=poezja. Granice między naturą a językiem zacierają się.</div></div>
+                <div class="pa-block"><div class="pa-label">💡 Wniosek</div><div class="pa-text">Wiersz nie opowiada — <strong>ON SAM JEST muzycznym przeżyciem języka.</strong> Metapoezja w czystej postaci.</div></div>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- WIERSZ 3: RZECZ CZARNOLESKA -->
         <div class="poem-wrap">
           <div class="poem-head" onclick="togglePoem('p3')">
-            <div class="poem-head-left">
-              <div class="poem-label">
-                Wiersz 3 · Dialog z tradycją · Tożsamość poety
-              </div>
-              <div class="poem-title">„Rzecz czarnoleska"</div>
-              <div class="poem-year">
-                1929 · z tomu <em>Rzecz czarnoleska</em>
-              </div>
-            </div>
+            <div class="poem-head-left"><div class="poem-label">Wiersz 3 · Dialog z tradycją · Tożsamość poety</div><div class="poem-title">„Rzecz czarnoleska"</div><div class="poem-year">1929 · z tomu <em>Rzecz czarnoleska</em></div></div>
             <div class="poem-chevron" id="chev-p3">▼</div>
           </div>
           <div class="poem-body" id="body-p3">
             <div class="poem-cols">
               <div>
-                <div class="poem-text">
-                  Jest rzecz w mowie polskiej, Prastara, nieśmiertelna,
-                  Najpiękniejsza i wolska, I wolna, i wieczna: Jest: ogień,
-                  wiatr i żywioł, Jest: krew, jest serce, łono, Jest pieśnią od
-                  prapocząt, Tak tkliwa, tak zraniona. O polskie słowo! Miłość
-                  Moja, strumień, korona — Z kochanowskiego lasu Wzięta i do
-                  mnie wrócona. (fragment / rekonstrukcja dla celów
-                  edukacyjnych)
-                </div>
-                <p
-                  style="
-                    font-size: 0.7rem;
-                    color: var(--ink2);
-                    margin-top: 0.8rem;
-                    font-style: italic;
-                  "
-                >
-                  * Tekst w formie skróconej dla celów edukacyjnych. Pełny
-                  wiersz — wydania zbiorowe Tuwima.
-                </p>
+                <div class="poem-text">Jest rzecz w mowie polskiej, Prastara, nieśmiertelna, Najpiękniejsza i wolska, I wolna, i wieczna: Jest: ogień, wiatr i żywioł, Jest: krew, jest serce, łono, Jest pieśnią od prapocząt, Tak tkliwa, tak zraniona. O polskie słowo! Miłość Moja, strumień, korona — Z kochanowskiego lasu Wzięta i do mnie wrócona. (fragment / rekonstrukcja dla celów edukacyjnych)</div>
+                <p style="font-size:0.7rem;color:var(--ink2);margin-top:0.8rem;font-style:italic">* Tekst w formie skróconej dla celów edukacyjnych.</p>
               </div>
               <div class="poem-analysis">
-                <div class="pa-block">
-                  <div class="pa-label">📚 Nawiązanie do Kochanowskiego</div>
-                  <div class="pa-text">
-                    <strong>Czarnolas</strong> — wieś Jana Kochanowskiego,
-                    symbol polskiej poezji klasycznej. Tuwim wprost wskazuje
-                    tradycję: <em>„z kochanowskiego lasu wzięta"</em>. To
-                    deklaracja: jestem dziedzicem najpiękniejszej polszczyzny.
-                    <strong
-                      >Polemika z odcięciem od tradycji — Tuwim je
-                      afirmuje.</strong
-                    >
-                  </div>
-                </div>
-                <div class="pa-block">
-                  <div class="pa-label">🇵🇱 Język jako ojczyzna</div>
-                  <div class="pa-text">
-                    Kluczowy motyw Tuwimowy:
-                    <strong>język polski jest jego prawdziwą ojczyzną</strong>.
-                    Nie ziemia, nie historia, nie krew — ale słowo. Dla
-                    Żyda-Polaka to jedyna ojczyzna, którą wybrał i w której może
-                    być całkowicie u siebie.
-                    <em>„O polskie słowo! Miłość moja."</em>
-                  </div>
-                </div>
-                <div class="pa-block">
-                  <div class="pa-label">⚡ Żywioł i klasycyzm razem</div>
-                  <div class="pa-text">
-                    Wiersz łączy <strong>witalistyczny żywioł</strong> (ogień,
-                    wiatr, krew) z <strong>klasyczną formą stroficzną</strong>.
-                    To synteza skamandrytów: tradycyjna forma, ale żywa treść.
-                    Tuwim nie musi wybierać — bierze z obu.
-                  </div>
-                </div>
-                <div class="pa-block">
-                  <div class="pa-label">😢 Wymiar tożsamościowy</div>
-                  <div class="pa-text">
-                    Wiersz ma <strong>wymiar osobisty i dramatyczny</strong>.
-                    Tuwim — jako Żyd piszący po polsku — deklaruje przynależność
-                    do polszczyzny z pasją, która brzmi jak odpowiedź na zarzut,
-                    że nie jest „prawdziwym Polakiem".
-                    <strong
-                      >Miłość do języka to protest i manifestacja
-                      jednocześnie.</strong
-                    >
-                  </div>
-                </div>
-                <div class="pa-block">
-                  <div class="pa-label">
-                    💡 Kluczowy wniosek interpretacyjny
-                  </div>
-                  <div class="pa-text">
-                    „Rzecz czarnoleska" to
-                    <strong>najgłębsze wyznanie wiary Tuwima</strong>: wierzy w
-                    język jak w Boga. Nawiązując do Kochanowskiego, umieszcza
-                    się w najcenniejszej tradycji polskiej poezji — i zarazem
-                    mówi:
-                    <em
-                      >ta tradycja jest moja, mam do niej prawo przez miłość,
-                      nie przez urodzenie.</em
-                    >
-                  </div>
-                </div>
+                <div class="pa-block"><div class="pa-label">📚 Nawiązanie do Kochanowskiego</div><div class="pa-text"><strong>Czarnolas</strong> — wieś Jana Kochanowskiego, symbol klasycznej polszczyzny. Tuwim deklaruje: jestem dziedzicem tej tradycji. <strong>Afirmacja tradycji — nie bunt.</strong></div></div>
+                <div class="pa-block"><div class="pa-label">🇵🇱 Język jako ojczyzna</div><div class="pa-text"><strong>Język polski = prawdziwa ojczyzna Tuwima.</strong> Nie ziemia, nie krew — ale słowo. Dla Żyda-Polaka to jedyna ojczyzna, którą wybrał sercem.</div></div>
+                <div class="pa-block"><div class="pa-label">⚡ Żywioł i klasycyzm razem</div><div class="pa-text">Łączy <strong>witalistyczny żywioł</strong> (ogień, wiatr, krew) z <strong>klasyczną formą stroficzną</strong>. Synteza programu Skamandra.</div></div>
+                <div class="pa-block"><div class="pa-label">💡 Wniosek</div><div class="pa-text"><strong>Najgłębsze wyznanie wiary Tuwima.</strong> Przynależność do polszczyzny przez miłość, nie przez urodzenie.</div></div>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- ZESTAWIENIE WIERSZY -->
-        <div class="sec-head">
-          <div class="sec-icon">🔍</div>
-          <div class="sec-title">Zestawienie — trzy wymiary Tuwima</div>
-          <div class="sec-line"></div>
-        </div>
-        <div style="overflow-x: auto; margin-bottom: 2rem">
+        <div class="sec-head"><div class="sec-icon">🔍</div><div class="sec-title">Zestawienie — trzy wymiary Tuwima</div><div class="sec-line"></div></div>
+        <div style="overflow-x:auto;margin-bottom:2rem">
           <table class="cmp-table">
-            <thead>
-              <tr>
-                <th>Kryterium</th>
-                <th>„Do krytyków"</th>
-                <th>„Słowisień"</th>
-                <th>„Rzecz czarnoleska"</th>
-              </tr>
-            </thead>
+            <thead><tr><th>Kryterium</th><th>„Do krytyków"</th><th>„Słowisień"</th><th>„Rzecz czarnoleska"</th></tr></thead>
             <tbody>
-              <tr>
-                <td>Temat główny</td>
-                <td>Bunt wobec krytyki, manifest poetycki</td>
-                <td>Muzyczność języka, metapoezja</td>
-                <td>Miłość do języka polskiego, dialog z tradycją</td>
-              </tr>
-              <tr>
-                <td>Ton</td>
-                <td>Buntowniczy, energiczny, polemiczny</td>
-                <td>Zabawowy, muzyczny, ekstatyczny</td>
-                <td>Wyznaniowy, czuły, podniosły</td>
-              </tr>
-              <tr>
-                <td>Kluczowy środek</td>
-                <td>Apostrofa, kontrast, enumeracja</td>
-                <td>Paronomazja, neologizm, onomatopeja</td>
-                <td>Apostrofa, metafora, nawiązanie intertekstualne</td>
-              </tr>
-              <tr>
-                <td>Związek ze Skamandrem</td>
-                <td>Demokratyzacja, witalizm, bunt wobec estetyzmu</td>
-                <td>Rewolucja językowa, muzyczność</td>
-                <td>Klasycyzm + żywioł, tożsamość poety</td>
-              </tr>
-              <tr>
-                <td>Wymiar autobiograficzny</td>
-                <td>Niski</td>
-                <td>Średni (poeta=słowik)</td>
-                <td>Wysoki (Żyd-Polak, język jako ojczyzna)</td>
-              </tr>
+              <tr><td>Temat główny</td><td>Bunt wobec krytyki, manifest poetycki</td><td>Muzyczność języka, metapoezja</td><td>Miłość do języka polskiego, dialog z tradycją</td></tr>
+              <tr><td>Ton</td><td>Buntowniczy, energiczny, polemiczny</td><td>Zabawowy, muzyczny, ekstatyczny</td><td>Wyznaniowy, czuły, podniosły</td></tr>
+              <tr><td>Kluczowy środek</td><td>Apostrofa, kontrast, enumeracja</td><td>Paronomazja, neologizm, onomatopeja</td><td>Apostrofa, metafora, nawiązanie intertekstualne</td></tr>
+              <tr><td>Związek ze Skamandrem</td><td>Demokratyzacja, witalizm, bunt wobec estetyzmu</td><td>Rewolucja językowa, muzyczność</td><td>Klasycyzm + żywioł, tożsamość poety</td></tr>
+              <tr><td>Wymiar autobiograficzny</td><td>Niski</td><td>Średni (poeta=słowik)</td><td>Wysoki (Żyd-Polak, język jako ojczyzna)</td></tr>
             </tbody>
           </table>
         </div>
@@ -2095,85 +709,19 @@
       <!-- ===================== QUIZ ===================== -->
       <div id="tab-quiz" class="tab-content">
         <div id="quiz-hub">
-          <div class="sec-head" style="margin-top: 1rem">
-            <div class="sec-icon">🎯</div>
-            <div class="sec-title">Quiz — Skamander i Tuwim</div>
-            <div class="sec-line"></div>
-          </div>
+          <div class="sec-head" style="margin-top:1rem"><div class="sec-icon">🎯</div><div class="sec-title">Quiz — Skamander i Tuwim</div><div class="sec-line"></div></div>
           <div class="quiz-hub-grid">
-            <div
-              class="qhub-card"
-              style="--qc: var(--sk-violet2)"
-              onclick="launchQuiz('skamander')"
-            >
-              <div class="qhub-icon">🏛️</div>
-              <div class="qhub-title">Program Skamandra</div>
-              <div class="qhub-sub">
-                Geneza grupy, program literacki, poeci, pojęcia kluczowe,
-                porównania.
-              </div>
-              <div class="qhub-count" id="hub-score-skamander">— pytań</div>
-            </div>
-            <div
-              class="qhub-card"
-              style="--qc: var(--sk-rose2)"
-              onclick="launchQuiz('wiersze_t')"
-            >
-              <div class="qhub-icon">🖋</div>
-              <div class="qhub-title">Interpretacja wierszy</div>
-              <div class="qhub-sub">
-                „Do krytyków", „Słowisień", „Rzecz czarnoleska" — analiza i
-                środki stylistyczne.
-              </div>
-              <div class="qhub-count" id="hub-score-wiersze_t">— pytań</div>
-            </div>
-            <div
-              class="qhub-card"
-              style="--qc: var(--gold); grid-column: 1/-1"
-              onclick="launchQuiz('all_t9')"
-            >
-              <div class="qhub-icon">⭐</div>
-              <div class="qhub-title">MEGA QUIZ — Cały Temat 9</div>
-              <div class="qhub-sub">
-                Wszystkie pytania o Skamandrze i Tuwimie w jednym losowanym
-                zestawie.
-              </div>
-              <div class="qhub-count" id="hub-score-all_t9">— pytań</div>
-            </div>
+            <div class="qhub-card" style="--qc:var(--sk-violet2)" onclick="launchQuiz('skamander')"><div class="qhub-icon">🏛️</div><div class="qhub-title">Program Skamandra</div><div class="qhub-sub">Geneza grupy, program literacki, poeci, pojęcia kluczowe, porównania.</div><div class="qhub-count" id="hub-score-skamander">— pytań</div></div>
+            <div class="qhub-card" style="--qc:var(--sk-rose2)" onclick="launchQuiz('wiersze_t')"><div class="qhub-icon">🖋</div><div class="qhub-title">Interpretacja wierszy</div><div class="qhub-sub">„Do krytyków", „Słowisień", „Rzecz czarnoleska" — analiza i środki stylistyczne.</div><div class="qhub-count" id="hub-score-wiersze_t">— pytań</div></div>
+            <div class="qhub-card" style="--qc:var(--gold);grid-column:1/-1" onclick="launchQuiz('all_t9')"><div class="qhub-icon">⭐</div><div class="qhub-title">MEGA QUIZ — Cały Temat 9</div><div class="qhub-sub">Wszystkie pytania o Skamandrze i Tuwimie w jednym losowanym zestawie.</div><div class="qhub-count" id="hub-score-all_t9">— pytań</div></div>
           </div>
         </div>
-
-        <!-- ACTIVE QUIZ -->
-        <div id="quiz-active" style="display: none">
-          <button class="quiz-back-btn" onclick="backToHub()">
-            ← Wróć do wyboru
-          </button>
-          <div class="quiz-prog-bar">
-            <div class="quiz-prog-fill" id="qa-fill" style="width: 0%"></div>
-          </div>
-          <div
-            style="
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-              margin-bottom: 1rem;
-            "
-          >
-            <div
-              style="
-                font-size: 0.7rem;
-                letter-spacing: 0.15em;
-                text-transform: uppercase;
-                color: var(--ink2);
-              "
-              id="qa-label"
-            ></div>
-            <div
-              style="font-size: 0.78rem; color: var(--gold); font-weight: 600"
-              id="qa-score"
-            >
-              Punkty: 0
-            </div>
+        <div id="quiz-active" style="display:none">
+          <button class="quiz-back-btn" onclick="backToHub()">← Wróć do wyboru</button>
+          <div class="quiz-prog-bar"><div class="quiz-prog-fill" id="qa-fill" style="width:0%"></div></div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem">
+            <div style="font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--ink2)" id="qa-label"></div>
+            <div style="font-size:0.78rem;color:var(--gold);font-weight:600" id="qa-score">Punkty: 0</div>
           </div>
           <div class="quiz-card">
             <div class="quiz-q-num" id="qa-num"></div>
@@ -2181,111 +729,218 @@
             <div class="quiz-q-text" id="qa-text"></div>
             <div class="quiz-options" id="qa-opts"></div>
             <div class="quiz-feedback" id="qa-feedback"></div>
-            <div class="quiz-next-wrap">
-              <div></div>
-              <button class="quiz-next" id="qa-next" onclick="nextQA()">
-                Następne →
-              </button>
-            </div>
+            <div class="quiz-next-wrap"><div></div><button class="quiz-next" id="qa-next" onclick="nextQA()">Następne →</button></div>
           </div>
         </div>
-
-        <!-- RESULTS -->
-        <div id="quiz-result-screen" style="display: none">
+        <div id="quiz-result-screen" style="display:none">
           <div class="res-wrap">
             <div class="res-emoji" id="qr-emoji"></div>
             <div class="res-title" id="qr-title"></div>
-            <div class="res-score-box">
-              <div class="res-big" id="qr-big"></div>
-              <div class="res-of" id="qr-of"></div>
-            </div>
-            <div class="res-bar-wrap">
-              <div class="res-bar-fill" id="qr-bar"></div>
-            </div>
+            <div class="res-score-box"><div class="res-big" id="qr-big"></div><div class="res-of" id="qr-of"></div></div>
+            <div class="res-bar-wrap"><div class="res-bar-fill" id="qr-bar"></div></div>
             <div class="res-msg" id="qr-msg"></div>
             <div class="res-cats" id="qr-cats"></div>
-            <br />
-            <button class="res-restart" onclick="replayQuiz()">
-              🔄 Spróbuj ponownie
-            </button>
-            <button class="res-back-btn" onclick="backToHub()">
-              ← Zmień tryb
-            </button>
+            <br>
+            <button class="res-restart" onclick="replayQuiz()">🔄 Spróbuj ponownie</button>
+            <button class="res-back-btn" onclick="backToHub()">← Zmień tryb</button>
           </div>
         </div>
       </div>
       <!-- end quiz -->
-    </div>
-    <!-- end page -->
+
+      <!-- ===================== NOTATKA ===================== -->
+      <div id="tab-notatka" class="tab-content">
+
+        <div class="nota-hero">
+          <div class="nota-eyebrow">Temat 9 · Notatka podsumowująca</div>
+          <div class="nota-hero-title">Skamander &amp; <em>Julian Tuwim</em> — najważniejsze informacje</div>
+          <div class="nota-hero-sub">Skamander — najważniejsza grupa poetycka dwudziestolecia. Debiut 1918, Warszawa, kawiarnia Pod Pikadorem. Nazwa od rzeki u murów Troi — symbol nowego, wolnego piękna. Brak sztywnego manifestu — łączyło ich pokrewieństwo wrażliwości, nie doktryna.</div>
+          <div class="nota-tags">
+            <span class="nota-tag" style="color:var(--sk-violet2);border-color:var(--sk-violet2)55">1918 — kawiarnia Pod Pikadorem</span>
+            <span class="nota-tag" style="color:var(--sk-rose2);border-color:var(--sk-rose2)55">pismo „Skamander" od 1920</span>
+            <span class="nota-tag" style="color:var(--gold);border-color:var(--gold)55">brak sztywnego manifestu</span>
+            <span class="nota-tag" style="color:var(--sk-forest2);border-color:var(--sk-forest2)55">witalizm · urbanizm · klasycyzm</span>
+          </div>
+        </div>
+
+        <div class="nota-quote">
+          <p>„Chcemy być poetami dnia dzisiejszego, wierzącymi głęboko i szczerze, że poezja jest wieczna tylko wówczas, gdy jest naprawdę współczesna."</p>
+          <cite>— Julian Tuwim, Słowo wstępne do pisma „Skamander"</cite>
+        </div>
+
+        <div class="sec-head"><div class="sec-icon">📜</div><div class="sec-title">Program literacki — 6 filarów</div><div class="sec-line"></div></div>
+        <div class="nota-grid">
+          <div class="nota-card" style="--na:var(--sk-violet2);animation-delay:0.05s">
+            <div class="nota-card-title">🚶 Zwykły człowiek</div>
+            <div class="nota-card-body">Odrzucenie wieszcza i profety. Bohater = <strong>robotnik, przechodzeń</strong>. Demokratyzacja — poezja dla wszystkich, o wszystkich.</div>
+          </div>
+          <div class="nota-card" style="--na:var(--sk-rose2);animation-delay:0.1s">
+            <div class="nota-card-title">🌆 Urbanizm</div>
+            <div class="nota-card-body">Miasto pełnoprawnym tematem — <strong>ulica, tramwaj, kawiarnia, tłum</strong>. Rytm wiersza = rytm miasta.</div>
+          </div>
+          <div class="nota-card" style="--na:var(--sk-forest2);animation-delay:0.15s">
+            <div class="nota-card-title">🌿 Witalizm</div>
+            <div class="nota-card-body">Afirmacja życia — <strong>radość, cielesność, dynamizm</strong>. Bunt wobec dekadenckiego pesymizmu Młodej Polski.</div>
+          </div>
+          <div class="nota-card" style="--na:var(--sk-ochre2);animation-delay:0.2s">
+            <div class="nota-card-title">🔤 Rewolucja języka</div>
+            <div class="nota-card-body"><strong>Mowa potoczna</strong> w wierszu. Muzyczność, instrumentacja głoskowa, neologizmy, gry słowne — język jako materiał.</div>
+          </div>
+          <div class="nota-card" style="--na:var(--blue);animation-delay:0.25s">
+            <div class="nota-card-title">📖 Klasycyzm formalny</div>
+            <div class="nota-card-body">Tradycyjna forma (strofa, rymy) + <strong>nowa treść</strong>. Kochanowski jako wzorzec — tradycja, nie ciężar.</div>
+          </div>
+          <div class="nota-card" style="--na:var(--amber);animation-delay:0.3s">
+            <div class="nota-card-title">⚔️ Bunt wobec poprzedników</div>
+            <div class="nota-card-body">Nie Młodopolski symbolizm, nie romantyczna misja narodowa. <strong>Indywidualne przeżycie</strong> zamiast zbiorowej misji.</div>
+          </div>
+        </div>
+
+        <div class="sec-head"><div class="sec-icon">✍️</div><div class="sec-title">Pięciu poetów — najważniejsze cechy</div><div class="sec-line"></div></div>
+        <div style="overflow-x:auto;margin-bottom:1.8rem">
+          <table class="cmp-table">
+            <thead><tr><th>Poeta</th><th>Lata</th><th>Cechy charakterystyczne</th></tr></thead>
+            <tbody>
+              <tr><td>🔥 Julian Tuwim</td><td>1894–1953</td><td>Żywioł słowa, witalizm, miłość do języka polskiego, tożsamość Żyd-Polak. Najwybitniejszy z grupy.</td></tr>
+              <tr><td>🏛️ Jan Lechoń</td><td>1899–1956</td><td>Historia Polski, patriotyzm, napięcie tradycja vs. nowoczesność. Debiut: „Herostrates".</td></tr>
+              <tr><td>🏆 Kazimierz Wierzyński</td><td>1894–1969</td><td>Witalizm, sport, olimpizm. Złoty medal olimpijski w Amsterdamie 1928 za „Laur olimpijski".</td></tr>
+              <tr><td>💡 Antoni Słonimski</td><td>1895–1976</td><td>Racjonalizm, sceptycyzm, ironia. Felietonista i dramaturg.</td></tr>
+              <tr><td>🎭 Jarosław Iwaszkiewicz</td><td>1894–1980</td><td>Piękno, śmierć, eros, melancholia. Potem oddzielna droga — wybitny prozaik.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="sec-head"><div class="sec-icon">🖊️</div><div class="sec-title">Julian Tuwim — portret w skrócie</div><div class="sec-line"></div></div>
+        <div class="nota-grid">
+          <div class="nota-card" style="--na:var(--sk-violet2);animation-delay:0.05s">
+            <div class="nota-card-title">📅 Biografia</div>
+            <div class="nota-card-body"><strong>1894 Łódź</strong> — zasymilowana rodzina żydowska. Debiut 1913 w Warszawie. Emigracja II wś (1939–1946) — Nowy Jork, Rio. Powrót, śmierć <strong>1953</strong>.</div>
+          </div>
+          <div class="nota-card" style="--na:var(--sk-rose2);animation-delay:0.1s">
+            <div class="nota-card-title">❤️ Język jako ojczyzna</div>
+            <div class="nota-card-body">Polszczyzna = <strong>głębsza ojczyzna niż ziemia</strong>. „Jestem Polakiem, bo tak mi się podoba." Muzyka ukryta w mowie — słowo jako materiał rzeźbiarski.</div>
+          </div>
+          <div class="nota-card" style="--na:var(--sk-forest2);animation-delay:0.15s">
+            <div class="nota-card-title">🌊 Dionizyjskość</div>
+            <div class="nota-card-body">Poezja pełna krwi i ruchu — duch <strong>dionizyjski</strong> (Nietzsche). Wiersze pulsują energią tłumu, ulicy, gniewu i radości.</div>
+          </div>
+          <div class="nota-card" style="--na:var(--sk-ochre2);animation-delay:0.2s">
+            <div class="nota-card-title">🎭 Tożsamość Żyd-Polak</div>
+            <div class="nota-card-body">Kluczowe napięcie — Polak przez wybór, nie krew. „My, Żydzi polscy" (1944) — esej po Holokauście. <strong>Ból i miłość jednocześnie.</strong></div>
+          </div>
+        </div>
+
+        <div class="sec-head"><div class="sec-icon">🖋</div><div class="sec-title">Trzy wiersze — tabela porównawcza</div><div class="sec-line"></div></div>
+        <div class="nota-wiersz-row">
+          <div class="nota-wiersz-card" style="animation-delay:0.05s">
+            <div class="nota-wiersz-head" style="background:rgba(176,64,112,0.12)">
+              <div class="nota-wiersz-label">Wiersz 1 · 1918</div>
+              <div class="nota-wiersz-title">„Do krytyków"</div>
+            </div>
+            <div class="nota-wiersz-body">
+              <div class="nota-wiersz-row-item"><div class="nota-wiersz-dot" style="background:var(--sk-rose2)"></div><div><span class="nota-wiersz-key">Temat:</span><span class="nota-wiersz-val">Bunt wobec krytyki, manifest poetycki</span></div></div>
+              <div class="nota-wiersz-row-item"><div class="nota-wiersz-dot" style="background:var(--sk-rose2)"></div><div><span class="nota-wiersz-key">Ton:</span><span class="nota-wiersz-val">Buntowniczy, polemiczny, energiczny</span></div></div>
+              <div class="nota-wiersz-row-item"><div class="nota-wiersz-dot" style="background:var(--sk-rose2)"></div><div><span class="nota-wiersz-key">Środki:</span><span class="nota-wiersz-val">Apostrofa, enumeracja, anafora „Jak…"</span></div></div>
+              <div class="nota-wiersz-row-item"><div class="nota-wiersz-dot" style="background:var(--sk-rose2)"></div><div><span class="nota-wiersz-key">Opozycja:</span><span class="nota-wiersz-val">„Przeszklane słowa" vs. ulica i krew</span></div></div>
+              <div class="nota-wiersz-row-item"><div class="nota-wiersz-dot" style="background:var(--sk-rose2)"></div><div><span class="nota-wiersz-key">Skamander:</span><span class="nota-wiersz-val">Demokratyzacja, witalizm, bunt wobec estetyzmu</span></div></div>
+            </div>
+          </div>
+          <div class="nota-wiersz-card" style="animation-delay:0.1s">
+            <div class="nota-wiersz-head" style="background:rgba(106,61,156,0.12)">
+              <div class="nota-wiersz-label">Wiersz 2 · 1936</div>
+              <div class="nota-wiersz-title">„Słowisień"</div>
+            </div>
+            <div class="nota-wiersz-body">
+              <div class="nota-wiersz-row-item"><div class="nota-wiersz-dot" style="background:var(--sk-violet2)"></div><div><span class="nota-wiersz-key">Temat:</span><span class="nota-wiersz-val">Muzyczność języka, metapoezja</span></div></div>
+              <div class="nota-wiersz-row-item"><div class="nota-wiersz-dot" style="background:var(--sk-violet2)"></div><div><span class="nota-wiersz-key">Ton:</span><span class="nota-wiersz-val">Zabawowy, ekstatyczny, muzyczny</span></div></div>
+              <div class="nota-wiersz-row-item"><div class="nota-wiersz-dot" style="background:var(--sk-violet2)"></div><div><span class="nota-wiersz-key">Środki:</span><span class="nota-wiersz-val">Paronomazja, neologizm, onomatopeja</span></div></div>
+              <div class="nota-wiersz-row-item"><div class="nota-wiersz-dot" style="background:var(--sk-violet2)"></div><div><span class="nota-wiersz-key">Symbol:</span><span class="nota-wiersz-val">Słowik = poeta, śpiew = akt tworzenia</span></div></div>
+              <div class="nota-wiersz-row-item"><div class="nota-wiersz-dot" style="background:var(--sk-violet2)"></div><div><span class="nota-wiersz-key">Skamander:</span><span class="nota-wiersz-val">Rewolucja językowa, muzyczność</span></div></div>
+            </div>
+          </div>
+          <div class="nota-wiersz-card" style="animation-delay:0.15s">
+            <div class="nota-wiersz-head" style="background:rgba(42,96,64,0.12)">
+              <div class="nota-wiersz-label">Wiersz 3 · 1929</div>
+              <div class="nota-wiersz-title">„Rzecz czarnoleska"</div>
+            </div>
+            <div class="nota-wiersz-body">
+              <div class="nota-wiersz-row-item"><div class="nota-wiersz-dot" style="background:var(--sk-forest2)"></div><div><span class="nota-wiersz-key">Temat:</span><span class="nota-wiersz-val">Miłość do języka, dialog z tradycją</span></div></div>
+              <div class="nota-wiersz-row-item"><div class="nota-wiersz-dot" style="background:var(--sk-forest2)"></div><div><span class="nota-wiersz-key">Ton:</span><span class="nota-wiersz-val">Wyznaniowy, czuły, podniosły</span></div></div>
+              <div class="nota-wiersz-row-item"><div class="nota-wiersz-dot" style="background:var(--sk-forest2)"></div><div><span class="nota-wiersz-key">Środki:</span><span class="nota-wiersz-val">Apostrofa, metafora, nawiązanie intertekstualne</span></div></div>
+              <div class="nota-wiersz-row-item"><div class="nota-wiersz-dot" style="background:var(--sk-forest2)"></div><div><span class="nota-wiersz-key">Tradycja:</span><span class="nota-wiersz-val">Czarnolas = Kochanowski = polska klasyka</span></div></div>
+              <div class="nota-wiersz-row-item"><div class="nota-wiersz-dot" style="background:var(--sk-forest2)"></div><div><span class="nota-wiersz-key">Skamander:</span><span class="nota-wiersz-val">Klasycyzm + żywioł, tożsamość Żyd-Polak</span></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sec-head"><div class="sec-icon">⚡</div><div class="sec-title">Skamander vs Awangarda Krakowska</div><div class="sec-line"></div></div>
+        <div style="overflow-x:auto;margin-bottom:1.8rem">
+          <table class="cmp-table">
+            <thead><tr><th>Kryterium</th><th>Skamander</th><th>Awangarda (Peiper, Przyboś)</th></tr></thead>
+            <tbody>
+              <tr><td>Forma</td><td>Klasyczna forma, modernistyczna treść</td><td>Rewolucja formalna, wiersz wolny, elipsa</td></tr>
+              <tr><td>Język</td><td>Potoczny, muzyczny, zmysłowy</td><td>Skondensowany, intelektualny, metaforyczny</td></tr>
+              <tr><td>Podmiot</td><td>Człowiek ulicy, indywidualista</td><td>Zbiorowość, praca, „masa"</td></tr>
+              <tr><td>Emocje</td><td>Witalizm, ekstatyczność, subiektywizm</td><td>Intelektualizm, chłód, obiektywizm</td></tr>
+              <tr><td>Manifest</td><td>Brak — luźna wspólnota wrażliwości</td><td>Dokładne manifesty (Peiper „Tędy")</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="sec-head"><div class="sec-icon">🔑</div><div class="sec-title">Kluczowe pojęcia do zapamiętania</div><div class="sec-line"></div></div>
+        <div class="nota-pojecia-grid">
+          <div class="nota-pojecie" style="animation-delay:0.05s"><div class="nota-pojecie-name">Witalizm</div><div class="nota-pojecie-def">Filozofia afirmacji życia — radość, dynamizm, cielesność. Wbrew dekadencji Młodej Polski.</div></div>
+          <div class="nota-pojecie" style="animation-delay:0.1s"><div class="nota-pojecie-name">Urbanizm poetycki</div><div class="nota-pojecie-def">Miasto jako pełnoprawny temat — ulica, tramwaj, tłum zamiast natury i arkadii.</div></div>
+          <div class="nota-pojecie" style="animation-delay:0.15s"><div class="nota-pojecie-name">Demokratyzacja poezji</div><div class="nota-pojecie-def">Odejście od elitaryzmu — poezja dla wszystkich, bohater = zwykły człowiek.</div></div>
+          <div class="nota-pojecie" style="animation-delay:0.2s"><div class="nota-pojecie-name">Instrumentacja głoskowa</div><div class="nota-pojecie-def">Celowy dobór głosek — aliteracje, onomatopeje, rymy wewnętrzne tworzą muzykę w tekście.</div></div>
+          <div class="nota-pojecie" style="animation-delay:0.25s"><div class="nota-pojecie-name">Metapoezja</div><div class="nota-pojecie-def">Wiersz o pisaniu wiersza. „Słowisień" — poeta rozmyśla nad naturą własnej sztuki.</div></div>
+          <div class="nota-pojecie" style="animation-delay:0.3s"><div class="nota-pojecie-name">Dionizyjskość</div><div class="nota-pojecie-def">Za Nietzschem — żywioł, ekstaza, irracjonalność. Antyteza apollińskiego ładu Awangardy.</div></div>
+          <div class="nota-pojecie" style="animation-delay:0.35s"><div class="nota-pojecie-name">Język jako ojczyzna</div><div class="nota-pojecie-def">Kluczowy motyw Tuwima — polszczyzna głębszą identyfikacją niż ziemia czy krew.</div></div>
+          <div class="nota-pojecie" style="animation-delay:0.4s"><div class="nota-pojecie-name">Neologizm poetycki</div><div class="nota-pojecie-def">Nowo ukute słowo. „Słowisień" — sam tytuł jest eksperymentem językowym.</div></div>
+          <div class="nota-pojecie" style="animation-delay:0.45s"><div class="nota-pojecie-name">Paronomazja</div><div class="nota-pojecie-def">Gra słów brzmiących podobnie — kluczowy środek „Słowisieniu" (słowik→słowić→słowo).</div></div>
+          <div class="nota-pojecie" style="animation-delay:0.5s"><div class="nota-pojecie-name">Klasycyzm formalny</div><div class="nota-pojecie-def">Tradycyjna forma (strofa, rymy) wypełniona nową, żywą treścią. Kochanowski jako wzorzec.</div></div>
+        </div>
+
+      </div>
+      <!-- end notatka -->
+
+    </div><!-- end page -->
 
     <div class="streak-badge" id="streak-badge"></div>
 
     <script>
-      // ==================== PROGRESS ====================
       const TOPIC_ID = "skamander_tuwim";
-      function gp() {
-        try {
-          return JSON.parse(localStorage.getItem("polski_progress") || "{}");
-        } catch {
-          return {};
-        }
-      }
-      function sp(d) {
-        try {
-          localStorage.setItem("polski_progress", JSON.stringify(d));
-        } catch {}
-      }
+      function gp() { try { return JSON.parse(localStorage.getItem("polski_progress") || "{}"); } catch { return {}; } }
+      function sp(d) { try { localStorage.setItem("polski_progress", JSON.stringify(d)); } catch {} }
       function saveScore(topicId, score, total) {
-        const p = gp();
-        if (!p[topicId]) p[topicId] = {};
-        if (!p[topicId].history) p[topicId].history = [];
+        const p = gp(); if (!p[topicId]) p[topicId] = {}; if (!p[topicId].history) p[topicId].history = [];
         const pct = Math.round((score / total) * 100);
         p[topicId].history.push({ score, total, pct, ts: Date.now() });
-        if (p[topicId].history.length > 10)
-          p[topicId].history = p[topicId].history.slice(-10);
-        p[topicId].lastScore = score;
-        p[topicId].lastTotal = total;
-        p[topicId].lastPct = pct;
-        sp(p);
+        if (p[topicId].history.length > 10) p[topicId].history = p[topicId].history.slice(-10);
+        p[topicId].lastScore = score; p[topicId].lastTotal = total; p[topicId].lastPct = pct; sp(p);
       }
 
-      // ==================== NAV STATUS ====================
       function navStatus(s) {
-        const p = gp();
-        if (!p[TOPIC_ID]) p[TOPIC_ID] = {};
-        p[TOPIC_ID].status = p[TOPIC_ID].status === s ? "" : s;
-        sp(p);
-        updateNavBtns();
+        const p = gp(); if (!p[TOPIC_ID]) p[TOPIC_ID] = {};
+        p[TOPIC_ID].status = p[TOPIC_ID].status === s ? "" : s; sp(p); updateNavBtns();
       }
       function updateNavBtns() {
-        const p = gp();
-        const st = (p[TOPIC_ID] || {}).status || "";
-        document.getElementById("nb-done").className =
-          "nav-sbtn" + (st === "done" ? " sd" : "");
-        document.getElementById("nb-focus").className =
-          "nav-sbtn" + (st === "focus" ? " sf" : "");
-        document.getElementById("nb-hard").className =
-          "nav-sbtn" + (st === "hard" ? " sh" : "");
+        const p = gp(); const st = (p[TOPIC_ID] || {}).status || "";
+        document.getElementById("nb-done").className = "nav-sbtn" + (st === "done" ? " sd" : "");
+        document.getElementById("nb-focus").className = "nav-sbtn" + (st === "focus" ? " sf" : "");
+        document.getElementById("nb-hard").className = "nav-sbtn" + (st === "hard" ? " sh" : "");
       }
       updateNavBtns();
 
-      // ==================== TABS ====================
       function showTab(id) {
-        document
-          .querySelectorAll(".tab-content")
-          .forEach((el) => el.classList.remove("active"));
-        document
-          .querySelectorAll(".toggle-btn")
-          .forEach((el) => el.classList.remove("active"));
+        document.querySelectorAll(".tab-content").forEach(el => el.classList.remove("active"));
+        document.querySelectorAll(".toggle-btn").forEach(el => el.classList.remove("active"));
         document.getElementById("tab-" + id).classList.add("active");
-        const map = { teoria: 0, wiersze: 1, quiz: 2 };
-        document
-          .querySelectorAll(".toggle-btn")
-          [map[id]].classList.add("active");
+        const map = { teoria: 0, wiersze: 1, quiz: 2, notatka: 3 };
+        document.querySelectorAll(".toggle-btn")[map[id]].classList.add("active");
         updateHubScores();
       }
 
-      // ==================== POEM TOGGLE ====================
       function togglePoem(id) {
         const body = document.getElementById("body-" + id);
         const chev = document.getElementById("chev-" + id);
@@ -2294,570 +949,60 @@
         chev.classList.toggle("open", !isOpen);
       }
 
-      // ==================== QUESTION BANKS ====================
       const QB_SKAMANDER = [
-        {
-          cat: "Geneza",
-          catColor: "#6a3d9c",
-          q: "W którym roku i gdzie powstał Skamander?",
-          opts: [
-            "1910 w Krakowie",
-            "1918 w Warszawie — kawiarnia Pod Pikadorem",
-            "1920 w Łodzi",
-            "1915 w Lwowie",
-          ],
-          ans: 1,
-          explain:
-            "Skamander debiutował w 1918 roku w Warszawie, w kawiarni Pod Pikadorem. Rok odzyskania niepodległości był symbolicznym momentem: Polska wolna — poezja też może być wolna.",
-        },
-        {
-          cat: "Geneza",
-          catColor: "#6a3d9c",
-          q: "Skąd pochodzi nazwa grupy 'Skamander'?",
-          opts: [
-            "Od imienia założyciela",
-            "Od rzeki płynącej u murów Troi — symbol nowego, wolnego piękna",
-            "Od kawiarni, w której się spotykali",
-            "Od pierwszego wydanego tomu",
-          ],
-          ans: 1,
-          explain:
-            "Skamander to rzeka mitologiczna u murów Troi — symbolizuje wolność i nowe piękno. Poeci wybrali tę nazwę jako manifest artystyczny.",
-        },
-        {
-          cat: "Geneza",
-          catColor: "#6a3d9c",
-          q: "Jaki kontekst historyczny umożliwił powstanie Skamandra?",
-          opts: [
-            "Rewolucja bolszewicka",
-            "Odzyskanie niepodległości przez Polskę — nie trzeba już pisać poezji bojowej",
-            "Wybuch I wojny światowej",
-            "Rewolucja przemysłowa",
-          ],
-          ans: 1,
-          explain:
-            "Polska wolna w 1918 roku — nie ma już konieczności poezji misyjnej i patriotycznej. Skamander mógł pisać o zwykłym życiu, bo była na to przestrzeń.",
-        },
-        {
-          cat: "Program",
-          catColor: "#b04070",
-          q: "Jakie podejście do formy reprezentował Skamander?",
-          opts: [
-            "Całkowite odrzucenie formy klasycznej",
-            "Rewolucja formalna jak Awangarda",
-            "Klasyczna forma, modernistyczna treść — tradycja wypełniona nową treścią",
-            "Wyłącznie wiersz wolny",
-          ],
-          ans: 2,
-          explain:
-            "Skamandryci korzystali z tradycyjnych form (strofy, rymy) — ale wypełniali je żywą, współczesną treścią. To nie rewolucja formalna jak u Peipera, lecz synteza.",
-        },
-        {
-          cat: "Program",
-          catColor: "#b04070",
-          q: "Co oznacza 'witalizm' w kontekście Skamandra?",
-          opts: [
-            "Pesymizm i melancholia",
-            "Filozofia afirmacji życia — radość, dynamizm, cielesność, bunt wobec dekadencji",
-            "Racjonalizm i intelektualizm",
-            "Skupienie na historii narodowej",
-          ],
-          ans: 1,
-          explain:
-            "Witalizm Skamandra to świadome odejście od dekadencji Młodej Polski — zamiast smutku i zmroku, afirmacja życia w całej jego zmysłowości i energii.",
-        },
-        {
-          cat: "Program",
-          catColor: "#b04070",
-          q: "Co to znaczy 'demokratyzacja poezji' u Skamandry̲tów?",
-          opts: [
-            "Pisanie o demokracji jako systemie",
-            "Odejście od elitaryzmu — poezja dla wszystkich, o zwykłym człowieku, językiem potocznym",
-            "Poezja płatna przez rząd",
-            "Druk w gazetach codziennych",
-          ],
-          ans: 1,
-          explain:
-            "Skamander obniżył próg elitarności — tematem stał się zwykły człowiek, ulica, tłum. Brak patosu i archaizmów — mowa codziennym językiem.",
-        },
-        {
-          cat: "Program",
-          catColor: "#b04070",
-          q: "Jak Skamander podchodził do miasta jako tematu?",
-          opts: [
-            "Odrzucał miasto jako tło — preferował naturę",
-            "Akceptował miasto jako pełnoprawny temat liryczny — ulica, tramwaj, kawiarnia, tłum",
-            "Traktował miasto tylko jako symbol zła",
-            "Ignorował przestrzeń miejską",
-          ],
-          ans: 1,
-          explain:
-            "Urbanizm Skamandra to świadomy wybór: miasto (Warszawa) staje się poetyckim krajobrazem. Tuwim, Słonimski — ich wiersze tętnią rytmem ulicy.",
-        },
-        {
-          cat: "Skamander vs Awangarda",
-          catColor: "#2458a0",
-          q: "Czym różnił się Skamander od Awangardy Krakowskiej Peipera?",
-          opts: [
-            "Niczym — były identyczne",
-            "Skamander: klasyczna forma, potoczność, emocje. Awangarda: rewolucja formalna, intelektualizm, wiersz wolny",
-            "Skamander był radykalniejszy formalnie",
-            "Awangarda preferowała tematykę historyczną",
-          ],
-          ans: 1,
-          explain:
-            "Fundamentalna różnica: Skamander szedł drogą ewolucji (forma klasyczna + nowa treść), Awangarda rewolucji (nowa forma i treść). Emocje vs. intelekt, subiektywizm vs. obiektywizm.",
-        },
-        {
-          cat: "Skamander vs Awangarda",
-          catColor: "#2458a0",
-          q: "Który z atrybutów pasuje do Awangardy, nie do Skamandra?",
-          opts: [
-            "Witalizm i afirmacja życia",
-            "Potoczność języka",
-            "Elipsa i skondensowana metafora intelektualna",
-            "Nawiązania do Kochanowskiego",
-          ],
-          ans: 2,
-          explain:
-            "Elipsa (skrót myślowy) i skondensowana metafora intelektualna to znaki rozpoznawcze Awangardy (Przyboś). Skamander wolał pełną, muzyczną wypowiedź.",
-        },
-        {
-          cat: "Poeci grupy",
-          catColor: "#3a6820",
-          q: "Kto był głównym twórcą Skamandra i uważany za najwybitniejszego?",
-          opts: [
-            "Jan Lechoń",
-            "Kazimierz Wierzyński",
-            "Julian Tuwim",
-            "Antoni Słonimski",
-          ],
-          ans: 2,
-          explain:
-            "Julian Tuwim jest uznawany za centralną postać i najwybitniejszego poetę Skamandra — jego żywioł słowny, witalizm i miłość do języka polskiego tworzą jeden z najoryginalniejszych głosów w literaturze.",
-        },
-        {
-          cat: "Poeci grupy",
-          catColor: "#3a6820",
-          q: "Który ze skamandrytów zasłynął z tematyki sportu i olimpizmu?",
-          opts: ["Tuwim", "Lechoń", "Słonimski", "Wierzyński"],
-          ans: 3,
-          explain:
-            "Kazimierz Wierzyński — jego tom 'Laur olimpijski' (1927) zdobył złoty medal na olimpiadzie w Amsterdamie 1928. Witalizm wyrażony przez sport i rywalizację.",
-        },
-        {
-          cat: "Poeci grupy",
-          catColor: "#3a6820",
-          q: "Jaka jest charakterystyczna cecha poezji Jana Lechonia?",
-          opts: [
-            "Fascynacja miastem i ulicą",
-            "Fascynacja historią Polski i napięcie między tradycją a nowoczesnością",
-            "Tematyka przyrodnicza",
-            "Filozofia racjonalizmu",
-          ],
-          ans: 1,
-          explain:
-            "Lechoń — historia Polski, patriotyzm, napięcie między potrzebą bycia nowoczesnym a ciężarem przeszłości. 'Herostrates' — tytuł jego debiutu, symbolizuje bunt wobec historii.",
-        },
-        {
-          cat: "Tuwim – biografia",
-          catColor: "#6a3d9c",
-          q: "Gdzie urodził się Julian Tuwim?",
-          opts: ["W Warszawie", "W Krakowie", "W Łodzi", "W Wilnie"],
-          ans: 2,
-          explain:
-            "Tuwim urodził się w 1894 roku w Łodzi — mieście wielokulturowym, przemysłowym. W zasymilowanej żydowskiej rodzinie, polskojęzycznej od pokoleń.",
-        },
-        {
-          cat: "Tuwim – biografia",
-          catColor: "#6a3d9c",
-          q: "Dlaczego tożsamość Tuwima jest określana jako 'Żyd-Polak'?",
-          opts: [
-            "Bo był obywatelem dwóch państw",
-            "Bo był urodzony w rodzinie żydowskiej, ale czuł się Polakiem przez język — napięcie tożsamościowe jest kluczem do jego twórczości",
-            "Bo pisał w dwóch językach",
-            "Bo emigrował do Izraela",
-          ],
-          ans: 1,
-          explain:
-            "Tuwim był Żydem z żydowskiej rodziny, ale jego ojczyzną był język polski — to napięcie (przynależność przez wybór, nie przez krew) kształtuje głęboki wymiar jego poezji.",
-        },
-        {
-          cat: "Tuwim – twórczość",
-          catColor: "#9c3060",
-          q: "Co jest centralnym elementem poetyki Tuwima?",
-          opts: [
-            "Wyciszony, kontemplacyjny ton",
-            "Żywioł słowa — muzyczność, neologizmy, instrumentacja głoskowa, miłość do polszczyzny",
-            "Intelektualizm i skondensowana metafora",
-            "Tematyka historyczna i patriotyczna",
-          ],
-          ans: 1,
-          explain:
-            "Tuwim kochał słowa fizycznie — jak materiał rzeźbiarski. Neologizmy, gry brzmień, aliteracje, rytm — jego wiersz to przede wszystkim muzyczne i zmysłowe doświadczenie języka.",
-        },
-        {
-          cat: "Tuwim – twórczość",
-          catColor: "#9c3060",
-          q: "Co oznacza sformułowanie 'język jako ojczyzna' w odniesieniu do Tuwima?",
-          opts: [
-            "Że Tuwim był językoznawcą",
-            "Że język polski był dla niego silniejszą identyfikacją niż ziemia czy krew — jako Żyd wybrał polszczyznę jako swoją ojczyznę",
-            "Że tłumaczył wiersze",
-            "Że mieszkał za granicą",
-          ],
-          ans: 1,
-          explain:
-            "Dla Tuwima — szczególnie bolesne po doświadczeniu antysemityzmu — język był jedyną ojczyzną, której nikt mu nie mógł odebrać. To wyjaśnia miłość do polszczyzny w jego wierszach.",
-        },
-        {
-          cat: "Kluczowe pojęcia",
-          catColor: "#a06820",
-          q: "Co to jest instrumentacja głoskowa?",
-          opts: [
-            "Granie na instrumentach muzycznych",
-            "Celowy dobór głosek dla efektu dźwiękowego — aliteracje, onomatopeje, rymy wewnętrzne",
-            "Zapis nutowy w wierszu",
-            "Tłumaczenie na język muzyki",
-          ],
-          ans: 1,
-          explain:
-            "Instrumentacja głoskowa = muzyka wbudowana w tekst — dobieranie głosek tak, by wiersz brzmiał, śpiewał, imitował dźwięki opisywanych zjawisk. Tuwim był mistrzem tej techniki.",
-        },
-        {
-          cat: "Kluczowe pojęcia",
-          catColor: "#a06820",
-          q: "Co to jest metapoezja?",
-          opts: [
-            "Poezja o tematyce metafizycznej",
-            "Wiersz o pisaniu wiersza — poeta rozmyśla nad naturą własnej sztuki i języka",
-            "Bardzo długi wiersz epicki",
-            "Poezja pisana w imieniu postaci historycznej",
-          ],
-          ans: 1,
-          explain:
-            "Metapoezja — self-reflexive poetry — to jeden z ulubionych chwytów Tuwima. W 'Słowisieniu' poeta pisze o śpiewie-słowie, sam czyniąc z wiersza demonstrację tej muzyczności.",
-        },
-        {
-          cat: "Kluczowe pojęcia",
-          catColor: "#a06820",
-          q: "Czym różni się dionizyjskość od apollińskości w kontekście Tuwima?",
-          opts: [
-            "Brak różnicy — to synonimy",
-            "Dionizyjskość (żywioł, ekstaza, irracjonalność) — cecha Tuwima; apollińskość (ład, harmonia, intelekt) — cecha Awangardy",
-            "Tuwim był apolliński",
-            "Apollińskość to cecha romantyzmu",
-          ],
-          ans: 1,
-          explain:
-            "Za Nietzschem: Dionizos = żywioł, upojenie, siła. Apollo = harmonia, ład, rozum. Tuwim jest poetą dionizyjskim — jego słowo wybucha, nie kalkuluje.",
-        },
+        { cat:"Geneza",catColor:"#6a3d9c",q:"W którym roku i gdzie powstał Skamander?",opts:["1910 w Krakowie","1918 w Warszawie — kawiarnia Pod Pikadorem","1920 w Łodzi","1915 w Lwowie"],ans:1,explain:"Skamander debiutował w 1918 roku w Warszawie, w kawiarni Pod Pikadorem. Rok odzyskania niepodległości był symbolicznym momentem: Polska wolna — poezja też może być wolna." },
+        { cat:"Geneza",catColor:"#6a3d9c",q:"Skąd pochodzi nazwa grupy 'Skamander'?",opts:["Od imienia założyciela","Od rzeki płynącej u murów Troi — symbol nowego, wolnego piękna","Od kawiarni, w której się spotykali","Od pierwszego wydanego tomu"],ans:1,explain:"Skamander to rzeka mitologiczna u murów Troi — symbolizuje wolność i nowe piękno. Poeci wybrali tę nazwę jako manifest artystyczny." },
+        { cat:"Geneza",catColor:"#6a3d9c",q:"Jaki kontekst historyczny umożliwił powstanie Skamandra?",opts:["Rewolucja bolszewicka","Odzyskanie niepodległości przez Polskę — nie trzeba już pisać poezji bojowej","Wybuch I wojny światowej","Rewolucja przemysłowa"],ans:1,explain:"Polska wolna w 1918 roku — nie ma już konieczności poezji misyjnej i patriotycznej. Skamander mógł pisać o zwykłym życiu, bo była na to przestrzeń." },
+        { cat:"Program",catColor:"#b04070",q:"Jakie podejście do formy reprezentował Skamander?",opts:["Całkowite odrzucenie formy klasycznej","Rewolucja formalna jak Awangarda","Klasyczna forma, modernistyczna treść — tradycja wypełniona nową treścią","Wyłącznie wiersz wolny"],ans:2,explain:"Skamandryci korzystali z tradycyjnych form (strofy, rymy) — ale wypełniali je żywą, współczesną treścią. To nie rewolucja formalna jak u Peipera, lecz synteza." },
+        { cat:"Program",catColor:"#b04070",q:"Co oznacza 'witalizm' w kontekście Skamandra?",opts:["Pesymizm i melancholia","Filozofia afirmacji życia — radość, dynamizm, cielesność, bunt wobec dekadencji","Racjonalizm i intelektualizm","Skupienie na historii narodowej"],ans:1,explain:"Witalizm Skamandra to świadome odejście od dekadencji Młodej Polski — zamiast smutku i zmroku, afirmacja życia w całej jego zmysłowości i energii." },
+        { cat:"Program",catColor:"#b04070",q:"Co to znaczy 'demokratyzacja poezji' u Skamandrytów?",opts:["Pisanie o demokracji jako systemie","Odejście od elitaryzmu — poezja dla wszystkich, o zwykłym człowieku, językiem potocznym","Poezja płatna przez rząd","Druk w gazetach codziennych"],ans:1,explain:"Skamander obniżył próg elitarności — tematem stał się zwykły człowiek, ulica, tłum. Brak patosu i archaizmów — mowa codziennym językiem." },
+        { cat:"Program",catColor:"#b04070",q:"Jak Skamander podchodził do miasta jako tematu?",opts:["Odrzucał miasto — preferował naturę","Akceptował miasto jako pełnoprawny temat liryczny — ulica, tramwaj, kawiarnia, tłum","Traktował miasto tylko jako symbol zła","Ignorował przestrzeń miejską"],ans:1,explain:"Urbanizm Skamandra to świadomy wybór: miasto (Warszawa) staje się poetyckim krajobrazem. Tuwim, Słonimski — ich wiersze tętnią rytmem ulicy." },
+        { cat:"Skamander vs Awangarda",catColor:"#2458a0",q:"Czym różnił się Skamander od Awangardy Krakowskiej Peipera?",opts:["Niczym — były identyczne","Skamander: klasyczna forma, potoczność, emocje. Awangarda: rewolucja formalna, intelektualizm, wiersz wolny","Skamander był radykalniejszy formalnie","Awangarda preferowała tematykę historyczną"],ans:1,explain:"Fundamentalna różnica: Skamander szedł drogą ewolucji (forma klasyczna + nowa treść), Awangarda rewolucji (nowa forma i treść). Emocje vs. intelekt, subiektywizm vs. obiektywizm." },
+        { cat:"Skamander vs Awangarda",catColor:"#2458a0",q:"Który z atrybutów pasuje do Awangardy, nie do Skamandra?",opts:["Witalizm i afirmacja życia","Potoczność języka","Elipsa i skondensowana metafora intelektualna","Nawiązania do Kochanowskiego"],ans:2,explain:"Elipsa i skondensowana metafora intelektualna to znaki rozpoznawcze Awangardy (Przyboś). Skamander wolał pełną, muzyczną wypowiedź." },
+        { cat:"Poeci grupy",catColor:"#3a6820",q:"Kto był głównym twórcą Skamandra i uważany za najwybitniejszego?",opts:["Jan Lechoń","Kazimierz Wierzyński","Julian Tuwim","Antoni Słonimski"],ans:2,explain:"Julian Tuwim jest uznawany za centralną postać i najwybitniejszego poetę Skamandra — jego żywioł słowny, witalizm i miłość do języka polskiego tworzą jeden z najoryginalniejszych głosów w literaturze." },
+        { cat:"Poeci grupy",catColor:"#3a6820",q:"Który ze skamandrytów zasłynął z tematyki sportu i olimpizmu?",opts:["Tuwim","Lechoń","Słonimski","Wierzyński"],ans:3,explain:"Kazimierz Wierzyński — jego tom 'Laur olimpijski' (1927) zdobył złoty medal na olimpiadzie w Amsterdamie 1928. Witalizm wyrażony przez sport i rywalizację." },
+        { cat:"Poeci grupy",catColor:"#3a6820",q:"Jaka jest charakterystyczna cecha poezji Jana Lechonia?",opts:["Fascynacja miastem i ulicą","Fascynacja historią Polski i napięcie między tradycją a nowoczesnością","Tematyka przyrodnicza","Filozofia racjonalizmu"],ans:1,explain:"Lechoń — historia Polski, patriotyzm, napięcie między potrzebą bycia nowoczesnym a ciężarem przeszłości. 'Herostrates' — tytuł jego debiutu, symbolizuje bunt wobec historii." },
+        { cat:"Tuwim – biografia",catColor:"#6a3d9c",q:"Gdzie urodził się Julian Tuwim?",opts:["W Warszawie","W Krakowie","W Łodzi","W Wilnie"],ans:2,explain:"Tuwim urodził się w 1894 roku w Łodzi — mieście wielokulturowym, przemysłowym. W zasymilowanej żydowskiej rodzinie, polskojęzycznej od pokoleń." },
+        { cat:"Tuwim – biografia",catColor:"#6a3d9c",q:"Dlaczego tożsamość Tuwima jest określana jako 'Żyd-Polak'?",opts:["Bo był obywatelem dwóch państw","Bo był urodzony w rodzinie żydowskiej, ale czuł się Polakiem przez język — napięcie tożsamościowe jest kluczem do jego twórczości","Bo pisał w dwóch językach","Bo emigrował do Izraela"],ans:1,explain:"Tuwim był Żydem z żydowskiej rodziny, ale jego ojczyzną był język polski — to napięcie (przynależność przez wybór, nie przez krew) kształtuje głęboki wymiar jego poezji." },
+        { cat:"Tuwim – twórczość",catColor:"#9c3060",q:"Co jest centralnym elementem poetyki Tuwima?",opts:["Wyciszony, kontemplacyjny ton","Żywioł słowa — muzyczność, neologizmy, instrumentacja głoskowa, miłość do polszczyzny","Intelektualizm i skondensowana metafora","Tematyka historyczna i patriotyczna"],ans:1,explain:"Tuwim kochał słowa fizycznie — jak materiał rzeźbiarski. Neologizmy, gry brzmień, aliteracje, rytm — jego wiersz to przede wszystkim muzyczne i zmysłowe doświadczenie języka." },
+        { cat:"Tuwim – twórczość",catColor:"#9c3060",q:"Co oznacza sformułowanie 'język jako ojczyzna' w odniesieniu do Tuwima?",opts:["Że Tuwim był językoznawcą","Że język polski był dla niego silniejszą identyfikacją niż ziemia czy krew — jako Żyd wybrał polszczyznę jako swoją ojczyznę","Że tłumaczył wiersze","Że mieszkał za granicą"],ans:1,explain:"Dla Tuwima — szczególnie bolesne po doświadczeniu antysemityzmu — język był jedyną ojczyzną, której nikt mu nie mógł odebrać. To wyjaśnia miłość do polszczyzny w jego wierszach." },
+        { cat:"Kluczowe pojęcia",catColor:"#a06820",q:"Co to jest instrumentacja głoskowa?",opts:["Granie na instrumentach muzycznych","Celowy dobór głosek dla efektu dźwiękowego — aliteracje, onomatopeje, rymy wewnętrzne","Zapis nutowy w wierszu","Tłumaczenie na język muzyki"],ans:1,explain:"Instrumentacja głoskowa = muzyka wbudowana w tekst — dobieranie głosek tak, by wiersz brzmiał, śpiewał, imitował dźwięki opisywanych zjawisk. Tuwim był mistrzem tej techniki." },
+        { cat:"Kluczowe pojęcia",catColor:"#a06820",q:"Co to jest metapoezja?",opts:["Poezja o tematyce metafizycznej","Wiersz o pisaniu wiersza — poeta rozmyśla nad naturą własnej sztuki i języka","Bardzo długi wiersz epicki","Poezja pisana w imieniu postaci historycznej"],ans:1,explain:"Metapoezja to jeden z ulubionych chwytów Tuwima. W 'Słowisieniu' poeta pisze o śpiewie-słowie, sam czyniąc z wiersza demonstrację tej muzyczności." },
+        { cat:"Kluczowe pojęcia",catColor:"#a06820",q:"Czym różni się dionizyjskość od apollińskości w kontekście Tuwima?",opts:["Brak różnicy — to synonimy","Dionizyjskość (żywioł, ekstaza, irracjonalność) — cecha Tuwima; apollińskość (ład, harmonia, intelekt) — cecha Awangardy","Tuwim był apolliński","Apollińskość to cecha romantyzmu"],ans:1,explain:"Za Nietzschem: Dionizos = żywioł, upojenie, siła. Apollo = harmonia, ład, rozum. Tuwim jest poetą dionizyjskim — jego słowo wybucha, nie kalkuluje." },
       ];
 
       const QB_WIERSZE_T = [
-        {
-          cat: "Do krytyków",
-          catColor: "#b04070",
-          q: "Do kogo zwraca się podmiot w wierszu 'Do krytyków'?",
-          opts: [
-            "Do czytelników",
-            "Do krytyków literackich — bezpośrednia apostrofa polemiczna",
-            "Do innych poetów",
-            "Do miłości",
-          ],
-          ans: 1,
-          explain:
-            "'Do krytyków' to apostrofa — bezpośrednie zwrot do krytyków. Podmiot liryczny konfrontuje się z nimi, deklarując inny program poetycki.",
-        },
-        {
-          cat: "Do krytyków",
-          catColor: "#b04070",
-          q: "Jakie dwie postawy są skontrastowane w 'Do krytyków'?",
-          opts: [
-            "Miłość i nienawiść",
-            "Krytycy (intelekt, estetyzm, 'przeszklane słowa') vs. poeta (ulica, tłum, żywioł, krew)",
-            "Tradycja i nowoczesność",
-            "Wieś i miasto",
-          ],
-          ans: 1,
-          explain:
-            "Centralna opozycja: krytycy = chłodny intelekt, dyscyplina, estetyzm (przeszklane słowa). Poeta = ulica, tłum, krzyk, krew. Tuwim wybiera żywioł nad akademicką kontrolą.",
-        },
-        {
-          cat: "Do krytyków",
-          catColor: "#b04070",
-          q: "Co symbolizują 'przeszklane słowa' w 'Do krytyków'?",
-          opts: [
-            "Słowa piękne jak kryształ",
-            "Słowa zimne, intelektualne, zdystansowane — poetycki estetyzm bez życia i emocji",
-            "Słowa bez znaczenia",
-            "Słowa o przeszłości",
-          ],
-          ans: 1,
-          explain:
-            "'Przeszklane słowa' to metafora krytyki akademickiej: chłodne, czyste, formalne — ale bez życia. Tuwim przeciwstawia im słowa żywe, gorące, z krwi i z ulicy.",
-        },
-        {
-          cat: "Do krytyków",
-          catColor: "#b04070",
-          q: "Jakie środki stylistyczne dominują w 'Do krytyków'?",
-          opts: [
-            "Epitet i opis pejzażu",
-            "Apostrofa, enumeracja (nagromadzenie metafor żywiołu) i anafora ('Jak...')",
-            "Ironia i groteska",
-            "Monolog wewnętrzny",
-          ],
-          ans: 1,
-          explain:
-            "Apostrofa (zwrot do krytyków) + enumeracja żywiołowych metafor (chmury, wiatry, krew) + anafora 'Jak...' = narastające, ekstatyczne napięcie.",
-        },
-        {
-          cat: "Do krytyków",
-          catColor: "#b04070",
-          q: "Jaki program poetycki deklaruje Tuwim w 'Do krytyków'?",
-          opts: [
-            "Klasyczny, wyważony poetyzm",
-            "Poezja żywa, oparta na ulicy, tłumie i żywiole słowa — bunt wobec elitaryzmu i estetyzmu",
-            "Poezja historyczna i patriotyczna",
-            "Poezja bez formy, eksperyment absolutny",
-          ],
-          ans: 1,
-          explain:
-            "'Do krytyków' to manifest: Tuwim nie chce poprawności i akademizmu. Chce słowa, które porywa, boli, unosi — żywioł zamiast kontroli. To deklaracja skamandrytowska.",
-        },
-        {
-          cat: "Słowisień",
-          catColor: "#6a3d9c",
-          q: "Co oznacza neologizm 'Słowisień' w tytule wiersza?",
-          opts: [
-            "Imię własne ptaka",
-            "Zlepek słów: słowik + pieśń (lub miesiąc) — sam tytuł jest eksperymentem językowym imitującym śpiew",
-            "Stara słowiańska nazwa drzewa",
-            "Termin botaniczny",
-          ],
-          ans: 1,
-          explain:
-            "'Słowisień' = neologizm tworzy z 'słowik', 'słowo', 'pieśń'. Tytuł jest już demonstracją głównego tematu — muzyczności i plastyczności języka.",
-        },
-        {
-          cat: "Słowisień",
-          catColor: "#6a3d9c",
-          q: "Jaka technika językowa jest głównym środkiem artystycznym 'Słowisieniu'?",
-          opts: [
-            "Epifora",
-            "Paronomazja (gra słów brzmiących podobnie) — łańcuch słów: słowik, słowić, słowień, słowi",
-            "Elipsa",
-            "Przerzutnia",
-          ],
-          ans: 1,
-          explain:
-            "Paronomazja = gra podobnie brzmiących słów: słowik → słowić → słowień → słowieje → słowisień → słowo. Łańcuch dźwiękowy jest głównym budulcem wiersza.",
-        },
-        {
-          cat: "Słowisień",
-          catColor: "#6a3d9c",
-          q: "Co symbolizuje słowik w 'Słowisieniu'?",
-          opts: [
-            "Polską przyroda wiosenną",
-            "Tradycyjny symbol poety i poezji — śpiew ptaka = akt tworzenia wiersza",
-            "Tęsknotę za ojczyzną",
-            "Symbol śmierci",
-          ],
-          ans: 1,
-          explain:
-            "Słowik to classyczny symbol poety (Keats, Norwid). W 'Słowisieniu' Tuwim utożsamia śpiew ptaka z aktem poetyckim — metapoezja poprzez naturę.",
-        },
-        {
-          cat: "Słowisień",
-          catColor: "#6a3d9c",
-          q: "Na czym polega metapoetycki wymiar 'Słowisieniu'?",
-          opts: [
-            "Na tym, że jest napisany w formie listu",
-            "Wiersz jest o pisaniu wiersza — słowik=poeta, śpiew=poezja. Granice między językiem a naturą się zacierają",
-            "Na tym, że opisuje własne powstawanie dosłownie",
-            "Na tym, że zawiera komentarz do poezji innego autora",
-          ],
-          ans: 1,
-          explain:
-            "Metapoezja: wiersz mówi o sobie — o języku, muzyczności, akcie tworzenia. Śpiew słowika=poezja. Tuwim demonstruje to, o czym pisze: wiersz JEST muzycznym doświadczeniem.",
-        },
-        {
-          cat: "Słowisień",
-          catColor: "#6a3d9c",
-          q: "Jaka atmosfera dominuje w 'Słowisieniu'?",
-          opts: [
-            "Melancholijna i żałobna",
-            "Ekstatyczna i radosna — zabawa językiem, letnia zmysłowość, uniesienie",
-            "Ironiczna i dystansująca",
-            "Poważna i patetyczna",
-          ],
-          ans: 1,
-          explain:
-            "'Słowisień' to jeden z bardziej radosnych wierszy Tuwima — letnia zmysłowość (lipiec, wiśnia, bz), uniesienie, zabawa. Witalizm w czystej, muzycznej postaci.",
-        },
-        {
-          cat: "Rzecz czarnoleska",
-          catColor: "#3a6820",
-          q: "Do jakiej tradycji literackiej nawiązuje tytuł 'Rzecz czarnoleska'?",
-          opts: [
-            "Do tradycji romantycznej",
-            "Do Jana Kochanowskiego — Czarnolas to jego wieś, symbol klasycznej polskiej poezji",
-            "Do Awangardy Krakowskiej",
-            "Do literatury ludowej",
-          ],
-          ans: 1,
-          explain:
-            "Czarnolas = wieś Jana Kochanowskiego, ojca polskiej poezji klasycznej. Tuwim deklaruje się dziedzicem tej tradycji — język jest piękny od Kochanowskiego.",
-        },
-        {
-          cat: "Rzecz czarnoleska",
-          catColor: "#3a6820",
-          q: "Jaką rolę odgrywa język polski w 'Rzeczy czarnoleskiej'?",
-          opts: [
-            "Jest narzędziem komunikacji",
-            "Jest ojczyzną i miłością poety — głębszą identyfikacją niż ziemia czy historia",
-            "Jest tematem krytyki",
-            "Jest powodem bólu",
-          ],
-          ans: 1,
-          explain:
-            "Kluczowy motyw: język jako ojczyzna. Dla Tuwima — Żyda-Polaka — polszczyzna była jedyną ojczyzną wybraną przez serce. 'O polskie słowo! Miłość moja.'",
-        },
-        {
-          cat: "Rzecz czarnoleska",
-          catColor: "#3a6820",
-          q: "Jaką opozycję łączy 'Rzecz czarnoleska'?",
-          opts: [
-            "Przeszłość i teraźniejszość",
-            "Klasycyzm (Kochanowski, forma tradycyjna) i witalizm (żywioł, krew, ogień) w jednym wierszu",
-            "Polskość i obcość",
-            "Miasto i wieś",
-          ],
-          ans: 1,
-          explain:
-            "Wiersz syntetyzuje program Skamandra: klasyczna forma stroficzna + witalistyczny żywioł w treści (ogień, wiatr, krew). Tradycja nie jest ciężarem — jest źródłem siły.",
-        },
-        {
-          cat: "Rzecz czarnoleska",
-          catColor: "#3a6820",
-          q: "Jaki wymiar osobisty ma 'Rzecz czarnoleska'?",
-          opts: [
-            "Żaden — to wiersz czysto artystyczny",
-            "Głęboki — Tuwim jako Żyd-Polak deklaruje przynależność do polszczyzny jako manifest tożsamości przez wybór, nie urodzenie",
-            "Autobiograficzny opis dzieciństwa",
-            "Opis podróży do Czarnolasu",
-          ],
-          ans: 1,
-          explain:
-            "'Rzecz czarnoleska' to wiersz-manifest tożsamościowy: Tuwim mówi, że należy do polszczyzny przez miłość i wybór. W kontekście antysemityzmu to akt odwagi i głębokiego przekonania.",
-        },
-        {
-          cat: "Rzecz czarnoleska",
-          catColor: "#3a6820",
-          q: "Z którym wierszu jest 'Rzecz czarnoleska' najsilniej skontrastowana poetycko?",
-          opts: [
-            "Z 'Słowisieniei' — bo jeden jest o ptakach, drugi o drzewach",
-            "Z 'Do krytyków' — tamten jest buntem wobec tradycji, ten jej afirmacją",
-            "Z wierszami Lechonia",
-            "Z Panem Tadeuszem Mickiewicza",
-          ],
-          ans: 1,
-          explain:
-            "'Do krytyków' = bunt, odcięcie się, ulica i tłum. 'Rzecz czarnoleska' = miłość do tradycji, dialog z Kochanowskim. Dwa bieguny Tuwima: rewolucjonista i klasyk — obie twarze jednego poety.",
-        },
-        {
-          cat: "Zestawienie",
-          catColor: "#c9a84c",
-          q: "Który z trzech wierszy jest wyraźnie metapoetycki?",
-          opts: [
-            "'Do krytyków'",
-            "'Słowisień' — wiersz o pisaniu wiersza, słowik jako poeta",
-            "'Rzecz czarnoleska'",
-            "Wszystkie w równym stopniu",
-          ],
-          ans: 1,
-          explain:
-            "'Słowisień' to najczyściej metapoetycki z trzech — jego tematem jest sam akt tworzenia poezji i muzyczność języka. Wiersz demonstruje to, o czym mówi.",
-        },
-        {
-          cat: "Zestawienie",
-          catColor: "#c9a84c",
-          q: "Który wiersz ma najsilniejszy wymiar tożsamościowy (Tuwim jako Żyd-Polak)?",
-          opts: [
-            "'Do krytyków'",
-            "'Słowisień'",
-            "'Rzecz czarnoleska' — język jako jedyna ojczyzna",
-            "Wszystkie w równym stopniu",
-          ],
-          ans: 2,
-          explain:
-            "'Rzecz czarnoleska' ma najgłębszy wymiar tożsamościowy — miłość do języka polskiego jest wyznaniem przynależności, szczególnie dramatycznym w kontekście żydowskiej tożsamości Tuwima.",
-        },
-        {
-          cat: "Zestawienie",
-          catColor: "#c9a84c",
-          q: "Który wiersz ma charakter manifestu poetyckiego — deklaracji programowej?",
-          opts: [
-            "'Do krytyków' — bezpośrednia polemika z krytykami i deklaracja witalizmu",
-            "'Słowisień'",
-            "'Rzecz czarnoleska'",
-            "Żaden z nich",
-          ],
-          ans: 0,
-          explain:
-            "'Do krytyków' to manifest programowy — Tuwim wprost deklaruje, czym jest jego poezja (żywioł, ulica, krew) w opozycji do zimnej poprawności krytyków. To najczystszy przykład skamandrytowskiej deklaracji.",
-        },
-        {
-          cat: "Zestawienie",
-          catColor: "#c9a84c",
-          q: "Co łączy wszystkie trzy wiersze Tuwima?",
-          opts: [
-            "Tematyka historyczna",
-            "Miłość do języka polskiego jako żywego, muzycznego materiału — we wszystkich język jest bohaterem",
-            "Tematyka miejska",
-            "Forma sonetu",
-          ],
-          ans: 1,
-          explain:
-            "We wszystkich trzech centralne jest słowo, język, mowa polska — czy to przez bunt ('Do krytyków'), zabawę ('Słowisień'), czy wyznanie ('Rzecz czarnoleska'). Język jest zawsze głównym bohaterem Tuwima.",
-        },
+        { cat:"Do krytyków",catColor:"#b04070",q:"Do kogo zwraca się podmiot w wierszu 'Do krytyków'?",opts:["Do czytelników","Do krytyków literackich — bezpośrednia apostrofa polemiczna","Do innych poetów","Do miłości"],ans:1,explain:"'Do krytyków' to apostrofa — bezpośrednie zwrot do krytyków. Podmiot liryczny konfrontuje się z nimi, deklarując inny program poetycki." },
+        { cat:"Do krytyków",catColor:"#b04070",q:"Jakie dwie postawy są skontrastowane w 'Do krytyków'?",opts:["Miłość i nienawiść","Krytycy (intelekt, estetyzm, 'przeszklane słowa') vs. poeta (ulica, tłum, żywioł, krew)","Tradycja i nowoczesność","Wieś i miasto"],ans:1,explain:"Centralna opozycja: krytycy = chłodny intelekt, estetyzm. Poeta = ulica, tłum, krzyk, krew. Tuwim wybiera żywioł nad akademicką kontrolą." },
+        { cat:"Do krytyków",catColor:"#b04070",q:"Co symbolizują 'przeszklane słowa' w 'Do krytyków'?",opts:["Słowa piękne jak kryształ","Słowa zimne, intelektualne, zdystansowane — poetycki estetyzm bez życia i emocji","Słowa bez znaczenia","Słowa o przeszłości"],ans:1,explain:"'Przeszklane słowa' to metafora krytyki akademickiej: chłodne, czyste, formalne — ale bez życia. Tuwim przeciwstawia im słowa żywe, gorące, z krwi i z ulicy." },
+        { cat:"Do krytyków",catColor:"#b04070",q:"Jakie środki stylistyczne dominują w 'Do krytyków'?",opts:["Epitet i opis pejzażu","Apostrofa, enumeracja (nagromadzenie metafor żywiołu) i anafora ('Jak...')","Ironia i groteska","Monolog wewnętrzny"],ans:1,explain:"Apostrofa (zwrot do krytyków) + enumeracja żywiołowych metafor (chmury, wiatry, krew) + anafora 'Jak...' = narastające, ekstatyczne napięcie." },
+        { cat:"Do krytyków",catColor:"#b04070",q:"Jaki program poetycki deklaruje Tuwim w 'Do krytyków'?",opts:["Klasyczny, wyważony poetyzm","Poezja żywa, oparta na ulicy, tłumie i żywiole słowa — bunt wobec elitaryzmu i estetyzmu","Poezja historyczna i patriotyczna","Poezja bez formy, eksperyment absolutny"],ans:1,explain:"'Do krytyków' to manifest: Tuwim nie chce poprawności i akademizmu. Chce słowa, które porywa, boli, unosi — żywioł zamiast kontroli. To deklaracja skamandrytowska." },
+        { cat:"Słowisień",catColor:"#6a3d9c",q:"Co oznacza neologizm 'Słowisień' w tytule wiersza?",opts:["Imię własne ptaka","Zlepek słów: słowik + pieśń (lub miesiąc) — sam tytuł jest eksperymentem językowym imitującym śpiew","Stara słowiańska nazwa drzewa","Termin botaniczny"],ans:1,explain:"'Słowisień' = neologizm z 'słowik', 'słowo', 'pieśń'. Tytuł jest już demonstracją głównego tematu — muzyczności i plastyczności języka." },
+        { cat:"Słowisień",catColor:"#6a3d9c",q:"Jaka technika językowa jest głównym środkiem artystycznym 'Słowisieniu'?",opts:["Epifora","Paronomazja (gra słów brzmiących podobnie) — łańcuch słów: słowik, słowić, słowień, słowi","Elipsa","Przerzutnia"],ans:1,explain:"Paronomazja = gra podobnie brzmiących słów: słowik → słowić → słowień → słowieje → słowisień → słowo. Łańcuch dźwiękowy jest głównym budulcem wiersza." },
+        { cat:"Słowisień",catColor:"#6a3d9c",q:"Co symbolizuje słowik w 'Słowisieniu'?",opts:["Polską przyrodę wiosenną","Tradycyjny symbol poety i poezji — śpiew ptaka = akt tworzenia wiersza","Tęsknotę za ojczyzną","Symbol śmierci"],ans:1,explain:"Słowik to klasyczny symbol poety (Keats, Norwid). W 'Słowisieniu' Tuwim utożsamia śpiew ptaka z aktem poetyckim — metapoezja poprzez naturę." },
+        { cat:"Słowisień",catColor:"#6a3d9c",q:"Na czym polega metapoetycki wymiar 'Słowisieniu'?",opts:["Na tym, że jest napisany w formie listu","Wiersz jest o pisaniu wiersza — słowik=poeta, śpiew=poezja. Granice między językiem a naturą się zacierają","Na tym, że opisuje własne powstawanie dosłownie","Na tym, że zawiera komentarz do poezji innego autora"],ans:1,explain:"Metapoezja: wiersz mówi o sobie — o języku, muzyczności, akcie tworzenia. Śpiew słowika=poezja. Tuwim demonstruje to, o czym pisze: wiersz JEST muzycznym doświadczeniem." },
+        { cat:"Słowisień",catColor:"#6a3d9c",q:"Jaka atmosfera dominuje w 'Słowisieniu'?",opts:["Melancholijna i żałobna","Ekstatyczna i radosna — zabawa językiem, letnia zmysłowość, uniesienie","Ironiczna i dystansująca","Poważna i patetyczna"],ans:1,explain:"'Słowisień' to jeden z bardziej radosnych wierszy Tuwima — letnia zmysłowość (lipiec, wiśnia, bz), uniesienie, zabawa. Witalizm w czystej, muzycznej postaci." },
+        { cat:"Rzecz czarnoleska",catColor:"#3a6820",q:"Do jakiej tradycji literackiej nawiązuje tytuł 'Rzecz czarnoleska'?",opts:["Do tradycji romantycznej","Do Jana Kochanowskiego — Czarnolas to jego wieś, symbol klasycznej polskiej poezji","Do Awangardy Krakowskiej","Do literatury ludowej"],ans:1,explain:"Czarnolas = wieś Jana Kochanowskiego, ojca polskiej poezji klasycznej. Tuwim deklaruje się dziedzicem tej tradycji — język jest piękny od Kochanowskiego." },
+        { cat:"Rzecz czarnoleska",catColor:"#3a6820",q:"Jaką rolę odgrywa język polski w 'Rzeczy czarnoleskiej'?",opts:["Jest narzędziem komunikacji","Jest ojczyzną i miłością poety — głębszą identyfikacją niż ziemia czy historia","Jest tematem krytyki","Jest powodem bólu"],ans:1,explain:"Kluczowy motyw: język jako ojczyzna. Dla Tuwima — Żyda-Polaka — polszczyzna była jedyną ojczyzną wybraną przez serce. 'O polskie słowo! Miłość moja.'" },
+        { cat:"Rzecz czarnoleska",catColor:"#3a6820",q:"Jaką opozycję łączy 'Rzecz czarnoleska'?",opts:["Przeszłość i teraźniejszość","Klasycyzm (Kochanowski, forma tradycyjna) i witalizm (żywioł, krew, ogień) w jednym wierszu","Polskość i obcość","Miasto i wieś"],ans:1,explain:"Wiersz syntetyzuje program Skamandra: klasyczna forma stroficzna + witalistyczny żywioł w treści (ogień, wiatr, krew). Tradycja nie jest ciężarem — jest źródłem siły." },
+        { cat:"Rzecz czarnoleska",catColor:"#3a6820",q:"Jaki wymiar osobisty ma 'Rzecz czarnoleska'?",opts:["Żaden — to wiersz czysto artystyczny","Głęboki — Tuwim jako Żyd-Polak deklaruje przynależność do polszczyzny jako manifest tożsamości przez wybór, nie urodzenie","Autobiograficzny opis dzieciństwa","Opis podróży do Czarnolasu"],ans:1,explain:"'Rzecz czarnoleska' to wiersz-manifest tożsamościowy: Tuwim mówi, że należy do polszczyzny przez miłość i wybór. W kontekście antysemityzmu to akt odwagi i głębokiego przekonania." },
+        { cat:"Rzecz czarnoleska",catColor:"#3a6820",q:"Z którym wierszem jest 'Rzecz czarnoleska' najsilniej skontrastowana poetycko?",opts:["Z 'Słowisieniu' — bo jeden jest o ptakach, drugi o drzewach","Z 'Do krytyków' — tamten jest buntem wobec tradycji, ten jej afirmacją","Z wierszami Lechonia","Z Panem Tadeuszem Mickiewicza"],ans:1,explain:"'Do krytyków' = bunt, odcięcie się, ulica i tłum. 'Rzecz czarnoleska' = miłość do tradycji, dialog z Kochanowskim. Dwa bieguny Tuwima: rewolucjonista i klasyk — obie twarze jednego poety." },
+        { cat:"Zestawienie",catColor:"#c9a84c",q:"Który z trzech wierszy jest wyraźnie metapoetycki?",opts:["'Do krytyków'","'Słowisień' — wiersz o pisaniu wiersza, słowik jako poeta","'Rzecz czarnoleska'","Wszystkie w równym stopniu"],ans:1,explain:"'Słowisień' to najczyściej metapoetycki z trzech — jego tematem jest sam akt tworzenia poezji i muzyczność języka. Wiersz demonstruje to, o czym mówi." },
+        { cat:"Zestawienie",catColor:"#c9a84c",q:"Który wiersz ma najsilniejszy wymiar tożsamościowy (Tuwim jako Żyd-Polak)?",opts:["'Do krytyków'","'Słowisień'","'Rzecz czarnoleska' — język jako jedyna ojczyzna","Wszystkie w równym stopniu"],ans:2,explain:"'Rzecz czarnoleska' ma najgłębszy wymiar tożsamościowy — miłość do języka polskiego jest wyznaniem przynależności, szczególnie dramatycznym w kontekście żydowskiej tożsamości Tuwima." },
+        { cat:"Zestawienie",catColor:"#c9a84c",q:"Który wiersz ma charakter manifestu poetyckiego — deklaracji programowej?",opts:["'Do krytyków' — bezpośrednia polemika z krytykami i deklaracja witalizmu","'Słowisień'","'Rzecz czarnoleska'","Żaden z nich"],ans:0,explain:"'Do krytyków' to manifest programowy — Tuwim wprost deklaruje, czym jest jego poezja (żywioł, ulica, krew) w opozycji do zimnej poprawności krytyków. To najczystszy przykład skamandrytowskiej deklaracji." },
+        { cat:"Zestawienie",catColor:"#c9a84c",q:"Co łączy wszystkie trzy wiersze Tuwima?",opts:["Tematyka historyczna","Miłość do języka polskiego jako żywego, muzycznego materiału — we wszystkich język jest bohaterem","Tematyka miejska","Forma sonetu"],ans:1,explain:"We wszystkich trzech centralne jest słowo, język, mowa polska — czy to przez bunt ('Do krytyków'), zabawę ('Słowisień'), czy wyznanie ('Rzecz czarnoleska'). Język jest zawsze głównym bohaterem Tuwima." },
       ];
 
-      const ALL_BANKS_T9 = {
-        skamander: QB_SKAMANDER,
-        wiersze_t: QB_WIERSZE_T,
-        all_t9: [...QB_SKAMANDER, ...QB_WIERSZE_T],
-      };
-      const BANK_LABELS_T9 = {
-        skamander: "Program Skamandra",
-        wiersze_t: "Interpretacja wierszy",
-        all_t9: "MEGA QUIZ — Temat 9",
-      };
+      const ALL_BANKS_T9 = { skamander: QB_SKAMANDER, wiersze_t: QB_WIERSZE_T, all_t9: [...QB_SKAMANDER, ...QB_WIERSZE_T] };
+      const BANK_LABELS_T9 = { skamander: "Program Skamandra", wiersze_t: "Interpretacja wierszy", all_t9: "MEGA QUIZ — Temat 9" };
 
-      // ==================== QUIZ ENGINE ====================
-      function shuffle(arr) {
-        return [...arr].sort(() => Math.random() - 0.5);
-      }
-      let qaState = {
-        mode: "",
-        current: -1,
-        score: 0,
-        answers: [],
-        shuffled: [],
-        catScores: {},
-      };
+      function shuffle(arr) { return [...arr].sort(() => Math.random() - 0.5); }
+      let qaState = { mode:"", current:-1, score:0, answers:[], shuffled:[], catScores:{} };
       let quizTopicId = "";
 
       function launchQuiz(mode) {
         quizTopicId = mode;
-        qaState = {
-          mode,
-          current: 0,
-          score: 0,
-          answers: [],
-          shuffled: shuffle(ALL_BANKS_T9[mode]),
-          catScores: {},
-        };
+        qaState = { mode, current:0, score:0, answers:[], shuffled:shuffle(ALL_BANKS_T9[mode]), catScores:{} };
         document.getElementById("quiz-hub").style.display = "none";
         document.getElementById("quiz-result-screen").style.display = "none";
         document.getElementById("quiz-active").style.display = "block";
@@ -2869,47 +1014,29 @@
         document.getElementById("quiz-result-screen").style.display = "none";
         updateHubScores();
       }
-      function replayQuiz() {
-        launchQuiz(qaState.mode);
-      }
+      function replayQuiz() { launchQuiz(qaState.mode); }
 
       function renderQA() {
         const q = qaState.shuffled[qaState.current];
         const total = qaState.shuffled.length;
-        document.getElementById("qa-label").textContent =
-          BANK_LABELS_T9[qaState.mode] +
-          " · Pytanie " +
-          (qaState.current + 1) +
-          " z " +
-          total;
-        document.getElementById("qa-score").textContent =
-          "Punkty: " + qaState.score;
-        document.getElementById("qa-fill").style.width =
-          (qaState.current / total) * 100 + "%";
-        document.getElementById("qa-num").textContent =
-          "Pytanie " + (qaState.current + 1);
+        document.getElementById("qa-label").textContent = BANK_LABELS_T9[qaState.mode] + " · Pytanie " + (qaState.current + 1) + " z " + total;
+        document.getElementById("qa-score").textContent = "Punkty: " + qaState.score;
+        document.getElementById("qa-fill").style.width = (qaState.current / total) * 100 + "%";
+        document.getElementById("qa-num").textContent = "Pytanie " + (qaState.current + 1);
         const catEl = document.getElementById("qa-cat");
-        catEl.textContent = q.cat;
-        catEl.style.color = q.catColor;
-        catEl.style.borderColor = q.catColor + "66";
-        catEl.style.background = q.catColor + "18";
+        catEl.textContent = q.cat; catEl.style.color = q.catColor; catEl.style.borderColor = q.catColor + "66"; catEl.style.background = q.catColor + "18";
         document.getElementById("qa-text").textContent = q.q;
         document.getElementById("qa-feedback").className = "quiz-feedback";
         document.getElementById("qa-next").className = "quiz-next";
-        const order = shuffle([0, 1, 2, 3]);
+        const order = shuffle([0,1,2,3]);
         q._fo = order;
-        const letters = ["A", "B", "C", "D"];
+        const letters = ["A","B","C","D"];
         const optsEl = document.getElementById("qa-opts");
         optsEl.innerHTML = "";
         order.forEach((origIdx, pos) => {
           const btn = document.createElement("button");
           btn.className = "quiz-opt";
-          btn.innerHTML =
-            '<span class="opt-letter">' +
-            letters[pos] +
-            "</span><span>" +
-            q.opts[origIdx] +
-            "</span>";
+          btn.innerHTML = '<span class="opt-letter">' + letters[pos] + "</span><span>" + q.opts[origIdx] + "</span>";
           btn.addEventListener("click", () => selectQA(origIdx));
           optsEl.appendChild(btn);
         });
@@ -2917,105 +1044,58 @@
 
       function selectQA(chosen) {
         const q = qaState.shuffled[qaState.current];
-        if (
-          document.querySelector(
-            "#qa-opts .quiz-opt.correct, #qa-opts .quiz-opt.wrong",
-          )
-        )
-          return;
+        if (document.querySelector("#qa-opts .quiz-opt.correct, #qa-opts .quiz-opt.wrong")) return;
         const correct = chosen === q.ans;
         if (correct) qaState.score++;
         qaState.answers.push(correct);
-        if (!qaState.catScores[q.cat])
-          qaState.catScores[q.cat] = { ok: 0, total: 0 };
+        if (!qaState.catScores[q.cat]) qaState.catScores[q.cat] = { ok:0, total:0 };
         qaState.catScores[q.cat].total++;
         if (correct) qaState.catScores[q.cat].ok++;
-        document.querySelectorAll("#qa-opts .quiz-opt").forEach((btn) => {
+        document.querySelectorAll("#qa-opts .quiz-opt").forEach(btn => {
           btn.classList.add("answered");
-          const pos = "ABCD".indexOf(
-            btn.querySelector(".opt-letter").textContent,
-          );
+          const pos = "ABCD".indexOf(btn.querySelector(".opt-letter").textContent);
           const oi = q._fo[pos];
           if (oi === q.ans) btn.classList.add("correct");
           if (oi === chosen && !correct) btn.classList.add("wrong");
         });
         const fb = document.getElementById("qa-feedback");
         fb.className = "quiz-feedback show " + (correct ? "ok" : "bad");
-        fb.innerHTML =
-          (correct
-            ? "<strong>✓ Dobrze!</strong>"
-            : "<strong>✗ Niepoprawnie.</strong>") + q.explain;
+        fb.innerHTML = (correct ? "<strong>✓ Dobrze!</strong>" : "<strong>✗ Niepoprawnie.</strong>") + q.explain;
         document.getElementById("qa-next").className = "quiz-next show";
-        document.getElementById("qa-score").textContent =
-          "Punkty: " + qaState.score;
+        document.getElementById("qa-score").textContent = "Punkty: " + qaState.score;
         let s = 0;
-        for (let i = qaState.answers.length - 1; i >= 0; i--) {
-          if (qaState.answers[i]) s++;
-          else break;
-        }
+        for (let i = qaState.answers.length - 1; i >= 0; i--) { if (qaState.answers[i]) s++; else break; }
         if (s >= 3) {
           const el = document.getElementById("streak-badge");
-          if (el) {
-            el.textContent = s + "× z rzędu! 🔥";
-            el.classList.add("show");
-            setTimeout(() => el.classList.remove("show"), 1800);
-          }
+          if (el) { el.textContent = s + "× z rzędu! 🔥"; el.classList.add("show"); setTimeout(() => el.classList.remove("show"), 1800); }
         }
       }
 
       function nextQA() {
         qaState.current++;
-        if (qaState.current >= qaState.shuffled.length) {
-          showQAResults();
-        } else {
-          renderQA();
-          document
-            .getElementById("quiz-active")
-            .scrollIntoView({ behavior: "smooth", block: "start" });
-        }
+        if (qaState.current >= qaState.shuffled.length) { showQAResults(); }
+        else { renderQA(); document.getElementById("quiz-active").scrollIntoView({ behavior:"smooth", block:"start" }); }
       }
 
       function showQAResults() {
         document.getElementById("quiz-active").style.display = "none";
         const res = document.getElementById("quiz-result-screen");
         res.style.display = "block";
-        const total = qaState.shuffled.length,
-          score = qaState.score;
+        const total = qaState.shuffled.length, score = qaState.score;
         const pct = Math.round((score / total) * 100);
         saveScore(quizTopicId, score, total);
         let emoji, title, msg;
-        if (pct === 100) {
-          emoji = "🏆";
-          title = "Perfekcja!";
-          msg = "Wszystkie pytania poprawnie — Skamander i Tuwim bez tajemnic!";
-        } else if (pct >= 80) {
-          emoji = "🎓";
-          title = "Świetnie!";
-          msg =
-            "Bardzo solidny wynik. Przejrzyj kategorie, na których straciłeś/aś punkty.";
-        } else if (pct >= 60) {
-          emoji = "📚";
-          title = "Dobra robota!";
-          msg = "Znasz materiał, ale warto przejrzeć słabsze kategorie.";
-        } else if (pct >= 40) {
-          emoji = "🌀";
-          title = "Jeszcze trochę pracy...";
-          msg = "Wróć do teorii, a potem spróbuj znowu!";
-        } else {
-          emoji = "📖";
-          title = "Czas na powtórkę!";
-          msg = "Skorzystaj z zakładki Teoria i Wiersze — a po powtórce wróć!";
-        }
+        if (pct === 100) { emoji = "🏆"; title = "Perfekcja!"; msg = "Wszystkie pytania poprawnie — Skamander i Tuwim bez tajemnic!"; }
+        else if (pct >= 80) { emoji = "🎓"; title = "Świetnie!"; msg = "Bardzo solidny wynik. Przejrzyj kategorie, na których straciłeś/aś punkty."; }
+        else if (pct >= 60) { emoji = "📚"; title = "Dobra robota!"; msg = "Znasz materiał, ale warto przejrzeć słabsze kategorie."; }
+        else if (pct >= 40) { emoji = "🌀"; title = "Jeszcze trochę pracy..."; msg = "Wróć do teorii, a potem spróbuj znowu!"; }
+        else { emoji = "📖"; title = "Czas na powtórkę!"; msg = "Skorzystaj z zakładki Teoria i Wiersze — a po powtórce wróć!"; }
         document.getElementById("qr-emoji").textContent = emoji;
         document.getElementById("qr-title").textContent = title;
         document.getElementById("qr-big").textContent = score + "/" + total;
-        document.getElementById("qr-of").textContent =
-          pct + "% poprawnych odpowiedzi";
+        document.getElementById("qr-of").textContent = pct + "% poprawnych odpowiedzi";
         document.getElementById("qr-msg").textContent = msg;
-        setTimeout(
-          () => (document.getElementById("qr-bar").style.width = pct + "%"),
-          100,
-        );
+        setTimeout(() => (document.getElementById("qr-bar").style.width = pct + "%"), 100);
         const cats = document.getElementById("qr-cats");
         cats.innerHTML = "";
         Object.entries(qaState.catScores).forEach(([cat, { ok, total }]) => {
@@ -3026,22 +1106,19 @@
           chip.innerHTML = `<div class="rcc-name">${cat}</div><div class="rcc-val" style="color:${col}">${ok}/${total} (${p}%)</div>`;
           cats.appendChild(chip);
         });
-        res.scrollIntoView({ behavior: "smooth", block: "start" });
+        res.scrollIntoView({ behavior:"smooth", block:"start" });
         updateHubScores();
       }
 
       function updateHubScores() {
         const p = gp();
-        ["skamander", "wiersze_t", "all_t9"].forEach((id) => {
+        ["skamander","wiersze_t","all_t9"].forEach(id => {
           const el = document.getElementById("hub-score-" + id);
           if (!el) return;
           const bank = ALL_BANKS_T9[id];
           const cnt = bank ? bank.length : 0;
-          if (p[id]?.lastPct !== undefined) {
-            el.textContent = p[id].lastPct + "% ostatnio · " + cnt + " pytań";
-          } else {
-            el.textContent = cnt + " pytań";
-          }
+          if (p[id]?.lastPct !== undefined) { el.textContent = p[id].lastPct + "% ostatnio · " + cnt + " pytań"; }
+          else { el.textContent = cnt + " pytań"; }
         });
       }
       updateHubScores();
